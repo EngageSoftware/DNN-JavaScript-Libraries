@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="jQuery.cycle2" type="JavaScript_Library" version="2.1.0">
+      <friendlyName>Cycle2</friendlyName>
+      <description>The successor to Cycle. Cycle2 is a mobile and desktop friendly slideshow built around ease-of-use with a declarative API. It supports responsive designs, dynamic slideshow manipulation, swipe events, and lots of options!</description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>http://www.engagesoftware.com</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes />
+      <azureCompatible>true</azureCompatible>
+      <dependencies>
+        <dependency type="managedPackage" version="1.7.0">jQuery</dependency>
+        <dependency type="managedPackage" version="2.1.0">jQuery.cycle2.core</dependency>
+        <dependency type="managedPackage" version="2.1.0">jQuery.cycle2.autoheight</dependency>
+        <dependency type="managedPackage" version="2.1.0">jQuery.cycle2.caption</dependency>
+        <dependency type="managedPackage" version="2.1.0">jQuery.cycle2.command</dependency>
+        <dependency type="managedPackage" version="2.1.0">jQuery.cycle2.hash</dependency>
+        <dependency type="managedPackage" version="2.1.0">jQuery.cycle2.loader</dependency>
+        <dependency type="managedPackage" version="2.1.0">jQuery.cycle2.pager</dependency>
+        <dependency type="managedPackage" version="2.1.0">jQuery.cycle2.prevnext</dependency>
+        <dependency type="managedPackage" version="2.1.0">jQuery.cycle2.progressive</dependency>
+        <dependency type="managedPackage" version="2.1.0">jQuery.cycle2.tmpl</dependency>
+      </dependencies>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>jQuery.cycle2</libraryName>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+          </javaScriptLibrary>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>

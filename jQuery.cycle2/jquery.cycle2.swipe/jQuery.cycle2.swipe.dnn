@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="jQuery.cycle2.swipe" type="JavaScript_Library" version="2.1.0">
+      <friendlyName>Cycle2 Swipe plugin</friendlyName>
+      <description><![CDATA[If you want swipe events and you're not using jQuery Mobile, download this plugin. This plugin provides support for advancing slides forward or back using a swipe gesture on touch devices. See <a href="http://jquery.malsup.com/cycle2/demo/swipe.php">the demo</a>. This is an optional functional plugin for the jQuery.Cycle2 library.]]></description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>http://www.engagesoftware.com</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes />
+      <azureCompatible>true</azureCompatible>
+      <dependencies>
+        <dependency type="managedPackage" version="1.7.0">jQuery</dependency>
+        <dependency type="managedPackage" version="2.1.0">jQuery.cycle2.core</dependency>
+      </dependencies>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>jQuery.cycle2.swipe</libraryName>
+            <fileName>jQuery.cycle2.swipe.js</fileName>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName>jQuery.cycle2.swipe</libraryFolderName>
+            <jsfile>
+              <name>jQuery.cycle2.swipe.js</name>
+            </jsfile>
+          </jsfiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>

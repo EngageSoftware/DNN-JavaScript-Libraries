@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="jQuery.tcycle" type="JavaScript_Library" version="2.1.0">
+      <friendlyName>tCycle</friendlyName>
+      <description><![CDATA[‘t’ is for tiny. tCycle is a minimalist jQuery slideshow plugin that won’t blow your bandwidth budget. See <a href="http://jquery.malsup.com/cycle2/tcycle/basic.php">the demo</a>.]]></description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>http://www.engagesoftware.com</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes />
+      <azureCompatible>true</azureCompatible>
+      <dependencies>
+        <dependency type="managedPackage" version="1.7.0">jQuery</dependency>
+      </dependencies>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>jQuery.tcycle</libraryName>
+            <fileName>jQuery.tcycle.js</fileName>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName>jQuery.tcycle</libraryFolderName>
+            <jsfile>
+              <name>jQuery.tcycle.js</name>
+            </jsfile>
+          </jsfiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
