@@ -1,4 +1,4 @@
 ﻿Import-Module .\New-Package.psm1
-rmdir .\InstallPackages -recurse -force
-mkdir .\InstallPackages
-New-Package -recurse
+rmdir .\InstallPackages -Recurse -Force
+mkdir .\InstallPackages | Out-Null
+New-Package -Recurse

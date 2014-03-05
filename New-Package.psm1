@@ -1,5 +1,6 @@
 ﻿Set-StrictMode -Version:Latest
-Import-Module PSCX -RequiredVersion 3.1.0.0
+#Import-Module PSCX -RequiredVersion 3.1.0.0
+Add-Type -AssemblyName 'System.IO.Compression.FileSystem'
 
 function New-Package(
     $directory = '.', 
@@ -35,7 +36,7 @@ function New-Package(
     if ($zipThisDirectory) {
         #Write-Host ('zipping ' + $directory.Path)
         $zipName = (Split-Path $directory.Path -Leaf) + '.zip'
-        ls $directory | Write-Zip -FlattenPaths -OutputPath (Join-Path $outputPath $zipName)
+        [System.IO.Compression.ZipFile]::CreateFromDirectory($directory, (Join-Path $outputPath $zipName), [System.IO.Compression.CompressionLevel]::Optimal, $false)
     }
 }
 
