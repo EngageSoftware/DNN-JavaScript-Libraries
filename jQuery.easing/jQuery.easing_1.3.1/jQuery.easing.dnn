@@ -21,7 +21,7 @@
             <libraryName>jQuery.easing</libraryName>
             <fileName>jQuery.easing.1.3.js</fileName>
             <objectName>jQuery.easing.easeInOutQuad</objectName>
-            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+            <preferredScriptLocation>PageHead</preferredScriptLocation>
             <CDNPath>https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js</CDNPath>
           </javaScriptLibrary>
         </component>
