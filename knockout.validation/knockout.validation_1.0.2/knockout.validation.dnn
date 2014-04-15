@@ -13,7 +13,7 @@
       <releaseNotes src="CHANGES.htm" />
       <azureCompatible>true</azureCompatible>
       <dependencies>
-	      <dependency type="managedPackage" version="2.2.1">knockout</dependency>
+	      <dependency type="managedPackage" version="2.2.1">Knockout</dependency>
       </dependencies>
       <components>
         <component type="JavaScript_Library">
