@@ -1,0 +1,39 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="knockout.validation" type="JavaScript_Library" version="1.0.2">
+      <friendlyName>Knockout Validation</friendlyName>
+      <description>A Validation Library plugin for KnockoutJS. An extensible and pluggable framework for performing model-based Form and UI validation.</description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>http://www.engagesoftware.com</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes src="CHANGES.htm" />
+      <azureCompatible>true</azureCompatible>
+      <dependencies>
+	      <dependency type="managedPackage" version="2.2.1">Knockout</dependency>
+      </dependencies>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>knockout.validation</libraryName>
+            <fileName>knockout.validation.js</fileName>
+            <objectName>ko.validation</objectName>
+            <cdnUrl>https://cdn.jsdelivr.net/knockout.validation/1.0.2/knockout.validation.min.js</cdnUrl>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName>knockout.validation</libraryFolderName>
+            <jsfile>
+              <name>knockout.validation.js</name>
+            </jsfile>
+          </jsfiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
