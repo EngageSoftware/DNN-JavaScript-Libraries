@@ -24,9 +24,9 @@
 
     if (typeof (ko) === undefined) { throw 'Knockout is required, please ensure it is loaded before loading this validation plug-in'; }
 
-    if (typeof define === "function" && define["amd"]) {
-        exports = ko.validation = {};
-    }
+    // create our namespace object
+    var validation = exports;
+    ko.validation = validation;
 
     var defaults = {
         registerExtenders: true,
@@ -146,7 +146,7 @@
     //#endregion
 
     //#region Public API
-    var validation = (function () {
+    var api = (function () {
 
         var isInitialized = 0;
 
@@ -453,7 +453,10 @@
                 contexts = null;
             }
         };
-    } ());
+    }());
+
+    // expose api publicly
+    ko.utils.extend(validation, api);
     //#endregion
 
     //#region Core Validation Rules
@@ -532,7 +535,7 @@
 
     validation.rules['pattern'] = {
         validator: function (val, regex) {
-            return utils.isEmptyVal(val) || val.match(regex) != null;
+            return utils.isEmptyVal(val) || val.toString().match(regex) != null;
         },
         message: 'Please check this value.'
     };
@@ -739,7 +742,7 @@
 
             //toggle visibility on validation messages when validation hasn't been evaluated, or when the object isValid
             var visiblityAccessor = function () {
-                return isModified ? !isValid : false;
+                return (!config.messagesOnModified || isModified) ? !isValid : false;
             };
 
             ko.bindingHandlers.text.update(element, errorMsgAccessor);
@@ -1072,8 +1075,4 @@
     };
 
     //#endregion
-
-    /// apply our public api to the public object
-    ko.utils.extend(exports, validation);
-
 }));
