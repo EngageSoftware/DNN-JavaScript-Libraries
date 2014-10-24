@@ -1,0 +1,45 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="bootstrap.accessibility" type="JavaScript_Library" version="01.00.02">
+      <friendlyName>Bootstrap Accessibility Plugin</friendlyName>
+      <description><![CDATA[Accessibility Plugin for Bootstrap 3 and Bootstrap 3 as SubModule <a href="http://paypal.github.io/bootstrap-accessibility-plugin/demo.html">http://paypal.github.io/bootstrap-accessibility-plugin/demo.html</a></a>]]></description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>http://www.engagesoftware.com</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes src="CHANGES.htm" />
+      <azureCompatible>true</azureCompatible>
+      <dependencies>
+        <dependency type="managedPackage" version="1.9.0">jQuery</dependency>
+      </dependencies>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>bootstrap.accessibility</libraryName>
+            <fileName>bootstrap-accessibility.js</fileName>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName>bootstrap.accessibility</libraryFolderName>
+            <jsfile>
+              <name>bootstrap-accessibility.js</name>
+            </jsfile>
+          </jsfiles>
+        </component>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>Resources\Libraries\bootstrap.accessibility\1.0.2</basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
