@@ -45,15 +45,47 @@ Then, in the body of the skin, use the skin object to request the library:
 
 HTML Skins
 ---------------
-The skin object mentioned above can also be used from HTML skins.  It would look something like this:
+The skin object mentioned above can also be used from HTML skins.  It would 
+look something like this:
 
     <object codetype="dotnetnuke/server" codebase="JavaScriptLibraryInclude">
         <param name="Name" value="jQuery" />
         <param name="Version" value="1.9.1" />
     </object>
-
-License
+    
+Code
 ---------------
+There is also an API to request JavaScript Libraries from code.  This is needed
+in skins prior to DNN 7.3 and the introduction of the `JavaScriptLibraryInclude`
+skin object, as well as from extension code (though extensions can also make use 
+of the skin object, if desired).  The primary entry point for the API is the
+`RequestRegistration` method of the `JavaScript` static class in the 
+`DotNetNuke.Framework.JavaScriptLibraries` namespace.  There are three overloads
+to `RequestRegistration`:
+
+    JavaScript.RequestRegistration(String libraryName)
+    JavaScript.RequestRegistration(String libraryName, Version version)
+    JavaScript.RequestRegistration(String libraryName, Version version, SpecificVersion specificity)
+
+The overload which doesn't specify a version will request the latest version of
+the library. In order to avoid your extensions breaking unexpectedly, it's 
+probably best to always specify a version number.  The second overload, which 
+includes the version number will request that specific version of the library.
+If that version isn't installed, it will instead display an error.  The third
+overload is probably the best to use for most scenarios. It allows you to pass
+a value indicating how specific the version is, as a value of the 
+`SpecificVersion` enum.  The possible values are `Latest`, `LatestMajor`, 
+`LatestMinor`, and `Exact`.  `Latest` is the behavior of the overload with one 
+argument, `Exact` is the behavior of the overload with two arguments, while the 
+other two values allow you to get behavior that is in between strict and loose. 
+
+When requesting that a JavaScript Library is registered, this will ensure that 
+it, and any of its dependencies, get included on the page.
+
+
+	
+License
+=================
 
 This code is released under the [MIT license](LICENSE.md).  
 However, the individual libraries are licensed by their respective owners.
