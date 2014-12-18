@@ -7,12 +7,14 @@ exist in a single place within a DNN site, instead of every module, skin, and
 piece of content that wants to include them using their own. DNN presently 
 comes with libraries for jQuery, jQuery UI, jQuery Migrate, Knockout, and 
 Knockout Mapping.
+
 In addition to these built-in libraries, new libraries can be installed into 
 DNN, and used by various components.  DNN allows multiple versions of a
 JavaScript library to be used, so one module can request a particular version
 of a script, while another requests another. So long as they aren't on the same
 page, they will get what they requested; otherwise, DNN will use the higher 
 version.
+
 
 Goal
 ===============
@@ -79,13 +81,30 @@ a value indicating how specific the version is, as a value of the
 argument, `Exact` is the behavior of the overload with two arguments, while the 
 other two values allow you to get behavior that is in between strict and loose. 
 
-When requesting that a JavaScript Library is registered, this will ensure that 
-it, and any of its dependencies, get included on the page.
 
+JavaScript Library Features
+===============
 
+When requesting that a JavaScript Library is registered, DNN ensures that 
+both that library's JavaScript file and all of its dependencies' JavaScript 
+files, get included on the page. The JavaScript library itself will define the
+properties that determine how the file is included on the page.  Specifically,
+the library will indicate its preferred location (from page head, body top, and
+body bottom), and can provide a URL to the script on a 
+<abbr title="Content Distribution Network">CDN</abbr> (along with a JavaScript
+expression to use to verify that the CDN loaded the script correctly, so that
+DNN can fallback to the local version if the CDN is down). The site
+administrator 
+
+The other main feature that JavaScript Libraries give you is de-duplication of
+scripts.  This means that if your module and your skin both request the 
+[html5shiv library](http://www.dnnsoftware.com/forge/html5shiv), it only gets
+included on the page once (rather than both components including their own 
+version of the script).  Likewise, if both components request different versions
+of the script, just the higher version will be included.
 	
 License
-=================
+===============
 
 This code is released under the [MIT license](LICENSE.md).  
 However, the individual libraries are licensed by their respective owners.
