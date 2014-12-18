@@ -1,8 +1,8 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="jQuery.cookie" type="JavaScript_Library" version="1.4.1">
-      <friendlyName>jQuery Cookie Plugin</friendlyName>
-      <description>A simple, lightweight jQuery plugin for reading, writing and deleting cookies.</description>
+    <package name="[name]" type="JavaScript_Library" version="[version]">
+      <friendlyName>[name]</friendlyName>
+      <description></description>
       <owner>
         <name>Engage Software</name>
         <organization>Engage Software</organization>
@@ -13,23 +13,25 @@
       <releaseNotes src="CHANGES.htm" />
       <azureCompatible>true</azureCompatible>
       <dependencies>
-        <dependency type="managedPackage" version="1.2.0">jQuery</dependency>
+      <!--
+        <dependency type="managedPackage" version="1.0.0">jQuery</dependency>
+        -->
       </dependencies>
       <components>
         <component type="JavaScript_Library">
           <javaScriptLibrary>
-            <libraryName>jQuery.cookie</libraryName>
-            <fileName>jQuery.cookie.js</fileName>
-            <objectName>jQuery.cookie</objectName>
+            <libraryName>[name]</libraryName>
+            <fileName>[file]</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/jquery.cookie/1.4.1/jquery.cookie.min.js</CDNPath>
+            <CDNPath></CDNPath>
+            <objectName></objectName>
           </javaScriptLibrary>
         </component>
         <component type="JavaScriptFile">
           <jsfiles>
-            <libraryFolderName>jQuery.cookie</libraryFolderName>
+            <libraryFolderName>[name]</libraryFolderName>
             <jsfile>
-              <name>jQuery.cookie.js</name>
+              <name>[file]</name>
             </jsfile>
           </jsfiles>
         </component>
