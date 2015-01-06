@@ -15,6 +15,13 @@ of a script, while another requests another. So long as they aren't on the same
 page, they will get what they requested; otherwise, DNN will use the higher 
 version.
 
+Packages
+===============
+
+The installable packages are included within this GitHub repository as 
+[releases](/EngageSoftware/DNN-JavaScript-Libraries/releases). They are also
+published on the [DNN Forge](http://www.dnnsoftware.com/forge).
+
 
 Goal
 ===============
