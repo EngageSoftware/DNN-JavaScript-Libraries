@@ -1,5 +1,5 @@
 ﻿Set-StrictMode -Version:Latest
-#Import-Module PSCX -RequiredVersion 3.1.0.0
+#Import-Module PSCX -RequiredVersion 3.2.0.0
 Add-Type -AssemblyName 'System.IO.Compression.FileSystem'
 
 function New-Package(
@@ -23,7 +23,7 @@ function New-Package(
 
     $zipThisDirectory = -not $recurse
     if ($recurse) {
-        $subDirectories = ls $directory -Directory | ? { $_.FullName -ne $outputPath.Path }
+        $subDirectories = ls $directory -Directory | ? { $_.FullName -ne $outputPath.Path -and $_.Name -ne '_template' -and $_.Name -ne 'bower_components' }
         if (@($subDirectories).Length -gt 0) {
             foreach ($subDirectory in $subDirectories) {
                 New-Package $subDirectory -recurse -outputPath $outputPath
