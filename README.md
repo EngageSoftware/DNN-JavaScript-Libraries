@@ -15,6 +15,13 @@ of a script, while another requests another. So long as they aren't on the same
 page, they will get what they requested; otherwise, DNN will use the higher 
 version.
 
+Packages
+===============
+
+The installable packages are included within this GitHub repository as 
+[releases](/EngageSoftware/DNN-JavaScript-Libraries/releases). They are also
+published on the [DNN Forge](http://www.dnnsoftware.com/forge).
+
 
 Goal
 ===============
@@ -26,6 +33,7 @@ libraries instead of packaging scripts directly into the extension). In order
 to aid in that goal, we are attempting to create a central repository 
 of common JavaScript Libraries that can be used by many different DNN extension
 developers. 
+
 
 Usage
 ===============
@@ -93,8 +101,9 @@ the library will indicate its preferred location (from page head, body top, and
 body bottom), and can provide a URL to the script on a 
 <abbr title="Content Distribution Network">CDN</abbr> (along with a JavaScript
 expression to use to verify that the CDN loaded the script correctly, so that
-DNN can fallback to the local version if the CDN is down). The site
-administrator 
+DNN can fallback to the local version if the CDN is down). The host
+administrator can configure whether to use the CDN or not (it is off by 
+default).
 
 The other main feature that JavaScript Libraries give you is de-duplication of
 scripts.  This means that if your module and your skin both request the 
@@ -102,6 +111,31 @@ scripts.  This means that if your module and your skin both request the
 included on the page once (rather than both components including their own 
 version of the script).  Likewise, if both components request different versions
 of the script, just the higher version will be included.
+
+
+Roadmap
+===============
+
+The obvious next step for this project is to add more libraries.  There's a 
+short list in [the Issues list for this repo](/EngageSoftware/DNN-JavaScript-Libraries/issues),
+but we would eventually like to make it very easy to add any reusable script to
+the repository. To do that, we'll need to invest in better integration with a
+script package manager, probably [Bower](http://bower.io/), so that with very
+little effort, we can get the latest version of a script, package it, and 
+publish it.
+
+In addition, there are some enhancements to DNN itself that would help this be
+an even more useful tool. The main enhancement is to provide a similar mechanism
+for shared CSS components. For example, many jQuery plugins are going to include
+basic styles to make them work. It would be nice if there was a way to get CSS
+that matched the requested JavaScript Library.  Also, JavaScript libraries with 
+multiple JavaScript files could be handled together more cleanly, rather than as
+a bunch of separate libraries.  Finally, one of the big ways that would make 
+this more of a no-brainer is if the extension installation process automatically
+found dependent packages on the [DNN Forge](http://www.dnnsoftware.com/forge) 
+rather than asking clients to install the JavaScript Library package(s) before 
+installing your component.
+
 	
 License
 ===============
