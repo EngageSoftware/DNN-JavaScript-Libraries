@@ -1,6 +1,6 @@
 ﻿ function New-PackageFromBower ($name) {
     bower install $name
-    $packageInfo = (Get-Content .\bower_components\$name\.bower.json) -join "`n" | ConvertFrom-Json
+    $packageInfo = (Get-Content .\_bower_components\$name\.bower.json) -join "`n" | ConvertFrom-Json
     $version = $packageInfo.version
     $allPaths = (bower list --paths --json) -join "`n" | ConvertFrom-Json
     $paths = @($allPaths.$name)
@@ -16,9 +16,8 @@
     $jsFile = $jsPaths[0]
     $fileName = Split-Path $jsFile -Leaf
 
-    mkdir $name
-    
-    $versionedFolder = "$name\$($name)_$version"
+   
+    $versionedFolder = "$($name)_$version"
     mkdir $versionedFolder
 
     $filePaths = @($paths | ? { -not (Test-Path $_ -PathType Container) })

@@ -5,7 +5,7 @@ Add-Type -AssemblyName 'System.IO.Compression.FileSystem'
 function New-Package(
     $directory = '.', 
     [switch]$recurse, 
-    $outputPath = 'InstallPackages')
+    $outputPath = '_InstallPackages')
 {
     if ($directory -is [string]) {
         $directory = Resolve-Path $directory
@@ -23,7 +23,7 @@ function New-Package(
 
     $zipThisDirectory = -not $recurse
     if ($recurse) {
-        $subDirectories = ls $directory -Directory | ? { $_.FullName -ne $outputPath.Path -and $_.Name -ne '_template' -and $_.Name -ne 'bower_components' }
+        $subDirectories = ls $directory -Directory | ? { $_.FullName -ne $outputPath.Path -and $_.Name -notmatch '^_' }
         if (@($subDirectories).Length -gt 0) {
             foreach ($subDirectory in $subDirectories) {
                 New-Package $subDirectory -recurse -outputPath $outputPath

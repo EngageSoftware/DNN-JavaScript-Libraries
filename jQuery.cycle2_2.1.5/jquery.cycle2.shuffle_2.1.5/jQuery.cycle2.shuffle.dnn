@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="jQuery.cycle2.shuffle" type="JavaScript_Library" version="2.1.5">
+      <friendlyName>Cycle2 Shuffle plugin</friendlyName>
+      <description><![CDATA[A plugin which supports the classic Cycle Shuffle animation. The shuffle animation is somewhat like moving a card from the top of a deck of cards to the back of the deck, or vice versa. See <a href="http://jquery.malsup.com/cycle2/demo/shuffle.php">the demo</a>. This is an optional transition plugin for the jQuery.Cycle2 library.]]></description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>http://www.engagesoftware.com</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes />
+      <azureCompatible>true</azureCompatible>
+      <dependencies>
+        <dependency type="managedPackage" version="1.7.0">jQuery</dependency>
+        <dependency type="managedPackage" version="2.1.0">jQuery.cycle2.core</dependency>
+      </dependencies>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>jQuery.cycle2.shuffle</libraryName>
+            <fileName>jQuery.cycle2.shuffle.min.js</fileName>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName>jQuery.cycle2.shuffle</libraryFolderName>
+            <jsfile>
+              <name>jQuery.cycle2.shuffle.min.js</name>
+            </jsfile>
+          </jsfiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>

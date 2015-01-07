@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="jQuery.cycle2.command" type="JavaScript_Library" version="2.1.5">
+      <friendlyName>Cycle2 Command plugin</friendlyName>
+      <description><![CDATA[This plugin provides support for issuing commands to a slideshow, such as pause, resume, stop, etc. See <a href="http://jquery.malsup.com/cycle2/demo/command.php">the demo</a>. It is included by default in the jQuery.Cycle2 library.]]></description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>http://www.engagesoftware.com</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes />
+      <azureCompatible>true</azureCompatible>
+      <dependencies>
+        <dependency type="managedPackage" version="1.7.0">jQuery</dependency>
+        <dependency type="managedPackage" version="2.1.0">jQuery.cycle2.core</dependency>
+      </dependencies>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>jQuery.cycle2.command</libraryName>
+            <fileName>jQuery.cycle2.command.min.js</fileName>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName>jQuery.cycle2.command</libraryFolderName>
+            <jsfile>
+              <name>jQuery.cycle2.command.min.js</name>
+            </jsfile>
+          </jsfiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
