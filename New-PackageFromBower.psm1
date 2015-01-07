@@ -1,7 +1,16 @@
 ﻿ function New-PackageFromBower ($name) {
     bower install $name
+    if ($name -match '#') {
+        $split = $name.Split('#')
+        $name = $split[0]
+        $version = $split[1]
+    }
+
     $packageInfo = (Get-Content .\_bower_components\$name\.bower.json) -join "`n" | ConvertFrom-Json
-    $version = $packageInfo.version
+    if (@(Get-Member -InputObject $packageInfo | ? { $_.Name -eq 'version' }).Count -gt 0) {
+        $version = $packageInfo.version
+    }
+
     $allPaths = (bower list --paths --json) -join "`n" | ConvertFrom-Json
     $paths = @($allPaths.$name)
     $jsPaths = @($paths | ? { $_ -match '\.js$' })
