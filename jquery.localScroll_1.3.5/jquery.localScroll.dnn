@@ -1,0 +1,40 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="jquery.localScroll" type="JavaScript_Library" version="1.3.5">
+      <friendlyName>jquery.localScroll</friendlyName>
+      <description>This plugin will animate a regular anchor navigation. It will allow your visitors to navigate your site with a smooth scrolling effect. </description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>http://www.engagesoftware.com</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes src="CHANGES.htm" />
+      <azureCompatible>true</azureCompatible>
+      <dependencies>
+        <dependency type="managedPackage" version="1.8.0">jQuery</dependency>
+        <dependency type="managedPackage" version="1.4.11">jquery.scrollTo</dependency>
+      </dependencies>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>jquery.localScroll</libraryName>
+            <fileName>jquery.localScroll.js</fileName>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+            <CDNPath>https://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/1.3.5/jquery.localScroll.min.js</CDNPath>
+            <objectName>jQuery.localScroll</objectName>
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName>jquery.localScroll</libraryFolderName>
+            <jsfile>
+              <name>jquery.localScroll.js</name>
+            </jsfile>
+          </jsfiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>

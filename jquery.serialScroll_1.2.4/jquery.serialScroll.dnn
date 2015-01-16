@@ -1,0 +1,40 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="jquery.serialScroll" type="JavaScript_Library" version="1.2.4">
+      <friendlyName>jquery.serialScroll</friendlyName>
+      <description>This plugin allows you to easily animate any series of elements, by sequentially scrolling them. It uses jQuery.ScrollTo to achieve the scrolling animation. It is a very unrestricted plugin, that lets you customize pretty much everything from outside. You can use horizontal or vertical scroll, also combined. </description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>http://www.engagesoftware.com</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes src="CHANGES.htm" />
+      <azureCompatible>true</azureCompatible>
+      <dependencies>
+        <dependency type="managedPackage" version="1.8.0">jQuery</dependency>
+        <dependency type="managedPackage" version="1.4.3">jquery.scrollTo</dependency>
+      </dependencies>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>jquery.serialScroll</libraryName>
+            <fileName>jquery.serialScroll.js</fileName>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+            <CDNPath></CDNPath>
+            <objectName>jQuery.serialScroll</objectName>
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName>jquery.serialScroll</libraryFolderName>
+            <jsfile>
+              <name>jquery.serialScroll.js</name>
+            </jsfile>
+          </jsfiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
