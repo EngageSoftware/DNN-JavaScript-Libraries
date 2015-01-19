@@ -22,7 +22,7 @@
             <libraryName>jquery.serialScroll</libraryName>
             <fileName>jquery.serialScroll.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath></CDNPath>
+            <CDNPath>https://cdnjs.cloudflare.com/ajax/libs/jquery.serialScroll/1.2.4/jquery.serialScroll.min.js</CDNPath>
             <objectName>jQuery.serialScroll</objectName>
           </javaScriptLibrary>
         </component>
