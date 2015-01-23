@@ -118,9 +118,8 @@ Roadmap
 
 The obvious next step for this project is to add more libraries.  There's a 
 short list in [the Issues list for this repo](/EngageSoftware/DNN-JavaScript-Libraries/issues),
-but we would eventually like to make it very easy to add any reusable script to
-the repository. To do that, we'll need to invest in better integration with a
-script package manager, probably [Bower](http://bower.io/), so that with very
+but we've started work on a [PowerShell script](New-PackageFromBower.psm1) that integrates with a
+script package manager, [Bower](http://bower.io/), so that with very
 little effort, we can get the latest version of a script, package it, and 
 publish it.
 
