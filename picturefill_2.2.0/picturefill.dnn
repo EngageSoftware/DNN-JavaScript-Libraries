@@ -1,0 +1,42 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="picturefill" type="JavaScript_Library" version="2.2.0">
+      <friendlyName>Picturefill</friendlyName>
+      <description><![CDATA[A responsive image polyfill for <code>&lt;picture></code>, <code>srcset</code>, <code>sizes</code>, and more
+<a href="http://scottjehl.github.com/picturefill/">http://scottjehl.github.com/picturefill/</a>]]></description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>http://www.engagesoftware.com</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes src="CHANGES.htm" />
+      <azureCompatible>true</azureCompatible>
+      <dependencies>
+      <!--
+        <dependency type="managedPackage" version="1.0.0">jQuery</dependency>
+        -->
+      </dependencies>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>picturefill</libraryName>
+            <fileName>picturefill.js</fileName>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+            <CDNPath>https://cdn.jsdelivr.net/picturefill/2.2.0/picturefill.min.js</CDNPath>
+            <objectName>picturefill</objectName>
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName>picturefill</libraryFolderName>
+            <jsfile>
+              <name>picturefill.js</name>
+            </jsfile>
+          </jsfiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
