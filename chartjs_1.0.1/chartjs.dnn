@@ -2,7 +2,7 @@
   <packages>
     <package name="chartjs" type="JavaScript_Library" version="1.0.1">
       <friendlyName>Chart.js</friendlyName>
-      <description>Simple HTML5 Charts using the &lt;canvas&gt; tag</description>
+      <description><![CDATA[Simple HTML5 Charts using the &lt;canvas&gt; tag]]></description>
       <owner>
         <name>Engage Software</name>
         <organization>Engage Software</organization>
