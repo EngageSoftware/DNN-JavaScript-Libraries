@@ -1,0 +1,39 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="knockout.validation" type="JavaScript_Library" version="2.0.2">
+      <friendlyName>Knockout Validation</friendlyName>
+      <description><![CDATA[A KnockoutJS Plugin for model and property validation]]></description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>http://www.engagesoftware.com</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes src="CHANGES.htm" />
+      <azureCompatible>true</azureCompatible>
+      <dependencies>
+        <dependency type="managedPackage" version="2.3.0">Knockout</dependency>
+      </dependencies>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>knockout.validation</libraryName>
+            <fileName>knockout.validation.js</fileName>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+            <CDNPath>https://cdn.jsdelivr.net/knockout.validation/2.0.2/knockout.validation.min.js</CDNPath>
+            <objectName>ko.validation</objectName>
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName>knockout.validation</libraryFolderName>
+            <jsfile>
+              <name>knockout.validation.js</name>
+            </jsfile>
+          </jsfiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>

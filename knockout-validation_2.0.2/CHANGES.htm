@@ -1,0 +1,115 @@
+<article style="max-height: 20em; overflow: auto;">
+<h1>2.0.2 (2015-02-02)</h1>
+
+<h3>Bug Fixes</h3>
+
+<ul class="task-list">
+<li>use <code>peerDependencies</code> for npm package dependencies #528</li>
+<li>
+<code>validationElement</code> and <code>validationMessage</code> bindings throw if observable is not validatable #519</li>
+<li>validation cannot be removed from attached observable #526</li>
+<li>localization may not work in node.js; some files were still not working with RequireJS #509</li>
+<li>Nuget package will contain the same file names as for Bower or NPM</li>
+</ul>
+
+<h1>2.0.1 (2015-01-26)</h1>
+
+<p>This release enables <a href="https://cdnjs.com/libraries/knockout-validation">cdnjs</a> npm auto-update and fixes localization loading issue with RequireJS.</p>
+
+<h3>Bug Fixes</h3>
+
+<ul class="task-list">
+<li>Localization loading randomly breaks when using requirejs #509</li>
+</ul>
+
+<h3>Localization</h3>
+
+<ul class="task-list">
+<li>add localization file for Chinese - Taiwan (zh-TW) #513</li>
+</ul>
+
+<h1>2.0.0 (2015-01-20)</h1>
+
+<h3>Features</h3>
+
+<ul class="task-list">
+<li>new localization files: Hebrew, Italian, Persian, Hungarian, Croatian, Brazilian, Japanese, Swedish, Norwegian, Chinese, German, Catalan, Danish, Korean, Latvian, Romanian, Bulgarian, Portuguese, Czech, Turkish  #165, #177, #196, #201, #203, #204, #212, #221, #261, #270, #322, #327, #329, #340, #378, #411, #415, #416, #430, #467</li>
+<li>add config option <code>errorsAsTitle</code> to disable setting element 'title' with error description. Default is <code>true</code> #168</li>
+<li>add config option <code>grouping.live</code> to react to changes to observableArrays #223</li>
+<li>add config option <code>decorateElementOnModified</code> #320</li>
+<li>add config option <code>allowHtmlMessages</code> for allowing HTML in validation messages #364</li>
+<li>add config option <code>validate.throttle</code> to implement throttling for validation #344</li>
+<li>add support for HTML5 date, email and number input types #130</li>
+<li>decorate radio buttons using checked binding #193</li>
+<li>Number validator - Allow numbers starting with point. #236</li>
+<li>step rule supports value <code>any</code> #271</li>
+<li>remove dependency on jQuery #318</li>
+<li>update knockout dependency to v3.0.0 #358</li>
+<li>add <code>setRules</code> method #337</li>
+<li>min and max validation use type attribute to determine behavior #355</li>
+<li>make library available through npm #357</li>
+<li>support observable params for validators #363</li>
+<li>min and max rules work with Date observables #459</li>
+<li>allow grouping options to be specified to <code>validatedObservable</code> #461</li>
+<li>add version in banner #428</li>
+<li>add support for <code>textInput</code> binding #451</li>
+<li>add support for <code>selectedOptions</code> binding #426</li>
+<li>add basic collection methods to errors, exposing raw validatables. #449</li>
+<li>ko.validation.group does not resolve deferred computed values unless they have rules defined on them. #163</li>
+<li>make localization files AMD and CommonJS/Node compatible #492</li>
+<li>enable loading of multiple locales and add possibility to switch between them #492</li>
+</ul>
+
+<h3>Bug Fixes</h3>
+
+<ul class="task-list">
+<li>unwrap parameters before using them in <code>formatMessage</code> #235</li>
+<li>make attached error property to be observable #247, #173</li>
+<li>grouping options does not overwrite global configuration options #248</li>
+<li>titles are not reset when data becomes valid #170</li>
+<li>reorder <code>phoneUS</code> validation checks to preserve optional properties if observable is not initialized or null. #234</li>
+<li>fix memory leaks in <code>addAnonymousRule</code> rules #346</li>
+<li>handle rule <code>params</code> which may be undefined #334</li>
+<li>
+<code>unique</code> rule can behave incorrectly for external values #365</li>
+<li>use update binding handler instead of utility method setTextContent #368</li>
+<li>
+<code>onlyIf</code> doesn’t affect anonymous validation rule #374</li>
+<li>fix group returns observables in errors array, not the value of each error #383</li>
+<li>fix initial value for isValid of <code>validatedObservable</code> #387</li>
+<li>fix check for knockout library #447</li>
+<li>make <code>formatMessage</code> aware if min and max rules were created from Javascript #385</li>
+<li>
+<code>writeInputAttributes</code> fails when anonymous rules are used #400</li>
+<li>
+<code>maxLength</code> rule fails if the value (of the observable) is a number #457</li>
+<li>
+<code>applyBindingsWithValidation</code> fails when called with viewModel and options #137</li>
+<li>
+<code>applyBindingsWithValidation</code> should extend provided config #472</li>
+<li>
+<code>dateISO</code> rule accepts months or days outside the valid range #265</li>
+<li>
+<code>writeInputValidationAttributes</code> does not support write HTML5 attributes correctly when <code>params</code> is observable #481</li>
+<li>prevent <code>ko.validation.group</code> to notify with intermediary validation state #99</li>
+<li>grouping over validatedObservable objects is not possible #494</li>
+<li>
+<code>showAllMessages</code> throws when accessing <code>isModified</code> when grouping over validatedObservable instances #269</li>
+<li>
+<code>validatedObservable</code> does not react when its value changes #442</li>
+<li>updating a validatedObservable will not reset initial validation result #209</li>
+<li>
+<code>parseInputAttributes</code> option may duplicate rules when enabled #277</li>
+</ul>
+
+<h3>Breaking Changes</h3>
+
+<ul class="task-list">
+<li>remove <code>ko.validation.configure</code> method, <code>ko.validation.init</code> must be used instead #496</li>
+<li>rename <code>decorateElement</code> to <code>decorateInputElement</code> #361</li>
+<li>do not change original data by <code>group</code> method #465, #225</li>
+<li>loading localization files using <code>script</code> tags or with and <code>AMD loader</code> no longer changes the language automatically. A call to <code>ko.validation.locale</code> is required #506</li>
+<li>rename some localization files due to invalid identifiers, no-NB.js ? nb-NO.js, ca-CA.js ? ca-ES.js c2d0ec19bc0abea073a4bbabc933e7299aa6af5b</li>
+<li>change project structure #511 - directories are now lowercase</li>
+</ul>
+</article>
