@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="bootstrap" type="JavaScript_Library" version="03.00.02">
+    <package name="bootstrap" type="JavaScript_Library" version="03.00.03">
       <friendlyName>Bootstrap JavaScript</friendlyName>
       <description><![CDATA[<p>Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development, created and maintained by <a href="http://twitter.com/mdo">Mark Otto</a> and <a href="http://twitter.com/fat">Jacob Thornton</a>.</p>
 <p>To get started, check out <a href="http://getbootstrap.com">http://getbootstrap.com</a>!</p>]]></description>
@@ -22,7 +22,7 @@
             <libraryName>bootstrap</libraryName>
             <fileName>bootstrap.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://maxcdn.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js</CDNPath>
+            <CDNPath>https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js</CDNPath>
             <objectName>jQuery.fn.scrollspy</objectName>
           </javaScriptLibrary>
         </component>
@@ -36,7 +36,7 @@
         </component>
         <component type="ResourceFile">
           <resourceFiles>
-            <basePath>Resources\Libraries\bootstrap\03_00_02</basePath>
+            <basePath>Resources\Libraries\bootstrap\03_00_03</basePath>
             <resourceFile>
               <name>Resources.zip</name>
             </resourceFile>
