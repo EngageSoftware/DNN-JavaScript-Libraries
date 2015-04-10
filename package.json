@@ -1,0 +1,6 @@
+{
+    "name": "engage-dnn-javascript-libraries",
+    "version": "0.10.0",
+    "private": true,
+    "file": ["_InstallPackages"]
+}
