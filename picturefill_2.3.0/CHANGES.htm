@@ -1,0 +1,51 @@
+<ol style="max-height: 20em; overflow: auto;">
+  <li>
+    <strong>2.3.0</strong>
+    <p>Changes from <a href="#release-2.3.0-beta">Picturefill 2.3 Beta</a></p>
+    <h3>Spec Matching</h3>
+    <ul class="task-list"><li>Invalid <code>sizes</code> values now fall back to <code>100vw</code> default (<a href="https://github.com/scottjehl/picturefill/commit/f379528073d875089bc594900079b09184dd4f69" class="commit-link"><tt>f379528</tt></a>)</li></ul>
+    <h3>Bugs</h3>
+    <ul class="task-list">
+        <li>Fixes a potential race condition when using <code>type</code> (<a href="https://github.com/scottjehl/picturefill/commit/3fba68de8b0df200e36b56dcfb01f89e09f8d4d0" class="commit-link"><tt>3fba68d</tt></a>)</li>
+        <li>Prevents a fatal error in IE8 when assigning an undefined width (<a href="https://github.com/scottjehl/picturefill/commit/d1f5a1fd550e30545f7b4c66b94e4838bab1a720" class="commit-link"><tt>d1f5a1f</tt></a>)</li>
+        <li>Prevent IE10/11 from setting an inherent width of zero on SVGs (<a href="https://github.com/scottjehl/picturefill/commit/742c66c0a93e7d417e58f1a50238371c3c1d6ef6" class="commit-link"><tt>742c66c</tt></a>)</li>
+        <li>Fixes an error that prevented Picturefill from being handled as a named AMD module (<a href="https://github.com/scottjehl/picturefill/commit/a5859fb564fd32d4ca3643277ccb35025a93214a" class="commit-link"><tt>a5859fb</tt></a>)</li>
+    </ul>
+  </li>
+  <li id="release-2.3.0-beta">
+    <strong>2.3.0 Beta</strong>
+    <p>Along with assorted bugfixes and performance improvements, the following major issues have been addressed with this release:</p>
+
+    <p><strong>Added support detection for the following image types: jpxr, jpg2000, and apng.</strong><br>
+    Image format support can now be handled using extensions. SVG and WebP remain a part of the Picturefill core, so as not to break existing implementations.</p>
+
+    <p><strong>Support for intrinsic image dimensions</strong><br>
+    Picturefill now matches native behavior in terms of an image’s inherent size: when served at “2x,” the image is displayed at half of its source’s inherent size. Note that this can and must be overrideable via CSS.</p>
+
+    <p><strong>Picturefill is now a named AMD module, and uses AMD/CommonJS module factory also in native supporting browsers.</strong></p>
+
+    <p><strong>Picturefill has a team now</strong><br>
+    Everyone join me in welcoming <a href="https://twitter.com/wilto/lists/picturefill/members">the team</a> responsible for the lion’s share of work that went into this release, and many more to come.</p>
+
+    <p><strong>Did someone just whisper “Picturefill 3?”</strong><br>
+    I thought I just heard someone whisper “Picturefill 3.” <em>Weird</em>.</p>
+  </li>
+  <li>
+    <strong>2.2.0</strong>
+    <p>Assorted bugfixes, improvements to compatibility in AMD environments, minor improvements to performance and spec compliance.</p>
+  </li>
+  <li>
+    <strong>2.1.0</strong>
+    <ul>
+      <li>Matches the <code>source</code> parsing algorithm outlined in the spec (find all <code>img</code>, check for parent <code>picture</code> elements, process any/all <code>source</code> elements until finding the <code>img</code> that invoked it all)</li>
+      <li>Allows use of the extended <code>srcset</code> syntax without an explicit <code>sizes</code> attribute, per the spec</li>
+    </ul>
+  </li>
+  <li>
+    <strong>2.0.0</strong>
+    <ul>
+      <li>General bugfixes</li>
+      <li>Changes to make parsing/general behavior line up more closely with the <a href="http://picture.responsiveimages.org/">specification</a></li>
+    </ul>
+  </li>
+</ol>
