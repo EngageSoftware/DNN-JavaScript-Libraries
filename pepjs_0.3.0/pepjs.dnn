@@ -1,0 +1,41 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="pepjs" type="JavaScript_Library" version="0.3.0">
+      <friendlyName>PEP</friendlyName>
+      <description><![CDATA[ Pointer Events Polyfill: a unified event system for the web platform <a href="http://www.w3.org/TR/pointerevents/">http://www.w3.org/TR/pointerevents/</a>]]></description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>http://www.engagesoftware.com</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes src="CHANGES.htm" />
+      <azureCompatible>true</azureCompatible>
+      <dependencies>
+      <!--
+        <dependency type="managedPackage" version="1.0.0">jQuery</dependency>
+        -->
+      </dependencies>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>pepjs</libraryName>
+            <fileName>pep.js</fileName>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+            <CDNPath>https://code.jquery.com/pep/0.3.0/pep.min.js</CDNPath>
+            <objectName>PointerEventsPolyfill</objectName>
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName>pepjs</libraryFolderName>
+            <jsfile>
+              <name>pep.js</name>
+            </jsfile>
+          </jsfiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
