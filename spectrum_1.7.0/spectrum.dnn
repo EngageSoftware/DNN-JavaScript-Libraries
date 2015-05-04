@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="spectrum" type="JavaScript_Library" version="1.6.0">
+    <package name="spectrum" type="JavaScript_Library" version="1.7.0">
       <friendlyName>spectrum</friendlyName>
       <description>The No Hassle JavaScript Colorpicker</description>
       <owner>
@@ -21,7 +21,7 @@
             <libraryName>spectrum</libraryName>
             <fileName>spectrum.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.6.0/spectrum.min.js</CDNPath>
+            <CDNPath>https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.7.0/spectrum.min.js</CDNPath>
             <objectName>jQuery.fn.spectrum</objectName>
           </javaScriptLibrary>
         </component>
