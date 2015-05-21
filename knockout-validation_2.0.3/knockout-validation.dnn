@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="knockout.validation" type="JavaScript_Library" version="2.0.2">
+    <package name="knockout.validation" type="JavaScript_Library" version="2.0.3">
       <friendlyName>Knockout Validation</friendlyName>
       <description><![CDATA[A KnockoutJS Plugin for model and property validation]]></description>
       <owner>
@@ -21,7 +21,7 @@
             <libraryName>knockout.validation</libraryName>
             <fileName>knockout.validation.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/knockout.validation/2.0.2/knockout.validation.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/knockout.validation/2.0.3/knockout.validation.min.js</CDNPath>
             <objectName>ko.validation</objectName>
           </javaScriptLibrary>
         </component>
