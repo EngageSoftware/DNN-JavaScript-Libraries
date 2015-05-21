@@ -1,0 +1,48 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="bootstrap-datepicker" type="JavaScript_Library" version="1.4.0">
+      <friendlyName>bootstrap-datepicker</friendlyName>
+      <description><![CDATA[A datepicker for @twitter bootstrap forked from Stefan Petre's (of eyecon.ro), improvements by @eternicode]]></description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>http://www.engagesoftware.com</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes src="CHANGES.htm" />
+      <azureCompatible>true</azureCompatible>
+      <dependencies>
+        <dependency type="managedPackage" version="1.7.1">jQuery</dependency>
+        <!--dependency type="managedPackage" version="2.0.4">bootstrap</dependency-->
+      </dependencies>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>bootstrap-datepicker</libraryName>
+            <fileName>bootstrap-datepicker.js</fileName>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+            <CDNPath>https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.0/js/bootstrap-datepicker.min.js</CDNPath>
+            <objectName>jQuery.fn.datepicker.noConflict</objectName>
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName>bootstrap-datepicker</libraryFolderName>
+            <jsfile>
+              <name>bootstrap-datepicker.js</name>
+            </jsfile>
+          </jsfiles>
+        </component>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>Resources\Libraries\bootstrap-datepicker\01_04_00</basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
