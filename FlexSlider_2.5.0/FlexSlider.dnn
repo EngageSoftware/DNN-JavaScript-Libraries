@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="FlexSlider" type="JavaScript_Library" version="02.04.00">
+    <package name="FlexSlider" type="JavaScript_Library" version="02.05.00">
       <friendlyName>FlexSlider JavaScript Library</friendlyName>
       <description>An awesome, fully responsive jQuery slider toolkit.</description>
       <owner>
@@ -13,7 +13,7 @@
       <releaseNotes src="CHANGES.htm" />
       <azureCompatible>true</azureCompatible>
       <dependencies>
-        <dependency type="managedPackage" version="1.4.2">jQuery</dependency>
+        <dependency type="managedPackage" version="1.7.0">jQuery</dependency>
       </dependencies>
       <components>
         <component type="JavaScript_Library">
@@ -21,7 +21,7 @@
             <libraryName>FlexSlider</libraryName>
             <fileName>jquery.flexslider.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/flexslider/2.4/jquery.flexslider-min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/flexslider/2.5/jquery.flexslider-min.js</CDNPath>
             <objectName>jQuery.fn.flexslider</objectName>
           </javaScriptLibrary>
         </component>
@@ -35,7 +35,7 @@
         </component>
         <component type="ResourceFile">
           <resourceFiles>
-            <basePath>Resources\Libraries\FlexSlider\02_04_00</basePath>
+            <basePath>Resources\Libraries\FlexSlider\02_05_00</basePath>
             <resourceFile>
               <name>Resources.zip</name>
             </resourceFile>
