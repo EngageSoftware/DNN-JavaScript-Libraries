@@ -1,0 +1,1126 @@
+<div style="max-height: 20em; overflow: auto;">
+<div class="markdown-body">
+      <h2>
+<a id="user-content-510-mar-27-2014-current" class="anchor" href="#510-mar-27-2014-current" aria-hidden="true"><span class="octicon octicon-link"></span></a>5.1.0 Mar 27 2014 (Current)</h2>
+
+<ul class="task-list">
+<li>API Changes
+
+<ul class="task-list">
+<li>evt.targetNode has changed to evt.target when using event delegation</li>
+<li>the native mouse/touch event object is now referenced by the evt key in the Kinetic event object.  i.e., if you want to access the mouse x position relative to the entire page, you would do this: shape.on('mousemove', function(evt) { var mouseX = evt.evt.clientX});</li>
+</ul>
+</li>
+<li>New Features
+
+<ul class="task-list">
+<li>new FastLayer for ultra fast rendering.  If you don't need node nesting, mouse and touch interactions, or event pub/sub, you should use FastLayer instead of Layer to create your layers.  It renders about 2x faster than normal layers.</li>
+<li>Now passing a Kinetic event object to event handlers which contains a target, type, and evt key that points to the native event object</li>
+<li>you can now configure if Kinetic should use degrees or radians via the <code>Kinetic.angleDeg</code> flag.  By default it is true.  You can set it to false if you'd like to use radians.</li>
+</ul>
+</li>
+<li>Bug Fixes
+
+<ul class="task-list">
+<li>when users have a browser zoom not equal to 100%, the stage now renders correctly</li>
+<li>drag and drop on Android now works much better</li>
+<li>Fix memory leak on stage destroy</li>
+<li>hasShadow now works correctly after setting shadowEnabled attribute</li>
+<li>clone method doesn't clone id attribute</li>
+<li>you can clone stage. New container will be automaticaly create, but not added to page.</li>
+</ul>
+</li>
+<li>Enhancements
+
+<ul class="task-list">
+<li>Animations are now much much smoother.  Made several optimizations in the Animation class.</li>
+<li>improved mobile drag and drop performance</li>
+<li>Now you can change frame rate of sprite during animation</li>
+<li>HammerJS support for KineticJS nodes.</li>
+<li>Experimental NodeJS support</li>
+<li>
+<code>isRunning</code> function for <code>Sprite</code>
+</li>
+<li>optional filter function for <code>getChildren</code> method</li>
+<li>add multiple children to container at once: <code>layer.add(rect, circle, group)</code>
+</li>
+<li>
+<code>add</code> works as <code>moveTo</code> if node already has parent container</li>
+<li>improved performance of starting and stopping multiple tweens at once</li>
+<li>
+<code>size</code> method is now overloaded.  You can use it to get or set node sizes</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="user-content-501-jan-21-2014" class="anchor" href="#501-jan-21-2014" aria-hidden="true"><span class="octicon octicon-link"></span></a>5.0.1 Jan 21 2014</h2>
+
+<ul class="task-list">
+<li>New Features
+
+<ul class="task-list">
+<li>all methods are now available with collections.  This means that you can now do things like layer.find('Circle').fill('green'); which will fill all of the circles inside layer with green</li>
+<li>all color components now have alpha components as well.  e.g. you can set a fill alpha separately from the stroke using fillAlpha(0.5).</li>
+</ul>
+</li>
+<li>Bug Fixes
+
+<ul class="task-list">
+<li>fill pattern scale now correctly defaults to 1 instead of 0</li>
+<li>Firefox no longer renders black shapes when using RGB components</li>
+<li>toObject() on a stage that contains an image no longer throws a JS error</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="user-content-500-jan-12-2014" class="anchor" href="#500-jan-12-2014" aria-hidden="true"><span class="octicon octicon-link"></span></a>5.0.0 Jan 12 2014</h2>
+
+<ul class="task-list">
+<li>API changes
+
+<ul class="task-list">
+<li>all rotations are in degrees.  i.e. shape.rotate() is in degrees, not radians.  The shape.rotateDeg() has been deprecated</li>
+<li>new overloaded getters and setters.  i.e. setDraggable(true) -&gt; draggable(true) and getDraggable() --&gt; draggable().  The verbose getter and setters are still available, but developers are encouraged to use the overloaded functions.</li>
+<li>Line, Spline, Polygon, and Blob have been combined into Line.  A spline is a line with tension.  A polygon is a line with closed=true.  A blob is a line with tension and closed=true.</li>
+<li>Sprite animations keys are now an array of numbers, not an array of object literals with x, y, width and height keys.  This drastically cuts down the verbosity of Sprite instantiation</li>
+<li>Sprite index attr changed to frameIndex</li>
+<li>all multi-dimensional inputs and outputs must be object literals for performance reasons.  i.e. shape.setScale(1) will no longer work.  You need to use shape.setScale({x: 1, y: 1}); </li>
+<li>before* events have been deprecated due to performance reasons.  They were causing a performance overhead that isn't really necessary.</li>
+<li>the listening attribute can now be set to true, false, or "inherit".  The default is "inherit".  Explicitly setting a node's listening attribute to false will now disable listening, and not behave as an inherit.</li>
+<li>the visible attribute can now be set to true, false, or "inherit".  The default is "inherit".  Explicitly setting a node's visible attribute to false will now force the element to be hidden, and not behave as an inherit.</li>
+<li>every method that does not return something now returns this</li>
+<li>new layer hitGraphEnabled flag allows you to explicitly enable or disable the hit graph in order to improve drawing performance when it's not needed</li>
+<li>new node transformsEnabled attr allows you to explicitly enable or disable transforms for a particular node to greatly improve drawing performance.  This is useful if you want your app to perform as fast as possible, and you don't plan on rotating or scaling your shapes, or using nested transforms.  The transformsEnabled attr can be set to "all", "none", or "position"</li>
+<li>filters are now set with the filters() method.  The setFilter() method has been deprecated</li>
+<li>All filter APIs have changed.  Please see the documentation for new methods.</li>
+<li>Node getLevel() method changed to getDepth()</li>
+<li>drawFunc() changed to sceneFunc() and drawHitFunc() changed to hitFunc() for consistency.  the draw() method internally uses the sceneFunc function to render the scene graph and the hitFunc function to render the hit graph.  the drawScene() method only uses the sceneFunc function and the drawHit() method only uses the hitFunc function.</li>
+<li>the Image createImageHitRegion method has been replaced with the Shape drawHitFromCache() method which works for all shapes, not just images.  In addition to giving us the ability to create more accurate hit regions for images with transparent pixels, it also allows us to create hit regions for filtered shapes.</li>
+<li>the color component API has changed a lot.  fillR() has changed to fillRed(), fillB() has changed to fillBlue(), etc.  The same goes for stroke and shadowColor components.  The RGB() methods have been removed because they have muddied up the API.  i.e. fillRGB(), strokeRGB(), and shadowColorRGB() have been removed.  The components are now actual attrs.  the fill attr has priority over components.  i.e. if you set fill to 'blue' but you set the fillRed and fillGreen values, the fill will resolve to blue.</li>
+<li>changed dashArray attr to dash</li>
+</ul>
+</li>
+<li>New Features
+
+<ul class="task-list">
+<li>New filters.  KineticJS now supports Blur, Brighten, Emboss, Enhance, Grayscale, HSV, Invert, Kaleidoscope, Mask, Noise, Pixelate, Posterize, RGB, Sepia, Solarize, and Threshold</li>
+<li>New Arc shape.  Thanks <a href="https://github.com/binoculars">binoculars</a>!</li>
+<li>New Ring shape.  Thanks <a href="https://github.com/binoculars">binoculars</a>!</li>
+<li>You can now create hit regions for filtered shapes using drawHitFromCache()</li>
+</ul>
+</li>
+<li>Enhancements
+
+<ul class="task-list">
+<li>new caching mechanism.  Rather than using toImage() to create an image, and then instantiating a Kinetic.Image shape, you can how just use shape.cache().  You can also use shape.clearCache() to clear the cache.</li>
+<li>now anything can be filtered, not just images.  This includes shapes, groups, and even entire layers</li>
+<li>multiple filters can now be applied, in any order</li>
+<li>Sprite afterFrame() method has been deprecated.  You can achieve the same functionality, with more flexibility, by listening for the index attr change.  i.e. sprite.on('indexChange', function(){...});</li>
+<li>Star numPoints attr is defaulted to 5</li>
+</ul>
+</li>
+<li>Bug Fixes
+
+<ul class="task-list">
+<li>shape edge anti-aliased pixel event detection now works correctly.  Thanks <a href="https://github.com/fogbrain99">fogbrain99</a> for getting this started!</li>
+<li>stage.setDraggable(false) now correctly disables drag and drop for the stage.  Thanks <a href="https://github.com/Moeriki">Dieter</a>!</li>
+<li>clipping now correctly clips the hit graph</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="user-content-474-nov-8-2013" class="anchor" href="#474-nov-8-2013" aria-hidden="true"><span class="octicon octicon-link"></span></a>4.7.4 Nov 8 2013</h2>
+
+<ul class="task-list">
+<li>Hot fix
+
+<ul class="task-list">
+<li>touchend events are now working correctly</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="user-content-473-nov-3-2013" class="anchor" href="#473-nov-3-2013" aria-hidden="true"><span class="octicon octicon-link"></span></a>4.7.3 Nov 3 2013</h2>
+
+<ul class="task-list">
+<li>API Changes
+
+<ul class="task-list">
+<li>getMousePosition() and getTouchPosition() have been deprecated.  Use getPointerPosition() instead which works for both desktop and mobile.</li>
+</ul>
+</li>
+<li>Enhancements
+
+<ul class="task-list">
+<li>Added Bower support.  Thanks <a href="https://github.com/EvanHahn">Evan</a>!</li>
+<li>Added CocoonJS support.  Thanks <a href="https://github.com/mihhail-lapushkin">Mihhail </a>
+</li>
+<li>Mouse and Touch events can now be used together during a single Kinetic session</li>
+<li>default text font family changed from Calibri to Arial, which is supported in all browsers.</li>
+</ul>
+</li>
+<li>Bug Fixes
+
+<ul class="task-list">
+<li>Fixed an issue where enableShadow/disableShadow doesn't work after a shape added into the layer.  Thanks <a href="https://github.com/kzhdev">Kun</a>!</li>
+<li>Text Path events now correctly respond to events.  Thanks <a href="https://github.com/jfollas">Jason</a>!</li>
+<li>changing the draggable property on mouse click no longer throws a JS error.  Thanks <a href="https://github.com/kzhdev">Kun</a>!</li>
+<li>fixed pixel ratio issue with buffer canvas creation</li>
+<li>fixed pixel ratio issue with createImageHitRegion()</li>
+<li>fixed pixel ratio issue with toImage()</li>
+<li>fixed pixel ratio issue with toDataURL()</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="user-content-472-sep-29-2013" class="anchor" href="#472-sep-29-2013" aria-hidden="true"><span class="octicon octicon-link"></span></a>4.7.2 Sep 29 2013</h2>
+
+<ul class="task-list">
+<li>Bug Fixes
+
+<ul class="task-list">
+<li>mouse and touch events now work correctly with Sprites</li>
+<li>Newer versions of Chrome no longer throw warnings about layerX/layerY deprecation</li>
+<li>Line and Spline shadows no longer affect the stroke opacity</li>
+<li>Stage drag and drop is now working correctly</li>
+<li>Filtering cropped images now works correctly.  Thanks <a href="https://github.com/eduplus">Eduplus</a> and <a href="https://github.com/ippo615">Andrew</a>!</li>
+</ul>
+</li>
+<li>Enhancements
+
+<ul class="task-list">
+<li>shadow logic was rewritten.  Shadows are now applied to both the fill and stroke, not one or the other.  Shape and shadow opacities now work well together.  Shadow logic has been removed from the shape classes.</li>
+<li>fill and stroke opacity are now applied together.  This is an issue with the native canvas API.  When a shape has both a fill and stroke, and also an opacity, the shape is first drawn onto a buffer canvas, and then copied over to the scene canvas with an opacity applied.</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="user-content-471-sep-23-2013" class="anchor" href="#471-sep-23-2013" aria-hidden="true"><span class="octicon octicon-link"></span></a>4.7.1 Sep 23 2013</h2>
+
+<ul class="task-list">
+<li>API changes
+
+<ul class="task-list">
+<li>deprecated get() method.  added find().  The change is backwards compatable.</li>
+</ul>
+</li>
+<li>Enhancements
+
+<ul class="task-list">
+<li>new stage content events that can be used to bind events to the content dom node without using a library like jQuery.  These include contentMousedown, contentMouseup, contentMousemove, contentMouseout, contentMouseover, contentClick, and contentDblclick, contentTouchstart, contentTouchend, contentTouchmove, contentTap, and contentDbltap.</li>
+<li>layer.clear() now also clears the hit graph (this mirrors draw() which draws both the scene and hit graph)</li>
+</ul>
+</li>
+<li>Bug Fixes
+
+<ul class="task-list">
+<li>layer.clear() now correctly clears the layer</li>
+<li>TextPath shapes are no longer offset when draw() is triggered multiple times</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="user-content-470-sep-16-2013" class="anchor" href="#470-sep-16-2013" aria-hidden="true"><span class="octicon octicon-link"></span></a>4.7.0 Sep 16 2013</h2>
+
+<ul class="task-list">
+<li>API Changes
+
+<ul class="task-list">
+<li>Split the Canvas class into Canvas and Context.  Canvas is now a complete wrapper around the HTML5 canvas element, and Context is a complete wrapper around the HTML5 canvas context.  Shape draw functons are now passed a Kinetic.Context which is used for all rendering.</li>
+<li>canvas.fill(shape) changed to context.fillShape(shape)</li>
+<li>canvas.stroke(shape) changed to context.strokeShape(shape)</li>
+<li>canvas.fillStroke(shape) changed to context.fillStrokeShape(shape)</li>
+<li>when creating custom shapes, it's no longer necessary to use canvas.getContext().  The Kinetic.Context object is passed directly into the draw function.</li>
+</ul>
+</li>
+<li>New Features
+
+<ul class="task-list">
+<li>if you set the Kinetic.enableTrace flag to true, you'll have access to a new context trace, which records every context method execution and property setter.  This is very useful if you plan on writing unit tests for custom shapes.  You can access the trace string with context.getTrace(), or you can access the trace array directly via context.traceArr</li>
+<li>you can now override the device pixel ratio by setting Kinetic.pixelRatio to a numeric value, such as 1 or 2</li>
+</ul>
+</li>
+<li>Bug Fixes
+
+<ul class="task-list">
+<li>mouseout event now fires before mousemove (Thanks <a href="https://github.com/ElliotChong">Elliot</a>!)</li>
+<li>Applying filters to PNG images with semi-transparent pixels multiple times no longer dilutes the transparent pixels.  Thanks <a href="https://github.com/ippo615">Andrew</a>!</li>
+<li>calling getAbsolutePosition() no longer affects the node's relative position.  This was a regression bug introduced in v4.6.0</li>
+<li>clipping regions now work correctly when the device pixel ratio != 1.  Thanks for the help <a href="https://github.com/Riball">Mark</a>!</li>
+<li>pixel ratio adjustments now work correctly in Firefox</li>
+<li>fixed wrong condition to detect whether look for a new path segment if an arc is used within the path.  Thanks <a href="https://github.com/therth">therth</a>!</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="user-content-460-aug-12-2013" class="anchor" href="#460-aug-12-2013" aria-hidden="true"><span class="octicon octicon-link"></span></a>4.6.0 Aug 12 2013</h2>
+
+<ul class="task-list">
+<li>New Features
+
+<ul class="task-list">
+<li>new clip attr, and the following new methods, setClip(), setClipX(), setClipY(), setClipWidth(), setClipHeight(), getClilp(), getClipX(), getClipY(), getClipWidth(), getClipHeight()</li>
+<li>layer.clear() can now accept a clipping region.  Coupled with using the clearBeforeDraw: false flag, this enables you to manually clear areas of a layer before each redraw to fine tune performance.</li>
+<li>new Edge, Emboss, Colorize, ShiftHue, UnsharpMask, and SoftBlur filters.  (Thank you <a href="https://github.com/ippo615">ippo615</a>!)</li>
+</ul>
+</li>
+<li>Enhancements
+
+<ul class="task-list">
+<li>Now using an internal caching system for all expensive operations.  This has increased rendering performance by about <strong>18%</strong>
+</li>
+<li>in an effort to improve performance, draw events no longer bubble.  Now only layers fire draw events.  For example, lets say you have 100 shapes, each inside of a group, and you redraw the layer.  This would fire 100 (shapes) + 100 (groups) + 1 (layer) + 1 (stage) = 202 draw events.  That's a lot of work for the browser.  Now, only one event will be fired at the layer level</li>
+<li>new image cropping methods.  getCrop(), getCropX(), getCropY(), getCropWidth(), getCropHeight(), setCrop(), setCropX(), setCropY(), setCropWidth(), and setCropHeight()</li>
+<li>getVisible returns the visible attr.  isVisible determines if the node is visible by taking ancestors into account</li>
+<li>getListening returns the listening attr.  isListening determins if the node is listening by taking ancestors into account</li>
+<li>deprecated the clipFunc attr in favor of clip, which has a rectangular perimeter</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="user-content-455-july-28-2013" class="anchor" href="#455-july-28-2013" aria-hidden="true"><span class="octicon octicon-link"></span></a>4.5.5 July 28 2013</h2>
+
+<ul class="task-list">
+<li>New Features
+
+<ul class="task-list">
+<li>new stage.batchDraw() method</li>
+<li>new addPoint() method for lines, splines, blobs, and polygons.  This enables you to quickly add a point to the points array without swapping out the entire array.</li>
+<li>new add() validation.  An error is thrown if invalid children are added to a parent, for example, when adding a layer to another layer.</li>
+</ul>
+</li>
+<li>Enhancements
+
+<ul class="task-list">
+<li>mouse and touch events can now be bound directly to the stage, i.e. mousedown, mouseup, click, dblclick, etc.  ex. stage.on('click', ...), when clicking on the an empty space on the stage, you will still get a click event fired, whose target node is the stage.</li>
+<li>you can now use .get() with multiple selectors, such as layer.get('#myRect, .foo, Text');</li>
+<li>further optimized batchDraw logic.  Each layer now has its own instance of a batch draw animation</li>
+<li>you can now listen to tween reset events with the onReset config parameter.  This is handy for knowing when a tween has resetted after reversing it. (Thanks Keldon Jones!)</li>
+<li>preventDefault() is no longer fired on mobile devices when the touch position is over an object that is not listening.  This is handy for cases when you want to be able to scroll the whole page by touch dragging pieces of the stage that aren't listening for events (Thanks Gabriel Florit for getting this started!)</li>
+<li>getListening() and isListening() no longer takes ancestor listening state into account.  The listening state of a node should not be affected by its parents</li>
+<li>beforeDraw and draw events are now fired when calling drawScene().  They are still fired with draw(), and are not fired with drawHit()</li>
+</ul>
+</li>
+<li>Bug Fixes
+
+<ul class="task-list">
+<li>shape shadow no longer renders when shadowOpacity is set to zero, and other shadow attrs are present</li>
+<li>click event no longer fires after dragging and dropping</li>
+<li>all kinetic specific event bindings are now added with a kinetic namespace.  Using off to remove a listener no longer removes kinetic specific handlers, unless you force the removal by using the .kinetic namespace</li>
+<li>mouseover events are now fired before mouseout events when both events are subscribed to</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="user-content-454-june-9-2013" class="anchor" href="#454-june-9-2013" aria-hidden="true"><span class="octicon octicon-link"></span></a>4.5.4 June 9 2013</h2>
+
+<ul class="task-list">
+<li>API Changes
+
+<ul class="task-list">
+<li>Brought back Ellipse</li>
+</ul>
+</li>
+<li>New Features
+
+<ul class="task-list">
+<li>new destroyChildren() method that destroys all children and descendants</li>
+<li>new Tween destroy() method which appropriately cleans up memory when you're done with a tween<br>
+</li>
+</ul>
+</li>
+<li>Enhancements
+
+<ul class="task-list">
+<li>Points can now be tweened.  This means that you can tween the geometry of shapes, such as lines, splines, polygons, and blobs</li>
+<li>All applicable methods now return this</li>
+<li>when a new stage is instantiated, its container DOM element is now emptied first</li>
+</ul>
+</li>
+<li>Bug Fixes
+
+<ul class="task-list">
+<li>Worked around a Chrome 27 Bug which sometimes draws rectangles as circles when a stroke is applied</li>
+<li>removeChildren() now works correctly when the children have children</li>
+<li>stage.destroy() now correctly destroys children</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="user-content-453-may-31-2013" class="anchor" href="#453-may-31-2013" aria-hidden="true"><span class="octicon octicon-link"></span></a>4.5.3 May 31 2013</h2>
+
+<ul class="task-list">
+<li>Bug Fixes
+
+<ul class="task-list">
+<li>drag and drop no longer gets hung up in Chrome 27</li>
+<li>custom builds that don't include the drag and drop module no longer throw a JS error</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="user-content-452-may-21-2013" class="anchor" href="#452-may-21-2013" aria-hidden="true"><span class="octicon octicon-link"></span></a>4.5.2 May 21 2013</h2>
+
+<ul class="task-list">
+<li>API changes
+
+<ul class="task-list">
+<li>Deprecated Ellipse shape.  Ellipses can be made by stretching a circle.  You can also maintain the stroke width using strokeScaleEnabled = false</li>
+<li>changed getIntersections() method to getAllIntersections() to indicate that you may be getting more than you need.  This is a very slow method, and should only be used for special situations.  getIntersection() is a much better alternative</li>
+<li>Label config API was rewritten.  You now need to instantiate individual Text and Tag shapes, and then add them to the Label group.  Please check the tutorials for examples.</li>
+<li>LabelRect shape inside Label has changed to Tag.  i.e., the Label group is now made up of a Text shape and a Tag shape</li>
+<li>nodeType and shapeType properties have been removed from toJSON output in favor of className.  when creating an element with Node.create, make sure that the json string contains a className property for each node</li>
+</ul>
+</li>
+<li>New features
+
+<ul class="task-list">
+<li>add event is now fired when nodes are added.  event object with child property is passed.</li>
+<li>new setAttr() method which can be used to set Kinetic attrs, or even custom attrs.  Custom attrs changes can also be subscribed to, just like Kinetic attrs.  i.e. shape.on('myAttrChange', ...);</li>
+<li>new getType() to get node type.  Will return Stage, Layer, Group, or Shape</li>
+<li>new getClassName() to get node class name.  Will return Stage, Layer, Group, and shape class names such as Rect, Circle, Text, etc.</li>
+</ul>
+</li>
+<li>Enhancements
+
+<ul class="task-list">
+<li>getChildren() and getLayers() now return a Kinetic.Collection</li>
+</ul>
+</li>
+<li>Performance improvements
+
+<ul class="task-list">
+<li>attr and draw changes no longer bubble.  This increases update/draw performance by about 25%</li>
+</ul>
+</li>
+<li>Bug fixes
+
+<ul class="task-list">
+<li>stage tweens now work correctly</li>
+<li>Label offsets now work correctly</li>
+<li>Label serialization and deserialization now work correctly</li>
+<li>When setting Layer visibility during instantiation, a JS error is no longer thrown</li>
+<li>Tween onFinish now only fires once if you're tweening more than one property</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="user-content-451-may-11-2013" class="anchor" href="#451-may-11-2013" aria-hidden="true"><span class="octicon octicon-link"></span></a>4.5.1 May 11 2013</h2>
+
+<ul class="task-list">
+<li>API Changes
+
+<ul class="task-list">
+<li>new Tween class.  The old Transition class has been retired.  For advanced tweens, such as tweening things along curves, or constructing timelines, KineticJS recommends the GreenSock Animation Platform which integrates seemlessly.</li>
+</ul>
+</li>
+<li>Bug Fixes
+
+<ul class="task-list">
+<li>Animations and Drag and drop now work correctly again in older versions of webkit that don't support requestAnimationFrame.  This primarily applies to users with Safari 5.1.x</li>
+<li>Animations instantiated with no layer array now correctly executes the user defined function</li>
+</ul>
+</li>
+<li>New Features
+
+<ul class="task-list">
+<li>new Tween class.  The old Transition class has been retired.</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="user-content-450-may-8-2013" class="anchor" href="#450-may-8-2013" aria-hidden="true"><span class="octicon octicon-link"></span></a>4.5.0 May 8 2013</h2>
+
+<ul class="task-list">
+<li>API changes
+
+<ul class="task-list">
+<li>The KineticJS Transition class has been deprecated in favor of GreenSock Transitions (GSAP).  Please see the updated transition tutorials for the new API.<br>
+</li>
+<li>Filters no longer require a callback.  They are now synchronous.<br>
+</li>
+<li>Filters now access parameters via getters, such as getFilterBrightness().  This was done to enable filter transitions</li>
+</ul>
+</li>
+<li>New features
+
+<ul class="task-list">
+<li>New Skew transform (thanks Daniel Kur and Dave Whipps!)</li>
+<li>You can now manipulate individual color components of fill, stroke, and shadowColor, i.e. setFillRGB(), setFillR(), setFillG(), and setFillB(), along with corresponding getter methods.  This also makes it possible to transition colors, and individual color components</li>
+<li>new image.clearFilter() method which clears the currently applied filter and returns the image back to its original state</li>
+<li>new batchDraw() method which batches redraws together.  Calling batchDraw() multiple times on the same node in between animation frames results in only one redraw per animation frame.</li>
+<li>new stage getLayers() method which maps to getChildren()</li>
+</ul>
+</li>
+<li>Performance Gains
+
+<ul class="task-list">
+<li>Increased rendering performance by about 17% by adding matrix transform caching</li>
+</ul>
+</li>
+<li>Enhancements 
+
+<ul class="task-list">
+<li>animations can now be tied to a single layer, or an array of layers</li>
+<li>All point attrs now have individual component getters and setters. i.e. in addition to setScale() and getScale(), you can now also use setScaleX(), setScaleY(), getScaleX(), and getScaleY()</li>
+<li>You can now run multiple independent transitions on a single node</li>
+</ul>
+</li>
+<li>Bug Fixes
+
+<ul class="task-list">
+<li>point getters and setters, such as getScale(), and getOffset(), now return unique default attrs and aren't affected by other node defaults.</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="user-content-443-apr-14-2013" class="anchor" href="#443-apr-14-2013" aria-hidden="true"><span class="octicon octicon-link"></span></a>4.4.3 Apr 14 2013</h2>
+
+<ul class="task-list">
+<li>Enhancements
+
+<ul class="task-list">
+<li>transition callback is now executed within the context of the node, meaning that you can access the node that is being transitioned with the "this" keyword</li>
+</ul>
+</li>
+<li>Bug fixes
+
+<ul class="task-list">
+<li>createImageHitRegion() now works correctly again</li>
+<li>toDataURL() and toImage() now works correctly on devices when the pixel ratio != 1</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="user-content-442-apr-13-2013" class="anchor" href="#442-apr-13-2013" aria-hidden="true"><span class="octicon octicon-link"></span></a>4.4.2 Apr 13 2013</h2>
+
+<ul class="task-list">
+<li>Bug Fixes
+
+<ul class="task-list">
+<li>added support for iOS 5.1 by removing Function.prototype.bind() dependency</li>
+<li>Destroying a node during drag and drop now works correctly</li>
+<li>Shape color key is now unregistered on destroy(), not remove()</li>
+</ul>
+</li>
+<li>Performance Gains
+
+<ul class="task-list">
+<li>improved node instantiation performance by improving the color key generation algorithm</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="user-content-441-apr-7-2013" class="anchor" href="#441-apr-7-2013" aria-hidden="true"><span class="octicon octicon-link"></span></a>4.4.1 Apr 7 2013</h2>
+
+<ul class="task-list">
+<li>New Features
+
+<ul class="task-list">
+<li>new Mask filter (Thanks nicomlas!)</li>
+</ul>
+</li>
+<li>Bug Fixes
+
+<ul class="task-list">
+<li>Sprite shapes now correctly take the default index value of 0 if the index is not defined</li>
+<li>custom builds that have not included the DragAndDrop module now work correctly</li>
+<li>Stage clear() now works correctly (Thanks alexahn!)</li>
+<li>Last word of multi line text now correctly wraps, and text wrapping now correctly takes into account padding (Thanks Louis Jolibois!)</li>
+<li>Line, Spline, Blob, and Polygon points default now works correctly</li>
+<li>hit graph is now redrawn correctly when calling drawHit()</li>
+<li>drag and drop logic now works correctly when both the stage and a shape are draggable</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="user-content-440-mar-26-2013" class="anchor" href="#440-mar-26-2013" aria-hidden="true"><span class="octicon octicon-link"></span></a>4.4.0 Mar 26 2013</h2>
+
+<ul class="task-list">
+<li>New features
+
+<ul class="task-list">
+<li>container clipping regions which can be applied to layers and groups.  Everything drawn on a container with a clipping region fits inside the region.  Clipping regions can also be transformed since they are tied to the container transform</li>
+<li>new Label plugin which can be used to create text with backgrounds, simple tooltips, or pointer tooltips.</li>
+<li>new Blur filter.  (Thanks Pavel Akhmetchanov!) </li>
+<li>new Text wrap attribute which can be set to none, word, or char (Thanks Louis Jolibois!)</li>
+<li>new strokeScaleEnabled property which enables you to configure whether or not a stroke style scales as a shape scales, or as its ancestors scale<br>
+</li>
+<li>new getAttr() method which enables you to get an attr by a dynamic key, rather then using the static getter method.  i.e. getX() vs. getAttr('x');</li>
+<li>new getNodeType() method which returns the node type, such as "Stage", "Layer", "Group", or "Shape".</li>
+<li>new startDrag() and stopDrag() methods to programmatically start and stop drag and drop</li>
+<li>new getShapeType() method which returns the shape type if the node is a shape, such as "Rect", "Circle", "Text", etc.</li>
+</ul>
+</li>
+<li>Enhancements
+
+<ul class="task-list">
+<li>improved overall Node instantiation time by about 66%, which means that your KineticJS apps will start up much faster</li>
+<li>improved transition performance</li>
+<li>serialized objects (JSON) are now about 3x more compact</li>
+<li>when using event delegation, the target event property changed from "shape" to "targetNode" for consistency because now any node type can fire events.  i.e. var shape = evt.targetNode</li>
+<li>now any node can use the draw() method, not just the stage and layers.  If draw() is used with groups and shapes, the layer is cleared, and just that node is drawn.</li>
+<li>removed stage.reset() to avoid confusion.  If you'd like to start over with a new stage, just use stage.destroy() and then new Kinetic.Stage() again. </li>
+<li>all canvas elements now have predefined padding, margin, border, and background style overrides.</li>
+<li>Path, TextPath, RegularPolygon, and Star shapes are now classified as plugins.  They will still exist in the Kinetic namespace.</li>
+<li>TextPath fontSize is now in pixels like Text</li>
+<li>Improved Text rendering performance (Thanks Louis Jolibois!)</li>
+<li>removed simulate() method.  added new paramter to fire() which enables you to control whether or not the event bubbles</li>
+<li>setUserPosition() and getUserPosition() changed to setPointerPosition() and getPointerPosition()</li>
+<li>dynamic drag and drop layer functionality has been removed.  The performance benefit (very small) did not outweight the complexity that was being introduced into the code base to support it.  Too many edge cases.  High performance drag and drop can still be achieved by intelligently structuring your layers. </li>
+<li>removed Collection apply() method to avoid confusion.  For now, just use each()</li>
+<li>removed beforeDraw and afterDraw methods.  you can now listen for draw events via .on('draw') or .on('beforeDraw').  Draw events now bubble.</li>
+</ul>
+</li>
+<li>Bug fixes
+
+<ul class="task-list">
+<li>Fixed Text wrapping issues (Thanks Louis Jolibois!)</li>
+<li>firing event which has no binding no longer throws an exception </li>
+<li>drag and drop on mobile no longer flickers (dynamic drag layer was removed)</li>
+<li>beforeEvent event names are now correctly constructed</li>
+<li>id selectors now work correctly during drag and drop</li>
+<li>drag events now correctly bubble</li>
+<li>dragend events now fire after mouseup/touchend events</li>
+<li>transition callbacks are now executed after all sub-tweens have completed</li>
+<li>mousedown on one shape, and mouseup on another shape, now correctly does not fire a click event on the second shape</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="user-content-433-feb-12-2013" class="anchor" href="#433-feb-12-2013" aria-hidden="true"><span class="octicon octicon-link"></span></a>4.3.3 Feb 12 2013</h2>
+
+<ul class="task-list">
+<li>Bug fixes
+
+<ul class="task-list">
+<li>Kinetic.Text events are now working correctly</li>
+<li>Fixed scaling issue when drawing directly onto a layer canvas on mobile devices with a pixelRatio &gt; 1</li>
+<li>Wedge clockwise property is now correctly defaulted to false.</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="user-content-432-feb-06-2013" class="anchor" href="#432-feb-06-2013" aria-hidden="true"><span class="octicon octicon-link"></span></a>4.3.2 Feb 06 2013</h2>
+
+<ul class="task-list">
+<li>New Features
+
+<ul class="task-list">
+<li>New enabler and disabler functions for shape attributes that can be used toggle properties on and off, such as fill, stroke, shadow, and dashArray.  The new respective attributes are fillEnabled, strokeEnabled, shadowEnabled, and dashArrayEnabled.  The new enabler and disabler methods are enableFill(), disableFill(), enableStroke(), disableStroke(), enableShadow(), disableShadow(), enableDashArray(), disableDashArray()</li>
+<li>new fillPriority attribute which makes it easy to switch between different fill types.  Can be color, pattern, linear-gradient, or radial-gradient</li>
+</ul>
+</li>
+<li>Enhancements
+
+<ul class="task-list">
+<li>When both a node and one of its ancestors are draggable, the node will now have priority over the ancestor.  For example, when both the stage and a shape are draggable, and you drag and drop the shape, just the shape will move.  When you drag and drop the stage, the whole stage will move.</li>
+<li>drag and drop completes when a mouseup or touchend event is detected anywhere on the page.  This means that when dragging a node, a user can mouseout of the stage, mouse back in, and the drag and drop will continue.  If a user mouses up outside of the stage, the drag and drop will end.</li>
+<li>dynamic drag layer now does deep copy for Groups and Layers when reconstructing Node tree</li>
+<li>added line dash support for Firefox and Safari (Thanks nokturnal!)</li>
+</ul>
+</li>
+<li>Bug Fixes
+
+<ul class="task-list">
+<li>shadows are now correctly applied to shapes with pattern or gradient fills.</li>
+<li>TextPath shadows now work correctly</li>
+<li>drag and drop dragend event is now fired after drag and drop animation is stopped</li>
+<li>mouseup and click events now work correctly after dragging and dropping</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="user-content-431-jan-13-2013" class="anchor" href="#431-jan-13-2013" aria-hidden="true"><span class="octicon octicon-link"></span></a>4.3.1 Jan 13 2013</h2>
+
+<ul class="task-list">
+<li>New features
+
+<ul class="task-list">
+<li>added new dragOnTop attr to enable or disable moving the node to a temp top layer when dragging</li>
+<li>new Node destroy() method which removes and destroys node</li>
+<li>new stage.getDragLayer() method returns the dedicated drag and drop layer</li>
+<li>new Animation isRunning() method returns true if the animation is running and false otherwise.</li>
+</ul>
+</li>
+<li>Enhancements
+
+<ul class="task-list">
+<li>points attr now supports an array of arrays (thanks Arthaey Angosii!)</li>
+<li>remove() method now only detaches a node from the stage, it no longer destroys it.  This means that you can also re add a node via the add() method after you've removed it</li>
+<li>changed getDOM() to getContent()</li>
+</ul>
+</li>
+<li>Bug fixes
+
+<ul class="task-list">
+<li>drag and drop no longer flickers on mobile devices</li>
+<li>setting draggable=false on dragend no longer throws a JS error</li>
+<li>stage.remove() now correctly removes content div element</li>
+<li>dragging and dropping nodes inside transformed groups now works correctly</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="user-content-430-jan-06-2013" class="anchor" href="#430-jan-06-2013" aria-hidden="true"><span class="octicon octicon-link"></span></a>4.3.0 Jan 06 2013</h2>
+
+<p>Note: This release addresses all of the API changes that I've been wanting to make for awhile.  Therefore, it's very likely that you'll need to make changes to your existing application when upgrading.  Significant API changes have been made with Kinetic.Text attrs, shadow attrs, and fill attrs.</p>
+
+<ul class="task-list">
+<li>New Features
+
+<ul class="task-list">
+<li>new Spline shape</li>
+<li>new Blob shape</li>
+</ul>
+</li>
+<li>Enhancements
+
+<ul class="task-list">
+<li>big changes to Kinetic.Text shape.  Rectangle component has been removed to simplify the API.  textFill is now fill, textStroke is now stroke, textStrokeWidth is now strokeWidth, and textShadow is now shadow.  If you want to have a rectangle behind the text, you need to group the text with a Kinetic.Rect shape.  Text fontSize units are now in pixels (used to be in points).  The lineHeight attr is now defaulted to 1 (used to be defaulted to 1.2).</li>
+<li>drag and drop operations now automatically dynamically create a temporary top layer, and place nodes there for groups and shapes to greatly improve drag and drop performance.  When the drag and drop operation is completed, the layer is removed and the node is placed back into its container</li>
+<li>cornerRadius attr moved to rect shape</li>
+<li>when dragging and dropping, if the mouse goes outside of the stage, and then returns, the the drag and drop operation is no longer cancelled</li>
+<li>shadow object attr has been flattened into shadowColor, shadowBlur, shadowOffset, and shadowOpacity attrs</li>
+<li>It's now possible for shapes to extend other shapes</li>
+<li>flattened fill attr object.</li>
+<li>removed excessive lineDash warnings</li>
+</ul>
+</li>
+<li>Bug Fixes
+
+<ul class="task-list">
+<li>toDataUrl now correctly counters pixel ratio scaling</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="user-content-v420-dec-16-2012" class="anchor" href="#v420-dec-16-2012" aria-hidden="true"><span class="octicon octicon-link"></span></a>v4.2.0 Dec 16 2012</h2>
+
+<ul class="task-list">
+<li>New Features
+
+<ul class="task-list">
+<li>pixel ratio optimization to sharpen text and image rendering on devices with a pixel ratio &gt; 1</li>
+<li>new Wedge shape</li>
+<li>AMD support</li>
+<li>Fill patterns can now be translated, rotated, scaled, and offset, similarly to nodes</li>
+<li>KineticJS is now hosted on a CDN which means you can hotlink to the download url and still get wicked fast http responses.</li>
+</ul>
+</li>
+<li>Enhancements
+
+<ul class="task-list">
+<li>shape draw functions are now passed a Canvas renderer, not a canvas context.  If your application uses custom shapes, please be sure to check out the custom shape tutorial to see what changes will need to be made.</li>
+<li>moved dashArray attr to Shape level.  Dash arrays are now rendered using the canvas API setLineDash() method, which enables dashed lines for any type of stroke, not just straight lines.  This was also done in preparation for the new spline feature for the next release.  Since not all browsers support dash arrays at the moment, a warning will be issued when trying to render a dash array in a browser which hasn't implemented it yet</li>
+<li>toImage() now accepts x and y params so that you can define the cache rectangle position</li>
+</ul>
+</li>
+<li>Bug Fixes
+
+<ul class="task-list">
+<li>toImage() now works correctly with the stage and layers</li>
+<li>animation frame object time, timeDiff, and lastTime properties are now updated correctly when multiple animations are running at the same time.</li>
+<li>nodes are now correctly removed in cases where node.remove() is called from a mousedown or click handler on self, and the node is draggable</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="user-content-v412-nov-28-2012" class="anchor" href="#v412-nov-28-2012" aria-hidden="true"><span class="octicon octicon-link"></span></a>v4.1.2 Nov 28 2012</h2>
+
+<ul class="task-list">
+<li>Enhancements
+
+<ul class="task-list">
+<li>changed createImageBuffer() to createImageHitRegion() for consistency</li>
+</ul>
+</li>
+<li>Bug Fixes
+
+<ul class="task-list">
+<li>createImageHitRegion() now correctly renders the hit graph for images with transparent pixels</li>
+<li>Image hit drawing functions now correctly render the image stroke</li>
+<li>added Kinetic warning for cases when toDataURL() fails due to security error</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="user-content-v411-nov-27-2012" class="anchor" href="#v411-nov-27-2012" aria-hidden="true"><span class="octicon octicon-link"></span></a>v4.1.1 Nov 27 2012</h2>
+
+<ul class="task-list">
+<li>Bug Fixes
+
+<ul class="task-list">
+<li>hit graph now correctly renders for non Webkit browsers, including Firefox and IE9.</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="user-content-v410-nov-26-2012" class="anchor" href="#v410-nov-26-2012" aria-hidden="true"><span class="octicon octicon-link"></span></a>v4.1.0 Nov 26 2012</h2>
+
+<ul class="task-list">
+<li>New Features
+
+<ul class="task-list">
+<li>you can now create custom hit detection drawing algorithms by setting the drawHitFunc attr</li>
+<li>stage now has access to drawScene() and drawHit() methods</li>
+<li>Shape constructors now accept custom drawFunc and drawHitFunc properties</li>
+<li>new textShadow attr</li>
+<li>new fillStroke() method which fills, strokes, and applies shadows to the current path</li>
+</ul>
+</li>
+<li>Enhancements<br>
+
+<ul class="task-list">
+<li>scene, hit, and buffer graph drawing performance have been greatly improved, especially for the  Image and Sprite shapes<br>
+</li>
+<li>Improved drag and drop performance by skipping hit func redraws on drag move</li>
+<li>Kinetic.Animation constructor now takes in a function and optional node, rather than a config object</li>
+<li>Image.applyFilter() now takes in a required filter function, optional config object, and optional callback, rather than a config object that contained these three properties.</li>
+</ul>
+</li>
+<li>Bug Fixes
+
+<ul class="task-list">
+<li>when node.remove() is called, parent property is unset</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="user-content-v405-nov-4-2012" class="anchor" href="#v405-nov-4-2012" aria-hidden="true"><span class="octicon octicon-link"></span></a>v4.0.5 Nov 4 2012</h2>
+
+<ul class="task-list">
+<li>New Features
+
+<ul class="task-list">
+<li>new Brighten filter (Thanks for getting this started Witali Mik!)</li>
+<li>new Invert filter</li>
+<li>new fire() method fires synthetic events without event bubbling</li>
+<li>animation objects now contain frameRate property for convenience</li>
+</ul>
+</li>
+<li>Enhancements
+
+<ul class="task-list">
+<li>Greatly improved animation, transition, and drag and drop performance by introducing dynamic switching between fixed frame rates and dynamic frame rates</li>
+<li>simulate() method is now used to simulate user events, such as click, mousemove, mouseover, etc.  When events are simulated, they can bubble up the Node tree.</li>
+</ul>
+</li>
+<li>Bug Fixes
+
+<ul class="task-list">
+<li>setDraggable(false) now correctly cancels stage drag and drop when dragging</li>
+<li>isListening() now takes into account ancestor listening status</li>
+<li>Kinetic.Global.warn() now works correctly in IE9 running on Windows 7 64bit (Thanks soulBit!)</li>
+<li>Sprite cloning now works correctly</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="user-content-v404-oct-19-2012" class="anchor" href="#v404-oct-19-2012" aria-hidden="true"><span class="octicon octicon-link"></span></a>v4.0.4 Oct 19 2012</h2>
+
+<ul class="task-list">
+<li>New Features
+
+<ul class="task-list">
+<li>new custom build configurator support which enables you to specify the exact modules needed for your application in order to reduce the JavaScript file size as much as possible</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="user-content-v403-oct-11-2012" class="anchor" href="#v403-oct-11-2012" aria-hidden="true"><span class="octicon octicon-link"></span></a>v4.0.3 Oct 11 2012</h2>
+
+<ul class="task-list">
+<li>New Features
+
+<ul class="task-list">
+<li>new mouseenter and mouseleave events.  This enables more flexibility with event delegation</li>
+</ul>
+</li>
+<li>Enhancements
+
+<ul class="task-list">
+<li>you can now remove groups of listeners via a name selector with the off() method (Thanks David Johansson!)</li>
+<li>toJSON() method can now serialize any node, including the stage, layers, groups, and shapes.</li>
+<li>removed stage.load() method.  You can now deserialize any node, including the stage, layers, groups, and shapes, by creating a node from a json string using Kinetic.Node.create()</li>
+<li>line caps styles are now enabled for paths</li>
+<li>get() now also supports shape type selectors (Thanks David Johansson!)</li>
+<li>moved width and height attrs to the node level.  Created getters and setters that use bounding boxes around select nodes.  For example, to define the size of an ellipse, you could set its width and height rather than setting the radius.</li>
+<li>Kinetic.Text getWidth() and getHeight() now return calculated width and height.  Removed getBoxWidth() and getBoxHeight() methods.</li>
+</ul>
+</li>
+<li>Bug Fixes
+
+<ul class="task-list">
+<li>layer children events no longer fire when layer is hidden (Thanks Adam Wróbel for getting this started!)</li>
+<li>setZIndex() now correctly reorders layer canvases</li>
+<li>opacity can now be applied to the stage (Thanks David Johansson!)</li>
+<li>text shadow offset now works correctly</li>
+<li>layer.toDataURL() and stage.toDataURL() now work correctly when using hidden layers</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="user-content-v402-sep-27-2012" class="anchor" href="#v402-sep-27-2012" aria-hidden="true"><span class="octicon octicon-link"></span></a>v4.0.2 Sep 27 2012</h2>
+
+<ul class="task-list">
+<li>New Features
+
+<ul class="task-list">
+<li>New Collections class enables you to apply methods to all of the nodes returned from get().  e.g. <code>stage.get('.foo').apply('setX', 400);</code>.  The Collections class also has a handy <code>each()</code> method for quickly iterating over an array of nodes.  You can also use <code>stage.get('.foo').on('click', '...')</code> (Thanks David Johansson for getting this going!)</li>
+<li>new <code>dragBoundFunc</code> property which enables you to define the drag and drop bounds function.  In addition to constraining the drag and drop motion vertically and horizontally, you can also create custom functions that constrain the motion diagonally, radially, or whatever you can come up with.  The <code>dragBoundFunc</code> property has replaced the <code>dragBounds</code> and <code>dragConstraint</code> properties because they are no redundant. (Thanks David Johansson!)</li>
+</ul>
+</li>
+<li>Enhancements
+
+<ul class="task-list">
+<li>
+<code>remove()</code> method now only requires the node that needs to be removed.  i.e. to remove a node, you no longer use <code>node.getParent().remove(node)</code>.  Now you just use <code>node.remove()</code>;</li>
+<li>improved attr setting performance</li>
+<li>clone() now does a deep copy by also cloning children nodes (Thanks David Johansson!)</li>
+<li>when calling layer.show() or hide(), the physical canvas element is shown or hidden rather than drawing or clearing the context.  This greatly improves layer hide and show performance.  (Thanks Adam Wróbel!)</li>
+<li>added isListening and isDraggable aliases for consistency</li>
+</ul>
+</li>
+<li>Bug Fixes
+
+<ul class="task-list">
+<li>Fix Layer.moveToBottom() when only one layer is present (Thanks Adam Wróbel!)</li>
+<li>setting text to an integer via setText() no longer fails</li>
+<li>If a framework extending the DOM is used (like MooTools or prototype) toJSON now serializes "Number"-object correctly (Thanks David Johansson!)</li>
+<li>You can now dynamically switch between different fill types, including colors, linear gradients, radial gradients, and patterns</li>
+<li>text shadows now work correctly with text paths (Thanks David Johansson!)</li>
+<li>Corrected Kinetic.Path.getPointOnLine() to work in negative x direction (Thanks David Johansson!)</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="user-content-v401-aug-26-2012" class="anchor" href="#v401-aug-26-2012" aria-hidden="true"><span class="octicon octicon-link"></span></a>v4.0.1 Aug 26 2012</h2>
+
+<ul class="task-list">
+<li>Enhancements
+
+<ul class="task-list">
+<li>Dependency on Class utility has been removed because it was really slowing down Node instantiations.  New custom solution is about 2x faster</li>
+<li>Reintroduced full Circle shape, in which Kinetic.Circle no longer points to Kinetic.Ellipse.</li>
+</ul>
+</li>
+<li>Bug Fixes
+
+<ul class="task-list">
+<li>layer moveToTop(), moveToBottom(), moveUp(), and moveDown() now correctly reorder the scene canvases</li>
+<li>Sprite afterFrame function now only executes once because its purpose is for animation key switching.  Once the key has switched, it doesn't make sense to continue executing the afterFrame function because the sprite is now on a different animation.</li>
+<li>getIntersections now returns the correct shapes that intersect a point</li>
+<li>radius property is now transitionable</li>
+<li>now removing color key from shapes hash when a shape is removed from stage</li>
+<li>multi line text now correctly supports shadows</li>
+<li>event detection now works correctly for stages below the fold on mobile devices </li>
+<li>FF should no longer fail when using non integer coordinates with methods dependent on getImageData() because the pixel coordinates are now rounded</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="user-content-v400-aug-21-2012" class="anchor" href="#v400-aug-21-2012" aria-hidden="true"><span class="octicon octicon-link"></span></a>v4.0.0 Aug 21 2012</h2>
+
+<ul class="task-list">
+<li>New Features
+
+<ul class="task-list">
+<li>new drawBuffer() method which only redraws the buffer canvas</li>
+<li>new drawScene() method which only redraws the scene</li>
+<li>new getIntersection() method returns an object with shape and pixel data</li>
+<li>new createBufferImage() method generates a special image to be drawn on the buffer which enables high precision event detections for images</li>
+<li>new clearBufferImage() method clears the buffer image and return to the default buffer rectangle</li>
+</ul>
+</li>
+<li>Enhancements
+
+<ul class="task-list">
+<li>new hit detection algorithm with complexity of O(1), which means that hit detection performance is constant regardless of the number of shapes.  i.e. you can have tens or hundreds of thousands of nodes, and event detection will still be lightning fast.  <em>Thanks to Ben and the Platfora team for suggesting the color key hash technique!</em>
+</li>
+<li>Kinetic.Animation is no longer tied to the stage.  You can now create as many animations as you like using new Kinetic.Animation()</li>
+<li>drag and drop is now hooked into the animation engine to leverage dynamic frame rates.  This greatly improves performance on mobile devices </li>
+<li>There's no longer a distinction between path detection and pixel detection.  The event engine now uses one strategy</li>
+<li>removed saveImageData() and clearImageData() methods</li>
+<li>alpha property has changed to opacity</li>
+</ul>
+</li>
+<li>Bug Fixes
+
+<ul class="task-list">
+<li>Animation last time is now correctly calculated after stopping and restarting an animation</li>
+<li>stage.toDataURL() now works correctly with jpg layers (thanks jfollas!)</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="user-content-v3105-aug-2-2012" class="anchor" href="#v3105-aug-2-2012" aria-hidden="true"><span class="octicon octicon-link"></span></a>v3.10.5 Aug 2 2012</h2>
+
+<ul class="task-list">
+<li>New Features
+
+<ul class="task-list">
+<li>new TextPath plugin lets you write text along arbitrary paths (Thanks jfollas!!  This was quite an undertaking)</li>
+</ul>
+</li>
+<li>Enhancements
+
+<ul class="task-list">
+<li>animations are now silky smooth</li>
+<li>Improved drag and drop performance by introducing dragThrottle</li>
+<li>improved drawing performance</li>
+<li>removed layer draw throttling and event throttling because they weren't working very well with the dynamic animation </li>
+<li>transition callback is now executed immediately after node draw
+frame rates, and were causing uncessary problems.<br>
+</li>
+</ul>
+</li>
+<li>Bug Fixes
+
+<ul class="task-list">
+<li>layer canvas context is now correctly removed from the dom when a layer is removed from the stage</li>
+<li>text fill now works correctly when text shadow has been applied and no textbox fill has been applied</li>
+<li>changing the font size now correctly updates the text data</li>
+<li>stage.stop() no longer throws a JS error if an animation has been started and restarted several times</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="user-content-v3104-jul-22-2012" class="anchor" href="#v3104-jul-22-2012" aria-hidden="true"><span class="octicon octicon-link"></span></a>v3.10.4 Jul 22 2012</h2>
+
+<ul class="task-list">
+<li>New Features
+
+<ul class="task-list">
+<li>new toImage() method converts any node into an image for the purpose of caching which can greatly improve drawing performance (as much as 4x faster for simple shapes)</li>
+<li>new applyFilter() method which enables you to apply filter logic to images (e.g. grayscale, inverting colors, etc.)</li>
+<li>on attr change handler event object now contains oldVal and newVal property</li>
+</ul>
+</li>
+<li>Enhancements
+
+<ul class="task-list">
+<li>toDataURL can now be used synchronously with layers, groups, and shapes. Stage toDataURL() is still asynchronous</li>
+<li>saveData() has changed to saveImageData(), and clearData() has changed to clearImageData()</li>
+<li>saveImageData() and clearImageData() now work with any node, including the stage, layers, and groups</li>
+<li>new on beforeAttrChange event handler which fires immediately before setting an attribute (in contrast to on attrChange, which fires immediately after an attr is updated)</li>
+<li>custom shapes draw functions are now passed a context to draw onto.</li>
+</ul>
+</li>
+<li>Bug Fixes
+
+<ul class="task-list">
+<li>getTransform() now takes into account center offset which fixes a bug related to the getAbsoluteTransform method not working correctly when parent nodes had an offset (Thanks Vijai!)</li>
+<li>the stage ids and names hashes are now updated correctly whenever a node's id or name changes (thanks Andreas Gerstmayr for getting this started!)</li>
+<li>Image getWidth() and getHeight() now correctly return width and height regardless if the width and height were set or not during instantiation</li>
+<li>getContentPosition now correctly takes into account CSS styling (Thanks Yannick!)</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="user-content-v3103-jul-8-2012" class="anchor" href="#v3103-jul-8-2012" aria-hidden="true"><span class="octicon octicon-link"></span></a>v3.10.3 Jul 8 2012</h2>
+
+<ul class="task-list">
+<li>New Features
+
+<ul class="task-list">
+<li>new inheritiance model which enables you to more easily extend or add custom methods to Kinetic classes</li>
+<li>new Text newline support '\n'</li>
+<li>new clone method which clones any Kinetic object, including the object's user defined event listeners (kicked off by matteo78)</li>
+</ul>
+</li>
+<li>Enhancements
+
+<ul class="task-list">
+<li>getIntersections can now be called from any Container, including Groups and Layers.</li>
+<li>greatly improved Sprite animation performance by hooking into the global animation object</li>
+</ul>
+</li>
+<li>Bug Fixes
+
+<ul class="task-list">
+<li>RegularPolygon Shape now generates the correct getters and setters</li>
+<li>Container remove() method now correctly removes children nodes</li>
+<li>mouseout is no longer triggered when moving from one node to another node inside the same container</li>
+<li>stage.on() now correctly binds events</li>
+<li>getIntersections no longer returns invisible shapes</li>
+<li>attr change events no longer bubble</li>
+<li>afterFrame Sprite event handler now correctly fires on the defined index</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="user-content-v3102-jul-1-2012" class="anchor" href="#v3102-jul-1-2012" aria-hidden="true"><span class="octicon octicon-link"></span></a>v3.10.2 Jul 1 2012</h2>
+
+<ul class="task-list">
+<li>New Features
+
+<ul class="task-list">
+<li>Text automatic wordwrap is now supported based on width and height properties</li>
+<li>new Text lineHeight property</li>
+<li>Text boxes can now have rounded corners</li>
+<li>Text width and height properties now define the text box width and height</li>
+<li>new Text getBoxWidth() and getBoxHeight() return the text box dimensions</li>
+<li>new clearBeforeDraw layer attribute which allows you to skip layer clearing on each draw</li>
+</ul>
+</li>
+<li>Enhancements
+
+<ul class="task-list">
+<li>Text align property now reffers to the text alignment inside of the text box. The verticalAlign property has been removed</li>
+<li>Text shape detection type is now defaulted to path.</li>
+<li>improved drawing performance</li>
+<li>you can now unset any attribute with null, 0, or ''. Setting an attribute to undefined will have no effect</li>
+<li>transition attr updates now trigger attr change events</li>
+</ul>
+</li>
+<li>Bug Fixes
+
+<ul class="task-list">
+<li>toJSON() no longer unsets attr functions and images (thanks Jonathan Griggs!)</li>
+<li>attr change event now correctly fires for root attrs when setting child attr</li>
+<li>Ellipse radius change no longer fires duplicate attr change event</li>
+</ul>
+</li>
+</ul>
+
+    </div>
+
+  </div>
+ 
