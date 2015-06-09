@@ -1,0 +1,41 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="tota11y" type="JavaScript_Library" version="0.0.1">
+      <friendlyName>tota11y</friendlyName>
+      <description><![CDATA[an accessibility (a11y) visualization toolkit <a href="http://khan.github.io/tota11y/">http://khan.github.io/tota11y/</a>]]></description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>http://www.engagesoftware.com</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes src="CHANGES.htm" />
+      <azureCompatible>true</azureCompatible>
+      <dependencies>
+      <!--
+        <dependency type="managedPackage" version="1.0.0">jQuery</dependency>
+        -->
+      </dependencies>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>tota11y</libraryName>
+            <fileName>tota11y.min.js</fileName>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+            <!--CDNPath></CDNPath>
+            <objectName></objectName-->
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName>tota11y</libraryFolderName>
+            <jsfile>
+              <name>tota11y.min.js</name>
+            </jsfile>
+          </jsfiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
