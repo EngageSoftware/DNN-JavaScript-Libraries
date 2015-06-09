@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="bootstrap.accessibility" type="JavaScript_Library" version="01.00.03">
+    <package name="bootstrap.accessibility" type="JavaScript_Library" version="01.00.04">
       <friendlyName>Bootstrap Accessibility Plugin</friendlyName>
       <description><![CDATA[Accessibility Plugin for Bootstrap 3 and Bootstrap 3 as SubModule <a href="http://paypal.github.io/bootstrap-accessibility-plugin/demo.html">http://paypal.github.io/bootstrap-accessibility-plugin/demo.html</a>]]></description>
       <owner>
@@ -33,7 +33,7 @@
         </component>
         <component type="ResourceFile">
           <resourceFiles>
-            <basePath>Resources\Libraries\bootstrap.accessibility\01_00_03</basePath>
+            <basePath>Resources\Libraries\bootstrap.accessibility\01_00_04</basePath>
             <resourceFile>
               <name>Resources.zip</name>
             </resourceFile>
