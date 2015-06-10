@@ -67,7 +67,7 @@ function New-BowerLibrary ($name) {
     $jsFile = $jsPaths[0]
     $fileName = Split-Path $jsFile -Leaf
 
-    $versionedFolder = New-Library $name $version $fileName
+    $versionedFolder = New-JavaScriptLibrary $name $version $fileName
 
     $filePaths = @($paths | ? { -not (Test-Path $_ -PathType Container) })
     if ($filePaths.Count -eq 0) {
