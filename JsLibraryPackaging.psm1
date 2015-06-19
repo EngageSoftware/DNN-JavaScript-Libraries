@@ -83,7 +83,7 @@ function New-BowerLibrary ($name) {
 
 function New-JavaScriptLibrary ($name, $version, $jsFileName) {
     $versionedFolder = "$($name)_$version"
-    mkdir $versionedFolder
+    mkdir $versionedFolder | Out-Null
   
     $manifestFile = "$versionedFolder\$name.dnn"
     cp _template\library.dnn $manifestFile
