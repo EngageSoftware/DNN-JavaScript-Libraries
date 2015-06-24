@@ -1,0 +1,41 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="bluebird" type="JavaScript_Library" version="2.9.30">
+      <friendlyName>Bluebird</friendlyName>
+      <description><![CDATA[<p>Bluebird is a fully featured <a href="https://github.com/petkaantonov/bluebird/tree/v2.9.30#what-are-promises-and-why-should-i-use-them">promise</a> library with focus on innovative features and performance</p>]]></description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>http://www.engagesoftware.com</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes src="CHANGES.htm" />
+      <azureCompatible>true</azureCompatible>
+      <dependencies>
+      <!--
+        <dependency type="managedPackage" version="1.0.0">jQuery</dependency>
+        -->
+      </dependencies>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>bluebird</libraryName>
+            <fileName>bluebird.min.js</fileName>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+            <CDNPath>https://cdn.jsdelivr.net/bluebird/2.9.30/bluebird.min.js</CDNPath>
+            <objectName>P</objectName>
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName>bluebird</libraryFolderName>
+            <jsfile>
+              <name>bluebird.min.js</name>
+            </jsfile>
+          </jsfiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
