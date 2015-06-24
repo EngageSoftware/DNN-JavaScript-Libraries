@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="less.js" type="JavaScript_Library" version="2.2.0">
+    <package name="less.js" type="JavaScript_Library" version="2.5.1">
       <friendlyName>less.js</friendlyName>
       <description>The dynamic stylesheet language</description>
       <owner>
@@ -21,9 +21,9 @@
         <component type="JavaScript_Library">
           <javaScriptLibrary>
             <libraryName>less.js</libraryName>
-            <fileName>less.js</fileName>
+            <fileName>less.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdnjs.cloudflare.com/ajax/libs/less.js/2.2.0/less.min.js</CDNPath>
+            <CDNPath>https://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js</CDNPath>
             <objectName>less</objectName>
           </javaScriptLibrary>
         </component>
@@ -31,7 +31,7 @@
           <jsfiles>
             <libraryFolderName>less.js</libraryFolderName>
             <jsfile>
-              <name>less.js</name>
+              <name>less.min.js</name>
             </jsfile>
           </jsfiles>
         </component>
