@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="underscore" type="JavaScript_Library" version="1.7.0">
+    <package name="underscore" type="JavaScript_Library" version="1.8.3">
       <friendlyName>underscore</friendlyName>
       <description>Underscore.js is a utility-belt library for JavaScript that provides support for the usual functional suspects (each, map, reduce, filter...) without extending any core JavaScript objects.</description>
       <owner>
@@ -21,9 +21,9 @@
         <component type="JavaScript_Library">
           <javaScriptLibrary>
             <libraryName>underscore</libraryName>
-            <fileName>underscore.js</fileName>
+            <fileName>underscore-min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/underscorejs/1.7.0/underscore-min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/underscorejs/1.8.3/underscore-min.js</CDNPath>
             <objectName>_</objectName>
           </javaScriptLibrary>
         </component>
@@ -31,7 +31,7 @@
           <jsfiles>
             <libraryFolderName>underscore</libraryFolderName>
             <jsfile>
-              <name>underscore.js</name>
+              <name>underscore-min.js</name>
             </jsfile>
           </jsfiles>
         </component>
