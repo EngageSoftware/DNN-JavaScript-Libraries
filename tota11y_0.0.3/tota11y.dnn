@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="tota11y" type="JavaScript_Library" version="0.0.1">
+    <package name="tota11y" type="JavaScript_Library" version="0.0.3">
       <friendlyName>tota11y</friendlyName>
       <description><![CDATA[an accessibility (a11y) visualization toolkit <a href="http://khan.github.io/tota11y/">http://khan.github.io/tota11y/</a>]]></description>
       <owner>
