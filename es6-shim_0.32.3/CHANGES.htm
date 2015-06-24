@@ -1,0 +1,593 @@
+<article style="max-height: 20em; overflow: auto;">
+<h1>es6-shim 0.32.3 (21 Jun 2015)</h1>
+
+<ul>
+<li>[Fix] Override or wrap native <code>Reflect</code> methods in Microsoft Edge v0.11 as required.</li>
+<li>[Fix] Edge v0.11: <code>Array.from([], undefined)</code> should not throw</li>
+<li>[Fix] Fix a bug in <code>Array.from handles iterables</code> runtime clobbering, which would always replace the native function</li>
+<li>[Fix] Ensure that <code>Set#has</code> has the correct name in Edge v0.11</li>
+<li>[Tests] Add <code>Map</code>/<code>Set</code> error messages for Edge v0.11</li>
+<li>[Tests] Fix <code>Math.fround</code> test value for Edge v0.11</li>
+<li>[Tests] Bail out of <code>Map</code>/<code>Set</code> test blocks if they don't exist</li>
+<li>[Docs] Update ES5 subclassing instructions in the README.</li>
+<li>[Dev Deps] Update <code>es5-shim</code></li>
+</ul>
+
+<h1>es6-shim 0.32.2 (17 Jun 2015)</h1>
+
+<ul>
+<li>[Fix] <code>Object.assign</code> with no sources should coerce to an object (#348)</li>
+<li>[Fix] <code>String#includes</code> should throw when given a <code>RegExp</code> (#349)</li>
+<li>[Fix] <code>RegExp()</code> should not throw (#350)</li>
+<li>[Fix] Create <code>Value.defineByDescriptor</code>, fix <code>create</code> when <code>Object.create</code> is unavailable.</li>
+<li>[Compliance] Update <code>Promise.reject</code> to match official ECMA-262 spec.</li>
+<li>[Dev Deps] Update <code>es5-shim</code></li>
+</ul>
+
+<h1>es6-shim 0.32.1 (13 Jun 2015)</h1>
+
+<ul>
+<li>[Fix] Make sure that all <code>Map</code>/<code>Set</code> shim forms properly add an iterable to the collection instance.</li>
+<li>[Tests] Make sure none of the <code>Array</code> ToLength tests throw <em>any</em> error (#347)</li>
+</ul>
+
+<h1>es6-shim 0.32.0 (7 Jun 2015)</h1>
+
+<ul>
+<li>[Spec compliance] Update Promises to match finalized ES6 spec (#345, #344, #239)</li>
+<li>[Fix] Ensure <code>Map</code>, <code>Set</code>, and <code>Promise</code> shims all throw when used without "new".</li>
+<li>[Tests] Fix the pending exceptions test for Safari 5.1</li>
+<li>[Refactor] Since the String HTML shims will be iterated anyways, no need to defineProperties them twice.</li>
+<li>[Deps] Update <code>chai</code>, <code>es5-shim</code></li>
+</ul>
+
+<h1>es6-shim 0.31.3 (2 Jun 2015)</h1>
+
+<ul>
+<li>[Fix] Properly name more shim functions</li>
+<li>[Fix] Fix an IE bug where the layout engine internally calls the userland <code>Object.getOwnPropertyNames</code></li>
+<li>[Fix] Ensure <code>Map.prototype[Symbol.iterator] === Map.prototype.entries</code></li>
+<li>[Fix] Ensure <code>Set.prototype[Symbol.iterator] === Set.prototype.values</code></li>
+<li>[Tests] <code>Object.assign</code> pending exceptions: IE 9 <code>preventExtensions</code> doesn't throw, even in strict mode</li>
+<li>[Security] Cache more native methods in case they're overwritten later</li>
+<li>[Tests] IE 11 has native <code>Map</code>/<code>Set</code>, but it takes an optional <em>function</em>, not an optional iterable, in the constructor</li>
+<li>[Tests] Add more "exists" early bailouts, to declutter native test results</li>
+<li>[Docs] Alphabetize shim lists in the README</li>
+<li>[Perf] Add more <code>Map</code>/<code>Set</code> fast paths for more primitives: boolean, null, undefined</li>
+<li>[Tests] Test up to <code>io.js</code> <code>v2.2</code></li>
+<li>[Deps] Update <code>mocha</code>, <code>es5-shim</code>, <code>uglify-js</code>, <code>jshint</code></li>
+<li>[Refactor] Style cleanups</li>
+</ul>
+
+<h1>es6-shim 0.31.2 (9 May 2015)</h1>
+
+<ul>
+<li>Fix ES5 <code>Array.prototype</code> method wrappers to return the correct value. (#341)</li>
+</ul>
+
+<h1>es6-shim 0.31.1 (7 May 2015)</h1>
+
+<ul>
+<li><code>RegExp</code> should work properly as a wrapper (#340)</li>
+</ul>
+
+<h1>es6-shim 0.31.0 (1 May 2015)</h1>
+
+<ul>
+<li>All Array.prototype methods should use <code>ToLength</code>, not <code>ToUint32</code>, on <code>this.length</code>.</li>
+<li>Preserve and use original Array.prototype functions (for later shimming)</li>
+<li>Make String#{startsWith, endsWith, includes} tests a bit more granular.</li>
+<li>Fix Map/Set invalid receiver error messages for WebKit</li>
+<li>Update <code>grunt-saucelabs</code>, <code>jscs</code></li>
+</ul>
+
+<h1>es6-shim 0.30.0 (26 Apr 2015)</h1>
+
+<ul>
+<li><code>Map</code> and <code>Set</code> methods are not generic, and must only be called on valid <code>Map</code> and <code>Set</code> objects.</li>
+<li>Use the native <code>Number#clz</code> (in Safari 8, eg) inside <code>Math.clz32</code></li>
+</ul>
+
+<h1>es6-shim 0.29.0 (26 Apr 2015)</h1>
+
+<ul>
+<li>Test on <code>io.js</code> <code>v1.7</code> and <code>v1.8</code></li>
+<li>Ensure that shallowly wrapped Maps’ and Sets’ prototypes aren't one level too far away.</li>
+<li>Update <code>chai</code> and use new matchers</li>
+<li>Avoid reassigning argument variables to avoid deoptimizations</li>
+<li>Ensure that ES3 browsers get both <code>Object.is</code> and <code>Object.assign</code></li>
+<li>Improve <code>Object.assign</code> to avoid leaking arguments in v8</li>
+<li>Ensuring <code>Number.parseInt === parseInt</code> (failed in FF 37)</li>
+<li>a little more accurate Math.cbrt (#335)</li>
+<li>Test cleanups</li>
+<li>Adding <code>Symbol.unscopables</code> tests</li>
+<li>Adding tests to ensure that default iterators on builtins === the appropriate prototype function.</li>
+</ul>
+
+<h1>es6-shim 0.28.2 (13 Apr 2015)</h1>
+
+<ul>
+<li><code>Map</code> and <code>Set</code> should have an arity of 0.</li>
+</ul>
+
+<h1>es6-shim 0.28.1 (12 Apr 2015)</h1>
+
+<ul>
+<li>Ensure <code>Object.assign</code> only includes enumerable Symbols.</li>
+</ul>
+
+<h1>es6-shim 0.28.0 (12 Apr 2015)</h1>
+
+<ul>
+<li>Ensure <code>Object.assign</code> also includes Symbols.</li>
+<li>Make sure to clobber Firefox 37's very slow native Object.assign, that has "pending exception" logic.</li>
+<li>Adding much more granular Set/Map acceptance tests and replacements, to preserve as much of the original implementation as possible. (#326, #328)</li>
+<li>Lots of test additions and cleanup
+
+<ul>
+<li>Fill in (and fix) missing name, arity, and enumerability tests.</li>
+<li>Using <code>property</code> matcher for a more helpful failure message.</li>
+<li>Make sure this test doesn't fail if <code>Array#values</code> doesn't exist yet.</li>
+<li>Make this <code>@@iterator</code> test not depend on <code>Array#values</code>, and properly skip tests if the symbol isn't available.</li>
+</ul></li>
+<li>Update <code>Math.fround</code> with a much smaller implementation (#332)</li>
+<li>Lock <code>uglify-js</code> down to v2.4.17, since v2.4.18 and v2.4.19 have a breaking change.</li>
+<li>Update <code>es5-shim</code>, <code>mocha</code>, <code>grunt-contrib-connect</code>, <code>chai</code>, <code>jshint</code></li>
+<li>IE 11 TP has a broken <code>String.raw</code> implementation</li>
+<li>Overwriting some imprecise Math functions on IE 11 TP.</li>
+<li>Overwrite <code>Math.imul</code> in Safari 8 to report the correct length.</li>
+<li>Fix Math.round for very large numbers</li>
+<li>Don't rely on shims in tests, for better native failure checking.</li>
+<li>Shim <code>Object.is</code> in ES3 environments, and add tests.</li>
+<li>Test the native <code>Object.assign</code> prior to shimming it.</li>
+<li>Tweak the <code>travis-ci</code> config to make a separate "lint only" test run.</li>
+<li>Fix Firefox 4 test failures: ensure RegExp global aliases starting with "$" exist.</li>
+<li>more efficient Math.clz32 (#327)</li>
+<li>Fix Webkit nightly bugs with <code>Array.from</code> and <code>Array.of</code>.</li>
+<li>Make sure shims that depend on <code>Number.isNaN</code> and <code>Number.isFinite</code> will always work.</li>
+<li>The latest Webkit nightly has a bug with <code>String#includes</code> and a position arg of <code>Infinity</code>.</li>
+<li>Webkit r181855 has a noncompliant <code>String#startsWith</code> and <code>String#endsWith</code></li>
+<li>Clean up README; add more accurate note about <code>es5-shim</code>.</li>
+<li>Updating the <code>String.raw</code> code to be more in line with the changes in RC2/Rev 35 of the spec.</li>
+</ul>
+
+<h1>es6-shim 0.27.1 (5 Mar 2015)</h1>
+
+<ul>
+<li>Revert <code>Array#slice</code> changes. (#322)</li>
+<li>Test on <code>io.js</code> <code>v1.4</code></li>
+</ul>
+
+<h1>es6-shim 0.27.0 (26 Feb 2015)</h1>
+
+<ul>
+<li>Overwrite <code>Array#slice</code> so that it supports Array subclasses.</li>
+<li>Improve <code>Map</code>/<code>Set</code> <code>TypeError</code> messages when called as a function. (#321)</li>
+</ul>
+
+<h1>es6-shim 0.26.1 (25 Feb 2015)</h1>
+
+<ul>
+<li>Ensure <code>Array</code>/<code>Array.prototype</code> functions have the correct name.</li>
+<li>Chrome 40 defines the incorrect name for <code>Array#values</code></li>
+<li>Make sure that <code>Array.of</code> works when subclassed.</li>
+</ul>
+
+<h1>es6-shim 0.26.0 (24 Feb 2015)</h1>
+
+<ul>
+<li>Ensure that remaining Object static methods accept primitives.</li>
+<li>Update <code>chai</code></li>
+<li>Document <code>String.prototype</code> HTML methods and <code>Reflect</code> methods in README</li>
+</ul>
+
+<h1>es6-shim 0.25.3 (22 Feb 2015)</h1>
+
+<ul>
+<li>Removing nonexistent arguments from some String.prototype HTML methods</li>
+<li>All grade A-supported <code>node</code>/<code>iojs</code> versions now ship with an <code>npm</code> that understands <code>^</code>.</li>
+<li>Test on <code>iojs-v1.3</code></li>
+<li>Update <code>chai</code></li>
+<li>Add a LICENSE file</li>
+</ul>
+
+<h1>es6-shim 0.25.2 (18 Feb 2015)</h1>
+
+<ul>
+<li>If someone (looking at you, chalk) has previously modified String.prototype with a non-function “bold”, don‘t break. (#315)</li>
+</ul>
+
+<h1>es6-shim 0.25.1 (18 Feb 2015)</h1>
+
+<ul>
+<li>Add Annex B String.prototype HTML methods.</li>
+<li>Overwriting Annex B String.prototype HTML methods in IE 9, which both uppercases the tag names, and fails to escape double quotes.</li>
+<li>Overwriting Annex B String.prototype HTML methods in Safari 4-5, which fails to escape double quotes.</li>
+<li>Ensuring that Date#toString returns “Invalid Date” when the date‘s value is NaN.</li>
+<li>Test on <code>iojs-v1.2</code></li>
+</ul>
+
+<h1>es6-shim 0.25.0 (16 Feb 2015)</h1>
+
+<ul>
+<li>Ensure Object.getOwnPropertyNames accepts primitives.</li>
+<li>Make sure the replaced <code>Object.keys</code> is non-enumerable.</li>
+<li>Clean up lots of tests to make failures easier to read, and false negatives less common</li>
+</ul>
+
+<h1>es6-shim 0.24.0 (5 Feb 2015)</h1>
+
+<ul>
+<li>Improving accuracy of Math.expm1 values, and ensuring a shim on Linux FF 35, which reports an inaccurate value for Math.expm1(10).</li>
+<li>Fix bug from 7454db144e5aa251d599415cfb296b67aa3cf992 which prevented String#startsWith and String#endsWith from being overwritten in old Firefox.</li>
+<li>Improve tests across a wider list of browsers</li>
+<li>Ensure that individual Reflect methods are added when possible</li>
+<li>Add Reflect (#313)</li>
+<li>Fix node 0.11: it has an imprecise Math.sinh with very small numbers.</li>
+<li>Alter String#repeat RangeError message to align with Firefox’s native implementation.</li>
+</ul>
+
+<h1>es6-shim 0.23.0 (26 Jan 2015)</h1>
+
+<ul>
+<li>Use Symbol.species when available, else fall back to "@@species" (renamed from "@@create")</li>
+<li>Fix <code>npm run test-native</code></li>
+<li>Correct broken Math implementations: <code>log1p</code>, <code>exmp1</code>, <code>tanh</code>, <code>acosh</code>, <code>cosh</code>, <code>sinh</code>, <code>round</code> (#314)</li>
+<li>Update <code>jscs</code>, <code>grunt-saucelabs</code>, <code>jshint</code></li>
+</ul>
+
+<h1>es6-shim 0.22.2 (4 Jan 2015)</h1>
+
+<ul>
+<li>Faster travis-ci builds</li>
+<li>Better ES3 support: quoting/avoiding reserved words</li>
+<li>Update <code>mocha</code>, <code>jscs</code>, <code>jshint</code>, <code>grunt-saucelabs</code>, <code>uglify-js</code></li>
+</ul>
+
+<h1>es6-shim 0.22.1 (13 Dec 2014)</h1>
+
+<ul>
+<li>Make RegExp#flags generic, per spec (#310)</li>
+</ul>
+
+<h1>es6-shim 0.22.0 (12 Dec 2014)</h1>
+
+<ul>
+<li>Add RegExp#flags</li>
+<li>Make <code>new RegExp</code> work with both a regex and a flags string</li>
+<li>Remove non-spec <code>Object.{getPropertyNames,getPropertyDescriptor}</code></li>
+</ul>
+
+<h1>es6-shim 0.21.1 (4 Dec 2014)</h1>
+
+<ul>
+<li>Promise/Promise.prototype methods, and String#{startsWith,endsWith} are now not enumerable</li>
+<li>Array#{keys, values, entries} should all be @@unscopeable in browsers that support that</li>
+<li>Ensure that tampering with Function#{call,apply} won’t break internal methods</li>
+<li>Add Math.clz32, RegExp tests</li>
+<li>Update es6-sham UMD</li>
+<li>Update <code>chai</code>, <code>es5-shim</code>, <code>grunt-saucelabs</code>, <code>jscs</code></li>
+</ul>
+
+<h1>es6-shim 0.21.0 (21 Nov 2014)</h1>
+
+<ul>
+<li>String#contains ? String#includes per 2014-11-19 TC39 meeting</li>
+<li>Use an invalid identifier as the es6-shim iterator key, so it doesn’t show up in the console as easily.</li>
+</ul>
+
+<h1>es6-shim 0.20.4 (20 Nov 2014)</h1>
+
+<ul>
+<li>Performance improvements: avoid slicing arguments, avoid <code>Function#call</code> when possible</li>
+<li>Name <code>String.{fromCodePoint,raw}</code> for debugging</li>
+<li>Fix <code>String.raw</code> to match spec</li>
+<li>Ensure Chrome’s excess Promise methods are purged</li>
+<li>Ensure <code>Set#keys === Set#values</code>, per spec</li>
+</ul>
+
+<h1>es6-shim 0.20.3 (19 Nov 2014)</h1>
+
+<ul>
+<li>Fix Set#add and Map#set to always return "this" (#302)</li>
+<li>Clarify TypeError messages thrown by Map/Set</li>
+<li>Fix Chrome 38 bug with Array#values</li>
+</ul>
+
+<h1>es6-shim 0.20.2 (28 Oct 2014)</h1>
+
+<ul>
+<li>Fix AMD (#299)</li>
+</ul>
+
+<h1>es6-shim 0.20.1 (27 Oct 2014)</h1>
+
+<ul>
+<li>Set#delete and Map#delete should return false unless a deletion occurred. (#298)</li>
+</ul>
+
+<h1>es6-shim 0.20.0 (26 Oct 2014)</h1>
+
+<ul>
+<li>Use a more reliable UMD</li>
+<li>export the global object rather than undefined</li>
+</ul>
+
+<h1>es6-shim 0.19.2 (25 Oct 2014)</h1>
+
+<ul>
+<li>Set#delete and Map#delete should return a boolean indicating success. (#298)</li>
+<li>Make style consistent; add jscs</li>
+</ul>
+
+<h1>es6-shim 0.19.1 (14 Oct 2014)</h1>
+
+<ul>
+<li>Fix Map#set and Set#add to be chainable (#295)</li>
+<li>Update mocha</li>
+</ul>
+
+<h1>es6-shim 0.19.0 (9 Oct 2014)</h1>
+
+<ul>
+<li>Detect and override noncompliant Map in Firefox 32 (#294)</li>
+<li>Fix Map and Set for engines that don’t preserve numeric key order (#292, #290)</li>
+<li>Detect and override noncompliant Safari 7.1 Promises (#289)</li>
+<li>Fix Array#keys and Array#entries in Safari 7.1</li>
+<li>General style and whitespace cleanup</li>
+<li>Update dependencies</li>
+<li>Clean up tests for ES3 by removing reserved words</li>
+</ul>
+
+<h1>es6-shim 0.18.0 (6 Sep 2014)</h1>
+
+<ul>
+<li>Speed up String#trim replacement (#284)</li>
+<li>named Array#find and Array#findIndex for easier debugging</li>
+<li>Replace broken native implementation in Firefox 25-31 for Array#find and Array#findIndex</li>
+<li>Ensure String.fromCodePoint has the correct length in Firefox</li>
+<li>List the license in <code>package.json</code> for <code>npm</code></li>
+<li>Array.from: fix spec bug with Array.from([], undefined) throwing</li>
+<li>Array.from: fix Firefox Array.from bug wrt swallowing negative lengths vs throwing</li>
+</ul>
+
+<h1>es6-shim 0.17.0 (31 Aug 2014)</h1>
+
+<ul>
+<li>Added es6-sham (#281)</li>
+<li>Fixing some flaky tests (#268)</li>
+<li>Tweaking how ArrayIterator is checked in its "next" function</li>
+<li>Cleaning up some of the logic in Array.from</li>
+</ul>
+
+<h1>es6-shim 0.16.0 (6 Aug 2014)</h1>
+
+<ul>
+<li>Array#find and Array#findIndex: no longer skips holes in sparse arrays, per <a href="https://bugs.ecmascript.org/show_bug.cgi?id=3107">https://bugs.ecmascript.org/show_bug.cgi?id=3107</a></li>
+</ul>
+
+<h1>es6-shim 0.15.1 (5 Aug 2014)</h1>
+
+<ul>
+<li>Array.from: now correctly throws if provided <code>undefined</code> as a mapper function</li>
+<li>Array.from: now correctly works if provided a falsy <code>thisArg</code></li>
+<li>Fix tests so they work properly when Array#(values|keys|entries) are not present</li>
+<li>Add <code>npm run lint</code> to run style checks independently</li>
+<li>Add <code>test/native.html</code> so browsers can be easily checked for shim-less compliance.</li>
+</ul>
+
+<h1>es6-shim 0.15.0 (31 Jul 2014)</h1>
+
+<ul>
+<li>Object.assign no longer throws on null or undefined sources, per <a href="https://bugs.ecmascript.org/show_bug.cgi?id=3096">https://bugs.ecmascript.org/show_bug.cgi?id=3096</a></li>
+</ul>
+
+<h1>es6-shim 0.14.0 (20 Jul 2014)</h1>
+
+<ul>
+<li>Properly recognize Symbol.iterator when it is present (#277)</li>
+<li>Fix Math.clz’s improper handling of values that coerce to NaN (#269)</li>
+<li>Fix incorrect handling of negative end index on Array#fill (#270)</li>
+<li>Removed Object.getOwnPropertyKeys, which shouldn’t be anywhere (#267)</li>
+<li>Fixed arity of Map and Set constructors, per 2014.04.27 draft spec (rev 24)</li>
+<li>Added a full additional suite of ES6 promise tests (thanks to @smikes!) (#265)</li>
+<li>Make Number.isInteger a bit more efficient (#266)</li>
+<li>Added <code>npm run test-native</code> to expose how broken implementations are without the shim ;-)</li>
+<li>Added additional tests</li>
+</ul>
+
+<h1>es6-shim 0.13.0 (11 Jun 2014)</h1>
+
+<ul>
+<li>Adapt to new Array.from changes: mapper function is now called with both value and index (#261, #262)</li>
+<li>More reliably getting the global object in strict mode to fix node-webkit (#258, #259)</li>
+<li>Properly test the global Promise for ignoring non-function callbacks (#258)</li>
+</ul>
+
+<h1>es6-shim 0.12.0 (4 Jun 2014)</h1>
+
+<ul>
+<li>Fix String#trim implementations that incorrectly trim \u0085</li>
+<li>Stop relying on ArrayIterator being a public var, fixing Safari 8</li>
+</ul>
+
+<h1>es6-shim 0.11.1 (2 Jun 2014)</h1>
+
+<ul>
+<li>Make sure to shim Object.assign in all environments, not just true ES5</li>
+<li>Now including minified file and source map</li>
+</ul>
+
+<h1>es6-shim 0.11.0 (11 May 2014)</h1>
+
+<ul>
+<li>Remove <code>Object.getOwnPropertyDescriptors</code>, per spec. (#234, #235)</li>
+<li>IE8 fixes. (#163, #236)</li>
+<li>Improve <code>Promise</code> scheduling. (#231)</li>
+<li>Add some more standalone shims</li>
+<li>Use an Object.create fallback, for better ES3 compatibility</li>
+<li>Fix Math.expm1 in more browsers (#84)</li>
+<li>Fix es6-shim in Web Workers (#247, #248)</li>
+<li>Correct Object.assign to take multiple sources (#241)</li>
+</ul>
+
+<h1>es6-shim 0.10.1 (13 Mar 2014)</h1>
+
+<ul>
+<li>Update bower.json, component.json, and .npmignore (#229, #230, #233)</li>
+<li>Minor updates to <code>Promise</code> implementation and test suite.</li>
+<li>Workaround lack of "strict mode" in IE9. (#232)</li>
+</ul>
+
+<h1>es6-shim 0.10.0 (1 March 2014)</h1>
+
+<ul>
+<li>Implement <code>Promise</code>, per spec. (#209, #215, #224, #225)</li>
+<li>Make <code>Map</code>/<code>Set</code> subclassable; support <code>iterable</code> argument to
+constructor (#218)</li>
+<li>Rename <code>Number#clz</code> to <code>Math.clz32</code> (#217)</li>
+<li>Bug fixes to <code>Array#find</code> and <code>Array#findIndex</code> on sparse arrays (#213)</li>
+<li>Re-add <code>Number.isInteger</code> (mistakenly removed in 0.9.0)</li>
+<li>Allow use of <code>arguments</code> as an iterable</li>
+<li>Minor spec-compliance fixes for <code>String.raw</code></li>
+<li>In ES6, <code>Object.keys</code> accepts non-Object types (#220)</li>
+<li>Improved browser compatibility with IE 9/10, Opera 12 (#225)</li>
+</ul>
+
+<h1>es6-shim 0.9.3 (5 February 2014)</h1>
+
+<ul>
+<li>Per spec, removed <code>Object.mixin</code> (#192)</li>
+<li>Per spec, treat -0 and +0 keys as identical in Map/Set (#129, #204)</li>
+<li>Per spec, <code>ArrayIterator</code>/<code>Array#values()</code> skips sparse indexes now. (#189)</li>
+<li>Added <code>Array.from</code>, supporting Map/Set/Array/String iterators (the String iterator iterates over codepoints, not indexes) (#182)</li>
+<li>Bug fixes to Map/Set iteration after concurrent delete. (#183)</li>
+<li>Bug fixes to <code>Number.clz</code>: 0 and 0x100000000 are handled correctly now. (#196)</li>
+<li>Added <code>Math.fround</code> to truncate to a 32-bit floating point number. (#140)</li>
+<li>Bug fix for <code>Math.cosh</code> (#178)</li>
+<li>Work around Firefox bugs in <code>String#startsWith</code> and <code>String#endsWith</code> (#172)</li>
+<li>Work around Safari bug in <code>Math.imul</code></li>
+</ul>
+
+<h1>es6-shim 0.9.2 (18 December 2013)</h1>
+
+<ul>
+<li>Negative <code>String#endsWith</code> position is now handled properly.</li>
+<li><code>TypeError</code> is now thrown when string methods are called
+on <code>null</code> / <code>undefined</code>.</li>
+</ul>
+
+<h1>es6-shim 0.9.1 (28 October 2013)</h1>
+
+<ul>
+<li>Added <code>Array#copyWithin</code> and <code>Number.MIN_SAFE_INTEGER</code></li>
+<li>Big speed-up of Maps / Sets for string / number keys:
+they are O(1) now.</li>
+<li>Changed <code>Math.hypot</code> according to spec.</li>
+<li>Other small fixes.</li>
+</ul>
+
+<h1>es6-shim 0.9.0 (30 August 2013)</h1>
+
+<ul>
+<li>Added Array iteration methods: <code>Array#keys</code>, <code>Array#values</code>, <code>Array#entries</code>, which return an <code>ArrayIterator</code></li>
+<li>Changed <code>Map</code> and <code>Set</code> constructors to conform to spec when called without <code>new</code></li>
+<li>Added <code>Math.imul</code></li>
+<li>Per spec, removed <code>Number.toInteger</code>, <code>Number.isInteger</code>, and <code>Number.MAX_INTEGER</code>; added <code>Number.isSafeInteger</code>, <code>Number.MAX_SAFE_INTEGER</code></li>
+<li>Added extensive additional tests for many methods</li>
+</ul>
+
+<h1>es6-shim 0.8.0 (8 June 2013)</h1>
+
+<ul>
+<li>Added <code>Object.setPrototypeOf</code>, <code>Set#keys</code>, <code>Set#values</code>, <code>Map#keys</code>, <code>Map#values</code>, <code>Map#entries</code>, <code>Set#entries</code>.</li>
+<li>Fixed <code>String#repeat</code> according to spec.</li>
+</ul>
+
+<h1>es6-shim 0.7.0 (2 April 2013)</h1>
+
+<ul>
+<li>Added <code>Array#find</code>, <code>Array#findIndex</code>, <code>Object.assign</code>, <code>Object.mixin</code>,
+<code>Math.cbrt</code>, <code>String.fromCodePoint</code>, <code>String#codePointAt</code>.</li>
+<li>Removed <code>Object.isnt</code>.</li>
+<li>Made Math functions fully conform spec.</li>
+</ul>
+
+<h1>es6-shim 0.6.0 (15 January 2013)</h1>
+
+<ul>
+<li>Added <code>Map#keys</code>, <code>Map#values</code>, <code>Map#size</code>, <code>Set#size</code>, <code>Set#clear</code>.</li>
+</ul>
+
+<h1>es6-shim 0.5.3 (2 September 2012)</h1>
+
+<ul>
+<li>Made <code>String#startsWith</code>, <code>String#endsWith</code> fully conform spec.</li>
+</ul>
+
+<h1>es6-shim 0.5.2 (17 June 2012)</h1>
+
+<ul>
+<li>Removed <code>String#toArray</code> and <code>Object.isObject</code> as per spec updates.</li>
+</ul>
+
+<h1>es6-shim 0.5.1 (14 June 2012)</h1>
+
+<ul>
+<li>Made Map and Set follow Spidermonkey implementation instead of V8.
+<code>var m = Map(); m.set('key', void 0); m.has('key');</code> now gives true.</li>
+</ul>
+
+<h1>es6-shim 0.5.0 (13 June 2012)</h1>
+
+<ul>
+<li>Added Number.MAX_INTEGER, Number.EPSILON, Number.parseInt,
+Number.parseFloat, Number.prototype.clz, Object.isObject.</li>
+</ul>
+
+<h1>es6-shim 0.4.1 (11 May 2012)</h1>
+
+<ul>
+<li>Fixed boundary checking in Number.isInteger.</li>
+</ul>
+
+<h1>es6-shim 0.4.0 (8 February 2012)</h1>
+
+<ul>
+<li>Added Math.log10, Math.log2, Math.log1p, Math.expm1, Math.cosh,
+Math.sinh, Math.tanh, Math.acosh, Math.asinh, Math.atanh, Math.hypot,
+Math.trunc.</li>
+</ul>
+
+<h1>es6-shim 0.3.1 (30 January 2012)</h1>
+
+<ul>
+<li>Added IE8 support.</li>
+</ul>
+
+<h1>es6-shim 0.3.0 (27 January 2012)</h1>
+
+<ul>
+<li>Added Number.isFinite() and Object.isnt().</li>
+</ul>
+
+<h1>es6-shim 0.2.1 (7 January 2012)</h1>
+
+<ul>
+<li>Fixed a bug in String#endsWith().</li>
+</ul>
+
+<h1>es6-shim 0.2.0 (25 December 2011)</h1>
+
+<ul>
+<li>Added browser support.</li>
+<li>Added tests.</li>
+<li>Added Math.sign().</li>
+</ul>
+
+<h1>es6-shim 0.1.0 (25 December 2011)</h1>
+
+<ul>
+<li>Initial release</li>
+</ul>
+</article>
