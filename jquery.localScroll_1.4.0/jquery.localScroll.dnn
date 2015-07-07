@@ -1,7 +1,7 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
     <package name="jquery.localScroll" type="JavaScript_Library" version="1.4.0">
-      <friendlyName>jquery.localScroll</friendlyName>
+      <friendlyName>jQuery.localScroll</friendlyName>
       <description>This plugin will animate a regular anchor navigation. It will allow your visitors to navigate your site with a smooth scrolling effect. </description>
       <owner>
         <name>Engage Software</name>

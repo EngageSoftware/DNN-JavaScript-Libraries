@@ -1,7 +1,7 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
     <package name="underscore" type="JavaScript_Library" version="1.8.3">
-      <friendlyName>underscore</friendlyName>
+      <friendlyName>Underscore.js</friendlyName>
       <description>Underscore.js is a utility-belt library for JavaScript that provides support for the usual functional suspects (each, map, reduce, filter...) without extending any core JavaScript objects.</description>
       <owner>
         <name>Engage Software</name>

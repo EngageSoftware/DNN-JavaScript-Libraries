@@ -1,7 +1,7 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
     <package name="jquery.scrollTo" type="JavaScript_Library" version="2.1.1">
-      <friendlyName>jquery.scrollTo</friendlyName>
+      <friendlyName>jQuery.scrollTo</friendlyName>
       <description>A small, customizable plugin for scrolling elements, or the window itself</description>
       <owner>
         <name>Engage Software</name>

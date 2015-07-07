@@ -1,7 +1,7 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
     <package name="spectrum" type="JavaScript_Library" version="1.7.0">
-      <friendlyName>spectrum</friendlyName>
+      <friendlyName>Spectrum</friendlyName>
       <description>The No Hassle JavaScript Colorpicker</description>
       <owner>
         <name>Engage Software</name>
