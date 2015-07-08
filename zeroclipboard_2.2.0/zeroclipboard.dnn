@@ -16,7 +16,7 @@
         <component type="JavaScript_Library">
           <javaScriptLibrary>
             <libraryName>zeroclipboard</libraryName>
-            <fileName>zeroclipboard.js</fileName>
+            <fileName>zeroclipboard.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
             <objectName>ZeroClipboard</objectName>
             <cdnUrl>https://cdn.jsdelivr.net/zeroclipboard/2.2.0/ZeroClipboard.min.js</cdnUrl>
@@ -26,7 +26,7 @@
           <jsfiles>
             <libraryFolderName>zeroclipboard</libraryFolderName>
             <jsfile>
-              <name>ZeroClipboard.js</name>
+              <name>ZeroClipboard.min.js</name>
             </jsfile>
           </jsfiles>
         </component>
