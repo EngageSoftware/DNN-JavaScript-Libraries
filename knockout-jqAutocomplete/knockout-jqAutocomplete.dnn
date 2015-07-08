@@ -1,0 +1,39 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="knockout-jqAutocomplete" type="JavaScript_Library" version="0.4.3">
+      <friendlyName>knockout-jqAutocomplete</friendlyName>
+      <description>knockout-jqAutocomplete is a Knockout.js plugin designed to work with jQuery UI's autocomplete widget.</description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>http://www.engagesoftware.com</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes src="CHANGES.htm" />
+      <azureCompatible>true</azureCompatible>
+      <dependencies>
+        <dependency type="managedPackage" version="2.2.1">Knockout</dependency>
+        <dependency type="managedPackage" version="1.10.3">jQuery-UI</dependency>
+      </dependencies>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>knockout-jqAutocomplete</libraryName>
+            <fileName>knockout-jqAutocomplete.js</fileName>
+            <objectName>ko.bindingHandlers.jqAuto</objectName>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName>knockout-jqAutocomplete</libraryFolderName>
+            <jsfile>
+              <name>knockout-jqAutocomplete.js</name>
+            </jsfile>
+          </jsfiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
