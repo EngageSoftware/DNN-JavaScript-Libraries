@@ -2,7 +2,7 @@
   <packages>
     <package name="knockout-jqAutocomplete" type="JavaScript_Library" version="0.4.3">
       <friendlyName>knockout-jqAutocomplete</friendlyName>
-      <description>knockout-jqAutocomplete is a Knockout.js plugin designed to work with jQuery UI's autocomplete widget.</description>
+      <description><![CDATA[<em>knockout-jqAutocomplete</em> is a <a href="http://knockoutjs.com/">Knockout.js</a> plugin designed to work with jQuery UI's <a href="http://jqueryui.com/autocomplete/">autocomplete widget</a>.]]></description>
       <owner>
         <name>Engage Software</name>
         <organization>Engage Software</organization>
