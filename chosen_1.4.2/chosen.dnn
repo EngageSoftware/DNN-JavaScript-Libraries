@@ -13,9 +13,7 @@
       <releaseNotes src="CHANGES.htm" />
       <azureCompatible>true</azureCompatible>
       <dependencies>
-      <!--
-        <dependency type="managedPackage" version="1.0.0">jQuery</dependency>
-        -->
+        <dependency type="managedPackage" version="1.4.4">jQuery</dependency>
       </dependencies>
       <components>
         <component type="JavaScript_Library">
