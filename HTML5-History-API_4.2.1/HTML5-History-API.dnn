@@ -1,0 +1,35 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="HTML5-History-API" type="JavaScript_Library" version="4.2.1">
+      <friendlyName>HTML5 History API</friendlyName>
+      <description><![CDATA[<em>HTML5-History-API</em> provides an emulation of HTML5 History API for older browsers.]]></description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>http://www.engagesoftware.com</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes src="CHANGES.htm" />
+      <azureCompatible>true</azureCompatible>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>HTML5-History-API</libraryName>
+            <fileName>history.js</fileName>
+            <objectName>window.history.location</objectName>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName>HTML5-History-API</libraryFolderName>
+            <jsfile>
+              <name>history.js</name>
+            </jsfile>
+          </jsfiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
