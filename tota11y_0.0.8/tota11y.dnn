@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="tota11y" type="JavaScript_Library" version="0.0.6">
+    <package name="tota11y" type="JavaScript_Library" version="0.0.8">
       <friendlyName>tota11y</friendlyName>
       <description><![CDATA[an accessibility (a11y) visualization toolkit <a href="http://khan.github.io/tota11y/">http://khan.github.io/tota11y/</a>]]></description>
       <owner>
@@ -23,7 +23,7 @@
             <libraryName>tota11y</libraryName>
             <fileName>tota11y.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/tota11y/0.0.6/tota11y.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/tota11y/0.0.8/tota11y.min.js</CDNPath>
             <objectName></objectName>
           </javaScriptLibrary>
         </component>
