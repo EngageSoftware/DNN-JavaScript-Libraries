@@ -1,0 +1,42 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="responsive-tabs" type="JavaScript_Library" version="1.4.5">
+      <friendlyName>jQuery Responsive Tabs</friendlyName>
+      <description><![CDATA[
+<p>This jQuery plugin provides responsive tab functionality. The tabs transform to an accordion when it reaches a CSS breakpoint.
+Check out a demo at <a href="http://jellekralt.github.io/Responsive-Tabs/demo.html">http://jellekralt.github.io/Responsive-Tabs/demo.html</a></p>
+      ]]></description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>http://www.engagesoftware.com</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes src="CHANGES.htm" />
+      <azureCompatible>true</azureCompatible>
+      <dependencies>
+        <dependency type="managedPackage" version="1.7.2">jQuery</dependency>
+      </dependencies>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>responsive-tabs</libraryName>
+            <fileName>jquery.responsiveTabs.js</fileName>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+            <CDNPath></CDNPath>
+            <objectName></objectName>
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName>responsive-tabs</libraryFolderName>
+            <jsfile>
+              <name>jquery.responsiveTabs.js</name>
+            </jsfile>
+          </jsfiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
