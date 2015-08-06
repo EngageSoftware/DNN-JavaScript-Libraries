@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="lie" type="JavaScript_Library" version="3.0.0">
+    <package name="lie" type="JavaScript_Library" version="3.0.1">
       <friendlyName>lie</friendlyName>
       <description><![CDATA[lie a small, performant, promise library implementing the <a href="http://promises-aplus.github.com/promises-spec/">Promises/A+ spec Version 1.1</a>.]]></description>
       <owner>
