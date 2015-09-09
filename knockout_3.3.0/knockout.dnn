@@ -1,0 +1,38 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="Knockout" type="JavaScript_Library" version="3.3.0">
+      <friendlyName>Knockout</friendlyName>
+      <description><![CDATA[ 
+<p><strong>Knockout</strong> is a JavaScript <a href="http://en.wikipedia.org/wiki/Model_View_ViewModel">MVVM</a> (a modern variant of MVC) library that makes it easier to create rich, desktop-like user interfaces with JavaScript and HTML. It uses <em>observers</em> to make your UI automatically stay in sync with an underlying data model, along with a powerful and extensible set of <em>declarative bindings</em> to enable productive development.</p>
+      ]]></description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>http://www.engagesoftware.com</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes src="CHANGES.htm" />
+      <azureCompatible>true</azureCompatible>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>Knockout</libraryName>
+            <fileName>knockout.js</fileName>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+            <CDNPath>//cdnjs.cloudflare.com/ajax/libs/knockout/3.3.0/knockout-min.js</CDNPath>
+            <objectName>ko</objectName>
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName>Knockout</libraryFolderName>
+            <jsfile>
+              <name>knockout.js</name>
+            </jsfile>
+          </jsfiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
