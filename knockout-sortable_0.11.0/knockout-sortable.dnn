@@ -1,0 +1,41 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="Knockout.Sortable" type="JavaScript_Library" version="0.11.0">
+      <friendlyName>Knockout Sortable</friendlyName>
+      <description><![CDATA[ 
+<p><strong>knockout-sortable</strong> is a binding for <a href="http://knockoutjs.com/">Knockout.js</a> designed to connect observableArrays with jQuery UI's sortable functionality.  This allows a user to drag and drop items within a list or between lists and have the corresponding observableArrays updated appropriately.</p>
+      ]]></description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>http://www.engagesoftware.com</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes src="CHANGES.htm" />
+      <azureCompatible>true</azureCompatible>
+      <dependencies>
+        <dependency type="managedPackage" version="3.3.0">Knockout</dependency>
+      </dependencies>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>Knockout.Sortable</libraryName>
+            <fileName>knockout-sortable.js</fileName>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+            <CDNPath>//cdnjs.cloudflare.com/ajax/libs/knockout-sortable/0.11.0/knockout-sortable.min.js</CDNPath>
+            <objectName>ko.sortable</objectName>
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName>Knockout.Sortable</libraryFolderName>
+            <jsfile>
+              <name>knockout-sortable.js</name>
+            </jsfile>
+          </jsfiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
