@@ -1,0 +1,38 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="router.js" type="JavaScript_Library" version="1.0.3">
+      <friendlyName>Router.js</friendlyName>
+      <description><![CDATA[Router.js is a simple yet powerful javascript plugin to handle hash fragment in order to route requests]]></description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>http://www.engagesoftware.com</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes src="CHANGES.htm" />
+      <azureCompatible>true</azureCompatible>
+      <dependencies>
+        <dependency type="managedPackage" version="4.2.1">history</dependency>
+      </dependencies>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>router.js</libraryName>
+            <fileName>router.min.js</fileName>
+            <objectName>Router</objectName>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName>router.js</libraryFolderName>
+            <jsfile>
+              <name>router.min.js</name>
+            </jsfile>
+          </jsfiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
