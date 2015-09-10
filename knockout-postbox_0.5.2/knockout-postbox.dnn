@@ -1,0 +1,39 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="knockout-postbox" type="JavaScript_Library" version="0.5.2">
+      <friendlyName>Knockout Validation</friendlyName>
+      <description>A small library that uses Knockout's native pub/sub capabilities to facilitate decoupled communication between separate view models or components.</description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>http://www.engagesoftware.com</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes src="CHANGES.htm" />
+      <azureCompatible>true</azureCompatible>
+      <dependencies>
+	      <dependency type="managedPackage" version="2.0.0">Knockout</dependency>
+      </dependencies>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>knockout-postbox</libraryName>
+            <fileName>knockout-postbox.js</fileName>
+            <objectName>ko.postbox</objectName>
+            <cdnUrl>https://cdnjs.cloudflare.com/ajax/libs/knockout-postbox/0.5.2/knockout-postbox.js</cdnUrl>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName>knockout-postbox</libraryFolderName>
+            <jsfile>
+              <name>knockout-postbox.js</name>
+            </jsfile>
+          </jsfiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
