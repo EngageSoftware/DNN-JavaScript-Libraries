@@ -19,9 +19,9 @@
         <component type="JavaScript_Library">
           <javaScriptLibrary>
             <libraryName>knockout-postbox</libraryName>
-            <fileName>knockout-postbox.js</fileName>
+            <fileName>knockout-postbox.min.js</fileName>
             <objectName>ko.postbox</objectName>
-            <cdnUrl>https://cdnjs.cloudflare.com/ajax/libs/knockout-postbox/0.5.2/knockout-postbox.js</cdnUrl>
+            <cdnUrl>https://cdnjs.cloudflare.com/ajax/libs/knockout-postbox/0.5.2/knockout-postbox.min.js</cdnUrl>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
           </javaScriptLibrary>
         </component>
@@ -29,7 +29,7 @@
           <jsfiles>
             <libraryFolderName>knockout-postbox</libraryFolderName>
             <jsfile>
-              <name>knockout-postbox.js</name>
+              <name>knockout-postbox.min.js</name>
             </jsfile>
           </jsfiles>
         </component>
