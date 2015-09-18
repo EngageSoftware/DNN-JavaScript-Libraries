@@ -1,7 +1,7 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
     <package name="[name]" type="JavaScript_Library" version="[version]">
-      <friendlyName>[name]</friendlyName>
+      <friendlyName>[friendlyName]</friendlyName>
       <description><![CDATA[ ]]></description>
       <owner>
         <name>Engage Software</name>

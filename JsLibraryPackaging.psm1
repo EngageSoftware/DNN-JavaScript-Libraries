@@ -82,7 +82,14 @@ function New-BowerLibrary ($name) {
     }
 }
 
-function New-JavaScriptLibrary ($name, $version, $jsFileName) {
+function New-JavaScriptLibrary ($name, $version, $jsFileName, $friendlyName) {
+    if (-not $friendlyName) {
+        $friendlyName = Read-Host "What is the library's friendly name? (blank for '$name')"
+        if (-not $friendlyName) {
+            $friendlyName = $name
+        }
+    }
+
     $versionedFolder = "$($name)_$version"
     mkdir $versionedFolder | Out-Null
   
@@ -93,9 +100,9 @@ function New-JavaScriptLibrary ($name, $version, $jsFileName) {
     $licenseFile = "$versionedFolder\LICENSE.htm"
     cp _template\LICENSE.htm $licenseFile
 
-    ReplaceTokens $manifestFile $name $version $jsFileName
-    ReplaceTokens $changesFile $name $version $jsFileName
-    ReplaceTokens $licenseFile $name $version $jsFileName
+    ReplaceTokens $manifestFile $name $friendlyName $version $jsFileName
+    ReplaceTokens $changesFile $name $friendlyName $version $jsFileName
+    ReplaceTokens $licenseFile $name $friendlyName $version $jsFileName
 
     notepad $manifestFile
     notepad $changesFile
@@ -104,9 +111,9 @@ function New-JavaScriptLibrary ($name, $version, $jsFileName) {
     return $versionedFolder
 }
 
- function ReplaceTokens($file, $name, $version, $fileName) {
+function ReplaceTokens($file, $name, $friendlyName, $version, $fileName) {
      (Get-Content $file) | 
-        % { $_ -replace '\[name\]', $name -replace '\[version\]', $version -replace '\[file\]', $fileName } | 
+        % { $_ -replace '\[name\]', $name -replace '\[friendlyName\]', $friendlyName -replace '\[version\]', $version -replace '\[file\]', $fileName } | 
         Set-Content $file
  }
 
