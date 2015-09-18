@@ -1,7 +1,7 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="Quill" type="JavaScript_Library" version="0.20.0">
       <friendlyName>Quill</friendlyName>
+    <package name="quill" type="JavaScript_Library" version="0.20.0">
       <description><![CDATA[ 
 <p><a href="https://saucelabs.com/u/quill"><img src="https://camo.githubusercontent.com/f803924c3ab945b2b62b4d3006339040c1e0c760/68747470733a2f2f73617563656c6162732e636f6d2f62726f777365722d6d61747269782f7175696c6c2d6d61737465722e737667" alt="Webdriver Test Status" data-canonical-src="https://saucelabs.com/browser-matrix/quill-master.svg" style="max-width:100%;"></a></p>
 <p>Quill is a modern rich text editor built for compatibility and extensibility. It was created by <a href="https://twitter.com/jhchen">Jason Chen</a> and <a href="https://twitter.com/byronmilligan">Byron Milligan</a> and open sourced by <a href="http://www.salesforce.com">Salesforce.com</a>.</p>
@@ -19,7 +19,7 @@
       <components>
         <component type="JavaScript_Library">
           <javaScriptLibrary>
-            <libraryName>Quill</libraryName>
+            <libraryName>quill</libraryName>
             <fileName>quill.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
             <CDNPath>https://cdnjs.cloudflare.com/ajax/libs/quill/0.20.0/quill.min.js</CDNPath>
@@ -28,7 +28,7 @@
         </component>
         <component type="JavaScriptFile">
           <jsfiles>
-            <libraryFolderName>Quill</libraryFolderName>
+            <libraryFolderName>quill</libraryFolderName>
             <jsfile>
               <name>quill.min.js</name>
             </jsfile>
@@ -36,7 +36,7 @@
         </component>
         <component type="ResourceFile">
           <resourceFiles>
-            <basePath>Resources\Libraries\Quill\00_20_00</basePath>
+            <basePath>Resources\Libraries\quill\00_20_00</basePath>
             <resourceFile>
               <name>Resources.zip</name>
             </resourceFile>
