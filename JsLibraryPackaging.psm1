@@ -48,13 +48,14 @@ function New-BowerLibrary ($name) {
         $version = $split[1]
     }
 
-    $packageInfo = (Get-Content .\_bower_components\$name\.bower.json) -join "`n" | ConvertFrom-Json
+    $folderName = (bower info $name name --json) | ConvertFrom-Json
+    $packageInfo = (Get-Content .\_bower_components\$folderName\.bower.json) -join "`n" | ConvertFrom-Json
     if (@(Get-Member -InputObject $packageInfo | ? { $_.Name -eq 'version' }).Count -gt 0) {
         $version = $packageInfo.version
     }
 
     $allPaths = (bower list --paths --json) -join "`n" | ConvertFrom-Json
-    $paths = @($allPaths.$name)
+    $paths = @($allPaths.$folderName)
     $jsPaths = @($paths | ? { $_ -match '\.js$' })
 
     if ($jsPaths.Count -eq 0) {
