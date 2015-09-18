@@ -22,7 +22,7 @@
             <libraryName>quill</libraryName>
             <fileName>quill.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdnjs.cloudflare.com/ajax/libs/quill/0.20.0/quill.min.js</CDNPath>
+            <CDNPath>https://cdn.quilljs.com/0.20.0/quill.min.js</CDNPath>
             <objectName>Quill</objectName>
           </javaScriptLibrary>
         </component>
