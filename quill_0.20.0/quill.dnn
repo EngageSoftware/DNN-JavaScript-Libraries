@@ -1,0 +1,47 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="quill" type="JavaScript_Library" version="0.20.0">
+      <friendlyName>Quill Rich Text Editor</friendlyName>
+      <description><![CDATA[ 
+<p>Quill is a modern rich text editor built for compatibility and extensibility. It was created by <a href="https://twitter.com/jhchen">Jason Chen</a> and <a href="https://twitter.com/byronmilligan">Byron Milligan</a> and open sourced by <a href="http://www.salesforce.com">Salesforce.com</a>.</p>
+<p>To get started, check out the <a href="http://quilljs.com/">Quill Github Page</a> or jump straight into the <a href="http://quilljs.com/examples/">demo</a>.</p>
+      ]]></description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>http://www.engagesoftware.com</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes src="CHANGES.htm" />
+      <azureCompatible>true</azureCompatible>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>quill</libraryName>
+            <fileName>quill.min.js</fileName>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+            <CDNPath>https://cdn.quilljs.com/0.20.0/quill.min.js</CDNPath>
+            <objectName>Quill</objectName>
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName>quill</libraryFolderName>
+            <jsfile>
+              <name>quill.min.js</name>
+            </jsfile>
+          </jsfiles>
+        </component>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>Resources\Libraries\quill\00_20_00</basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
