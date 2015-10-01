@@ -1,9 +1,9 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="picturefill" type="JavaScript_Library" version="2.3.1">
+    <package name="picturefill" type="JavaScript_Library" version="3.0.1">
       <friendlyName>Picturefill</friendlyName>
       <description><![CDATA[A responsive image polyfill for <code>&lt;picture></code>, <code>srcset</code>, <code>sizes</code>, and more
-<a href="http://scottjehl.github.com/picturefill/">http://scottjehl.github.com/picturefill/</a>]]></description>
+<a href="http://scottjehl.github.com/picturefill/">https://scottjehl.github.io/picturefill/</a>]]></description>
       <owner>
         <name>Engage Software</name>
         <organization>Engage Software</organization>
@@ -22,9 +22,9 @@
         <component type="JavaScript_Library">
           <javaScriptLibrary>
             <libraryName>picturefill</libraryName>
-            <fileName>picturefill.js</fileName>
+            <fileName>picturefill.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/picturefill/3.0.1/picturefill.min.js</CDNPath>
             <objectName>picturefill</objectName>
           </javaScriptLibrary>
         </component>
@@ -32,7 +32,7 @@
           <jsfiles>
             <libraryFolderName>picturefill</libraryFolderName>
             <jsfile>
-              <name>picturefill.js</name>
+              <name>picturefill.min.js</name>
             </jsfile>
           </jsfiles>
         </component>
