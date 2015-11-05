@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="pepjs" type="JavaScript_Library" version="0.3.0">
+    <package name="pepjs" type="JavaScript_Library" version="0.4.0">
       <friendlyName>PEP</friendlyName>
       <description><![CDATA[ Pointer Events Polyfill: a unified event system for the web platform <a href="http://www.w3.org/TR/pointerevents/">http://www.w3.org/TR/pointerevents/</a>]]></description>
       <owner>
@@ -23,7 +23,7 @@
             <libraryName>pepjs</libraryName>
             <fileName>pep.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://code.jquery.com/pep/0.3.0/pep.min.js</CDNPath>
+            <CDNPath>https://code.jquery.com/pep/0.4.0/pep.min.js</CDNPath>
             <objectName>PointerEventsPolyfill</objectName>
           </javaScriptLibrary>
         </component>
