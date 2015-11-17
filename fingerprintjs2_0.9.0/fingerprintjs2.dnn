@@ -2,7 +2,7 @@
   <packages>
     <package name="fingerprintjs2" type="JavaScript_Library" version="0.9.0">
       <friendlyName>Fingerprintjs2</friendlyName>
-      <description><![CDATA[Modern & flexible browser fingerprinting library.]]></description>
+      <description><![CDATA[Modern &amp; flexible browser fingerprinting library.]]></description>
       <owner>
         <name>Engage Software</name>
         <organization>Engage Software</organization>
