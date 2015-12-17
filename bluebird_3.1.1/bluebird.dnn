@@ -1,8 +1,8 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="bluebird" type="JavaScript_Library" version="3.0.6">
+    <package name="bluebird" type="JavaScript_Library" version="3.1.1">
       <friendlyName>Bluebird</friendlyName>
-      <description><![CDATA[<p>Bluebird is a fully featured <a href="https://github.com/petkaantonov/bluebird/tree/v2.9.32#what-are-promises-and-why-should-i-use-them">promise</a> library with focus on innovative features and performance</p>]]></description>
+      <description><![CDATA[<p>Bluebird is a fully featured <a href="http://bluebirdjs.com/docs/why-promises.html">promise</a> library with focus on innovative features and performance</p>]]></description>
       <owner>
         <name>Engage Software</name>
         <organization>Engage Software</organization>
@@ -23,7 +23,7 @@
             <libraryName>bluebird</libraryName>
             <fileName>bluebird.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/bluebird/3.0.6/bluebird.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/bluebird/3.1.1/bluebird.min.js</CDNPath>
             <objectName>P</objectName>
           </javaScriptLibrary>
         </component>
