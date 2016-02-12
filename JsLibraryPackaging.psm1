@@ -158,7 +158,7 @@ function Update-JavaScriptLibrary ($name, $newVersion) {
     (Get-Content $dnnFile) | % { $_ -replace $oldVersion, $newVersion } | Set-Content $dnnFile
 
     git add -A
-    git --no-pager diff --cached
+    git --no-pager diff --cached --find-renames=10%
     git commit -m "$name $newVersion"
 }
 
