@@ -152,10 +152,16 @@ function Update-JavaScriptLibrary ($name, $newVersion) {
     mv $oldVersionFolder.Name $newVersionFolder
 
     $licenseFile = Get-Item "$newVersionFolder\LICENSE.htm"
-    (Get-Content $licenseFile) | % { $_ -replace $oldVersion, $newVersion } | Set-Content $licenseFile
+    (Get-Content $licenseFile) | % { $_ -replace $oldVersion.Replace('.', '\.'), $newVersion } | Set-Content $licenseFile
 
     $dnnFile = Get-Item "$newVersionFolder\*.dnn"
-    (Get-Content $dnnFile) | % { $_ -replace $oldVersion, $newVersion } | Set-Content $dnnFile
+    (Get-Content $dnnFile) | % { $_ -replace $oldVersion.Replace('.', '\.'), $newVersion } | Set-Content $dnnFile
+
+    $oldParsedVersion = [System.Version]::Parse($oldVersion)
+    $newParsedVersion = [System.Version]::Parse($newVersion)
+    $oldParsedFolder = "$($oldParsedVersion.Major.ToString('0#'))_$($oldParsedVersion.Minor.ToString('0#'))_$($oldParsedVersion.Build.ToString('0#'))"
+    $newParsedFolder = "$($newParsedVersion.Major.ToString('0#'))_$($newParsedVersion.Minor.ToString('0#'))_$($newParsedVersion.Build.ToString('0#'))"
+    (Get-Content $dnnFile) | % { $_ -replace $oldParsedFolder, $newParsedFolder } | Set-Content $dnnFile
 
     git add -A
     git --no-pager diff --cached --find-renames=10%
