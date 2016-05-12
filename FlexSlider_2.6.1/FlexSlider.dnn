@@ -1,0 +1,47 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="FlexSlider" type="JavaScript_Library" version="2.6.1">
+      <friendlyName>FlexSlider JavaScript Library</friendlyName>
+      <description>An awesome, fully responsive jQuery slider toolkit.</description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>http://www.engagesoftware.com</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes src="CHANGES.htm" />
+      <azureCompatible>true</azureCompatible>
+      <dependencies>
+        <dependency type="managedPackage" version="1.11.3">jQuery</dependency>
+      </dependencies>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>FlexSlider</libraryName>
+            <fileName>jquery.flexslider-min.js</fileName>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+            <CDNPath>https://cdn.jsdelivr.net/flexslider/2.6.1/jquery.flexslider-min.js</CDNPath>
+            <objectName>jQuery.fn.flexslider</objectName>
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName>FlexSlider</libraryFolderName>
+            <jsfile>
+              <name>jquery.flexslider-min.js</name>
+            </jsfile>
+          </jsfiles>
+        </component>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>Resources\Libraries\FlexSlider\02_06_01</basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
