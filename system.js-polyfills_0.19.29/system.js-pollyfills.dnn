@@ -1,8 +1,8 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="system.js" type="JavaScript_Library" version="0.19.28">
-      <friendlyName>SystemJS</friendlyName>
-      <description><![CDATA[Universal dynamic module loader]]></description>
+    <package name="system.js-polyfills" type="JavaScript_Library" version="0.19.29">
+      <friendlyName>SystemJS Polyfills</friendlyName>
+      <description><![CDATA[Polyfills for SystemJS (adds IE8+ support via Promise and URL implementations)]]></description>
       <owner>
         <name>Engage Software</name>
         <organization>Engage Software</organization>
@@ -13,13 +13,15 @@
       <releaseNotes src="CHANGES.htm" />
       <azureCompatible>true</azureCompatible>
       <dependencies>
-        <dependency type="managedPackage" version="0.19.28">system.js-polyfills</dependency>
+      <!--
+        <dependency type="managedPackage" version="1.0.0">jQuery</dependency>
+        -->
       </dependencies>
       <components>
         <component type="JavaScript_Library">
           <javaScriptLibrary>
-            <libraryName>system.js</libraryName>
-            <fileName>system.js</fileName>
+            <libraryName>system.js-polyfills</libraryName>
+            <fileName>system-polyfills.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
             <!--CDNPath></CDNPath>
             <objectName>System</objectName-->
@@ -27,15 +29,15 @@
         </component>
         <component type="JavaScriptFile">
           <jsfiles>
-            <libraryFolderName>system.js</libraryFolderName>
+            <libraryFolderName>system.js-polyfills</libraryFolderName>
             <jsfile>
-              <name>system.js</name>
+              <name>system-polyfills.js</name>
             </jsfile>
           </jsfiles>
         </component>
         <component type="ResourceFile">
           <resourceFiles>
-            <basePath>Resources\Libraries\system.js\00_19_28</basePath>
+            <basePath>Resources\Libraries\system.js-polyfills\00_19_29</basePath>
             <resourceFile>
               <name>Resources.zip</name>
             </resourceFile>
