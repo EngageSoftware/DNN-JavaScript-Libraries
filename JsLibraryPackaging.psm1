@@ -111,6 +111,18 @@ function New-JavaScriptLibrary ($name, $version, $jsFileName, $friendlyName) {
     return $versionedFolder
 }
 
+function Update-BowerLibraries () {
+    $libraries = ((bower list --json) | ConvertFrom-Json).dependencies
+    foreach ($libraryProperty in $libraries.psobject.properties) {
+        $library = $libraries.$($libraryProperty.Name)
+        $libraryName = $library.endpoint.source
+        $libraryVersion = $library.pkgMeta.version
+        if ($libraryVersion -ne $library.update.latest) {
+            Update-BowerLibrary $libraryName
+        }
+    }
+}
+
 function Update-BowerLibrary ($name) {
     bower install $name
 
@@ -177,5 +189,6 @@ function ReplaceTokens($file, $name, $friendlyName, $version, $fileName) {
 Export-ModuleMember New-JavaScriptLibrary
 Export-ModuleMember New-BowerLibrary
 Export-ModuleMember Update-JavaScriptLibrary
+Export-ModuleMember Update-BowerLibraries
 Export-ModuleMember Update-BowerLibrary
 Export-ModuleMember New-Package
