@@ -1,0 +1,41 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="numeral" type="JavaScript_Library" version="1.5.3">
+      <friendlyName>Numeral.js</friendlyName>
+      <description><![CDATA[A javascript library for formatting and manipulating numbers. <a href="http://numeraljs.com/">http://numeraljs.com/</a>]]></description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>http://www.engagesoftware.com</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes src="CHANGES.htm" />
+      <azureCompatible>true</azureCompatible>
+      <dependencies>
+      <!--
+        <dependency type="managedPackage" version="1.0.0">jQuery</dependency>
+        -->
+      </dependencies>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>numeral</libraryName>
+            <fileName>numeral.min.js</fileName>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+            <CDNPath>https://cdnjs.cloudflare.com/ajax/libs/numeral.js/1.5.3/numeral.min.js</CDNPath>
+            <objectName>numeral</objectName>
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName>numeral</libraryFolderName>
+            <jsfile>
+              <name>numeral.min.js</name>
+            </jsfile>
+          </jsfiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
