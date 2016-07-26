@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="system.js-polyfills" type="JavaScript_Library" version="0.19.34">
+    <package name="system.js-polyfills" type="JavaScript_Library" version="0.19.35">
       <friendlyName>SystemJS Polyfills</friendlyName>
       <description><![CDATA[Polyfills for SystemJS (adds IE8+ support via Promise and URL implementations)]]></description>
       <owner>
@@ -37,7 +37,7 @@
         </component>
         <component type="ResourceFile">
           <resourceFiles>
-            <basePath>Resources\Libraries\system.js-polyfills\00_19_34</basePath>
+            <basePath>Resources\Libraries\system.js-polyfills\00_19_35</basePath>
             <resourceFile>
               <name>Resources.zip</name>
             </resourceFile>
