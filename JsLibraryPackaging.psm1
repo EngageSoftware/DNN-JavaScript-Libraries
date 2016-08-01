@@ -145,6 +145,12 @@ function Update-BowerLibrary ($name, $version = $null) {
         $newVersion = $packageInfo.version
     }
 
+    $oldVersionFolder = Get-Item "$($folderName)_*"
+    if ($oldVersionFolder.Name -eq "$($folderName)_$newVersion") {
+        Write-Warning "Attempting to upgrade $name to $newVersion when it is already that version"
+        return
+    }
+
     $allPaths = (bower list --paths --json) -join "`n" | ConvertFrom-Json
     $paths = @($allPaths.$folderName)
     $jsPaths = @($paths | ? { $_ -match '\.js$' })
@@ -164,7 +170,6 @@ function Update-BowerLibrary ($name, $version = $null) {
         $jsFile = $minJsFile
     }
 
-    $oldVersionFolder = Get-Item "$($folderName)_*"
     cp $jsFile $oldVersionFolder.Name
 
     Update-JavaScriptLibrary $folderName $newVersion
