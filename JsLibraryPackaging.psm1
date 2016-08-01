@@ -125,13 +125,19 @@ function Update-BowerLibraries () {
 
         if ($libraryVersion -ne $latestVersion) {
             Write-Host "Updating $libraryName from $libraryVersion to $($library.update.latest)"
-            Update-BowerLibrary $libraryName
+            Update-BowerLibrary $libraryName $latestVersion
         }
     }
 }
 
-function Update-BowerLibrary ($name) {
-    bower install $name
+function Update-BowerLibrary ($name, $version = $null) {
+    if ($version) {
+        $bowerInstallName = "$name#$version"
+    } else {
+        $bowerInstallName = $name
+    }
+
+    bower install $bowerInstallName --production
 
     $folderName = (bower info $name name --json) | ConvertFrom-Json
     $packageInfo = (Get-Content .\_bower_components\$folderName\.bower.json) -join "`n" | ConvertFrom-Json
@@ -158,10 +164,10 @@ function Update-BowerLibrary ($name) {
         $jsFile = $minJsFile
     }
 
-    $oldVersionFolder = Get-Item "$($name)_*"
+    $oldVersionFolder = Get-Item "$($folderName)_*"
     cp $jsFile $oldVersionFolder.Name
 
-    Update-JavaScriptLibrary $name $newVersion
+    Update-JavaScriptLibrary $folderName $newVersion
 }
 
 function Update-JavaScriptLibrary ($name, $newVersion) {
