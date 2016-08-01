@@ -117,7 +117,14 @@ function Update-BowerLibraries () {
         $library = $libraries.$($libraryProperty.Name)
         $libraryName = $library.endpoint.source
         $libraryVersion = $library.pkgMeta.version
-        if ($libraryVersion -ne $library.update.latest) {
+        $latestVersion = $library.update.latest
+        if ($latestVersion.Contains('-')) {
+            #if latest is beta
+            $latestVersion = $library.update.target
+        }
+
+        if ($libraryVersion -ne $latestVersion) {
+            Write-Host "Updating $libraryName from $libraryVersion to $($library.update.latest)"
             Update-BowerLibrary $libraryName
         }
     }
