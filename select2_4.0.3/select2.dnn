@@ -1,0 +1,51 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="select2" type="JavaScript_Library" version="4.0.3">
+      <friendlyName>Select2</friendlyName>
+      <description><![CDATA[<p>Select2 is a jQuery-based replacement for select boxes. It supports searching,
+remote data sets, and pagination of results.</p>
+
+<p>To get started, checkout examples and documentation at
+<a href="https://select2.github.io/">https://select2.github.io/</a></p>]]></description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>http://www.engagesoftware.com</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes src="CHANGES.htm" />
+      <azureCompatible>true</azureCompatible>
+      <dependencies>
+        <dependency type="managedPackage" version="1.7.2">jQuery</dependency>
+      </dependencies>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>select2</libraryName>
+            <fileName>select2.min.js</fileName>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+            <CDNPath>https://cdn.jsdelivr.net/select2/4.0.3/js/select2.min.js</CDNPath>
+            <objectName>jQuery.fn.select2</objectName>
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName>select2</libraryFolderName>
+            <jsfile>
+              <name>select2.min.js</name>
+            </jsfile>
+          </jsfiles>
+        </component>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>Resources\Libraries\select2\04_00_03</basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
