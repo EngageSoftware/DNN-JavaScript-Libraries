@@ -66,6 +66,13 @@ function New-BowerLibrary ($name) {
     } 
 
     $jsFile = $jsPaths[0]
+    $jsFolder = [System.IO.Path]::GetDirectoryName($jsFile)
+    $jsFileName = [System.IO.Path]::GetFileNameWithoutExtension($jsFile)
+    $minJsFile = [System.IO.Path]::Combine($jsFolder, $jsFileName + '.min.js')
+    if (Test-Path $minJsFile) {
+        $jsFile = $minJsFile
+    }
+
     $fileName = Split-Path $jsFile -Leaf
 
     $versionedFolder = New-JavaScriptLibrary $name $version $fileName
