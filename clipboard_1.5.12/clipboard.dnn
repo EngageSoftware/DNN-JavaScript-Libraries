@@ -1,0 +1,42 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="clipboard" type="JavaScript_Library" version="1.5.12">
+      <friendlyName>clipboard.js</friendlyName>
+      <description><![CDATA[<p>A modern approach to copy text to clipboard</p>
+<p>No Flash. No frameworks. Just 3kb gzipped</p>]]></description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>http://www.engagesoftware.com</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes src="CHANGES.htm" />
+      <azureCompatible>true</azureCompatible>
+      <dependencies>
+      <!--
+        <dependency type="managedPackage" version="1.0.0">jQuery</dependency>
+        -->
+      </dependencies>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>clipboard</libraryName>
+            <fileName>clipboard.min.js</fileName>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+            <CDNPath>https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js</CDNPath>
+            <objectName>Clipboard</objectName>
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName>clipboard</libraryFolderName>
+            <jsfile>
+              <name>clipboard.min.js</name>
+            </jsfile>
+          </jsfiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
