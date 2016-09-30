@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="jquery-mousewheel" type="JavaScript_Library" version="3.1.12">
+    <package name="jquery-mousewheel" type="JavaScript_Library" version="3.1.13">
       <friendlyName>jQuery Mouse Wheel Plugin</friendlyName>
       <description><![CDATA[A jQuery plugin that adds cross-browser mouse wheel support.]]></description>
       <owner>
@@ -19,9 +19,9 @@
         <component type="JavaScript_Library">
           <javaScriptLibrary>
             <libraryName>jquery-mousewheel</libraryName>
-            <fileName>jquery.mousewheel.js</fileName>
+            <fileName>jquery.mousewheel.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.min.js</CDNPath>
+            <CDNPath>https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js</CDNPath>
             <objectName>jQuery.event.special.mousewheel</objectName>
           </javaScriptLibrary>
         </component>
@@ -29,7 +29,7 @@
           <jsfiles>
             <libraryFolderName>jquery-mousewheel</libraryFolderName>
             <jsfile>
-              <name>jquery.mousewheel.js</name>
+              <name>jquery.mousewheel.min.js</name>
             </jsfile>
           </jsfiles>
         </component>

@@ -39,7 +39,7 @@
     "chosen": "1.6.2",
     "html5shiv": "3.7.3",
     "jquery.scrollTo": "2.1.2",
-    "jquery-mousewheel": "3.1.12",
+    "jquery-mousewheel": "3.1.13",
     "jszip": "2.4.0",
     "KineticJS": "kineticjs#5.1.0",
     "knockout-jqAutocomplete": "0.4.3",
