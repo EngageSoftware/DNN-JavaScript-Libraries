@@ -42,7 +42,7 @@
     "jquery-mousewheel": "3.1.13",
     "jszip": "3.1.2",
     "KineticJS": "kineticjs#5.1.0",
-    "knockout-jqAutocomplete": "0.4.3",
+    "knockout-jqAutocomplete": "0.4.4",
     "knockout-postbox": "0.5.2",
     "knockout-sortable": "0.11.0",
     "knockout-validation": "2.0.3",
