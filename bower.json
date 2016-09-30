@@ -1,0 +1,59 @@
+{
+  "name": "engage-dnn-javascript-libraries",
+  "description": "Common JavaScript libraries packaged as DNN JavaScript Library extensions",
+  "authors": [
+    "Brian Dukes <bdukes@engagesoftware.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "DNN Platform"
+  ],
+  "homepage": "https://github.com/EngageSoftware/DNN-JavaScript-Libraries/",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "_bower_components/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-datepicker": "1.6.4",
+    "bluebird": "3.4.6",
+    "bootstrap": "^3.3.7",
+    "clipboard": "^1.5.12",
+    "chart.js": "^2.3.0",
+    "date-fns": "^1.3.0",
+    "flexslider": "FlexSlider#2.6.3",
+    "es6-shim": "0.35.1",
+    "less": "less.js#^2.7.1",
+    "lie": "^3.1.0",
+    "numeral": "^1.5.3",
+    "picturefill": "^3.0.2",
+    "select2": "^4.0.3",
+    "Swiper": "swiper#^3.3.1",
+    "system.js": "0.19.39",
+    "urijs": "1.18.2",
+    "tota11y": "^0.1.5",
+    "chosen": "1.4.2",
+    "html5shiv": "3.7.3",
+    "jquery.scrollTo": "2.1.2",
+    "jquery-mousewheel": "3.1.12",
+    "jszip": "2.4.0",
+    "KineticJS": "kineticjs#5.1.0",
+    "knockout-jqAutocomplete": "0.4.3",
+    "knockout-postbox": "0.5.2",
+    "knockout-sortable": "0.11.0",
+    "knockout-validation": "2.0.3",
+    "quill-editor-knockout-binding": "ko-quill#0.1.3",
+    "pepjs": "0.4.1",
+    "quill": "0.20.0",
+    "respond": "respond-minmax#1.4.2",
+    "responsive-tabs": "1.4.5",
+    "router.js": "1.0.3",
+    "spectrum": "1.8.0",
+    "underscore": "1.8.3",
+    "zeroclipboard": "2.2.0"
+  }
+}
