@@ -1,8 +1,8 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="Knockout.Sortable" type="JavaScript_Library" version="0.11.0">
+    <package name="Knockout.Sortable" type="JavaScript_Library" version="0.15.0">
       <friendlyName>Knockout Sortable</friendlyName>
-      <description><![CDATA[ 
+      <description><![CDATA[
 <p><strong>knockout-sortable</strong> is a binding for <a href="http://knockoutjs.com/">Knockout.js</a> designed to connect observableArrays with jQuery UI's sortable functionality.  This allows a user to drag and drop items within a list or between lists and have the corresponding observableArrays updated appropriately.</p>
       ]]></description>
       <owner>
@@ -21,9 +21,9 @@
         <component type="JavaScript_Library">
           <javaScriptLibrary>
             <libraryName>Knockout.Sortable</libraryName>
-            <fileName>knockout-sortable.js</fileName>
+            <fileName>knockout-sortable.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdnjs.cloudflare.com/ajax/libs/knockout-sortable/0.11.0/knockout-sortable.min.js</CDNPath>
+            <CDNPath>https://cdnjs.cloudflare.com/ajax/libs/knockout-sortable/0.15.0/knockout-sortable.min.js</CDNPath>
             <objectName>ko.sortable</objectName>
           </javaScriptLibrary>
         </component>
@@ -31,7 +31,7 @@
           <jsfiles>
             <libraryFolderName>Knockout.Sortable</libraryFolderName>
             <jsfile>
-              <name>knockout-sortable.js</name>
+              <name>knockout-sortable.min.js</name>
             </jsfile>
           </jsfiles>
         </component>
