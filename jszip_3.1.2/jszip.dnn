@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="jszip" type="JavaScript_Library" version="2.4.0">
+    <package name="jszip" type="JavaScript_Library" version="3.1.2">
       <friendlyName>JSZip</friendlyName>
       <description><![CDATA[A library for creating, reading and editing .zip files with Javascript, with a lovely and simple API.]]></description>
       <owner>
@@ -21,9 +21,9 @@
         <component type="JavaScript_Library">
           <javaScriptLibrary>
             <libraryName>jszip</libraryName>
-            <fileName>jszip.js</fileName>
+            <fileName>jszip.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/jszip/2.4.0/jszip.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/jszip/3.1.2/jszip.min.js</CDNPath>
             <objectName>JSZip</objectName>
           </javaScriptLibrary>
         </component>
@@ -31,7 +31,7 @@
           <jsfiles>
             <libraryFolderName>jszip</libraryFolderName>
             <jsfile>
-              <name>jszip.js</name>
+              <name>jszip.min.js</name>
             </jsfile>
           </jsfiles>
         </component>
