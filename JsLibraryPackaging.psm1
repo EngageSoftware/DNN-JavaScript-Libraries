@@ -41,7 +41,7 @@ function New-Package(
 }
 
 function New-BowerLibrary ($name) {
-    bower install $name
+    bower install $name --save --production
     if ($name -match '#') {
         $split = $name.Split('#')
         $name = $split[0]
@@ -144,7 +144,7 @@ function Update-BowerLibrary ($name, $version = $null) {
         $bowerInstallName = $name
     }
 
-    bower install $bowerInstallName --production
+    bower install $bowerInstallName --production --save
 
     $folderName = (bower info $name name --json) | ConvertFrom-Json
     $packageInfo = (Get-Content .\_bower_components\$folderName\.bower.json) -join "`n" | ConvertFrom-Json
