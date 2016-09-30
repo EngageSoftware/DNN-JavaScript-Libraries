@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="responsive-tabs" type="JavaScript_Library" version="1.4.5">
+    <package name="responsive-tabs" type="JavaScript_Library" version="1.6.1">
       <friendlyName>jQuery Responsive Tabs</friendlyName>
       <description><![CDATA[
 <p>This jQuery plugin provides responsive tab functionality. The tabs transform to an accordion when it reaches a CSS breakpoint.
@@ -22,7 +22,7 @@ Check out a demo at <a href="http://jellekralt.github.io/Responsive-Tabs/demo.ht
         <component type="JavaScript_Library">
           <javaScriptLibrary>
             <libraryName>responsive-tabs</libraryName>
-            <fileName>jquery.responsiveTabs.js</fileName>
+            <fileName>jquery.responsiveTabs.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
             <CDNPath></CDNPath>
             <objectName></objectName>
@@ -32,7 +32,7 @@ Check out a demo at <a href="http://jellekralt.github.io/Responsive-Tabs/demo.ht
           <jsfiles>
             <libraryFolderName>responsive-tabs</libraryFolderName>
             <jsfile>
-              <name>jquery.responsiveTabs.js</name>
+              <name>jquery.responsiveTabs.min.js</name>
             </jsfile>
           </jsfiles>
         </component>
