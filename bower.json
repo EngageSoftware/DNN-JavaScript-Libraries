@@ -35,7 +35,7 @@
     "Swiper": "swiper#^3.3.1",
     "system.js": "0.19.39",
     "urijs": "1.18.2",
-    "tota11y": "^0.1.5",
+    "tota11y": "0.1.6",
     "chosen": "1.6.2",
     "html5shiv": "3.7.3",
     "jquery.scrollTo": "2.1.2",
