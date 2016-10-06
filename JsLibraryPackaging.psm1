@@ -56,7 +56,9 @@ function New-BowerLibrary ($name) {
 
     $allPaths = (bower list --paths --json) -join "`n" | ConvertFrom-Json
     $paths = @($allPaths.$folderName)
-    $jsPaths = @($paths | ? { $_ -match '\.js$' })
+    $jsPaths = @($paths | 
+                  ? { $_ -match '\.js$' } | 
+                  % { MakeMinifiedPath($_) })
 
     if ($jsPaths.Count -eq 0) {
         $jsPaths = @(ls $paths *.js -Recurse)
@@ -66,18 +68,13 @@ function New-BowerLibrary ($name) {
     }
 
     $jsFile = $jsPaths[0]
-    $jsFolder = [System.IO.Path]::GetDirectoryName($jsFile)
-    $jsFileName = [System.IO.Path]::GetFileNameWithoutExtension($jsFile)
-    $minJsFile = [System.IO.Path]::Combine($jsFolder, $jsFileName + '.min.js')
-    if (Test-Path $minJsFile) {
-        $jsFile = $minJsFile
-    }
-
     $fileName = Split-Path $jsFile -Leaf
 
     $versionedFolder = New-JavaScriptLibrary $name $version $fileName
 
-    $filePaths = @($paths | ? { -not (Test-Path $_ -PathType Container) })
+    $filePaths = @($paths | 
+                    ? { -not (Test-Path $_ -PathType Container) } | 
+                    % { MakeMinifiedPath($_) })
     if ($filePaths.Count -eq 0) {
         $jsPaths | % { cp $_.FullName $versionedFolder }
     } else {
@@ -209,7 +206,18 @@ function ReplaceTokens($file, $name, $friendlyName, $version, $fileName) {
      (Get-Content $file) |
         % { $_ -replace '\[name\]', $name -replace '\[friendlyName\]', $friendlyName -replace '\[version\]', $version -replace '\[file\]', $fileName } |
         Set-Content $file
- }
+}
+
+function MakeMinifiedPath($path) {
+    $folder = [System.IO.Path]::GetDirectoryName($path)
+    $fileName = [System.IO.Path]::GetFileNameWithoutExtension($path)
+    $minifiedPath = [System.IO.Path]::Combine($folder, $fileName + '.min.js')
+    if (Test-Path $minifiedPath) { 
+        return $minifiedPath
+    } else { 
+        return $path
+    }
+}
 
 Export-ModuleMember New-JavaScriptLibrary
 Export-ModuleMember New-BowerLibrary
