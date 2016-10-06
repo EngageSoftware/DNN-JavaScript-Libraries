@@ -3,8 +3,8 @@
 Add-Type -AssemblyName 'System.IO.Compression.FileSystem'
 
 function New-Package(
-    $directory = '.', 
-    [switch]$recurse, 
+    $directory = '.',
+    [switch]$recurse,
     $outputPath = '_InstallPackages')
 {
     if ($directory -is [string]) {
@@ -17,7 +17,7 @@ function New-Package(
     if ($outputPath -is [string]) {
         $outputPath = Resolve-Path $outputPath
     } elseif ($outputPath -is [System.IO.DirectoryInfo]) {
-        $outputPath = Resolve-Path $outputPath.FullName        
+        $outputPath = Resolve-Path $outputPath.FullName
     }
     #Write-Host ('output path is ' + $outputPath.Path)
 
@@ -63,7 +63,7 @@ function New-BowerLibrary ($name) {
     }
     if ($jsPaths.Count -gt 1) {
         Write-Warning 'Package contains multiple JS files, only the first will be listed in the package'
-    } 
+    }
 
     $jsFile = $jsPaths[0]
     $jsFolder = [System.IO.Path]::GetDirectoryName($jsFile)
@@ -99,7 +99,7 @@ function New-JavaScriptLibrary ($name, $version, $jsFileName, $friendlyName) {
 
     $versionedFolder = "$($name)_$version"
     mkdir $versionedFolder | Out-Null
-  
+
     $manifestFile = "$versionedFolder\$name.dnn"
     cp _template\library.dnn $manifestFile
     $changesFile = "$versionedFolder\CHANGES.htm"
@@ -167,7 +167,7 @@ function Update-BowerLibrary ($name, $version = $null) {
     }
     if ($jsPaths.Count -gt 1) {
         Write-Warning 'Package contains multiple JS files, only the first will be listed in the package'
-    } 
+    }
 
     $jsFile = $jsPaths[0]
     $jsFolder = [System.IO.Path]::GetDirectoryName($jsFile)
@@ -206,8 +206,8 @@ function Update-JavaScriptLibrary ($name, $newVersion) {
 }
 
 function ReplaceTokens($file, $name, $friendlyName, $version, $fileName) {
-     (Get-Content $file) | 
-        % { $_ -replace '\[name\]', $name -replace '\[friendlyName\]', $friendlyName -replace '\[version\]', $version -replace '\[file\]', $fileName } | 
+     (Get-Content $file) |
+        % { $_ -replace '\[name\]', $name -replace '\[friendlyName\]', $friendlyName -replace '\[version\]', $version -replace '\[file\]', $fileName } |
         Set-Content $file
  }
 
