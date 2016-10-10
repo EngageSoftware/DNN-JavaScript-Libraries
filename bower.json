@@ -24,7 +24,7 @@
     "bootstrap": "^3.3.7",
     "clipboard": "^1.5.12",
     "chart.js": "^2.3.0",
-    "date-fns": "^1.3.0",
+    "date-fns": "1.4.0",
     "flexslider": "FlexSlider#2.6.3",
     "es6-shim": "0.35.1",
     "less": "less.js#^2.7.1",
