@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="date-fns" type="JavaScript_Library" version="1.5.2">
+    <package name="date-fns" type="JavaScript_Library" version="1.6.0">
       <friendlyName>date-fns</friendlyName>
       <description><![CDATA[Modern JavaScript date utility library]]></description>
       <owner>
@@ -14,7 +14,7 @@
       <azureCompatible>true</azureCompatible>
       <dependencies>
       <!--
-        <dependency type="managedPackage" version="1.5.2">jQuery</dependency>
+        <dependency type="managedPackage" version="1.6.0">jQuery</dependency>
         -->
       </dependencies>
       <components>
@@ -23,7 +23,7 @@
             <libraryName>date-fns</libraryName>
             <fileName>date_fns.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>http://cdn.date-fns.org/v1.5.2/date_fns.min.js</CDNPath>
+            <CDNPath>http://cdn.date-fns.org/v1.6.0/date_fns.min.js</CDNPath>
             <objectName>dateFns</objectName>
           </javaScriptLibrary>
         </component>
