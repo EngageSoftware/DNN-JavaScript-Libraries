@@ -1,7 +1,7 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
     <package name="knockout-postbox" type="JavaScript_Library" version="0.5.2">
-      <friendlyName>Knockout Validation</friendlyName>
+      <friendlyName>knockout-postbox</friendlyName>
       <description>A small library that uses Knockout's native pub/sub capabilities to facilitate decoupled communication between separate view models or components.</description>
       <owner>
         <name>Engage Software</name>
