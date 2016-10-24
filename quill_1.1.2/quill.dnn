@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="quill" type="JavaScript_Library" version="1.1.0">
+    <package name="quill" type="JavaScript_Library" version="1.1.2">
       <friendlyName>Quill Rich Text Editor</friendlyName>
       <description><![CDATA[ 
 <p>Quill is a modern rich text editor built for compatibility and extensibility. It was created by <a href="https://twitter.com/jhchen">Jason Chen</a> and <a href="https://twitter.com/byronmilligan">Byron Milligan</a> and open sourced by <a href="http://www.salesforce.com">Salesforce.com</a>.</p>
@@ -21,7 +21,7 @@
             <libraryName>quill</libraryName>
             <fileName>quill.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.quilljs.com/1.1.0/quill.min.js</CDNPath>
+            <CDNPath>https://cdn.quilljs.com/1.1.2/quill.min.js</CDNPath>
             <objectName>Quill</objectName>
           </javaScriptLibrary>
         </component>
@@ -35,7 +35,7 @@
         </component>
         <component type="ResourceFile">
           <resourceFiles>
-            <basePath>Resources\Libraries\quill\01_01_00</basePath>
+            <basePath>Resources\Libraries\quill\01_01_02</basePath>
             <resourceFile>
               <name>Resources.zip</name>
             </resourceFile>
