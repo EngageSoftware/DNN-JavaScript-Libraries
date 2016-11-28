@@ -57,6 +57,7 @@
     "file-saver": "filesaverjs#^1.3.3",
     "swiper": "3.4.0",
     "js-xlsx": "^0.8.0",
-    "Blob": "*"
+    "Blob": "*",
+    "tableexport.js": "^3.3.5"
   }
 }

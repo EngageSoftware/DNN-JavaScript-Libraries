@@ -1,0 +1,45 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="tableexport.js" type="JavaScript_Library" version="3.3.5">
+      <friendlyName>TableExport.js</friendlyName>
+      <description><![CDATA[The simple, easy-to-implement plugin to export HTML tables to xlsx, xls, csv, and txt files]]></description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>http://www.engagesoftware.com</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes src="CHANGES.htm" />
+      <azureCompatible>true</azureCompatible>
+      <dependencies>
+        <dependency type="managedPackage" version="1.11.3">jQuery</dependency>
+        <dependency type="managedPackage" version="0.8.1">xlsx-js</dependency>
+        <dependency type="managedPackage" version="1.3.3">filesaverjs</dependency>
+        <!-- Optional dependencies
+        <dependency type="managedPackage" version="3.3.5">bootstrap</dependency>
+        <dependency type="managedPackage" version="0.1.0">Blob</dependency>
+        -->
+      </dependencies>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>tableexport.js</libraryName>
+            <fileName>tableexport.min.js</fileName>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+            <CDNPath></CDNPath>
+            <objectName></objectName>
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName>tableexport.js</libraryFolderName>
+            <jsfile>
+              <name>tableexport.min.js</name>
+            </jsfile>
+          </jsfiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
