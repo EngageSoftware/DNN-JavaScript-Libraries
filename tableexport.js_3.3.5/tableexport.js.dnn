@@ -14,7 +14,7 @@
       <azureCompatible>true</azureCompatible>
       <dependencies>
         <dependency type="managedPackage" version="1.11.3">jQuery</dependency>
-        <dependency type="managedPackage" version="0.8.1">xlsx-js</dependency>
+        <dependency type="managedPackage" version="0.8.0">js-xlsx</dependency>
         <dependency type="managedPackage" version="1.3.3">filesaverjs</dependency>
         <!-- Optional dependencies
         <dependency type="managedPackage" version="3.3.5">bootstrap</dependency>
