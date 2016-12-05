@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="es6-shim" type="JavaScript_Library" version="0.35.1">
+    <package name="es6-shim" type="JavaScript_Library" version="0.35.2">
       <friendlyName>ES6 Shim</friendlyName>
       <description><![CDATA[Provides compatibility shims so that legacy JavaScript engines behave as closely as possible to ECMAScript 6 (Harmony).]]></description>
       <owner>
@@ -23,7 +23,7 @@
             <libraryName>es6-shim</libraryName>
             <fileName>es6-shim.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/es6.shim/0.35.1/es6-shim.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/es6.shim/0.35.2/es6-shim.min.js</CDNPath>
             <objectName>Promise</objectName>
           </javaScriptLibrary>
         </component>
