@@ -29,7 +29,7 @@
     "es6-shim": "0.35.2",
     "less": "less.js#^2.7.1",
     "lie": "^3.1.0",
-    "numeral": "1.5.6",
+    "numeral": "2.0.0",
     "picturefill": "^3.0.2",
     "select2": "^4.0.3",
     "system.js": "0.19.41",
