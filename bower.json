@@ -58,6 +58,6 @@
     "swiper": "3.4.0",
     "js-xlsx": "^0.8.0",
     "Blob": "*",
-    "tableexport.js": "^3.3.5"
+    "tableexport.js": "3.3.7"
   }
 }
