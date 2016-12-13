@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="swiper" type="JavaScript_Library" version="3.4.0">
+    <package name="swiper" type="JavaScript_Library" version="3.4.1">
       <friendlyName>Swiper</friendlyName>
       <description><![CDATA[ 
 <p>Swiper - is the free and most modern mobile touch slider with hardware accelerated transitions and amazing native behavior. It is intended to be used in mobile websites, mobile web apps, and mobile native/hybrid apps. Designed mostly for iOS, but also works great on latest Android, Windows Phone 8 and modern Desktop browsers</p>
@@ -26,7 +26,7 @@
             <libraryName>swiper</libraryName>
             <fileName>swiper.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/js/swiper.min.js</CDNPath>
+            <CDNPath>https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js</CDNPath>
             <objectName>Swiper</objectName>
           </javaScriptLibrary>
         </component>
@@ -42,7 +42,7 @@
 
           <resourceFiles>
 
-            <basePath>Resources\Libraries\swiper\03_04_00</basePath>
+            <basePath>Resources\Libraries\swiper\03_04_01</basePath>
 
             <resourceFile>
 
