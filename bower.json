@@ -20,7 +20,7 @@
   ],
   "dependencies": {
     "bootstrap-datepicker": "1.6.4",
-    "bluebird": "3.4.6",
+    "bluebird": "3.4.7",
     "bootstrap": "^3.3.7",
     "clipboard": "1.5.16",
     "chart.js": "2.4.0",
