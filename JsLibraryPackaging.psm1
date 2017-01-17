@@ -120,15 +120,22 @@ function Update-BowerLibraries () {
     foreach ($libraryProperty in $libraries.psobject.properties) {
         $library = $libraries.$($libraryProperty.Name)
         $libraryName = $library.endpoint.source
-        $libraryVersion = $library.pkgMeta.version
-        $latestVersion = $library.update.latest
-        if ($latestVersion.Contains('-')) {
-            #if latest is beta
-            $latestVersion = $library.update.target
+        $libraryVersion = GetBowerPackageVersion($library.pkgMeta)
+
+        $noVersion = $false
+        $latestVersion = $null
+        if (Get-Member -InputObject $library -Name 'update') {
+            $latestVersion = $library.update.latest
+            if ($latestVersion.Contains('-')) {
+                #if latest is beta
+                $latestVersion = $library.update.target
+            }
+        } else {
+            $noVersion = $true
         }
 
-        if ($libraryVersion -ne $latestVersion) {
-            Write-Host "Updating $libraryName from $libraryVersion to $($library.update.latest)"
+        if (($libraryVersion -ne $latestVersion) -or $noVersion) {
+            Write-Host "Updating $libraryName from $libraryVersion to $latestVersion"
             Update-BowerLibrary $libraryName $latestVersion
         }
     }
@@ -145,9 +152,7 @@ function Update-BowerLibrary ($name, $version = $null) {
 
     $folderName = (bower info $name name --json) | ConvertFrom-Json
     $packageInfo = (Get-Content .\_bower_components\$folderName\.bower.json) -join "`n" | ConvertFrom-Json
-    if (@(Get-Member -InputObject $packageInfo | ? { $_.Name -eq 'version' }).Count -gt 0) {
-        $newVersion = $packageInfo.version
-    }
+    $newVersion = GetBowerPackageVersion($packageInfo)
 
     $oldVersionFolder = Get-Item "$($folderName)_*"
     if ($oldVersionFolder.Name -eq "$($folderName)_$newVersion") {
@@ -216,6 +221,16 @@ function MakeMinifiedPath($path) {
         return $minifiedPath
     } else { 
         return $path
+    }
+}
+
+function GetBowerPackageVersion($package) {
+    if (Get-Member -InputObject $library.pkgMeta -Name 'version') {
+        return $library.pkgMeta.version
+    } elseif (Get-Member -InputObject $library.pkgMeta -Name '_release') {
+        return $library.pkgMeta._release
+    } else {
+        return '*'
     }
 }
 
