@@ -179,7 +179,7 @@ function Update-BowerLibrary ($name, $version = $null) {
         $jsFile = $minJsFile
     }
 
-    cp $jsFile $oldVersionFolder.Name
+    cp $jsFile $oldVersionFolder.Name -Force
 
     Update-JavaScriptLibrary $folderName $newVersion
 }
