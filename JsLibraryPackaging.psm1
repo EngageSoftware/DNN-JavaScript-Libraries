@@ -225,10 +225,10 @@ function MakeMinifiedPath($path) {
 }
 
 function GetBowerPackageVersion($package) {
-    if (Get-Member -InputObject $library.pkgMeta -Name 'version') {
-        return $library.pkgMeta.version
-    } elseif (Get-Member -InputObject $library.pkgMeta -Name '_release') {
-        return $library.pkgMeta._release
+    if (Get-Member -InputObject $package -Name 'version') {
+        return $package.version
+    } elseif (Get-Member -InputObject $package -Name '_release') {
+        return $package._release
     } else {
         return '*'
     }
