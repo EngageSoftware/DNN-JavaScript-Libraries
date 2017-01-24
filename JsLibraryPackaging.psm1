@@ -165,7 +165,7 @@ function Update-BowerLibrary ($name, $version = $null) {
     $jsPaths = @($paths | ? { $_ -match '\.js$' })
 
     if ($jsPaths.Count -eq 0) {
-        $jsPaths = @(ls $paths *.js -Recurse)
+        $jsPaths = @(ls $paths *.js -Recurse) | % { $_.FullName }
     }
     if ($jsPaths.Count -gt 1) {
         Write-Warning 'Package contains multiple JS files, only the first will be listed in the package'
