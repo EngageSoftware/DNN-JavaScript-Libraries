@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="system.js" type="JavaScript_Library" version="0.19.41">
+    <package name="system.js" type="JavaScript_Library" version="0.20.0">
       <friendlyName>SystemJS</friendlyName>
       <description><![CDATA[Universal dynamic module loader]]></description>
       <owner>
@@ -12,9 +12,7 @@
       <license src="LICENSE.htm" />
       <releaseNotes src="CHANGES.htm" />
       <azureCompatible>true</azureCompatible>
-      <dependencies>
-        <dependency type="managedPackage" version="0.19.41">system.js-polyfills</dependency>
-      </dependencies>
+      <dependencies></dependencies>
       <components>
         <component type="JavaScript_Library">
           <javaScriptLibrary>
@@ -35,7 +33,7 @@
         </component>
         <component type="ResourceFile">
           <resourceFiles>
-            <basePath>Resources\Libraries\system.js\00_19_41</basePath>
+            <basePath>Resources\Libraries\system.js\00_20_00</basePath>
             <resourceFile>
               <name>Resources.zip</name>
             </resourceFile>
