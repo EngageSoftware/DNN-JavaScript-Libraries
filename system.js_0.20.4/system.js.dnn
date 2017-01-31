@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="system.js" type="JavaScript_Library" version="0.20.0">
+    <package name="system.js" type="JavaScript_Library" version="0.20.4">
       <friendlyName>SystemJS</friendlyName>
       <description><![CDATA[Universal dynamic module loader]]></description>
       <owner>
@@ -33,7 +33,7 @@
         </component>
         <component type="ResourceFile">
           <resourceFiles>
-            <basePath>Resources\Libraries\system.js\00_20_00</basePath>
+            <basePath>Resources\Libraries\system.js\00_20_04</basePath>
             <resourceFile>
               <name>Resources.zip</name>
             </resourceFile>
