@@ -28,7 +28,7 @@
     "flexslider": "FlexSlider#2.6.3",
     "es6-shim": "0.35.3",
     "less": "less.js#2.7.2",
-    "lie": "^3.1.0",
+    "lie": "3.1.1",
     "numeral": "2.0.4",
     "picturefill": "^3.0.2",
     "select2": "^4.0.3",
