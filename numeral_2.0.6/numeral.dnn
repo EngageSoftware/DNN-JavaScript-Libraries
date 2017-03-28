@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="numeral" type="JavaScript_Library" version="2.0.4">
+    <package name="numeral" type="JavaScript_Library" version="2.0.6">
       <friendlyName>Numeral.js</friendlyName>
       <description><![CDATA[A javascript library for formatting and manipulating numbers. <a href="http://numeraljs.com/">http://numeraljs.com/</a>]]></description>
       <owner>
@@ -23,7 +23,7 @@
             <libraryName>numeral</libraryName>
             <fileName>numeral.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.4/numeral.min.js</CDNPath>
+            <CDNPath>https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js</CDNPath>
             <objectName>numeral</objectName>
           </javaScriptLibrary>
         </component>
