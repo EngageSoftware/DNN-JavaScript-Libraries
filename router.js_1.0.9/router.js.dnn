@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="router.js" type="JavaScript_Library" version="1.0.8">
+    <package name="router.js" type="JavaScript_Library" version="1.0.9">
       <friendlyName>Router.js</friendlyName>
       <description><![CDATA[Router.js is a simple yet powerful javascript plugin to handle hash fragment in order to route requests]]></description>
       <owner>
