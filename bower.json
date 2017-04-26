@@ -47,7 +47,7 @@
     "knockout-validation": "2.0.3",
     "quill-editor-knockout-binding": "ko-quill#0.1.3",
     "pepjs": "0.4.2",
-    "quill": "1.2.3",
+    "quill": "1.2.4",
     "respond": "respond-minmax#1.4.2",
     "responsive-tabs": "1.6.2",
     "router.js": "1.0.9",
