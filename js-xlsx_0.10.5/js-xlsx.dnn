@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="js-xlsx" type="JavaScript_Library" version="0.9.13">
+    <package name="js-xlsx" type="JavaScript_Library" version="0.10.5">
       <friendlyName>JS-XLSX</friendlyName>
       <description><![CDATA[Parser and writer for various spreadsheet formats. Pure-JS cleanroom implementation from official specifications and related documents.]]></description>
       <owner>
@@ -23,7 +23,7 @@
             <libraryName>js-xlsx</libraryName>
             <fileName>xlsx.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/js-xlsx/0.9.13/xlsx.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/js-xlsx/0.10.5/xlsx.min.js</CDNPath>
             <objectName>XLSX</objectName>
           </javaScriptLibrary>
         </component>
