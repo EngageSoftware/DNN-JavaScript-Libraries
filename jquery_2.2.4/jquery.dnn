@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="jQuery" type="JavaScript_Library" version="1.12.4">
+    <package name="jQuery" type="JavaScript_Library" version="2.2.4">
       <friendlyName>jQuery</friendlyName>
       <description><![CDATA[jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.]]></description>
       <owner>
@@ -23,7 +23,7 @@
             <libraryName>jQuery</libraryName>
             <fileName>jquery.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://code.jquery.com/jquery-1.12.4.min.js</CDNPath>
+            <CDNPath>https://code.jquery.com/jquery-2.2.4.min.js</CDNPath>
             <objectName>jQuery</objectName>
           </javaScriptLibrary>
         </component>
