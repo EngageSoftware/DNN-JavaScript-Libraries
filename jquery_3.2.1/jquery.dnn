@@ -22,7 +22,7 @@
           <javaScriptLibrary>
             <libraryName>jQuery</libraryName>
             <fileName>jquery.min.js</fileName>
-            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+            <preferredScriptLocation>PageHead</preferredScriptLocation>
             <CDNPath>https://code.jquery.com/jquery-3.2.1.min.js</CDNPath>
             <objectName>jQuery</objectName>
           </javaScriptLibrary>
