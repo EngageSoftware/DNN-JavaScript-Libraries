@@ -59,6 +59,6 @@
     "js-xlsx": "0.9.12",
     "Blob": "*",
     "tableexport.js": "4.0.1",
-    "tinymce": "4.6.0"
+    "tinymce": "4.6.4"
   }
 }
