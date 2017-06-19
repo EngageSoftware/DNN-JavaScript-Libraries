@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="clipboard" type="JavaScript_Library" version="1.6.1">
+    <package name="clipboard" type="JavaScript_Library" version="1.7.1">
       <friendlyName>clipboard.js</friendlyName>
       <description><![CDATA[<p>A modern approach to copy text to clipboard</p>
 <p>No Flash. No frameworks. Just 3kb gzipped</p>]]></description>
@@ -24,7 +24,7 @@
             <libraryName>clipboard</libraryName>
             <fileName>clipboard.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/clipboard.js/1.6.1/clipboard.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/clipboard.js/1.7.1/clipboard.min.js</CDNPath>
             <objectName>Clipboard</objectName>
           </javaScriptLibrary>
         </component>
