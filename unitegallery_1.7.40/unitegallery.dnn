@@ -1,0 +1,47 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="unitegallery" type="JavaScript_Library" version="1.7.40">
+      <friendlyName>Unite Gallery</friendlyName>
+      <description><![CDATA[The Unite Gallery is multipurpose javascript gallery based on jquery library. It's built with a modular technique with a lot of accent of ease of use and customization. It's very easy to customize the gallery, changing it's skin via css, and even writing your own theme. Yet this gallery is very powerfull, fast and has the most of nowdays must have features like responsiveness, touch enabled and even zoom feature, it's unique effect.]]></description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>http://www.engagesoftware.com</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes src="CHANGES.htm" />
+      <azureCompatible>true</azureCompatible>
+      <dependencies>
+        <dependency type="managedPackage" version="1.9.0">jQuery</dependency>
+      </dependencies>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>unitegallery</libraryName>
+            <fileName>unitegallery.min.js</fileName>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+            <CDNPath>https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.40/js/unitegallery.min.js</CDNPath>
+            <objectName>jQuery.fn.unitegallery</objectName>
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName>unitegallery</libraryFolderName>
+            <jsfile>
+              <name>unitegallery.min.js</name>
+            </jsfile>
+          </jsfiles>
+        </component>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>Resources\Libraries\unitegallery\01_07_40</basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
