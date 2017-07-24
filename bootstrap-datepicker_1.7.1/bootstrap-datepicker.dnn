@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="bootstrap-datepicker" type="JavaScript_Library" version="1.7.0">
+    <package name="bootstrap-datepicker" type="JavaScript_Library" version="1.7.1">
       <friendlyName>bootstrap-datepicker</friendlyName>
       <description><![CDATA[A datepicker for @twitter bootstrap forked from Stefan Petre's (of eyecon.ro), improvements by @eternicode]]></description>
       <owner>
@@ -22,7 +22,7 @@
             <libraryName>bootstrap-datepicker</libraryName>
             <fileName>bootstrap-datepicker.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.0/js/bootstrap-datepicker.min.js</CDNPath>
+            <CDNPath>https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js</CDNPath>
             <objectName>jQuery.fn.datepicker.noConflict</objectName>
           </javaScriptLibrary>
         </component>
@@ -36,7 +36,7 @@
         </component>
         <component type="ResourceFile">
           <resourceFiles>
-            <basePath>Resources\Libraries\bootstrap-datepicker\01_07_00</basePath>
+            <basePath>Resources\Libraries\bootstrap-datepicker\01_07_01</basePath>
             <resourceFile>
               <name>Resources.zip</name>
             </resourceFile>

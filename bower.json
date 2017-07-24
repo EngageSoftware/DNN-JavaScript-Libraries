@@ -19,7 +19,7 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap-datepicker": "1.7.0",
+    "bootstrap-datepicker": "1.7.1",
     "bluebird": "3.5.0",
     "bootstrap": "3.3.7",
     "clipboard": "1.7.1",
