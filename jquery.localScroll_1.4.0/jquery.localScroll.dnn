@@ -1,8 +1,8 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="jquery.localScroll" type="JavaScript_Library" version="1.4.0">
+    <package name="jquery.localScroll" type="JavaScript_Library" version="2.0.0">
       <friendlyName>jQuery.localScroll</friendlyName>
-      <description>This plugin will animate a regular anchor navigation. It will allow your visitors to navigate your site with a smooth scrolling effect. </description>
+      <description><![CDATA[Animated anchor navigation made easy with jQuery]]></description>
       <owner>
         <name>Engage Software</name>
         <organization>Engage Software</organization>
@@ -22,7 +22,7 @@
             <libraryName>jquery.localScroll</libraryName>
             <fileName>jquery.localScroll.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/1.4.0/jquery.localScroll.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/jquery.localscroll/2.0.0/jquery.localScroll.min.js</CDNPath>
             <objectName>jQuery.localScroll</objectName>
           </javaScriptLibrary>
         </component>
