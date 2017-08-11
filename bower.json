@@ -59,7 +59,7 @@
     "js-xlsx": "0.11.2",
     "Blob": "*",
     "tableexport.js": "4.0.1",
-    "tinymce": "4.6.4",
+    "tinymce": "4.6.5",
     "jquery": "3.2.1",
     "jquery-ui": "^1.12.1",
     "unitegallery": "^1.7.40"
