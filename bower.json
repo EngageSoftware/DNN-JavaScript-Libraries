@@ -63,6 +63,7 @@
     "jquery": "3.2.1",
     "jquery-ui": "^1.12.1",
     "unitegallery": "^1.7.40",
-    "jquery.localScroll": "^2.0.0"
+    "jquery.localScroll": "^2.0.0",
+    "jquery.serialscroll": "jquery.serialScroll#^1.3.1"
   }
 }
