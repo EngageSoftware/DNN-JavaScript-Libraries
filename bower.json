@@ -56,7 +56,7 @@
     "zeroclipboard": "2.3.0",
     "file-saver": "filesaverjs#^1.3.3",
     "swiper": "3.4.2",
-    "js-xlsx": "0.11.2",
+    "js-xlsx": "0.11.3",
     "Blob": "*",
     "tableexport.js": "4.0.1",
     "tinymce": "4.6.5",
