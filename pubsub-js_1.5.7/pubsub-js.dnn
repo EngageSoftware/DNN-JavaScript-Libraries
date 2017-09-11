@@ -1,0 +1,43 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="pubsub-js" type="JavaScript_Library" version="1.5.7">
+      <friendlyName>PubSubJS</friendlyName>
+      <description><![CDATA[
+Dependency free publish/subscribe for JavaScript
+]]></description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>http://www.engagesoftware.com</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes src="CHANGES.htm" />
+      <azureCompatible>true</azureCompatible>
+      <dependencies>
+      <!--
+        <dependency type="managedPackage" version="1.0.0">jQuery</dependency>
+        -->
+      </dependencies>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>pubsub-js</libraryName>
+            <fileName>pubsub.min.js</fileName>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+            <CDNPath>https://cdn.jsdelivr.net/npm/pubsub-js@1.5.7/src/pubsub.min.js</CDNPath>
+            <objectName>PubSub</objectName>
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName>pubsub-js</libraryFolderName>
+            <jsfile>
+              <name>pubsub.min.js</name>
+            </jsfile>
+          </jsfiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
