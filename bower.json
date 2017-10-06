@@ -31,7 +31,7 @@
     "lie": "3.1.1",
     "numeral": "2.0.6",
     "picturefill": "3.0.3",
-    "select2": "^4.0.3",
+    "select2": "4.0.4",
     "system.js": "0.20.19",
     "urijs": "1.19.0",
     "tota11y": "0.1.6",
