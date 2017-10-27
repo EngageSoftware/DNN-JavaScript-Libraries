@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="intl-tel-input" type="JavaScript_Library" version="12.1.0">
+    <package name="intl-tel-input" type="JavaScript_Library" version="12.1.2">
       <friendlyName>International Telephone Input</friendlyName>
       <description><![CDATA[A jQuery plugin for entering and validating international telephone numbers. It adds a flag dropdown to any input, detects the user's country, displays a relevant placeholder and provides formatting/validation methods.]]></description>
       <owner>
@@ -21,7 +21,7 @@
             <libraryName>intl-tel-input</libraryName>
             <fileName>intlTelInput.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.0/js/intlTelInput.min.js</CDNPath>
+            <CDNPath>https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.2/js/intlTelInput.min.js</CDNPath>
             <objectName>jQuery.fn.intlTelInput</objectName>
           </javaScriptLibrary>
         </component>
@@ -35,7 +35,7 @@
         </component>
         <component type="ResourceFile">
           <resourceFiles>
-            <basePath>Resources\Libraries\intl-tel-input\12_01_00</basePath>
+            <basePath>Resources\Libraries\intl-tel-input\12_01_02</basePath>
             <resourceFile>
               <name>Resources.zip</name>
             </resourceFile>
