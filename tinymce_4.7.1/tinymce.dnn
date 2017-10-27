@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="tinymce" type="JavaScript_Library" version="4.7.0">
+    <package name="tinymce" type="JavaScript_Library" version="4.7.1">
       <friendlyName>TinyMCE</friendlyName>
       <description><![CDATA[ TinyMCE is a JavaScript library for platform independent 'WYSIWYG' or rich text editing. It is released as open source under the LGPL. ]]></description>
       <owner>
@@ -23,7 +23,7 @@
             <libraryName>tinymce</libraryName>
             <fileName>tinymce.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdnjs.cloudflare.com/ajax/libs/tinymce/4.7.0/tinymce.min.js</CDNPath>
+            <CDNPath>https://cdnjs.cloudflare.com/ajax/libs/tinymce/4.7.1/tinymce.min.js</CDNPath>
             <objectName>tinymce</objectName>
           </javaScriptLibrary>
         </component>
@@ -37,7 +37,7 @@
         </component>
         <component type="ResourceFile">
           <resourceFiles>
-            <basePath>Resources\Libraries\tinymce\04_07_00</basePath>
+            <basePath>Resources\Libraries\tinymce\04_07_01</basePath>
             <resourceFile>
               <name>Resources.zip</name>
             </resourceFile>
