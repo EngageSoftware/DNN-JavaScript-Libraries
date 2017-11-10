@@ -1,0 +1,4 @@
+{
+  "files": ["node_modules/unitegallery/dist/js/unitegallery.min.js"],
+  "resources": ["node_modules/unitegallery/dist/**"]
+}

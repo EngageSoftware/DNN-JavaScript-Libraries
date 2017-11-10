@@ -1,0 +1,10 @@
+{
+  "files": ["node_modules/tinymce/tinymce.min.js"],
+  "resources": [
+    "node_modules/tinymce/**",
+    "!node_modules/tinymce/tinymce.min.js",
+    "!node_modules/tinymce/readme.md",
+    "!node_modules/tinymce/*.json",
+    "!node_modules/tinymce/*.txt"
+  ]
+}

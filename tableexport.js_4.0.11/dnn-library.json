@@ -1,0 +1,4 @@
+{
+  "files": ["node_modules/tableexport/dist/js/tableexport.min.js"],
+  "resources": ["node_modules/tableexport/dist/**"]
+}

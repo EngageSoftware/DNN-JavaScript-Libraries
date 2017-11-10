@@ -1,0 +1,11 @@
+{
+  "files": ["node_modules/quill/dist/quill.min.js"],
+  "resources": [
+    "node_modules/quill/dist/quill.bubble.css",
+    "node_modules/quill/dist/quill.core.css",
+    "node_modules/quill/dist/quill.core.js",
+    "node_modules/quill/dist/quill.js",
+    "node_modules/quill/dist/quill.min.js.map",
+    "node_modules/quill/dist/quill.snow.css"
+  ]
+}
