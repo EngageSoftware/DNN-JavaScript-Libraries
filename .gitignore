@@ -1,3 +1,4 @@
 bower_components/
 _bower_components/
 _InstallPackages/
+/node_modules/
