@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="tipsy" type="JavaScript_Library" version="1.0.2">
+    <package name="tipsy" type="JavaScript_Library" version="1.0.3">
       <friendlyName>tipsy</friendlyName>
       <description>tipsy is a simple jQuery plugin for generating Facebook-style tooltips</description>
       <owner>
@@ -13,7 +13,7 @@
       <releaseNotes src="CHANGES.htm" />
       <azureCompatible>true</azureCompatible>
       <dependencies>
-      <!--
+        <!--
         <dependency type="managedPackage" version="1.0.0">jQuery</dependency>
         -->
       </dependencies>
@@ -23,7 +23,7 @@
             <libraryName>tipsy</libraryName>
             <fileName>jquery.tipsy.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdnjs.cloudflare.com/ajax/libs/jquery.tipsy/1.0.2/jquery.tipsy.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/jquery.tipsy@1.0.3/src/jquery.tipsy.min.js</CDNPath>
             <objectName>jQuery.fn.tipsy</objectName>
           </javaScriptLibrary>
         </component>
@@ -34,6 +34,14 @@
               <name>jquery.tipsy.js</name>
             </jsfile>
           </jsfiles>
+        </component>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>Resources\Libraries\tipsy\01_00_03</basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
         </component>
       </components>
     </package>

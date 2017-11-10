@@ -5,6 +5,21 @@
     "file": [
         "_InstallPackages"
     ],
+    "dependencies": {
+        "jquery.tipsy": "^1.0.3",
+        "jszip": "^3.1.5",
+        "quill": "^1.3.4",
+        "spectrum-colorpicker": "^1.8.0",
+        "swiper": "^4.0.5",
+        "systemjs": "^0.20.19",
+        "tableexport": "^4.0.11",
+        "tinymce": "^4.7.2",
+        "tota11y": "^0.1.6",
+        "underscore": "^1.8.3",
+        "unitegallery": "^1.7.28",
+        "urijs": "^1.19.0",
+        "zeroclipboard": "^2.3.0"
+    },
     "devDependencies": {
         "glob": "^7.1.2",
         "gulp": "^3.9.1",

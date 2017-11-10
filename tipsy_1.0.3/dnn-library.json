@@ -1,0 +1,4 @@
+{
+  "files": ["node_modules/jquery.tipsy/src/jquery.tipsy.js"],
+  "resources": ["node_modules/jquery.tipsy/src/jquery.tipsy.css"]
+}

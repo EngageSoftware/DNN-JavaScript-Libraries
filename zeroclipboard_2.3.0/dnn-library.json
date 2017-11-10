@@ -1,0 +1,11 @@
+{
+  "files": ["node_modules/zeroclipboard/dist/ZeroClipboard.min.js"],
+  "resources": [
+    "node_modules/zeroclipboard/dist/ZeroClipboard.Core.js",
+    "node_modules/zeroclipboard/dist/ZeroClipboard.Core.min.js",
+    "node_modules/zeroclipboard/dist/ZeroClipboard.Core.min.map",
+    "node_modules/zeroclipboard/dist/ZeroClipboard.js",
+    "node_modules/zeroclipboard/dist/ZeroClipboard.min.map",
+    "node_modules/zeroclipboard/dist/ZeroClipboard.swf"
+  ]
+}

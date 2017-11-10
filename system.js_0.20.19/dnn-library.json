@@ -1,0 +1,7 @@
+{
+  "files": ["node_modules/systemjs/dist/system.js"],
+  "resources": [
+    "node_modules/systemjs/dist/**",
+    "!node_modules/systemjs/dist/system.js"
+  ]
+}
