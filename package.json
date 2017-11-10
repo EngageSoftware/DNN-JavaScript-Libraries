@@ -2,5 +2,13 @@
     "name": "engage-dnn-javascript-libraries",
     "version": "0.10.0",
     "private": true,
-    "file": ["_InstallPackages"]
+    "file": [
+        "_InstallPackages"
+    ],
+    "devDependencies": {
+        "glob": "^7.1.2",
+        "gulp": "^3.9.1",
+        "gulp-zip": "^4.0.0",
+        "merge-stream": "^1.0.1"
+    }
 }
