@@ -5,6 +5,9 @@
     "file": [
         "_InstallPackages"
     ],
+    "scripts": {
+        "package": "gulp"
+    },
     "dependencies": {
         "jquery.tipsy": "^1.0.3",
         "jszip": "^3.1.5",
