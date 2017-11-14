@@ -14,13 +14,9 @@ gulp.task(
       task: gulp.task(manifestPath, () =>
         mergeStream(
           gulp.src(manifest.files),
-          gulp.src(manifest.resources || []).pipe(zip("Resources.zip"))
+          gulp.src(manifest.resources || []).pipe(zip("Resources.zip")),
+          gulp.src(["LICENSE.htm", "CHANGES.htm", "*.dnn"], { cwd: path.dirname(manifestPath) })
         )
-          .add(
-            gulp.src(["LICENSE.htm", "CHANGES.htm", "*.dnn"], {
-              cwd: path.dirname(manifestPath)
-            })
-          )
           .pipe(zip(path.basename(path.dirname(manifestPath)) + ".zip"))
           .pipe(gulp.dest("./_InstallPackages/"))
       )
