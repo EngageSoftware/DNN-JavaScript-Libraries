@@ -25,5 +25,5 @@ gulp.task(
           .pipe(gulp.dest("./_InstallPackages/"))
       )
     }))
-    .reduce((tasks, { manifestPath }) => tasks.concat(manifestPath), [])
+    .reduce((taskNames, { manifestPath }) => taskNames.concat(manifestPath), [])
 );
