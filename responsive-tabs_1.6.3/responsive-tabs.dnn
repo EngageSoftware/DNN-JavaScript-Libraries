@@ -35,6 +35,14 @@ Check out a demo at <a href="http://jellekralt.github.io/Responsive-Tabs/demo.ht
               <name>jquery.responsiveTabs.min.js</name>
             </jsfile>
           </jsfiles>
+        </component>      
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>Resources\Libraries\responsive-tabs\01_06_03</basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
         </component>
       </components>
     </package>

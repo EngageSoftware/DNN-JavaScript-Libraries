@@ -10,6 +10,10 @@ adler-32@~1.0.0:
     exit-on-epipe ""
     printj ""
 
+almond@~0.3.1:
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/almond/-/almond-0.3.3.tgz#a0e7c95ac7624d6417b4494b1e68bff693168a20"
+
 ansi-regex@^2.0.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-2.1.1.tgz#c3b33ab5ee360d86e0e628f0468ae7ef27d654df"
@@ -63,6 +67,10 @@ beeper@^1.0.0:
 blobjs@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/blobjs/-/blobjs-1.1.1.tgz#544af6db887b1c62f45ea8e07ceb45c13b5995aa"
+
+bootstrap@^3.3.7:
+  version "3.3.7"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-3.3.7.tgz#5a389394549f23330875a3b150656574f8a9eb71"
 
 brace-expansion@^1.0.0, brace-expansion@^1.1.7:
   version "1.1.8"
@@ -667,15 +675,23 @@ isobject@^3.0.0, isobject@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/isobject/-/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
 
+jquery-mousewheel@~3.1.13:
+  version "3.1.13"
+  resolved "https://registry.yarnpkg.com/jquery-mousewheel/-/jquery-mousewheel-3.1.13.tgz#06f0335f16e353a695e7206bf50503cb523a6ee5"
+
 jquery.tipsy@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/jquery.tipsy/-/jquery.tipsy-1.0.3.tgz#648f3a9025d342be1c7280f23b70c41835a85b13"
   dependencies:
     jquery "*"
 
-jquery@*, "jquery@>= 3.1.1":
+jquery@*, "jquery@>= 3.1.1", jquery@^3.2.1:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.2.1.tgz#5c4d9de652af6cd0a770154a631bba12b015c787"
+
+"jquery@>=1.7.2 <3.0.0":
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-2.2.4.tgz#2c89d6889b5eac522a7eea32c14521559c6cbf02"
 
 jszip@^3.1.5:
   version "3.1.5"
@@ -899,6 +915,10 @@ normalize-path@^2.0.1:
   dependencies:
     remove-trailing-separator "^1.0.1"
 
+numeral@^2.0.6:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/numeral/-/numeral-2.0.6.tgz#4ad080936d443c2561aed9f2197efffe25f4e506"
+
 object-assign@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-3.0.0.tgz#9bedd5ca0897949bca47e7ff408062d549f587f2"
@@ -1000,6 +1020,14 @@ path-root@^0.1.1:
   dependencies:
     path-root-regex "^0.1.0"
 
+pepjs@^0.4.3:
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/pepjs/-/pepjs-0.4.3.tgz#16080e970aae779913756c2daef88eaa7486df41"
+
+picturefill@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/picturefill/-/picturefill-3.0.2.tgz#fa3d35fffbef5ab5300fe2ad9dca8f2e36cba27b"
+
 preserve@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
@@ -1015,6 +1043,10 @@ printj@:
 process-nextick-args@~1.0.6:
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-1.0.7.tgz#150e20b756590ad3f91093f25a4f2ad8bff30ba3"
+
+pubsub-js@^1.5.7:
+  version "1.5.7"
+  resolved "https://registry.yarnpkg.com/pubsub-js/-/pubsub-js-1.5.7.tgz#a9f386ac141b0905b19cbb2dd57256265f975744"
 
 quill-delta@^3.6.2:
   version "3.6.2"
@@ -1124,9 +1156,30 @@ resolve@^1.1.6, resolve@^1.1.7:
   dependencies:
     path-parse "^1.0.5"
 
+respond.js@^1.4.2:
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/respond.js/-/respond.js-1.4.2.tgz#fd5c07450acce6090916d8d090b86b672dd9748b"
+
+responsive-tabs@^1.6.3:
+  version "1.6.3"
+  resolved "https://registry.yarnpkg.com/responsive-tabs/-/responsive-tabs-1.6.3.tgz#220a8650de9e73d720d3f7076da50170c45e4491"
+  dependencies:
+    jquery ">=1.7.2 <3.0.0"
+
+routerjs@^1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/routerjs/-/routerjs-1.0.10.tgz#d6ac7e79dcf58b281702801f3da221d00052ec31"
+
 safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.1.tgz#893312af69b2123def71f57889001671eeb2c853"
+
+select2@4.0.5:
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/select2/-/select2-4.0.5.tgz#7aac50692561985b34d3b82ec55e226f8960d40a"
+  dependencies:
+    almond "~0.3.1"
+    jquery-mousewheel "~3.1.13"
 
 semver@^4.1.0:
   version "4.3.6"

@@ -1,0 +1,7 @@
+{
+  "files": ["node_modules/picturefill/dist/picturefill.min.js"],
+  "resources": [
+    "node_modules/routerjs/dist/**",
+    "!node_modules/picturefill/dist/picturefill.min.js"
+  ]
+}

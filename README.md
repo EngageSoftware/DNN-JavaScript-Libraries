@@ -141,3 +141,17 @@ License
 
 This code is released under the [MIT license](LICENSE.md).  
 However, the individual libraries are licensed by their respective owners.
+
+
+How to Migrate a Library from Bower to npm
+==========================================
+1. Find library on https://npms.io/
+2. Install with Yarn, e.g. `yarn add routerjs`
+3. Remove old `Resources.zip` and JS files
+4. Add `dnn-library.json` file
+5. Find files to publish in `node_modules` folder
+6. Update paths in `dnn-library.json` file
+7. Optionally ensure version is correct
+8. Optionally add `Resources.zip` section to `.dnn` file
+9. Optionally update CDN URL
+10. Don't do any of this, because it's automated, hopefully :-)

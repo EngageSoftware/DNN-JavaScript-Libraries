@@ -1,0 +1,7 @@
+{
+  "files": ["node_modules/respond.js/dest/respond.min.js"],
+  "resources": [
+    "node_modules/respond.js/dest/**",
+    "!node_modules/respond.js/dest/respond.min.js"
+  ]
+}

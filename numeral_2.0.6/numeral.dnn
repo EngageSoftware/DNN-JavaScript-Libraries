@@ -35,6 +35,14 @@
             </jsfile>
           </jsfiles>
         </component>
+         <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>Resources\Libraries\numeral\02_00_06</basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
       </components>
     </package>
   </packages>

@@ -32,6 +32,14 @@
             </jsfile>
           </jsfiles>
         </component>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>Resources\Libraries\router.js\01_00_10</basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
       </components>
     </package>
   </packages>

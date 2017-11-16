@@ -21,7 +21,7 @@
         <component type="JavaScript_Library">
           <javaScriptLibrary>
             <libraryName>respond-minmax</libraryName>
-            <fileName>respond.src.js</fileName>
+            <fileName>respond.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
             <CDNPath><!-- do not use CDN since the script needs to do a non-cross-domain request to get the CSS --></CDNPath>
             <objectName>respond</objectName>
@@ -31,9 +31,17 @@
           <jsfiles>
             <libraryFolderName>respond-minmax</libraryFolderName>
             <jsfile>
-              <name>respond.src.js</name>
+              <name>respond.min.js</name>
             </jsfile>
           </jsfiles>
+        </component>
+         <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>Resources\Libraries\respond-minmax\01_04_02</basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
         </component>
       </components>
     </package>
