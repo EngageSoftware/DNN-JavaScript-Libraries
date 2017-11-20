@@ -1,0 +1,4 @@
+{
+  "files": ["node_modules/intl-tel-input/build/js/intlTelLnput.min.js"],
+  "resources": ["node_modules/intel-tel-input/build/js/**"]
+}

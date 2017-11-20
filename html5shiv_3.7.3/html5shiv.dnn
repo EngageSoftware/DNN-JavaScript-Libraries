@@ -33,6 +33,14 @@
             </jsfile>
           </jsfiles>
         </component>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>Resources\Libraries\html5shiv\03_07_03</basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
       </components>
     </package>
   </packages>

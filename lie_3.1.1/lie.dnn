@@ -35,6 +35,14 @@
             </jsfile>
           </jsfiles>
         </component>
+         <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>Resources\Libraries\lie\03_01_01</basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
       </components>
     </package>
   </packages>

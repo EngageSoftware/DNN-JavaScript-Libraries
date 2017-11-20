@@ -19,7 +19,7 @@
         <component type="JavaScript_Library">
           <javaScriptLibrary>
             <libraryName>jQuery.easing</libraryName>
-            <fileName>jQuery.easing.1.3.js</fileName>
+            <fileName>jQuery.easing.min.js</fileName>
             <objectName>jQuery.easing.easeInOutQuad</objectName>
             <preferredScriptLocation>PageHead</preferredScriptLocation>
             <CDNPath>https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js</CDNPath>
@@ -29,9 +29,17 @@
           <jsfiles>
             <libraryFolderName>jQuery.easing</libraryFolderName>
             <jsfile>
-              <name>jQuery.easing.1.3.js</name>
+              <name>jQuery.easing.min.js</name>
             </jsfile>
           </jsfiles>
+        </component>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>Resources\Libraries\jquery.easing\01_03_01</basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
         </component>
       </components>
     </package>

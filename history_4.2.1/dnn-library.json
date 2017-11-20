@@ -1,0 +1,4 @@
+{
+  "files": ["node_modules/html5-history-api/history.min.js"],
+  "resources": ["node_modules/html5-history-api/**"]
+}

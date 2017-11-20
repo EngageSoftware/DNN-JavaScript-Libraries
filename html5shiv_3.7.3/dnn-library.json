@@ -1,0 +1,4 @@
+{
+  "files": ["node_modules/html5shiv/dist/html5shiv.min.js"],
+  "resources": ["node_modules/html5shiv/dist/**"]
+}

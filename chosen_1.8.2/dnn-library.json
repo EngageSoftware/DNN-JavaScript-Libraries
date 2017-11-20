@@ -1,0 +1,4 @@
+{
+  "files": ["node_modules/chosen-js/chosen.jquery.min.js"],
+  "resources": ["node_modules/chosen-js/**"]
+}
