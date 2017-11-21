@@ -23,7 +23,7 @@
             <libraryName>Knockout.Sortable</libraryName>
             <fileName>knockout-sortable.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdnjs.cloudflare.com/ajax/libs/knockout-sortable/1.1.0/knockout-sortable.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/knockout-sortable@1.1.0/build/knockout-sortable.min.js</CDNPath>
             <objectName>ko.sortable</objectName>
           </javaScriptLibrary>
         </component>

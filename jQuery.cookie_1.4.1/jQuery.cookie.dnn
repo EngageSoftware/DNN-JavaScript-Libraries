@@ -22,7 +22,7 @@
             <fileName>jQuery.cookie.js</fileName>
             <objectName>jQuery.cookie</objectName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/jquery.cookie/1.4.1/jquery.cookie.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js</CDNPath>
           </javaScriptLibrary>
         </component>
         <component type="JavaScriptFile">

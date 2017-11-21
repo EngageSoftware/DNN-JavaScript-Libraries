@@ -19,8 +19,8 @@
             <libraryName>system.js</libraryName>
             <fileName>system.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <!--CDNPath></CDNPath>
-            <objectName>System</objectName-->
+            <CDNPath>https://cdn.jsdelivr.net/npm/systemjs@0.20.19/dist/system.js</CDNPath>
+            <!--objectName>System</objectName-->
           </javaScriptLibrary>
         </component>
         <component type="JavaScriptFile">

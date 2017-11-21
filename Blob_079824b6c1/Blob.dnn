@@ -24,7 +24,7 @@ not natively support it.]]></description>
             <libraryName>Blob</libraryName>
             <fileName>Blob.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/blob.js/0.1/Blob.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/blob.js@1.0.1/Blob.min.js</CDNPath>
             <objectName>Blob</objectName>
           </javaScriptLibrary>
         </component>

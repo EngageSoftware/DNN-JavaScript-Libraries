@@ -23,7 +23,7 @@
             <libraryName>numeral</libraryName>
             <fileName>numeral.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/numeral@2.0.6/min/numeral.min.js</CDNPath>
             <objectName>numeral</objectName>
           </javaScriptLibrary>
         </component>

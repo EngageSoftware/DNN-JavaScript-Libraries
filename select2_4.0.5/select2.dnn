@@ -25,7 +25,7 @@ remote data sets, and pagination of results.</p>
             <libraryName>select2</libraryName>
             <fileName>select2.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/select2/4.0.5/js/select2.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/select2@4.0.6-rc.0/dist/js/select2.min.js</CDNPath>
             <objectName>jQuery.fn.select2</objectName>
           </javaScriptLibrary>
         </component>

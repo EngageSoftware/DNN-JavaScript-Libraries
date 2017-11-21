@@ -22,6 +22,7 @@
             <fileName>router.min.js</fileName>
             <objectName>Router</objectName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+            <CDNPath>https://cdn.jsdelivr.net/npm/routerjs@1.0.10/dist/router.min.js</CDNPath>
           </javaScriptLibrary>
         </component>
         <component type="JavaScriptFile">

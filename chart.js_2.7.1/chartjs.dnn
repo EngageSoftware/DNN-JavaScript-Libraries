@@ -23,7 +23,7 @@
             <libraryName>chartjs</libraryName>
             <fileName>Chart.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/chart.js/2.7.1/Chart.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/chart.js@2.7.1/src/chart.min.js</CDNPath>
             <objectName>Chart</objectName>
           </javaScriptLibrary>
         </component>
@@ -34,6 +34,14 @@
               <name>Chart.min.js</name>
             </jsfile>
           </jsfiles>
+        </component>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>Resources\Libraries\chartjs\02_07_01</basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
         </component>
       </components>
     </package>

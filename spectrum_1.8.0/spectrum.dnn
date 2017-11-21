@@ -21,7 +21,7 @@
             <libraryName>spectrum</libraryName>
             <fileName>spectrum.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.0/spectrum.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/spectrum-colorpicker@1.8.0/spectrum.min.js</CDNPath>
             <objectName>jQuery.fn.spectrum</objectName>
           </javaScriptLibrary>
         </component>

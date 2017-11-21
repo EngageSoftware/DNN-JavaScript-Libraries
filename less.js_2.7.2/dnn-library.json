@@ -1,7 +1,4 @@
 {
   "files": ["node_modules/less/dist/less.min.js"],
-  "resources": [
-    "node_modules/numeral/min/**",
-    "!node_modules/numeral/min/numeral.min.js"
-  ]
+  "resources": []
 }

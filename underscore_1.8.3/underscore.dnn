@@ -23,7 +23,7 @@
             <libraryName>underscore</libraryName>
             <fileName>underscore-min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/underscorejs/1.8.3/underscore-min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/underscore@1.8.3/underscore.min.js</CDNPath>
             <objectName>_</objectName>
           </javaScriptLibrary>
         </component>

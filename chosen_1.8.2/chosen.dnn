@@ -21,7 +21,7 @@
             <libraryName>chosen</libraryName>
             <fileName>chosen.jquery.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.2/chosen.jquery.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/chosen-js@1.8.2/chosen.jquery.min.js</CDNPath>
             <objectName>jQuery.fn.chosen</objectName>
           </javaScriptLibrary>
         </component>

@@ -1,0 +1,7 @@
+{
+  "files": ["node_modules/bootstrap/dist/js/bootstrap.min.js"],
+  "resources": [
+    "node_modules/bootstrap/dist/**",
+    "!node_modules/bootstrap/dist/js/bootstrap.min.js"
+  ]
+}

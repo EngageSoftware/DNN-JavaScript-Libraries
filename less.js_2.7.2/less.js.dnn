@@ -23,7 +23,7 @@
             <libraryName>less.js</libraryName>
             <fileName>less.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/less@2.7.2/dist/less.min.js</CDNPath>
             <objectName>less</objectName>
           </javaScriptLibrary>
         </component>

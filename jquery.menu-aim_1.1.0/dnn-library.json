@@ -1,0 +1,4 @@
+{
+  "files": ["node_modules/jquery-menu-aim/jquery.menu-aim.js"],
+  "resources": ["node_modules/jquery-menu-aim/**"]
+}

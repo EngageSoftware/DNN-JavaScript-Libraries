@@ -23,6 +23,7 @@
             <fileName>knockout-jqAutocomplete.min.js</fileName>
             <objectName>ko.bindingHandlers.jqAuto</objectName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+            <CDNPath>https://cdn.jsdelivr.net/npm/knockout-jqautocomplete@0.4.4/src/knockout-jqAutocomplete.js</CDNPath>
           </javaScriptLibrary>
         </component>
         <component type="JavaScriptFile">

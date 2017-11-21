@@ -21,6 +21,7 @@
             <libraryName>bootstrap.accessibility</libraryName>
             <fileName>bootstrap-accessibility.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+             <CDNPath>https://cdn.jsdelivr.net/npm/bootstrap-datepicker@1.7.1/dist/js/bootstrap-datepicker.min.js</CDNPath>
           </javaScriptLibrary>
         </component>
         <component type="JavaScriptFile">

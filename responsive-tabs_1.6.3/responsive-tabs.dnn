@@ -24,7 +24,7 @@ Check out a demo at <a href="http://jellekralt.github.io/Responsive-Tabs/demo.ht
             <libraryName>responsive-tabs</libraryName>
             <fileName>jquery.responsiveTabs.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath></CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/responsive-tabs@1.6.3/js/jquery.responsiveTabs.min.js</CDNPath>
             <objectName></objectName>
           </javaScriptLibrary>
         </component>

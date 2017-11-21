@@ -21,7 +21,7 @@
             <libraryName>knockout.validation</libraryName>
             <fileName>knockout.validation.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/knockout.validation/2.0.3/knockout.validation.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/knockout.validation@2.0.3/dist/knockout.validation.min.js</CDNPath>
             <objectName>ko.validation</objectName>
           </javaScriptLibrary>
         </component>

@@ -19,6 +19,7 @@
             <fileName>history.js</fileName>
             <objectName>window.history.location</objectName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+            <CDNPath>https://cdn.jsdelivr.net/npm/html5-history-api@4.2.8/history.min.js</CDNPath>
           </javaScriptLibrary>
         </component>
         <component type="JavaScriptFile">

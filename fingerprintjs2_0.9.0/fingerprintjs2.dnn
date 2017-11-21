@@ -19,7 +19,7 @@
             <fileName>fingerprint2.min.js</fileName>
             <objectName>Fingerprint2</objectName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/fingerprintjs2/0.9.0/fingerprint2.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/fingerprintjs2@1.5.1/dist/fingerprint2.min.js</CDNPath>
           </javaScriptLibrary>
         </component>
         <component type="JavaScriptFile">

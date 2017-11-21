@@ -22,7 +22,7 @@
             <fileName>html5shiv-printshiv.min.js</fileName>
             <objectName>html5</objectName>
             <preferredScriptLocation>PageHead</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv-printshiv.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js</CDNPath>
           </javaScriptLibrary>
         </component>
         <component type="JavaScriptFile">

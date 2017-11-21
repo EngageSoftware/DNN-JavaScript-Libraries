@@ -1,4 +1,4 @@
 {
-  "files": ["node_modules/knockout-sortable/src/knockout-sortable.js"],
+  "files": ["node_modules/knockout-sortable/build/knockout-sortable.min.js"],
   "resources": []
 }
