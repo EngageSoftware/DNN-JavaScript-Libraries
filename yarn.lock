@@ -1075,6 +1075,10 @@ kind-of@^4.0.0:
   dependencies:
     is-buffer "^1.1.5"
 
+kinetic@^5.2.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/kinetic/-/kinetic-5.2.0.tgz#83c4c5eb5644f24e26e9b4b3858431970a30b75f"
+
 knockout-jqautocomplete@^0.4.4:
   version "0.4.4"
   resolved "https://registry.yarnpkg.com/knockout-jqautocomplete/-/knockout-jqautocomplete-0.4.4.tgz#c40480a0ab58a040a0fb8fe52f6862ffe593e851"
