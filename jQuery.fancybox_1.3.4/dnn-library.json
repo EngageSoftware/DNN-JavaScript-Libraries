@@ -1,4 +1,4 @@
 {
-  "files": ["jQuery.fancybox_1.3.4/jquery.fancybox-1.3.4.js"],
-  "resources": []
+  "files": ["jQuery.fancybox_1.3.4/jquery.fancybox-1.3.4.pack.js"],
+  "resources": ["jQuery.fancybox_1.3.4/resources/**"]
 }
