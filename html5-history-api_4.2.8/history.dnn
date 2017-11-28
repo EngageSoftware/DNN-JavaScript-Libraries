@@ -1,0 +1,46 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="history" type="JavaScript_Library" version="4.2.8">
+      <friendlyName>HTML5 History API</friendlyName>
+      <description>
+        <![CDATA[HTML5 History API expansion for browsers not supporting pushState, replaceState <a href="http://spb-piksel.ru">http://spb-piksel.ru</a>]]>
+      </description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>http://www.engagesoftware.com</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes src="CHANGES.htm" />
+      <azureCompatible>true</azureCompatible>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>history</libraryName>
+            <fileName>history.js</fileName>
+            <objectName>window.history.location</objectName>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+            <CDNPath>https://cdn.jsdelivr.net/npm/html5-history-api@4.2.8/history.min.js</CDNPath>
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName>history</libraryFolderName>
+            <jsfile>
+              <name>history.js</name>
+            </jsfile>
+          </jsfiles>
+        </component>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>Resources\Libraries\history\04_02_08</basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>

@@ -1,0 +1,38 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="date-fns" type="JavaScript_Library" version="1.29.0">
+      <friendlyName>date-fns</friendlyName>
+      <description>
+        <![CDATA[Modern JavaScript date utility library]]>
+      </description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>http://www.engagesoftware.com</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes src="CHANGES.htm" />
+      <azureCompatible>true</azureCompatible>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>date-fns</libraryName>
+            <fileName>date_fns.min.js</fileName>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+            <!--CDNPath>http://cdn.date-fns.org/v1.29.0/date_fns.min.js</CDNPath-->
+            <objectName>dateFns</objectName>
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName>date-fns</libraryFolderName>
+            <jsfile>
+              <name>date_fns.min.js</name>
+            </jsfile>
+          </jsfiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
