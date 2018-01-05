@@ -1,0 +1,4 @@
+{
+  "files": ["node_modules/datatables/media/js/jquery.dataTables.min.js"],
+  "resources": ["node_modules/datatables/media/**"]
+}
