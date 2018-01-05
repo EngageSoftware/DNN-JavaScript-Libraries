@@ -9,6 +9,7 @@
     "package": "gulp"
   },
   "dependencies": {
+    "alpaca": "^1.5.23",
     "blob.js": "^1.0.1",
     "bluebird": "^3.5.1",
     "bootstrap": "^3.3.7",

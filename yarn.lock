@@ -28,6 +28,10 @@ almond@~0.3.1:
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/almond/-/almond-0.3.3.tgz#a0e7c95ac7624d6417b4494b1e68bff693168a20"
 
+alpaca@^1.5.23:
+  version "1.5.23"
+  resolved "https://registry.yarnpkg.com/alpaca/-/alpaca-1.5.23.tgz#54a0c1a1c8b1a559f478424a6ebe761de378a899"
+
 ansi-regex@^2.0.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-2.1.1.tgz#c3b33ab5ee360d86e0e628f0468ae7ef27d654df"

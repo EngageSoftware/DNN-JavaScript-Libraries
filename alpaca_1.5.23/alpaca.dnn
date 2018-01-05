@@ -1,0 +1,45 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="alpaca" type="JavaScript_Library" version="1.5.23">
+      <friendlyName>Alpaca</friendlyName>
+      <description>Alpaca provides the easiest way to generate interactive HTML5 forms for web and mobile applications. It uses JSON Schema and simple Handlebars templates to generate great looking, dynamic user interfaces on top of Twitter Bootstrap, jQuery UI, jQuery Mobile and HTML5.</description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>http://www.engagesoftware.com</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes src="CHANGES.htm" />
+      <azureCompatible>true</azureCompatible>
+      <dependencies></dependencies>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>alpaca</libraryName>
+            <fileName>alpaca.min.js</fileName>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+            <objectName>jQuery.fn.alpaca</objectName>
+            <cdnUrl>http://code.cloudcms.com/alpaca/1.5.23/web/alpaca.min.js</cdnUrl>
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName>alpaca</libraryFolderName>
+            <jsfile>
+              <name>alpaca.min.js</name>
+            </jsfile>
+          </jsfiles>
+        </component>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>Resources\Libraries\alpaca\01_10_13</basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
