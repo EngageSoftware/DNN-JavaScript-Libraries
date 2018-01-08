@@ -1,0 +1,46 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="moment" type="JavaScript_Library" version="2.20.1">
+      <friendlyName>Moment.js</friendlyName>
+      <description>
+        <![CDATA[Parse, validate, manipulate, and display dates and times in JavaScript.]]>
+      </description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>http://www.engagesoftware.com</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes src="CHANGES.htm" />
+      <azureCompatible>true</azureCompatible>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>moment</libraryName>
+            <fileName>moment.min.js</fileName>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+            <CDNPath>https://cdn.jsdelivr.net/npm/moment@2.20.1/min/moment.min.js</CDNPath>
+            <objectName>moment</objectName>
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName>moment</libraryFolderName>
+            <jsfile>
+              <name>moment.min.js</name>
+            </jsfile>
+          </jsfiles>
+        </component>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>Resources\Libraries\moment\02_20_01</basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>

@@ -1,0 +1,7 @@
+{
+  "files": ["node_modules/moment/min/moment.min.js"],
+  "resources": [
+    "node_modules/moment/min/**",
+    "!node_modules/moment/min/moment.min.js"
+  ]
+}
