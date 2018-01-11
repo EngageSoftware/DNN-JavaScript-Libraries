@@ -1,0 +1,47 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="datatables.net-buttons" type="JavaScript_Library" version="01.10.16">
+      <friendlyName>DataTables Buttons Extension</friendlyName>
+      <description>An extension to the DataTables JS library, providing a common framework for user interaction buttons..</description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>http://www.engagesoftware.com</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes src="CHANGES.htm" />
+      <azureCompatible>true</azureCompatible>
+      <dependencies>
+        <dependency type="managedPackage" version="1.10.16">datatables.net</dependency>
+      </dependencies>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>datatables.net-buttons</libraryName>
+            <fileName>dataTables.buttons.min.js</fileName>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+            <objectName>jQuery.fn.DataTable.Buttons</objectName>
+            <cdnUrl>https://cdn.datatables.net/buttons/1.5.1/js/dataTables.buttons.min.js</cdnUrl>
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName>datatables.net-buttons</libraryFolderName>
+            <jsfile>
+              <name>dataTables.buttons.min.js</name>
+            </jsfile>
+          </jsfiles>
+        </component>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>Resources\Libraries\datatables.net-buttons\01_10_16</basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
