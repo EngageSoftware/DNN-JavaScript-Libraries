@@ -1,4 +1,2 @@
-bower_components/
-_bower_components/
-_InstallPackages/
+/_InstallPackages/
 /node_modules/
