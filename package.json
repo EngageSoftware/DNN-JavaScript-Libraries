@@ -2,9 +2,12 @@
   "name": "engage-dnn-javascript-libraries",
   "version": "0.10.0",
   "private": true,
-  "file": ["_InstallPackages"],
+  "file": [
+    "_InstallPackages"
+  ],
   "scripts": {
-    "package": "gulp"
+    "package": "gulp",
+    "new": "yo ./_new"
   },
   "dependencies": {
     "alpaca": "1.5.23",
@@ -68,9 +71,14 @@
     "zeroclipboard": "2.3.0"
   },
   "devDependencies": {
+    "chalk": "2.3.0",
     "glob": "^7.1.2",
+    "globby": "7.1.1",
     "gulp": "^3.9.1",
     "gulp-zip": "^4.0.0",
-    "merge-stream": "^1.0.1"
+    "merge-stream": "^1.0.1",
+    "package-json": "4.0.1",
+    "yeoman-generator": "2.0.2",
+    "yo": "2.0.1"
   }
 }

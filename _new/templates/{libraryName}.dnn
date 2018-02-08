@@ -1,0 +1,56 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="<%=libraryName%>" type="JavaScript_Library" version="<%=version%>">
+      <friendlyName><%=friendlyName%>
+      </friendlyName>
+      <description>
+        <![CDATA[<%-description%>]]>
+      </description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>https://engagesoftware.com/</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes src="CHANGES.htm" />
+      <azureCompatible>true</azureCompatible>
+      <dependencies></dependencies>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName><%=libraryName%>
+            </libraryName>
+            <fileName><%=fileName%>
+            </fileName>
+            <preferredScriptLocation><%=preferredScriptLocation%>
+            </preferredScriptLocation>
+            <objectName><%=objectName%>
+            </objectName>
+            <cdnUrl>https://cdn.jsdelivr.net/npm/<%=libraryName%>@<%=version%><%=relativePath%>
+            </cdnUrl>
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName><%=libraryName%>
+            </libraryFolderName>
+            <jsfile>
+              <name><%=fileName%>
+              </name>
+            </jsfile>
+          </jsfiles>
+        </component>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>Resources\Libraries\<%=libraryName%>\<%=versionFolder%>
+            </basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
