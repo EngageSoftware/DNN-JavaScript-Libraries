@@ -1629,6 +1629,10 @@ ignore@^3.3.5:
   version "3.3.7"
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-3.3.7.tgz#612289bfb3c220e186a58118618d5be8c1bab021"
 
+image-map@1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/image-map/-/image-map-1.0.8.tgz#1be198b971825aeb500d74d5df2c2490a09b6795"
+
 image-size@~0.5.0:
   version "0.5.5"
   resolved "https://registry.yarnpkg.com/image-size/-/image-size-0.5.5.tgz#09dfd4ab9d20e29eb1c3e80b8990378df9e3cb9c"
