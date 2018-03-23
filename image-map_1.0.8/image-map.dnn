@@ -1,0 +1,39 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="image-map" type="JavaScript_Library" version="1.0.8">
+      <friendlyName>Image-Map</friendlyName>
+      <description>
+        <![CDATA[A native JavaScript solution for creating responsive image-maps that rerender on image or viewport changes.]]>
+      </description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>https://engagesoftware.com/</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes src="CHANGES.htm" />
+      <azureCompatible>true</azureCompatible>
+      <dependencies></dependencies>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>image-map</libraryName>
+            <fileName>image-map.min.js</fileName>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+            <objectName>ImageMap</objectName>
+            <cdnUrl>https://cdn.jsdelivr.net/npm/image-map@1.0.8/image-map.min.js</cdnUrl>
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName>image-map</libraryFolderName>
+            <jsfile>
+              <name>image-map.min.js</name>
+            </jsfile>
+          </jsfiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
