@@ -1,0 +1,6 @@
+{
+  "files": [
+    "node_modules/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"
+  ],
+  "resources": ["node_modules/eonasdan-bootstrap-datetimepicker/build/**"]
+}

@@ -1,0 +1,4 @@
+{
+  "files": ["node_modules/routerjs/dist/router.min.js"],
+  "resources": ["node_modules/routerjs/dist/*.map"]
+}

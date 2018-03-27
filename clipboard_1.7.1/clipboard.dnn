@@ -24,7 +24,7 @@
             <libraryName>clipboard</libraryName>
             <fileName>clipboard.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/clipboard.js/1.7.1/clipboard.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/clipboard@1.7.1/dist/clipboard.min.js</CDNPath>
             <objectName>Clipboard</objectName>
           </javaScriptLibrary>
         </component>

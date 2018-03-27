@@ -1,0 +1,9 @@
+{
+  "files": ["node_modules/es6-shim/es6-shim.min.js"],
+  "resources": [
+    "node_modules/es6-shim/*.js",
+    "node_modules/es6-shim/*.map",
+    "!node_modules/es6-shim/Gruntfile.js",
+    "!node_modules/es6-shim/es6-shim.min.js"
+  ]
+}

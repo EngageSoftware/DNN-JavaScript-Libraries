@@ -1,0 +1,4 @@
+{
+  "files": ["node_modules/chart.js/dist/Chart.min.js"],
+  "resources": ["node_modules/chart.js/dist/**"]
+}

@@ -21,7 +21,7 @@
             <libraryName>knockout-postbox</libraryName>
             <fileName>knockout-postbox.min.js</fileName>
             <objectName>ko.postbox</objectName>
-            <cdnUrl>https://cdnjs.cloudflare.com/ajax/libs/knockout-postbox/0.6.0/knockout-postbox.min.js</cdnUrl>
+            <cdnUrl>https://cdn.jsdelivr.net/npm/knockout-postbox@0.6.0/build/knockout-postbox.min.js</cdnUrl>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
           </javaScriptLibrary>
         </component>

@@ -1,0 +1,50 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="eonasdan-bootstrap-datetimepicker" type="JavaScript_Library" version="4.17.47">
+      <friendlyName>Bootstrap 3 Datepicker</friendlyName>
+      <description>Date/time picker widget based on twitter bootstrap</description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>https://engagesoftware.com/</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes src="CHANGES.htm" />
+      <azureCompatible>true</azureCompatible>
+      <dependencies>
+        <dependency type="managedPackage" version="2.10.0">moment</dependency>
+        <dependency type="managedPackage" version="1.8.3">jQuery</dependency>
+        <!--<dependency type="managedPackage" version="3.3">bootstrap</dependency>-->
+        <!--<dependency type="managedPackage" version="0.4.0">moment-timezone</dependency>-->
+      </dependencies>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>eonasdan-bootstrap-datetimepicker</libraryName>
+            <fileName>bootstrap-datetimepicker.min.js</fileName>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+            <objectName>jQuery.fn.datetimepicker</objectName>
+            <cdnUrl>https://cdn.jsdelivr.net/npm/eonasdan-bootstrap-datetimepicker@4.17.47/build/js/bootstrap-datetimepicker.min.js</cdnUrl>
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName>eonasdan-bootstrap-datetimepicker</libraryFolderName>
+            <jsfile>
+              <name>bootstrap-datetimepicker.min.js</name>
+            </jsfile>
+          </jsfiles>
+        </component>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>Resources\Libraries\eonasdan-bootstrap-datetimepicker\01_10_13</basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>

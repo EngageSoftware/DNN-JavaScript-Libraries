@@ -23,7 +23,7 @@
             <libraryName>numeral</libraryName>
             <fileName>numeral.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/numeral@2.0.6/min/numeral.min.js</CDNPath>
             <objectName>numeral</objectName>
           </javaScriptLibrary>
         </component>
@@ -34,6 +34,14 @@
               <name>numeral.min.js</name>
             </jsfile>
           </jsfiles>
+        </component>
+         <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>Resources\Libraries\numeral\02_00_06</basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
         </component>
       </components>
     </package>

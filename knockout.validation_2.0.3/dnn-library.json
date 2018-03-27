@@ -1,0 +1,4 @@
+{
+  "files": ["node_modules/knockout.validation/dist/knockout.validation.min.js"],
+  "resources": ["node_modules/knockout.validation/dist/*.map"]
+}

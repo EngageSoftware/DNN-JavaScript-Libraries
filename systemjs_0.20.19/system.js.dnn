@@ -1,0 +1,45 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="system.js" type="JavaScript_Library" version="0.20.19">
+      <friendlyName>SystemJS</friendlyName>
+      <description><![CDATA[Universal dynamic module loader]]></description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>http://www.engagesoftware.com</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes src="CHANGES.htm" />
+      <azureCompatible>true</azureCompatible>
+      <dependencies></dependencies>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>system.js</libraryName>
+            <fileName>system.js</fileName>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+            <CDNPath>https://cdn.jsdelivr.net/npm/systemjs@0.20.19/dist/system.js</CDNPath>
+            <!--objectName>System</objectName-->
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName>system.js</libraryFolderName>
+            <jsfile>
+              <name>system.js</name>
+            </jsfile>
+          </jsfiles>
+        </component>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>Resources\Libraries\system.js\00_20_19</basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>

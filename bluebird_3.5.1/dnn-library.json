@@ -1,0 +1,4 @@
+{
+  "files": ["node_modules/bluebird/js/browser/bluebird.min.js"],
+  "resources": ["node_modules/bluebird/js/browser/**"]
+}

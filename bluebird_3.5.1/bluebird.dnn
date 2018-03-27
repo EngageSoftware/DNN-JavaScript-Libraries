@@ -23,7 +23,7 @@
             <libraryName>bluebird</libraryName>
             <fileName>bluebird.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/bluebird/3.5.1/bluebird.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/bluebird@3.5.1/js/browser/bluebird.min.js</CDNPath>
             <objectName>P</objectName>
           </javaScriptLibrary>
         </component>
@@ -34,6 +34,14 @@
               <name>bluebird.min.js</name>
             </jsfile>
           </jsfiles>
+        </component>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>Resources\Libraries\bluebird\03_05_01</basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
         </component>
       </components>
     </package>

@@ -21,7 +21,7 @@
             <libraryName>FlexSlider</libraryName>
             <fileName>jquery.flexslider-min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/flexslider/2.6.4/jquery.flexslider-min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/flexslider@2.6.4/jquery.flexslider.min.js</CDNPath>
             <objectName>jQuery.fn.flexslider</objectName>
           </javaScriptLibrary>
         </component>

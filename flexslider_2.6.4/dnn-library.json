@@ -1,0 +1,8 @@
+{
+  "files": ["node_modules/flexslider/jquery.flexslider-min.js"],
+  "resources": [
+    "node_modules/flexslider/*.css",
+    "node_modules/flexslider/fonts/**",
+    "node_modules/flexslider/images/**"
+  ]
+}

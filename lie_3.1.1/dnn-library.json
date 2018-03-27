@@ -1,0 +1,7 @@
+{
+  "files": ["node_modules/lie/dist/lie.min.js"],
+  "resources": [
+    "node_modules/lie/dist/**",
+    "!node_modules/lie/dist/lie.min.js"
+  ]
+}

@@ -23,7 +23,7 @@
             <libraryName>lie</libraryName>
             <fileName>lie.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath></CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/lie@3.1.1/dist/lie.min.js</CDNPath>
             <objectName>Promise</objectName>
           </javaScriptLibrary>
         </component>
@@ -34,6 +34,14 @@
               <name>lie.min.js</name>
             </jsfile>
           </jsfiles>
+        </component>
+         <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>Resources\Libraries\lie\03_01_01</basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
         </component>
       </components>
     </package>

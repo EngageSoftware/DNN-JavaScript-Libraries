@@ -23,7 +23,7 @@ Dependency free publish/subscribe for JavaScript
         <component type="JavaScript_Library">
           <javaScriptLibrary>
             <libraryName>pubsub-js</libraryName>
-            <fileName>pubsub.min.js</fileName>
+            <fileName>pubsub.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
             <CDNPath>https://cdn.jsdelivr.net/npm/pubsub-js@1.5.7/src/pubsub.min.js</CDNPath>
             <objectName>PubSub</objectName>
@@ -33,7 +33,7 @@ Dependency free publish/subscribe for JavaScript
           <jsfiles>
             <libraryFolderName>pubsub-js</libraryFolderName>
             <jsfile>
-              <name>pubsub.min.js</name>
+              <name>pubsub.js</name>
             </jsfile>
           </jsfiles>
         </component>

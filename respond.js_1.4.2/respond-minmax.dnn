@@ -1,0 +1,49 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="respond-minmax" type="JavaScript_Library" version="1.4.2">
+      <friendlyName>Respond</friendlyName>
+      <description><![CDATA[A fast &amp; lightweight polyfill for min/max-width CSS3 Media Queries (for IE 6-8, and more)]]></description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>http://www.engagesoftware.com</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes src="CHANGES.htm" />
+      <azureCompatible>true</azureCompatible>
+      <dependencies>
+      <!--
+        <dependency type="managedPackage" version="1.0.0">jQuery</dependency>
+        -->
+      </dependencies>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>respond-minmax</libraryName>
+            <fileName>respond.min.js</fileName>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+            <CDNPath><!-- do not use CDN since the script needs to do a non-cross-domain request to get the CSS --></CDNPath>
+            <objectName>respond</objectName>
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName>respond-minmax</libraryFolderName>
+            <jsfile>
+              <name>respond.min.js</name>
+            </jsfile>
+          </jsfiles>
+        </component>
+         <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>Resources\Libraries\respond-minmax\01_04_02</basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>

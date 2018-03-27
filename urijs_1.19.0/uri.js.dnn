@@ -23,7 +23,7 @@
             <libraryName>uri.js</libraryName>
             <fileName>URI.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/uri.js/1.19.0/jquery.URI.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/urijs@1.19.0/src/URI.min.js</CDNPath>
             <objectName>URI</objectName>
           </javaScriptLibrary>
         </component>

@@ -23,7 +23,7 @@
             <libraryName>pepjs</libraryName>
             <fileName>pep.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://code.jquery.com/pep/0.4.3/pep.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/pepjs@0.4.3/dist/pep.min.js</CDNPath>
             <objectName>PointerEventsPolyfill</objectName>
           </javaScriptLibrary>
         </component>

@@ -21,7 +21,7 @@
             <libraryName>jquery.scrollTo</libraryName>
             <fileName>jquery.scrollTo.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js</CDNPath>
             <objectName>jQuery.scrollTo</objectName>
           </javaScriptLibrary>
         </component>

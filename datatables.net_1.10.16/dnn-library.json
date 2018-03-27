@@ -1,0 +1,8 @@
+{
+  "files": ["node_modules/datatables.net/js/jquery.dataTables.js"],
+  "resources": [
+    "node_modules/datatables.net-dt/**",
+    "!**/package.json",
+    "!**/Readme.md"
+  ]
+}

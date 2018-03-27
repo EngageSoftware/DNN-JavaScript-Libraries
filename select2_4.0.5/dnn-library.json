@@ -1,0 +1,4 @@
+{
+  "files": ["node_modules/select2/dist/js/select2.min.js"],
+  "resources": ["node_modules/select2/dist/**"]
+}
