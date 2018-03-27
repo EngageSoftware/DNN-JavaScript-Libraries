@@ -2128,6 +2128,10 @@ knockout.validation@2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/knockout.validation/-/knockout.validation-2.0.3.tgz#899de5232364e1ecd5d946e080f6a26293046329"
 
+knockout@3.5.0-beta:
+  version "3.5.0-beta"
+  resolved "https://registry.yarnpkg.com/knockout/-/knockout-3.5.0-beta.tgz#0a90af428f6b5dfbba73fe57be1dc78bb3812758"
+
 latest-version@^3.0.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/latest-version/-/latest-version-3.1.0.tgz#a205383fea322b33b5ae3b18abee0dc2f356ee15"
@@ -2497,6 +2501,12 @@ mkdirp@^0.5.0, mkdirp@^0.5.1:
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
   dependencies:
     minimist "0.0.8"
+
+moment-timezone@0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/moment-timezone/-/moment-timezone-0.4.0.tgz#571ec43f5d2fb70ddb601c7d23b284e2f63ddab4"
+  dependencies:
+    moment ">= 2.6.0"
 
 moment-timezone@^0.4.0:
   version "0.4.1"
