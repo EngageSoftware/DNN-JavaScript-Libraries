@@ -23,24 +23,34 @@ module.exports = class extends Generator {
 				type: 'input',
 				name: 'libraryName',
 				message: "What is the npm module's name?",
+				validate: (libraryName, answers) => {
+					this.spawnCommand('yarn', ['add', libraryName], {
+						stdio: 'ignore',
+					});
+
+					return packageJson(libraryName, {
+						fullMetadata: true,
+					})
+						.then(pkg => {
+							answers.pkg = pkg;
+							if (pkg.repository && pkg.repository.url) {
+								answers.githubUrl = pkg.repository.url
+									.replace(/^git(?:\+https?)?:/, 'https:')
+									.replace(/\.git$/, '');
+							}
+						})
+						.then(
+							() => true,
+							err =>
+								`There was an error retrieving metadata for npm package ${libraryName} \n ${err}`
+						);
+				},
 			},
 			{
 				type: 'input',
 				name: 'friendlyName',
 				message: "What is the library's friendly name?",
-				default: answers =>
-					packageJson(answers.libraryName, {
-						fullMetadata: true,
-					}).then(pkg => {
-						answers.pkg = pkg;
-						if (pkg.repository && pkg.repository.url) {
-							answers.githubUrl = pkg.repository.url
-								.replace(/^git(?:\+https?)?:/, 'https:')
-								.replace(/\.git$/, '');
-						}
-
-						return pkg.name;
-					}),
+				default: answers => answers.pkg.name,
 			},
 			{
 				type: 'input',
@@ -91,13 +101,17 @@ module.exports = class extends Generator {
 								)
 							)
 							.map(path.normalize)
+							.map(file => file.replace(/\\/g, '/'))
 							.concat([new inquirer.Separator(), 'Other']);
 					} catch (e) {
 						console.error(e);
 					}
 				},
 				default: answers =>
-					path.normalize(answers.pkg.browser || answers.pkg.main),
+					path
+						.normalize(answers.pkg.browser || answers.pkg.main)
+						.replace(/\\/g, '/'),
+				filter: libraryPath => libraryPath.replace(/\\/g, '/'),
 			},
 			{
 				type: 'input',
@@ -131,7 +145,7 @@ module.exports = class extends Generator {
 	}
 
 	writing() {
-		const folder = `${this.props.libraryName}_${this.props.version}`;
+		const folder = this.props.libraryName;
 		this.fs.copyTpl(
 			this.templatePath('{libraryName}.dnn'),
 			this.destinationPath(`${folder}/${this.props.libraryName}.dnn`),

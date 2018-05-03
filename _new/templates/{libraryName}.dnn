@@ -22,7 +22,7 @@
             <fileName><%=fileName%></fileName>
             <preferredScriptLocation><%=preferredScriptLocation%></preferredScriptLocation>
             <objectName><%=objectName%></objectName>
-            <cdnUrl>https://cdn.jsdelivr.net/npm/<%=libraryName%>@<~=version~><%=relativePath%></cdnUrl>
+            <cdnUrl>https://cdn.jsdelivr.net/npm/<%=libraryName%>@<~=version~>/<%=relativePath%></cdnUrl>
           </javaScriptLibrary>
         </component>
         <component type="JavaScriptFile">
