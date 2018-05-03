@@ -7,6 +7,7 @@ const yosay = require('yosay');
 const inquirer = require('inquirer');
 const packageJson = require('package-json');
 const globby = require('globby');
+const { formatVersionFolder } = require('../utility');
 
 module.exports = class extends Generator {
 	prompting() {
@@ -125,10 +126,7 @@ module.exports = class extends Generator {
 			this.props = props;
 			this.props.fileName = path.basename(props.relativePath);
 			this.props.version = props.pkg.version;
-			this.props.versionFolder = props.pkg.version
-				.split('.')
-				.map(n => n.padStart(2, '0'))
-				.join('_');
+			this.props.versionFolder = formatVersionFolder(props.pkg.version);
 		});
 	}
 

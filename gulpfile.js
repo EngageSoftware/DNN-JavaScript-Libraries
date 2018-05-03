@@ -1,8 +1,10 @@
 const path = require('path');
 const gulp = require('gulp');
 const glob = require('glob');
+const ejs = require('gulp-ejs');
 const zip = require('gulp-zip');
 const mergeStream = require('merge-stream');
+const { formatVersionFolder } = require('./utility');
 
 const dependencies = require('./package.json').dependencies;
 
@@ -26,9 +28,19 @@ libraries.forEach(library =>
 			gulp
 				.src(library.manifest.resources || [])
 				.pipe(zip('Resources.zip')),
-			gulp.src(['LICENSE.htm', 'CHANGES.htm', '*.dnn'], {
-				cwd: library.path,
-			})
+			gulp
+				.src(['LICENSE.htm', 'CHANGES.htm', '*.dnn'], {
+					cwd: library.path,
+				})
+				.pipe(
+					ejs(
+						{
+							version: library.version,
+							versionFolder: formatVersionFolder(library.version),
+						},
+						{ delimiter: '~' }
+					)
+				)
 		)
 			.pipe(zip(`${library.name}_${library.version}.zip`))
 			.pipe(gulp.dest('./_InstallPackages/'))
