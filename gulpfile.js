@@ -1,25 +1,40 @@
-const path = require("path");
-const gulp = require("gulp");
-const glob = require("glob");
-const zip = require("gulp-zip");
-const mergeStream = require("merge-stream");
+const path = require('path');
+const gulp = require('gulp');
+const glob = require('glob');
+const zip = require('gulp-zip');
+const mergeStream = require('merge-stream');
 
-const matches = glob.sync("*/dnn-library.json");
-gulp.task(
-  "default",
-  matches
-    .map(m => ({ manifestPath: m, manifest: require(path.resolve(m)) }))
-    .map(({ manifestPath, manifest }) => ({
-      manifestPath,
-      task: gulp.task(manifestPath, () =>
-        mergeStream(
-          gulp.src(manifest.files),
-          gulp.src(manifest.resources || []).pipe(zip("Resources.zip")),
-          gulp.src(["LICENSE.htm", "CHANGES.htm", "*.dnn"], { cwd: path.dirname(manifestPath) })
-        )
-          .pipe(zip(path.basename(path.dirname(manifestPath)) + ".zip"))
-          .pipe(gulp.dest("./_InstallPackages/"))
-      )
-    }))
-    .reduce((taskNames, { manifestPath }) => taskNames.concat(manifestPath), [])
+const dependencies = require('./package.json').dependencies;
+
+const libraries = glob
+	.sync('*/dnn-library.json')
+	.map(manifestPath => ({
+		path: path.dirname(manifestPath),
+		manifest: require(path.resolve(manifestPath)),
+	}))
+	.map(library =>
+		Object.assign(library, { name: path.basename(library.path) })
+	)
+	.map(library =>
+		Object.assign(library, { version: dependencies[library.name] })
+	);
+
+libraries.forEach(library =>
+	gulp.task(library.path, () =>
+		mergeStream(
+			gulp.src(library.manifest.files),
+			gulp
+				.src(library.manifest.resources || [])
+				.pipe(zip('Resources.zip')),
+			gulp.src(['LICENSE.htm', 'CHANGES.htm', '*.dnn'], {
+				cwd: library.path,
+			})
+		)
+			.pipe(zip(`${library.name}_${library.version}.zip`))
+			.pipe(gulp.dest('./_InstallPackages/'))
+	)
 );
+
+const libraryTaskNames = libraries.map(l => l.path);
+
+gulp.task('default', libraryTaskNames);
