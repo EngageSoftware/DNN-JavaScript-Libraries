@@ -75,15 +75,15 @@
     "zeroclipboard": "2.3.0"
   },
   "devDependencies": {
-    "chalk": "2.3.0",
+    "chalk": "^2.4.1",
     "glob": "^7.1.2",
-    "globby": "7.1.1",
+    "globby": "^8.0.1",
     "gulp": "^3.9.1",
-    "gulp-ejs": "3.1.3",
-    "gulp-zip": "^4.0.0",
+    "gulp-ejs": "^3.1.3",
+    "gulp-zip": "^4.1.0",
     "merge-stream": "^1.0.1",
-    "package-json": "4.0.1",
-    "yeoman-generator": "2.0.2",
-    "yo": "2.0.1"
+    "package-json": "^4.0.1",
+    "yeoman-generator": "^2.0.5",
+    "yo": "^2.0.2"
   }
 }
