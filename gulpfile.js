@@ -1,3 +1,5 @@
+'use strict';
+
 const path = require('path');
 const gulp = require('gulp');
 const glob = require('glob');
@@ -6,7 +8,7 @@ const zip = require('gulp-zip');
 const mergeStream = require('merge-stream');
 const { formatVersionFolder } = require('./utility');
 
-const dependencies = require('./package.json').dependencies;
+const { dependencies } = require('./package.json');
 
 const libraries = glob
 	.sync('*/dnn-library.json')

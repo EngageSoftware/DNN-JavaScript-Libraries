@@ -1,5 +1,5 @@
-/* eslint-env node*/
 'use strict';
+
 const path = require('path');
 const Generator = require('yeoman-generator');
 const chalk = require('chalk');
@@ -87,10 +87,6 @@ module.exports = class extends Generator {
 				name: 'relativePath',
 				message: 'What is the main JavaScript file?',
 				choices: answers => {
-					console.log(
-						'choices',
-						`node_modules/${answers.libraryName}/**/*.js`
-					);
 					try {
 						return globby
 							.sync(`node_modules/${answers.libraryName}/**/*.js`)
