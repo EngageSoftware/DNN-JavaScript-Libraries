@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="chosen" type="JavaScript_Library" version="1.8.2">
+    <package name="chosen" type="JavaScript_Library" version="<~=version~>">
       <friendlyName>Chosen</friendlyName>
       <description>Chosen is a library for making long, unwieldy select boxes more user friendly.</description>
       <owner>
@@ -21,7 +21,7 @@
             <libraryName>chosen</libraryName>
             <fileName>chosen.jquery.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/npm/chosen-js@1.8.2/chosen.jquery.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/chosen-js@<~=version~>/chosen.jquery.min.js</CDNPath>
             <objectName>jQuery.fn.chosen</objectName>
           </javaScriptLibrary>
         </component>
@@ -35,7 +35,7 @@
         </component>
         <component type="ResourceFile">
           <resourceFiles>
-            <basePath>Resources\Libraries\chosen\01_08_02</basePath>
+            <basePath>Resources\Libraries\chosen\<~=versionFolder~></basePath>
             <resourceFile>
               <name>Resources.zip</name>
             </resourceFile>

@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="zeroclipboard" type="JavaScript_Library" version="02.03.00">
+    <package name="zeroclipboard" type="JavaScript_Library" version="<~=version~>">
       <friendlyName>ZeroClipboard</friendlyName>
       <description>The ZeroClipboard library provides an easy way to copy text to the clipboard using an invisible Adobe Flash movie and a JavaScript interface. http://zeroclipboard.org/</description>
       <owner>
@@ -19,7 +19,7 @@
             <fileName>zeroclipboard.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
             <objectName>ZeroClipboard</objectName>
-            <cdnUrl>https://cdn.jsdelivr.net/zeroclipboard/2.3.0/ZeroClipboard.min.js</cdnUrl>
+            <cdnUrl>https://cdn.jsdelivr.net/zeroclipboard/<~=version~>/ZeroClipboard.min.js</cdnUrl>
           </javaScriptLibrary>
         </component>
         <component type="JavaScriptFile">
@@ -32,7 +32,7 @@
         </component>
         <component type="ResourceFile">
           <resourceFiles>
-            <basePath>Resources\Libraries\zeroclipboard\02_03_00</basePath>
+            <basePath>Resources\Libraries\zeroclipboard\<~=versionFolder~></basePath>
             <resourceFile>
               <name>Resources.zip</name>
             </resourceFile>

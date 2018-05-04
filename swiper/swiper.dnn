@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="swiper" type="JavaScript_Library" version="4.0.5">
+    <package name="swiper" type="JavaScript_Library" version="<~=version~>">
       <friendlyName>Swiper</friendlyName>
       <description>
         <![CDATA[
@@ -27,7 +27,7 @@
             <libraryName>swiper</libraryName>
             <fileName>swiper.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.5/js/swiper.min.js</CDNPath>
+            <CDNPath>https://cdnjs.cloudflare.com/ajax/libs/Swiper/<~=version~>/js/swiper.min.js</CDNPath>
             <objectName>Swiper</objectName>
           </javaScriptLibrary>
         </component>
@@ -41,7 +41,7 @@
         </component>
         <component type="ResourceFile">
           <resourceFiles>
-            <basePath>Resources\Libraries\swiper\04_00_05</basePath>
+            <basePath>Resources\Libraries\swiper\<~=versionFolder~></basePath>
             <resourceFile>
               <name>Resources.zip</name>
             </resourceFile>

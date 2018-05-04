@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="image-map" type="JavaScript_Library" version="1.0.8">
+    <package name="image-map" type="JavaScript_Library" version="<~=version~>">
       <friendlyName>Image-Map</friendlyName>
       <description>
         <![CDATA[A native JavaScript solution for creating responsive image-maps that rerender on image or viewport changes.]]>
@@ -22,7 +22,7 @@
             <fileName>image-map.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
             <objectName>ImageMap</objectName>
-            <cdnUrl>https://cdn.jsdelivr.net/npm/image-map@1.0.8/image-map.min.js</cdnUrl>
+            <cdnUrl>https://cdn.jsdelivr.net/npm/image-map@<~=version~>/image-map.min.js</cdnUrl>
           </javaScriptLibrary>
         </component>
         <component type="JavaScriptFile">

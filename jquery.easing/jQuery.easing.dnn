@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="jQuery.easing" type="JavaScript_Library" version="1.4.1">
+    <package name="jQuery.easing" type="JavaScript_Library" version="<~=version~>">
       <friendlyName>jQuery Easing Plugin</friendlyName>
       <description>A jQuery plugin from GSGD to give advanced easing options.</description>
       <owner>
@@ -22,7 +22,7 @@
             <fileName>jQuery.easing.min.js</fileName>
             <objectName>jQuery.easing.easeInOutQuad</objectName>
             <preferredScriptLocation>PageHead</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/jquery.easing@<~=version~>/jquery.easing.min.js</CDNPath>
           </javaScriptLibrary>
         </component>
         <component type="JavaScriptFile">
@@ -35,7 +35,7 @@
         </component>
         <component type="ResourceFile">
           <resourceFiles>
-            <basePath>Resources\Libraries\jquery.easing\01_04_01</basePath>
+            <basePath>Resources\Libraries\jquery.easing\<~=versionFolder~></basePath>
             <resourceFile>
               <name>Resources.zip</name>
             </resourceFile>

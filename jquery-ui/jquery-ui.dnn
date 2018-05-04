@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="jQuery-UI" type="JavaScript_Library" version="1.12.1">
+    <package name="jQuery-UI" type="JavaScript_Library" version="<~=version~>">
       <friendlyName>jQuery UI</friendlyName>
       <description><![CDATA[jQuery UI is a curated set of user interface interactions, effects, widgets, and themes built on top of the jQuery JavaScript Library. Whether you're building highly interactive web applications or you just need to add a date picker to a form control, jQuery UI is the perfect choice.]]></description>
       <owner>
@@ -21,7 +21,7 @@
             <libraryName>jQuery-UI</libraryName>
             <fileName>jquery-ui.min.js</fileName>
             <preferredScriptLocation>PageHead</preferredScriptLocation>
-            <CDNPath>https://code.jquery.com/ui/1.12.1/jquery-ui.min.js</CDNPath>
+            <CDNPath>https://code.jquery.com/ui/<~=version~>/jquery-ui.min.js</CDNPath>
             <objectName>jQuery.ui</objectName>
           </javaScriptLibrary>
         </component>

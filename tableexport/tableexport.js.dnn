@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="tableexport.js" type="JavaScript_Library" version="4.0.11">
+    <package name="tableexport.js" type="JavaScript_Library" version="<~=version~>">
       <friendlyName>TableExport.js</friendlyName>
       <description>
         <![CDATA[The simple, easy-to-implement plugin to export HTML tables to xlsx, xls, csv, and txt files]]>
@@ -28,7 +28,7 @@
             <libraryName>tableexport.js</libraryName>
             <fileName>tableexport.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/npm/tableexport@4.0.11/dist/js/tableexport.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/tableexport@<~=version~>/dist/js/tableexport.min.js</CDNPath>
             <objectName>TableExport</objectName>
           </javaScriptLibrary>
         </component>

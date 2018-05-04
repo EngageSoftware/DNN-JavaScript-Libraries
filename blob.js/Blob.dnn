@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="Blob" type="JavaScript_Library" version="1.0.1">
+    <package name="Blob" type="JavaScript_Library" version="<~=version~>">
       <friendlyName>Blob.js</friendlyName>
       <description>
         <![CDATA[Blob.js implements the W3C <a href="https://developer.mozilla.org/en-US/docs/Web/API/Blob"><code>Blob</code></a> interface in browsers that do
@@ -26,7 +26,7 @@ not natively support it.]]>
             <libraryName>Blob</libraryName>
             <fileName>Blob.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/npm/blob.js@1.0.1/Blob.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/blob.js@<~=version~>/Blob.min.js</CDNPath>
             <objectName>Blob</objectName>
           </javaScriptLibrary>
         </component>

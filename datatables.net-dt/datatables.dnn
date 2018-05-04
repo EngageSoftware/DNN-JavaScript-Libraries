@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="datatables.net" type="JavaScript_Library" version="01.10.16">
+    <package name="datatables.net" type="JavaScript_Library" version="<~=version~>">
       <friendlyName>DataTables</friendlyName>
       <description>DataTables is a plug-in for the jQuery Javascript library. It is a highly flexible tool, based upon the foundations of progressive enhancement, and will add advanced interaction controls to any HTML table.</description>
       <owner>
@@ -22,7 +22,7 @@
             <fileName>jquery.dataTables.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
             <objectName>jQuery.fn.DataTable</objectName>
-            <cdnUrl>https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js</cdnUrl>
+            <cdnUrl>https://cdn.datatables.net/<~=version~>/js/jquery.dataTables.min.js</cdnUrl>
           </javaScriptLibrary>
         </component>
         <component type="JavaScriptFile">
@@ -35,7 +35,7 @@
         </component>
         <component type="ResourceFile">
           <resourceFiles>
-            <basePath>Resources\Libraries\datatables.net\01_10_16</basePath>
+            <basePath>Resources\Libraries\datatables.net\<~=versionFolder~></basePath>
             <resourceFile>
               <name>Resources.zip</name>
             </resourceFile>

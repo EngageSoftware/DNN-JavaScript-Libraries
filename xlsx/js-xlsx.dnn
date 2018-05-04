@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="js-xlsx" type="JavaScript_Library" version="0.11.10">
+    <package name="js-xlsx" type="JavaScript_Library" version="<~=version~>">
       <friendlyName>JS-XLSX</friendlyName>
       <description>
         <![CDATA[Parser and writer for various spreadsheet formats. Pure-JS cleanroom implementation from official specifications and related documents.]]>

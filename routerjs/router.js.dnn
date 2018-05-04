@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="router.js" type="JavaScript_Library" version="1.0.10">
+    <package name="router.js" type="JavaScript_Library" version="<~=version~>">
       <friendlyName>Router.js</friendlyName>
       <description><![CDATA[Router.js is a simple yet powerful javascript plugin to handle hash fragment in order to route requests]]></description>
       <owner>
@@ -22,7 +22,7 @@
             <fileName>router.min.js</fileName>
             <objectName>Router</objectName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/npm/routerjs@1.0.10/dist/router.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/routerjs@<~=version~>/dist/router.min.js</CDNPath>
           </javaScriptLibrary>
         </component>
         <component type="JavaScriptFile">
@@ -35,7 +35,7 @@
         </component>
         <component type="ResourceFile">
           <resourceFiles>
-            <basePath>Resources\Libraries\router.js\01_00_10</basePath>
+            <basePath>Resources\Libraries\router.js\<~=versionFolder~></basePath>
             <resourceFile>
               <name>Resources.zip</name>
             </resourceFile>

@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="moment" type="JavaScript_Library" version="2.20.1">
+    <package name="moment" type="JavaScript_Library" version="<~=version~>">
       <friendlyName>Moment.js</friendlyName>
       <description>
         <![CDATA[Parse, validate, manipulate, and display dates and times in JavaScript.]]>
@@ -20,7 +20,7 @@
             <libraryName>moment</libraryName>
             <fileName>moment.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/npm/moment@2.20.1/min/moment.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/moment@<~=version~>/min/moment.min.js</CDNPath>
             <objectName>moment</objectName>
           </javaScriptLibrary>
         </component>
@@ -34,7 +34,7 @@
         </component>
         <component type="ResourceFile">
           <resourceFiles>
-            <basePath>Resources\Libraries\moment\02_20_01</basePath>
+            <basePath>Resources\Libraries\moment\<~=versionFolder~></basePath>
             <resourceFile>
               <name>Resources.zip</name>
             </resourceFile>

@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="html5shiv" type="JavaScript_Library" version="3.7.3">
+    <package name="html5shiv" type="JavaScript_Library" version="<~=version~>">
       <friendlyName>HTML5 Shiv</friendlyName>
       <description>
         The HTML5 Shiv enables use of HTML5 sectioning elements in legacy Internet Explorer and provides basic HTML5 styling for Internet Explorer 6-9, Safari 4.x (and iPhone 3.x), and Firefox 3.x.
@@ -22,7 +22,7 @@
             <fileName>html5shiv-printshiv.min.js</fileName>
             <objectName>html5</objectName>
             <preferredScriptLocation>PageHead</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/html5shiv@<~=version~>/dist/html5shiv.min.js</CDNPath>
           </javaScriptLibrary>
         </component>
         <component type="JavaScriptFile">
@@ -35,7 +35,7 @@
         </component>
         <component type="ResourceFile">
           <resourceFiles>
-            <basePath>Resources\Libraries\html5shiv\03_07_03</basePath>
+            <basePath>Resources\Libraries\html5shiv\<~=versionFolder~></basePath>
             <resourceFile>
               <name>Resources.zip</name>
             </resourceFile>

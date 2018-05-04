@@ -1,8 +1,8 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="kineticjs" type="JavaScript_Library" version="5.2.0">
+    <package name="kineticjs" type="JavaScript_Library" version="<~=version~>">
       <friendlyName>KineticJS</friendlyName>
-      <description><![CDATA[KineticJS is an HTML5 Canvas JavaScript framework that extends the 2d context by enabling canvas interactivity for desktop and mobile applications. 
+      <description><![CDATA[KineticJS is an HTML5 Canvas JavaScript framework that extends the 2d context by enabling canvas interactivity for desktop and mobile applications.
 <a href="http://www.kineticjs.com">http://www.kineticjs.com</a>]]></description>
       <owner>
         <name>Engage Software</name>
@@ -24,7 +24,7 @@
             <libraryName>kineticjs</libraryName>
             <fileName>kinetic.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/npm/kinetic@5.2.0/kinetic.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/kinetic@<~=version~>/kinetic.min.js</CDNPath>
             <objectName>Kinetic</objectName>
           </javaScriptLibrary>
         </component>

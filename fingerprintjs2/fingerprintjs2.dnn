@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="fingerprintjs2" type="JavaScript_Library" version="1.5.1">
+    <package name="fingerprintjs2" type="JavaScript_Library" version="<~=version~>">
       <friendlyName>Fingerprintjs2</friendlyName>
       <description>
         <![CDATA[Modern &amp; flexible browser fingerprinting library.]]>
@@ -21,7 +21,7 @@
             <fileName>fingerprint2.min.js</fileName>
             <objectName>Fingerprint2</objectName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/npm/fingerprintjs2@1.5.1/dist/fingerprint2.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/fingerprintjs2@<~=version~>/dist/fingerprint2.min.js</CDNPath>
           </javaScriptLibrary>
         </component>
         <component type="JavaScriptFile">

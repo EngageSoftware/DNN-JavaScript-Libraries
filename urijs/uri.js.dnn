@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="uri.js" type="JavaScript_Library" version="1.19.0">
+    <package name="uri.js" type="JavaScript_Library" version="<~=version~>">
       <friendlyName>URI.js</friendlyName>
       <description><![CDATA[Javascript URL mutation library]]></description>
       <owner>
@@ -23,7 +23,7 @@
             <libraryName>uri.js</libraryName>
             <fileName>URI.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/npm/urijs@1.19.0/src/URI.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/urijs@<~=version~>/src/URI.min.js</CDNPath>
             <objectName>URI</objectName>
           </javaScriptLibrary>
         </component>

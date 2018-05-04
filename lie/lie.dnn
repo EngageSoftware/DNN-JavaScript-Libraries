@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="lie" type="JavaScript_Library" version="3.1.1">
+    <package name="lie" type="JavaScript_Library" version="<~=version~>">
       <friendlyName>lie</friendlyName>
       <description><![CDATA[lie a small, performant, promise library implementing the <a href="http://promises-aplus.github.com/promises-spec/">Promises/A+ spec Version 1.1</a>.]]></description>
       <owner>
@@ -23,7 +23,7 @@
             <libraryName>lie</libraryName>
             <fileName>lie.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/npm/lie@3.1.1/dist/lie.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/lie@<~=version~>/dist/lie.min.js</CDNPath>
             <objectName>Promise</objectName>
           </javaScriptLibrary>
         </component>
@@ -37,7 +37,7 @@
         </component>
          <component type="ResourceFile">
           <resourceFiles>
-            <basePath>Resources\Libraries\lie\03_01_01</basePath>
+            <basePath>Resources\Libraries\lie\<~=versionFolder~></basePath>
             <resourceFile>
               <name>Resources.zip</name>
             </resourceFile>

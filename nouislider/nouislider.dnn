@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="nouislider" type="JavaScript_Library" version="10.1.0">
+    <package name="nouislider" type="JavaScript_Library" version="<~=version~>">
       <friendlyName>noUiSlider</friendlyName>
       <description><![CDATA[
 <p>noUiSlider is a lightweight JavaScript range slider library. It offers a wide selection of options and settings, and is compatible with a ton of (touch) devices, including those running iOS, Android, Windows 8/8.1/10, Windows Phone 8.1 and Windows Mobile 10.</p>
@@ -20,7 +20,7 @@
             <libraryName>nouislider</libraryName>
             <fileName>nouislider.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/npm/nouislider@10.1.0/distribute/nouislider.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/nouislider@<~=version~>/distribute/nouislider.min.js</CDNPath>
             <objectName>noUiSlider</objectName>
           </javaScriptLibrary>
         </component>
@@ -34,7 +34,7 @@
         </component>
         <component type="ResourceFile">
           <resourceFiles>
-            <basePath>Resources\Libraries\nouislider\10_01_00</basePath>
+            <basePath>Resources\Libraries\nouislider\<~=versionFolder~></basePath>
             <resourceFile>
               <name>Resources.zip</name>
             </resourceFile>

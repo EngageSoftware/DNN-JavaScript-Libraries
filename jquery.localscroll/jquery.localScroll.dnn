@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="jquery.localScroll" type="JavaScript_Library" version="2.0.0">
+    <package name="jquery.localScroll" type="JavaScript_Library" version="<~=version~>">
       <friendlyName>jQuery.localScroll</friendlyName>
       <description><![CDATA[Animated anchor navigation made easy with jQuery]]></description>
       <owner>
@@ -22,7 +22,7 @@
             <libraryName>jquery.localScroll</libraryName>
             <fileName>jquery.localScroll.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/npm/jquery.localscroll@2.0.0/jquery.localScroll.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/jquery.localscroll@<~=version~>/jquery.localScroll.min.js</CDNPath>
             <objectName>jQuery.localScroll</objectName>
           </javaScriptLibrary>
         </component>

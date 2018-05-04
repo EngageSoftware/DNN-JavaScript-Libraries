@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="jquery.scrollTo" type="JavaScript_Library" version="2.1.2">
+    <package name="jquery.scrollTo" type="JavaScript_Library" version="<~=version~>">
       <friendlyName>jQuery.scrollTo</friendlyName>
       <description>A small, customizable plugin for scrolling elements, or the window itself</description>
       <owner>
@@ -21,7 +21,7 @@
             <libraryName>jquery.scrollTo</libraryName>
             <fileName>jquery.scrollTo.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/jquery.scrollto@<~=version~>/jquery.scrollTo.min.js</CDNPath>
             <objectName>jQuery.scrollTo</objectName>
           </javaScriptLibrary>
         </component>

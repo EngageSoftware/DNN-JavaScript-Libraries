@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="history" type="JavaScript_Library" version="4.2.8">
+    <package name="history" type="JavaScript_Library" version="<~=version~>">
       <friendlyName>HTML5 History API</friendlyName>
       <description>
         <![CDATA[HTML5 History API expansion for browsers not supporting pushState, replaceState <a href="http://spb-piksel.ru">http://spb-piksel.ru</a>]]>
@@ -21,7 +21,7 @@
             <fileName>history.js</fileName>
             <objectName>window.history.location</objectName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/npm/html5-history-api@4.2.8/history.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/html5-history-api@<~=version~>/history.min.js</CDNPath>
           </javaScriptLibrary>
         </component>
         <component type="JavaScriptFile">
@@ -34,7 +34,7 @@
         </component>
         <component type="ResourceFile">
           <resourceFiles>
-            <basePath>Resources\Libraries\history\04_02_08</basePath>
+            <basePath>Resources\Libraries\history\<~=versionFolder~></basePath>
             <resourceFile>
               <name>Resources.zip</name>
             </resourceFile>

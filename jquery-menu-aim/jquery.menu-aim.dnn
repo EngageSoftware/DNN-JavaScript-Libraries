@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="jquery.menu-aim" type="JavaScript_Library" version="1.1.0">
+    <package name="jquery.menu-aim" type="JavaScript_Library" version="<~=version~>">
       <friendlyName>jQuery-menu-aim</friendlyName>
       <description>
         <![CDATA[
@@ -42,7 +42,7 @@
         </component>
         <component type="ResourceFile">
           <resourceFiles>
-            <basePath>Resources\Libraries\jquery.menu-aim\01_01_00</basePath>
+            <basePath>Resources\Libraries\<~=versionFolder~></basePath>
             <resourceFile>
               <name>Resources.zip</name>
             </resourceFile>

@@ -1,4 +1,4 @@
 {
-  "files": ["jquery-ui_1.12.1/jquery-ui.min.js"],
-  "resources": []
+	"files": ["jquery-ui/jquery-ui.min.js"],
+	"resources": []
 }

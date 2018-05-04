@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="knockout-jqAutocomplete" type="JavaScript_Library" version="0.4.4">
+    <package name="knockout-jqAutocomplete" type="JavaScript_Library" version="<~=version~>">
       <friendlyName>knockout-jqAutocomplete</friendlyName>
       <description><![CDATA[<em>knockout-jqAutocomplete</em> is a <a href="http://knockoutjs.com/">Knockout.js</a> plugin designed to work with jQuery UI's <a href="http://jqueryui.com/autocomplete/">autocomplete widget</a>.]]></description>
       <owner>
@@ -23,7 +23,7 @@
             <fileName>knockout-jqAutocomplete.min.js</fileName>
             <objectName>ko.bindingHandlers.jqAuto</objectName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/npm/knockout-jqautocomplete@0.4.4/src/knockout-jqAutocomplete.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/knockout-jqautocomplete@<~=version~>/src/knockout-jqAutocomplete.js</CDNPath>
           </javaScriptLibrary>
         </component>
         <component type="JavaScriptFile">

@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="jquery.serialScroll" type="JavaScript_Library" version="1.3.0">
+    <package name="jquery.serialScroll" type="JavaScript_Library" version="<~=version~>">
       <friendlyName>jQuery.serialScroll</friendlyName>
       <description>
         <![CDATA[Animated scrolling of series with jQuery]]>
@@ -24,7 +24,7 @@
             <libraryName>jquery.serialScroll</libraryName>
             <fileName>jquery.serialScroll.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/npm/jquery.serialscroll@1.3.0/jquery.serialScroll.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/jquery.serialscroll@<~=version~>/jquery.serialScroll.min.js</CDNPath>
             <objectName>jQuery.serialScroll</objectName>
           </javaScriptLibrary>
         </component>

@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="pubsub-js" type="JavaScript_Library" version="1.5.7">
+    <package name="pubsub-js" type="JavaScript_Library" version="<~=version~>">
       <friendlyName>PubSubJS</friendlyName>
       <description><![CDATA[
 Dependency free publish/subscribe for JavaScript
@@ -25,7 +25,7 @@ Dependency free publish/subscribe for JavaScript
             <libraryName>pubsub-js</libraryName>
             <fileName>pubsub.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/npm/pubsub-js@1.5.7/src/pubsub.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/pubsub-js@<~=version~>/src/pubsub.min.js</CDNPath>
             <objectName>PubSub</objectName>
           </javaScriptLibrary>
         </component>

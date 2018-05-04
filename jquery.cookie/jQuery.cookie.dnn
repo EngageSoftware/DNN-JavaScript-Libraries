@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="jQuery.cookie" type="JavaScript_Library" version="1.4.1">
+    <package name="jQuery.cookie" type="JavaScript_Library" version="<~=version~>">
       <friendlyName>jQuery Cookie Plugin</friendlyName>
       <description>A simple, lightweight jQuery plugin for reading, writing and deleting cookies.</description>
       <owner>
@@ -22,7 +22,7 @@
             <fileName>jQuery.cookie.js</fileName>
             <objectName>jQuery.cookie</objectName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/jquery.cookie@<~=version~>/jquery.cookie.min.js</CDNPath>
           </javaScriptLibrary>
         </component>
         <component type="JavaScriptFile">

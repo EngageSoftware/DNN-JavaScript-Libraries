@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="system.js" type="JavaScript_Library" version="0.20.19">
+    <package name="system.js" type="JavaScript_Library" version="<~=version~>">
       <friendlyName>SystemJS</friendlyName>
       <description><![CDATA[Universal dynamic module loader]]></description>
       <owner>
@@ -19,7 +19,7 @@
             <libraryName>system.js</libraryName>
             <fileName>system.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/npm/systemjs@0.20.19/dist/system.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/systemjs@<~=version~>/dist/system.js</CDNPath>
             <!--objectName>System</objectName-->
           </javaScriptLibrary>
         </component>
@@ -33,7 +33,7 @@
         </component>
         <component type="ResourceFile">
           <resourceFiles>
-            <basePath>Resources\Libraries\system.js\00_20_19</basePath>
+            <basePath>Resources\Libraries\system.js\<~=versionFolder~></basePath>
             <resourceFile>
               <name>Resources.zip</name>
             </resourceFile>

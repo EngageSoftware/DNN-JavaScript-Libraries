@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="chartjs" type="JavaScript_Library" version="2.7.1">
+    <package name="chartjs" type="JavaScript_Library" version="<~=version~>">
       <friendlyName>Chart.js</friendlyName>
       <description><![CDATA[Simple HTML5 Charts using the &lt;canvas&gt; tag]]></description>
       <owner>
@@ -23,7 +23,7 @@
             <libraryName>chartjs</libraryName>
             <fileName>Chart.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/npm/chart.js@2.7.1/src/chart.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/chart.js@<~=version~>/src/chart.min.js</CDNPath>
             <objectName>Chart</objectName>
           </javaScriptLibrary>
         </component>
@@ -37,7 +37,7 @@
         </component>
         <component type="ResourceFile">
           <resourceFiles>
-            <basePath>Resources\Libraries\chartjs\02_07_01</basePath>
+            <basePath>Resources\Libraries\chartjs\<~=versionFolder~></basePath>
             <resourceFile>
               <name>Resources.zip</name>
             </resourceFile>

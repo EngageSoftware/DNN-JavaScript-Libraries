@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="date-fns" type="JavaScript_Library" version="1.29.0">
+    <package name="date-fns" type="JavaScript_Library" version="<~=version~>">
       <friendlyName>date-fns</friendlyName>
       <description>
         <![CDATA[Modern JavaScript date utility library]]>
@@ -20,7 +20,7 @@
             <libraryName>date-fns</libraryName>
             <fileName>date_fns.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <!--CDNPath>http://cdn.date-fns.org/v1.29.0/date_fns.min.js</CDNPath-->
+            <!--CDNPath>http://cdn.date-fns.org/v<~=version~>/date_fns.min.js</CDNPath-->
             <objectName>dateFns</objectName>
           </javaScriptLibrary>
         </component>

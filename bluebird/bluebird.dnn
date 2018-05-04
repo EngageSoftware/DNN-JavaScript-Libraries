@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="bluebird" type="JavaScript_Library" version="3.5.1">
+    <package name="bluebird" type="JavaScript_Library" version="<~=version~>">
       <friendlyName>Bluebird</friendlyName>
       <description><![CDATA[<p>Bluebird is a fully featured <a href="http://bluebirdjs.com/docs/why-promises.html">promise</a> library with focus on innovative features and performance</p>]]></description>
       <owner>
@@ -23,7 +23,7 @@
             <libraryName>bluebird</libraryName>
             <fileName>bluebird.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/npm/bluebird@3.5.1/js/browser/bluebird.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/bluebird@<~=version~>/js/browser/bluebird.min.js</CDNPath>
             <objectName>P</objectName>
           </javaScriptLibrary>
         </component>
@@ -37,7 +37,7 @@
         </component>
         <component type="ResourceFile">
           <resourceFiles>
-            <basePath>Resources\Libraries\bluebird\03_05_01</basePath>
+            <basePath>Resources\Libraries\bluebird\<~=versionFolder~></basePath>
             <resourceFile>
               <name>Resources.zip</name>
             </resourceFile>
