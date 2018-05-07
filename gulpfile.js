@@ -68,3 +68,42 @@ gulp.task('outdated', () => {
 ${formatPackageUpgrades(validUpgrades)}`);
 	});
 });
+
+gulp.task('upgrade-patch', () => {
+	const allUpgradesPromises = libraries.map(library =>
+		getUpgradeVersions(library).then(upgrades =>
+			Object.assign(library, { upgrades })
+		)
+	);
+
+	return Promise.all(allUpgradesPromises).then(allUpgrades => {
+		const validUpgrades = allUpgrades.filter(({ upgrades }) =>
+			upgrades.get('patch')
+		);
+
+		if (validUpgrades.length === 0) {
+			log.warn(`No patch upgrades to process`);
+
+			return;
+		}
+
+		validUpgrades.forEach(({ name, version, upgrades }) => {
+			const patchVersion = upgrades.get('patch');
+			log(`Upgrading ${name} from ${version} to ${patchVersion}`);
+
+			const eos = require('end-of-stream');
+			const { spawn } = require('child_process');
+			eos(
+				spawn('yarn', ['upgrade', `${name}@${patchVersion}`]),
+				err =>
+					err
+						? log.error(err)
+						: spawn('git', [
+								'commit',
+								'-am',
+								`Upgraded ${name} from ${version} to ${patchVersion}`,
+						  ])
+			);
+		});
+	});
+});
