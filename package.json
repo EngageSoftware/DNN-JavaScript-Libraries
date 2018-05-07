@@ -44,7 +44,7 @@
     "jquery.tipsy": "1.0.3",
     "jszip": "3.1.5",
     "kinetic": "5.2.0",
-    "knockout": "3.5.0-beta",
+    "knockout": "3.4.2",
     "knockout-jqautocomplete": "0.4.4",
     "knockout-postbox": "0.6.0",
     "knockout-sortable": "1.1.0",

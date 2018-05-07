@@ -2557,9 +2557,9 @@ knockout.validation@2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/knockout.validation/-/knockout.validation-2.0.3.tgz#899de5232364e1ecd5d946e080f6a26293046329"
 
-knockout@3.5.0-beta:
-  version "3.5.0-beta"
-  resolved "https://registry.yarnpkg.com/knockout/-/knockout-3.5.0-beta.tgz#0a90af428f6b5dfbba73fe57be1dc78bb3812758"
+knockout@3.4.2:
+  version "3.4.2"
+  resolved "https://registry.yarnpkg.com/knockout/-/knockout-3.4.2.tgz#e87958de77ad1e936f7ce645bab8b5d7c456d937"
 
 latest-version@^3.0.0:
   version "3.1.0"
