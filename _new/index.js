@@ -99,8 +99,13 @@ module.exports = class extends Generator {
 							.map(path.normalize)
 							.map(file => file.replace(/\\/g, '/'))
 							.concat([new inquirer.Separator(), 'Other']);
-					} catch (e) {
-						console.error(e);
+					} catch (err) {
+						this.log.error(
+							'There was an unexpected error retrieving files: \n %O',
+							err
+						);
+
+						return ['Other'];
 					}
 				},
 				default: answers =>
