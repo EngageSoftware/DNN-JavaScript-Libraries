@@ -7,7 +7,11 @@ const glob = require('glob');
 const ejs = require('gulp-ejs');
 const zip = require('gulp-zip');
 const mergeStream = require('merge-stream');
-const { formatVersionFolder, compareStrings } = require('./utility');
+const {
+	formatVersionFolder,
+	compareStrings,
+	formatPackageUpgrades,
+} = require('./utility');
 
 const { dependencies } = require('./package.json');
 
@@ -57,7 +61,6 @@ gulp.task('default', libraryTaskNames);
 gulp.task('outdated', () => {
 	const packageJson = require('package-json');
 	const semver = require('semver');
-	const cliui = require('cliui');
 
 	const allUpgradesPromises = Object.keys(dependencies).map(name => {
 		const currentVersion = dependencies[name];
@@ -79,11 +82,12 @@ gulp.task('outdated', () => {
 
 		return packageUpgrades.then(upgrades => ({
 			name,
+			version: currentVersion,
 			upgrades,
 		}));
 	});
 
-	Promise.all(allUpgradesPromises).then(allUpgrades => {
+	return Promise.all(allUpgradesPromises).then(allUpgrades => {
 		const validUpgrades = allUpgrades
 			.filter(({ upgrades }) => upgrades.size > 0)
 			.sort(({ name: a }, { name: b }) => compareStrings(a, b));
@@ -94,55 +98,7 @@ gulp.task('outdated', () => {
 			return;
 		}
 
-		const ui = cliui();
-		ui.div(
-			{
-				text: 'Name',
-				align: 'left',
-				border: true,
-			},
-			{
-				text: 'Patch',
-				align: 'right',
-				border: true,
-			},
-			{
-				text: 'Minor',
-				align: 'right',
-				border: true,
-			},
-			{
-				text: 'Major',
-				align: 'right',
-				border: true,
-			}
-		);
-		validUpgrades.forEach(({ name, upgrades }) =>
-			ui.div(
-				{
-					text: name,
-					align: 'left',
-					padding: [0, 0, 0, 1],
-				},
-				{
-					text: upgrades.get('patch') || '',
-					align: 'right',
-					padding: [0, 1, 0, 0],
-				},
-				{
-					text: upgrades.get('minor') || '',
-					align: 'right',
-					padding: [0, 1, 0, 0],
-				},
-				{
-					text: upgrades.get('major') || '',
-					align: 'right',
-					padding: [0, 1, 0, 0],
-				}
-			)
-		);
-
 		log.info(`
-${ui.toString()}`);
+${formatPackageUpgrades(validUpgrades)}`);
 	});
 });
