@@ -1,6 +1,7 @@
 'use strict';
 
 const { formatPackageUpgrades } = require('./ui');
+const { getLibraries, getUpgradeVersions } = require('./packages');
 
 /**
  * Format a version number in the format used by DNN JS library folders
@@ -42,4 +43,6 @@ module.exports = {
 	formatVersionFolder,
 	compareStrings,
 	formatPackageUpgrades,
+	getLibraries,
+	getUpgradeVersions,
 };
