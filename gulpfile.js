@@ -2,6 +2,7 @@
 
 const gulp = require('gulp');
 const log = require('fancy-log');
+const chalk = require('chalk');
 const ejs = require('gulp-ejs');
 const zip = require('gulp-zip');
 const mergeStream = require('merge-stream');
@@ -59,7 +60,9 @@ gulp.task('outdated', () => {
 			.sort(({ name: a }, { name: b }) => compareStrings(a, b));
 
 		if (validUpgrades.length === 0) {
-			log.warn(`All ${allUpgrades.length} packages up-to-date`);
+			log.warn(
+				chalk`All {yellow ${allUpgrades.length}} packages up-to-date`
+			);
 
 			return;
 		}
@@ -69,41 +72,71 @@ ${formatPackageUpgrades(validUpgrades)}`);
 	});
 });
 
-gulp.task('upgrade-patch', () => {
-	const allUpgradesPromises = libraries.map(library =>
-		getUpgradeVersions(library).then(upgrades =>
-			Object.assign(library, { upgrades })
-		)
-	);
-
-	return Promise.all(allUpgradesPromises).then(allUpgrades => {
-		const validUpgrades = allUpgrades.filter(({ upgrades }) =>
-			upgrades.get('patch')
+['patch', 'minor', 'major'].forEach(upgradeType =>
+	gulp.task(`upgrade-${upgradeType}`, () => {
+		const allUpgradesPromises = libraries.map(library =>
+			getUpgradeVersions(library).then(upgrades =>
+				Object.assign(library, { upgrades })
+			)
 		);
 
-		if (validUpgrades.length === 0) {
-			log.warn(`No patch upgrades to process`);
+		return Promise.all(allUpgradesPromises).then(allUpgrades => {
+			const validUpgrades = allUpgrades.filter(({ upgrades }) =>
+				upgrades.get(upgradeType)
+			);
 
-			return;
-		}
+			if (validUpgrades.length === 0) {
+				log.warn(`No ${upgradeType} upgrades to process`);
 
-		validUpgrades.forEach(({ name, version, upgrades }) => {
-			const patchVersion = upgrades.get('patch');
-			log(`Upgrading ${name} from ${version} to ${patchVersion}`);
+				return;
+			}
 
-			const eos = require('end-of-stream');
-			const { spawn } = require('child_process');
-			eos(
-				spawn('yarn', ['upgrade', `${name}@${patchVersion}`]),
-				err =>
-					err
-						? log.error(err)
-						: spawn('git', [
-								'commit',
-								'-am',
-								`Upgraded ${name} from ${version} to ${patchVersion}`,
-						  ])
+			const upgradeWarnings = validUpgrades.map(
+				({ name, version, upgrades, manifest }) => {
+					const newVersion = upgrades.get(upgradeType);
+					log(
+						chalk`Upgrading {magenta ${name}} from {yellow ${version}} to {yellow ${newVersion}}`
+					);
+
+					const spawn = require('cross-spawn');
+					spawn.sync(
+						'yarn',
+						[
+							'upgrade',
+							'--exact',
+							'--non-interactive',
+							`${name}@${newVersion}`,
+						],
+						{
+							stdio: 'inherit',
+						}
+					);
+					spawn.sync(
+						'git',
+						[
+							'commit',
+							'--all',
+							'--message',
+							`Upgrade ${name} to ${newVersion} (from ${version})`,
+						],
+						{ stdio: 'inherit' }
+					);
+
+					if (
+						manifest.files
+							.concat(manifest.resources || [])
+							.some(f => !f.startsWith('node_modules'))
+					) {
+						return name;
+					}
+				}
+			);
+
+			upgradeWarnings.forEach(libraryName =>
+				log.warn(
+					chalk`The library {magenta ${libraryName}} has some resources that do not come from {gray node_modules}, please verify that the upgrade was complete`
+				)
 			);
 		});
-	});
-});
+	})
+);
