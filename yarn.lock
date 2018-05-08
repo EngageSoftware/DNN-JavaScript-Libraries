@@ -397,7 +397,11 @@ bootstrap-datepicker@1.8.0:
   dependencies:
     jquery ">=1.7.1 <4.0.0"
 
-bootstrap@3.3.7, bootstrap@^3.3:
+bootstrap@4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.1.1.tgz#3aec85000fa619085da8d2e4983dfd67cf2114cb"
+
+bootstrap@^3.3:
   version "3.3.7"
   resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-3.3.7.tgz#5a389394549f23330875a3b150656574f8a9eb71"
 
