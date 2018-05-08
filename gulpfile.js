@@ -121,6 +121,17 @@ ${formatPackageUpgrades(validUpgrades)}`);
 						],
 						{ stdio: 'inherit' }
 					);
+					spawn.sync(
+						'git',
+						[
+							'tag',
+							'--sign',
+							'--message',
+							`Automatic ${upgradeType} upgrade of ${name} to ${newVersion} (from ${version})`,
+							`${name}_${newVersion}`,
+						],
+						{ stdio: 'inherit' }
+					);
 
 					if (
 						manifest.files
