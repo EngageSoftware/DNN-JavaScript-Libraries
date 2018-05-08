@@ -55,9 +55,9 @@ almond@~0.3.1:
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/almond/-/almond-0.3.3.tgz#a0e7c95ac7624d6417b4494b1e68bff693168a20"
 
-alpaca@1.5.23:
-  version "1.5.23"
-  resolved "https://registry.yarnpkg.com/alpaca/-/alpaca-1.5.23.tgz#54a0c1a1c8b1a559f478424a6ebe761de378a899"
+alpaca@1.5.24:
+  version "1.5.24"
+  resolved "https://registry.yarnpkg.com/alpaca/-/alpaca-1.5.24.tgz#80969be521fed103c11c61e34ed61b703c2d79ec"
 
 ansi-align@^2.0.0:
   version "2.0.0"
