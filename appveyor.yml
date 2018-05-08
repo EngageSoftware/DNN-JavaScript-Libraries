@@ -8,7 +8,7 @@ test_script:
   - node --version
   - yarn --version
 
-build:
+build_script:
   - yarn run package
 
 artifacts:
