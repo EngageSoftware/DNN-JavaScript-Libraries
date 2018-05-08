@@ -73,7 +73,7 @@
     "underscore": "1.8.3",
     "unitegallery": "1.7.28",
     "urijs": "1.19.1",
-    "xlsx": "0.11.10",
+    "xlsx": "0.11.19",
     "zeroclipboard": "2.3.0"
   },
   "devDependencies": {
