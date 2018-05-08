@@ -1,5 +1,7 @@
 # DNN JavaScript Libraries
 
+[https://ci.appveyor.com/api/projects/status/github/EngageSoftware/Dnn-JavaScript-Libraries?svg=true](https://ci.appveyor.com/project/bdukes/dnn-javascript-libraries)
+
 Version 7.2 of the [DNN Platform](http://www.dnnsoftware.com) introduced the
 JavaScript Library extension type. This allows common JavaScript libraries to
 exist in a single place within a DNN site, instead of every module, skin, and
@@ -31,8 +33,7 @@ commit your changes and submit a pull request on GitHub.
 # Packages
 
 The installable packages are included within this GitHub repository as
-[releases](/EngageSoftware/DNN-JavaScript-Libraries/releases). They are also
-published on the [DNN Forge](http://www.dnnsoftware.com/forge).
+[releases](/EngageSoftware/DNN-JavaScript-Libraries/releases).
 
 # Goal
 
@@ -117,27 +118,6 @@ scripts. This means that if your module and your skin both request the
 included on the page once (rather than both components including their own
 version of the script). Likewise, if both components request different versions
 of the script, just the higher version will be included.
-
-# Roadmap
-
-The obvious next step for this project is to add more libraries. There's a
-short list in [the Issues list for this repo](/EngageSoftware/DNN-JavaScript-Libraries/issues),
-but we've started work on a [PowerShell script](New-PackageFromBower.psm1) that integrates with a
-script package manager, [Bower](http://bower.io/), so that with very
-little effort, we can get the latest version of a script, package it, and
-publish it.
-
-In addition, there are some enhancements to DNN itself that would help this be
-an even more useful tool. The main enhancement is to provide a similar mechanism
-for shared CSS components. For example, many jQuery plugins are going to include
-basic styles to make them work. It would be nice if there was a way to get CSS
-that matched the requested JavaScript Library. Also, JavaScript libraries with
-multiple JavaScript files could be handled together more cleanly, rather than as
-a bunch of separate libraries. Finally, one of the big ways that would make
-this more of a no-brainer is if the extension installation process automatically
-found dependent packages on the [DNN Forge](http://www.dnnsoftware.com/forge)
-rather than asking clients to install the JavaScript Library package(s) before
-installing your component.
 
 # License
 
