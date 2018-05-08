@@ -544,7 +544,7 @@ cfb@~0.11.1:
   dependencies:
     commander ""
 
-cfb@~1.0.2:
+cfb@~1.0.7:
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/cfb/-/cfb-1.0.7.tgz#ccb615eb1bb0a039e7829ab0b2ad4ea564fbaa78"
   dependencies:
@@ -753,9 +753,9 @@ code-point-at@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
 
-codepage@~1.12.0:
-  version "1.12.2"
-  resolved "https://registry.yarnpkg.com/codepage/-/codepage-1.12.2.tgz#fd4424448c8bf1db5d7e01f9ecf9e8346582a195"
+codepage@~1.13.0:
+  version "1.13.0"
+  resolved "https://registry.yarnpkg.com/codepage/-/codepage-1.13.0.tgz#5a9a6583028e6243828c869f145740d7ed7b62c3"
   dependencies:
     commander "~2.14.1"
     exit-on-epipe "~1.0.1"
@@ -823,13 +823,9 @@ commander@:
   version "2.11.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.11.0.tgz#157152fd1e7a6c8d98a5b715cf376df928004563"
 
-commander@^2.14.1:
+commander@^2.14.1, commander@~2.15.1:
   version "2.15.1"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.15.1.tgz#df46e867d0fc2aec66a34662b406a9ccafff5b0f"
-
-commander@~2.13.0:
-  version "2.13.0"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-2.13.0.tgz#6964bca67685df7c1f1430c584f07d7597885b9c"
 
 commander@~2.14.1:
   version "2.14.1"
@@ -1674,11 +1670,9 @@ frac@~1.0.6:
   dependencies:
     voc ""
 
-frac@~1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/frac/-/frac-1.1.0.tgz#dc437e9c6a646b60b127d82ac4902464445cc1e3"
-  dependencies:
-    voc "~1.0.0"
+frac@~1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/frac/-/frac-1.1.2.tgz#3d74f7f6478c88a1b5020306d747dc6313c74d0b"
 
 fragment-cache@^0.2.1:
   version "0.2.1"
@@ -5272,11 +5266,11 @@ split-string@^3.0.1, split-string@^3.0.2:
   dependencies:
     extend-shallow "^3.0.0"
 
-ssf@~0.10.1:
-  version "0.10.1"
-  resolved "https://registry.yarnpkg.com/ssf/-/ssf-0.10.1.tgz#f23d82b63792ef56089089c1cd0c848e911cdba6"
+ssf@~0.10.2:
+  version "0.10.2"
+  resolved "https://registry.yarnpkg.com/ssf/-/ssf-0.10.2.tgz#65b2b4fcdfd967bc8e8383a41349009893115976"
   dependencies:
-    frac "~1.1.0"
+    frac "~1.1.2"
 
 ssf@~0.9.1:
   version "0.9.4"
@@ -5902,7 +5896,7 @@ vinyl@^2.0.1, vinyl@^2.1.0:
     remove-trailing-separator "^1.0.1"
     replace-ext "^1.0.0"
 
-voc@, voc@~1.0.0:
+voc@:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/voc/-/voc-1.0.0.tgz#5465c0ce11d0881f7d8e36d8ca587043f33a25ae"
 
@@ -5989,17 +5983,17 @@ xdg-basedir@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/xdg-basedir/-/xdg-basedir-3.0.0.tgz#496b2cc109eca8dbacfe2dc72b603c17c5870ad4"
 
-xlsx@0.11.19:
-  version "0.11.19"
-  resolved "https://registry.yarnpkg.com/xlsx/-/xlsx-0.11.19.tgz#2f019d9df756f6345aac5bc1af2442cf22a025e3"
+xlsx@0.12.12:
+  version "0.12.12"
+  resolved "https://registry.yarnpkg.com/xlsx/-/xlsx-0.12.12.tgz#2d17459f2cb1e4f1b564c170c565a18baa9239dc"
   dependencies:
     adler-32 "~1.2.0"
-    cfb "~1.0.2"
-    codepage "~1.12.0"
-    commander "~2.13.0"
+    cfb "~1.0.7"
+    codepage "~1.13.0"
+    commander "~2.15.1"
     crc-32 "~1.2.0"
     exit-on-epipe "~1.0.1"
-    ssf "~0.10.1"
+    ssf "~0.10.2"
 
 xlsx@^0.9.13:
   version "0.9.13"
