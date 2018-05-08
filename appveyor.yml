@@ -1,7 +1,11 @@
+environment:
+  nodejs_version: "LTS"
+
 cache:
  - "%LOCALAPPDATA%\\Yarn"
 
 install:
+  - ps: Install-Product node $env:nodejs_version
   - ps: yarn install
 
 test_script:
