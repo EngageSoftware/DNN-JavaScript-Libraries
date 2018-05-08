@@ -133,21 +133,24 @@ ${formatPackageUpgrades(validUpgrades)}`);
 						{ stdio: 'inherit' }
 					);
 
-					if (
-						manifest.files
-							.concat(manifest.resources || [])
-							.some(f => !f.startsWith('node_modules'))
-					) {
-						return name;
-					}
+					const fileGlobs = manifest.files.concat(
+						manifest.resources || []
+					);
+					const hasExtraFiles = fileGlobs.some(
+						f => f[0] !== '!' && !f.startsWith('node_modules')
+					);
+
+					return hasExtraFiles ? name : null;
 				}
 			);
 
-			upgradeWarnings.forEach(libraryName =>
-				log.warn(
-					chalk`The library {magenta ${libraryName}} has some resources that do not come from {gray node_modules}, please verify that the upgrade was complete`
-				)
-			);
+			upgradeWarnings
+				.filter(libraryName => libraryName !== null)
+				.forEach(libraryName =>
+					log.warn(
+						chalk`The library {magenta ${libraryName}} has some resources that do not come from {gray node_modules}, please verify that the upgrade was complete`
+					)
+				);
 		});
 	})
 );
