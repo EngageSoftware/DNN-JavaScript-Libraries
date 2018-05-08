@@ -4392,9 +4392,9 @@ tiny-emitter@^2.0.0:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/tiny-emitter/-/tiny-emitter-2.0.2.tgz#82d27468aca5ade8e5fd1e6d22b57dd43ebdfb7c"
 
-tinymce@4.7.2:
-  version "4.7.2"
-  resolved "https://registry.yarnpkg.com/tinymce/-/tinymce-4.7.2.tgz#24bf64ff1d1e68190e15461a658dc257a426c5ee"
+tinymce@4.7.12:
+  version "4.7.12"
+  resolved "https://registry.yarnpkg.com/tinymce/-/tinymce-4.7.12.tgz#b8e15adcb03215996c9910edaf3ee0482eedfa4f"
 
 titleize@^1.0.0:
   version "1.0.0"
