@@ -1924,9 +1924,9 @@ hosted-git-info@^2.1.4:
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.5.0.tgz#6d60e34b3abbc8313062c3b798ef8d901a07af3c"
 
-html5-history-api@4.2.8:
-  version "4.2.8"
-  resolved "https://registry.yarnpkg.com/html5-history-api/-/html5-history-api-4.2.8.tgz#3ebbc38e36cae0dc410f74c20fdd5d76d93e96a8"
+html5-history-api@4.2.10:
+  version "4.2.10"
+  resolved "https://registry.yarnpkg.com/html5-history-api/-/html5-history-api-4.2.10.tgz#fa8d0ddd2f11711b624e8e4f79ea6dc271ab672b"
 
 html5shiv@3.7.3:
   version "3.7.3"
