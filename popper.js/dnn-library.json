@@ -1,0 +1,7 @@
+{
+	"files": ["node_modules/popper.js/dist/popper.min.js"],
+	"resources": [
+		"node_modules/popper.js/dist/*.js",
+		"node_modules/popper.js/dist/*.map"
+	]
+}

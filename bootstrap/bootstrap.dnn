@@ -15,6 +15,7 @@
       <azureCompatible>true</azureCompatible>
       <dependencies>
         <dependency type="managedPackage" version="1.9.1">jQuery</dependency>
+        <dependency type="managedPackage" version="1.14.3">popper.js</dependency>
       </dependencies>
       <components>
         <component type="JavaScript_Library">
