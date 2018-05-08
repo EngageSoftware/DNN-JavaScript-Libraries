@@ -1,0 +1,18 @@
+cache:
+ - "%LOCALAPPDATA%\\Yarn"
+
+install:
+  - ps: yarn install
+
+test_script:
+  - node --version
+  - yarn --version
+
+build:
+  - yarn run package
+
+artifacts:
+  - path: '_InstallPackages/*.zip'
+
+notifications:
+  - provider: GitHubPullRequest
