@@ -1024,14 +1024,14 @@ datatables.net-buttons@>=1.0.3:
     datatables.net "^1.10.15"
     jquery ">=1.7"
 
-datatables.net-dt@1.10.16:
-  version "1.10.16"
-  resolved "https://registry.yarnpkg.com/datatables.net-dt/-/datatables.net-dt-1.10.16.tgz#6758a308fb9e5f9629fb6541cc301e48ec9ec555"
+datatables.net-dt@2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/datatables.net-dt/-/datatables.net-dt-2.1.1.tgz#cbae9230956e4e7e3460082b48934b3084248db8"
   dependencies:
-    datatables.net "1.10.16"
+    datatables.net ">=1.10.9"
     jquery ">=1.7"
 
-datatables.net@1.10.16, datatables.net@>=1.10.9, datatables.net@^1.10.15:
+datatables.net@>=1.10.9, datatables.net@^1.10.15:
   version "1.10.16"
   resolved "https://registry.yarnpkg.com/datatables.net/-/datatables.net-1.10.16.tgz#4b052d1082824261b68eed9d22741b711d3d2469"
   dependencies:
