@@ -2808,7 +2808,7 @@ jquery-mousewheel@3.1.13, jquery-mousewheel@~3.1.13:
   version "3.1.13"
   resolved "https://registry.yarnpkg.com/jquery-mousewheel/-/jquery-mousewheel-3.1.13.tgz#06f0335f16e353a695e7206bf50503cb523a6ee5"
 
-jquery-ui@1.12.1:
+jquery-ui@1.12.1, jquery-ui@^1.12.1:
   version "1.12.1"
   resolved "https://registry.yarnpkg.com/jquery-ui/-/jquery-ui-1.12.1.tgz#bcb4045c8dd0539c134bc1488cdd3e768a7a9e51"
 
@@ -2850,6 +2850,10 @@ jquery@*, jquery@3.2.1, "jquery@>= 3.1.1", jquery@>=1.11.3, jquery@>=1.7, "jquer
 "jquery@>=1.7.2 <3.0.0":
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-2.2.4.tgz#2c89d6889b5eac522a7eea32c14521559c6cbf02"
+
+jquery@^3.2.1:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
 
 jsbn@~0.1.0:
   version "0.1.1"
@@ -2946,9 +2950,13 @@ kinetic@5.2.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/kinetic/-/kinetic-5.2.0.tgz#83c4c5eb5644f24e26e9b4b3858431970a30b75f"
 
-knockout-jqautocomplete@0.4.4:
-  version "0.4.4"
-  resolved "https://registry.yarnpkg.com/knockout-jqautocomplete/-/knockout-jqautocomplete-0.4.4.tgz#c40480a0ab58a040a0fb8fe52f6862ffe593e851"
+knockout-jqautocomplete@0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/knockout-jqautocomplete/-/knockout-jqautocomplete-0.5.0.tgz#cc65e9ab3a8a983476dda14d7ae2b970bb601025"
+  dependencies:
+    jquery "^3.2.1"
+    jquery-ui "^1.12.1"
+    knockout "^3.4.2"
 
 knockout-postbox@0.6.0:
   version "0.6.0"
@@ -2962,7 +2970,7 @@ knockout.validation@2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/knockout.validation/-/knockout.validation-2.0.3.tgz#899de5232364e1ecd5d946e080f6a26293046329"
 
-knockout@3.4.2:
+knockout@3.4.2, knockout@^3.4.2:
   version "3.4.2"
   resolved "https://registry.yarnpkg.com/knockout/-/knockout-3.4.2.tgz#e87958de77ad1e936f7ce645bab8b5d7c456d937"
 
