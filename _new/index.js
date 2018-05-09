@@ -112,13 +112,18 @@ module.exports = class extends Generator {
 					path
 						.normalize(answers.pkg.browser || answers.pkg.main)
 						.replace(/\\/g, '/'),
-				filter: libraryPath => libraryPath.replace(/\\/g, '/'),
+				filter: relativePath => relativePath.replace(/\\/g, '/'),
 			},
 			{
 				type: 'input',
 				name: 'relativePath',
 				message: 'What is the main JavaScript file?',
 				when: answers => answers.relativePath === 'Other',
+				default: answers =>
+					path
+						.normalize(answers.pkg.browser || answers.pkg.main)
+						.replace(/\\/g, '/'),
+				filter: relativePath => relativePath.replace(/\\/g, '/'),
 			},
 			{
 				type: 'list',

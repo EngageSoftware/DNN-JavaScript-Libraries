@@ -22,7 +22,7 @@
             <fileName>popper.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
             <objectName>Popper</objectName>
-            <cdnUrl>https://cdn.jsdelivr.net/npm/popper.js@<~=version~>/dist\popper.min.js</cdnUrl>
+            <cdnUrl>https://cdn.jsdelivr.net/npm/popper.js@<~=version~>/dist/popper.min.js</cdnUrl>
           </javaScriptLibrary>
         </component>
         <component type="JavaScriptFile">
