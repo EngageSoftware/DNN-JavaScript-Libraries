@@ -1,6 +1,6 @@
 # DNN JavaScript Libraries
 
-[https://ci.appveyor.com/api/projects/status/github/EngageSoftware/Dnn-JavaScript-Libraries?svg=true](https://ci.appveyor.com/project/bdukes/dnn-javascript-libraries)
+[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/EngageSoftware/Dnn-JavaScript-Libraries?svg=true)](https://ci.appveyor.com/project/bdukes/dnn-javascript-libraries)
 
 Version 7.2 of the [DNN Platform](http://www.dnnsoftware.com) introduced the
 JavaScript Library extension type. This allows common JavaScript libraries to
