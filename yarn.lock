@@ -5881,9 +5881,9 @@ xdg-basedir@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/xdg-basedir/-/xdg-basedir-3.0.0.tgz#496b2cc109eca8dbacfe2dc72b603c17c5870ad4"
 
-xlsx@0.12.12:
-  version "0.12.12"
-  resolved "https://registry.yarnpkg.com/xlsx/-/xlsx-0.12.12.tgz#2d17459f2cb1e4f1b564c170c565a18baa9239dc"
+xlsx@0.12.13:
+  version "0.12.13"
+  resolved "https://registry.yarnpkg.com/xlsx/-/xlsx-0.12.13.tgz#f6bec7cf8d916cf625685116170cc3b224228658"
   dependencies:
     adler-32 "~1.2.0"
     cfb "~1.0.7"
