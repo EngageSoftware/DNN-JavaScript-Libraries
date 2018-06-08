@@ -5367,9 +5367,9 @@ swiper@4.2.6:
     dom7 "^2.0.5"
     ssr-window "^1.0.0"
 
-systemjs@0.21.3:
-  version "0.21.3"
-  resolved "https://registry.yarnpkg.com/systemjs/-/systemjs-0.21.3.tgz#76467a34a9a12ead3b11028a27345f7649e46204"
+systemjs@0.21.4:
+  version "0.21.4"
+  resolved "https://registry.yarnpkg.com/systemjs/-/systemjs-0.21.4.tgz#043996efcac3fefcb7d62e8c40457a42e9c86e1e"
 
 tableexport@5.0.0:
   version "5.0.0"
