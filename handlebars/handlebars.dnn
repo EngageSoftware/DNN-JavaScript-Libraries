@@ -1,0 +1,38 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="handlebars" type="JavaScript_Library" version="<~=version~>">
+      <friendlyName>Handlebars.js</friendlyName>
+      <description>
+        <![CDATA[Handlebars provides the power necessary to let you build semantic templates effectively with no frustration]]>
+      </description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>https://engagesoftware.com/</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes src="CHANGES.htm" />
+      <azureCompatible>true</azureCompatible>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>handlebars</libraryName>
+            <fileName>handlebars.min.js</fileName>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+            <objectName>Handlebars</objectName>
+            <cdnUrl>https://cdn.jsdelivr.net/npm/handlebars@<~=version~>/dist/handlebars.min.js</cdnUrl>
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName>handlebars</libraryFolderName>
+            <jsfile>
+              <name>handlebars.min.js</name>
+            </jsfile>
+          </jsfiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
