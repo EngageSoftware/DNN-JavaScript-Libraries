@@ -1,0 +1,6 @@
+{
+	"files": ["node_modules/lightbox2/dist/js/lightbox.min.js"],
+	"resources": [
+		"node_modules/lightbox2/dist/**"
+	]
+}
