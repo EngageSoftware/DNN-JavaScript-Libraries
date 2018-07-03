@@ -9,7 +9,9 @@
     "package": "gulp",
     "outdated": "gulp outdated",
     "upgrade": "gulp upgrade-patch && gulp upgrade-minor && gulp upgrade-major",
-    "new": "yo ./_new"
+    "new": "yo ./_new",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "alpaca": "1.5.24",
@@ -76,7 +78,8 @@
     "unitegallery": "1.7.28",
     "urijs": "1.19.1",
     "xlsx": "0.13.0",
-    "zeroclipboard": "2.3.0"
+    "zeroclipboard": "2.3.0",
+    "snyk": "^1.88.0"
   },
   "devDependencies": {
     "chalk": "^2.4.1",
@@ -93,5 +96,6 @@
     "semver": "5.5.0",
     "yeoman-generator": "^2.0.5",
     "yo": "^2.0.2"
-  }
+  },
+  "snyk": true
 }
