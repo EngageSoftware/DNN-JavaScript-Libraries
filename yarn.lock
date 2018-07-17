@@ -1386,9 +1386,9 @@ flagged-respawn@^0.3.2:
   version "0.3.2"
   resolved "https://registry.yarnpkg.com/flagged-respawn/-/flagged-respawn-0.3.2.tgz#ff191eddcd7088a675b2610fffc976be9b8074b5"
 
-flexslider@2.7.0:
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/flexslider/-/flexslider-2.7.0.tgz#001df06cd7119b3ab9fa2590fe301069fcfb6028"
+flexslider@2.7.1:
+  version "2.7.1"
+  resolved "https://registry.yarnpkg.com/flexslider/-/flexslider-2.7.1.tgz#6752b0b31c90cde9207ee6406aea70ad299c3ac3"
   dependencies:
     jquery ">=1.11.3"
 
