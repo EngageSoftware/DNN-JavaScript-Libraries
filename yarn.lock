@@ -2078,9 +2078,9 @@ interpret@^1.0.0:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/interpret/-/interpret-1.0.4.tgz#820cdd588b868ffb191a809506d6c9c8f212b1b0"
 
-intl-tel-input@12.1.15:
-  version "12.1.15"
-  resolved "https://registry.yarnpkg.com/intl-tel-input/-/intl-tel-input-12.1.15.tgz#7393e6b77572731bbc65ca4585782e8ba3d74de4"
+intl-tel-input@12.1.16:
+  version "12.1.16"
+  resolved "https://registry.yarnpkg.com/intl-tel-input/-/intl-tel-input-12.1.16.tgz#0993ce8a83aed8fcbe96000ff028b64db30fb453"
 
 into-stream@^3.1.0:
   version "3.1.0"
