@@ -1,5 +1,6 @@
 'use strict';
 
+const { padStart } = require('lodash');
 const { formatPackageUpgrades } = require('./ui');
 const { getLibraries, getUpgradeVersions } = require('./packages');
 
@@ -14,7 +15,7 @@ function formatVersionFolder(version) {
 
 	return version
 		.split('.')
-		.map(n => n.padStart(versionFolderPadding, '0'))
+		.map(n => padStart(n, versionFolderPadding, '0'))
 		.join('_');
 }
 
