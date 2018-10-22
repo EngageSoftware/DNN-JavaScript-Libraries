@@ -2248,10 +2248,10 @@ ignore@^3.3.5:
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-3.3.7.tgz#612289bfb3c220e186a58118618d5be8c1bab021"
   integrity sha512-YGG3ejvBNHRqu0559EOxxNFihD0AjpvHlC/pdGKd3X3ofe+CoJkYazwNJYTNebqpPKN+VVQbh4ZFn1DivMNuHA==
 
-image-map@1.0.8:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/image-map/-/image-map-1.0.8.tgz#1be198b971825aeb500d74d5df2c2490a09b6795"
-  integrity sha1-G+GYuXGCWutQDXTV3ywkkKCbZ5U=
+image-map@1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/image-map/-/image-map-1.0.9.tgz#c3ef83d7e0b3c0d6952cf7a71ad856cbfc105bef"
+  integrity sha512-pH0wp5x4Y2mf/DiaqV9gzoY48jfIDvFhbkuxvNIpSIW2k97j3D2i8YvGjOQKAXjRBq4JcRQpoeakqafsd3DGzQ==
 
 image-size@~0.5.0:
   version "0.5.5"
