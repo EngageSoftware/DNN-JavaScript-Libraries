@@ -16,38 +16,42 @@ const {
 
 const libraries = getLibraries();
 
-libraries.forEach(library =>
-	gulp.task(library.path, () => {
-		const mainFileStream = gulp.src(library.manifest.files);
-		const resourceZipStream = gulp
-			.src(library.manifest.resources || [])
-			.pipe(zip('Resources.zip'));
+function makePackageTask(library) {
+	const packageFn = function() {
+		const resourceZipStream =
+			library.manifest.resources && library.manifest.resources.length
+				? gulp
+						.src(library.manifest.resources)
+						.pipe(zip('Resources.zip'))
+				: null;
 
 		const templateData = {
 			version: library.version,
 			versionFolder: formatVersionFolder(library.version),
 		};
-		const packageFilesStream = gulp
+		const filesStream = gulp
 			.src(['LICENSE.htm', 'CHANGES.htm', '*.dnn'], {
 				cwd: library.path,
 			})
-			.pipe(ejs(templateData, { delimiter: '~' }));
+			.pipe(ejs(templateData, { delimiter: '~' }))
+			.pipe(gulp.src(library.manifest.files));
 
-		return mergeStream(
-			mainFileStream,
-			resourceZipStream,
-			packageFilesStream
-		)
+		const packageStream = resourceZipStream
+			? mergeStream(filesStream, resourceZipStream)
+			: filesStream;
+
+		return packageStream
 			.pipe(zip(`${library.name}_${library.version}.zip`))
 			.pipe(gulp.dest('./_InstallPackages/'));
-	})
-);
+	};
 
-const libraryTaskNames = libraries.map(library => library.path);
+	packageFn.displayName = `Generate ${library.name}_${library.version}.zip`;
+	return packageFn;
+}
 
-gulp.task('default', libraryTaskNames);
+const defaultTask = gulp.parallel(...libraries.map(makePackageTask));
 
-gulp.task('outdated', () => {
+function outdated() {
 	const allUpgradesPromises = libraries.map(library =>
 		getUpgradeVersions(library).then(upgrades =>
 			Object.assign(library, { upgrades })
@@ -70,10 +74,10 @@ gulp.task('outdated', () => {
 		log.info(`
 ${formatPackageUpgrades(validUpgrades)}`);
 	});
-});
+}
 
-['patch', 'minor', 'major'].forEach(upgradeType =>
-	gulp.task(`upgrade-${upgradeType}`, () => {
+function makeUpgradeTask(upgradeType) {
+	const upgradeFn = function() {
 		const allUpgradesPromises = libraries.map(library =>
 			getUpgradeVersions(library).then(upgrades =>
 				Object.assign(library, { upgrades })
@@ -152,5 +156,23 @@ ${formatPackageUpgrades(validUpgrades)}`);
 					)
 				);
 		});
-	})
-);
+	};
+
+	upgradeFn.displayName = `Apply ${upgradeType} upgrades`;
+
+	return upgradeFn;
+}
+
+const upgradePatch = makeUpgradeTask('patch');
+const upgradeMinor = makeUpgradeTask('minor');
+const upgradeMajor = makeUpgradeTask('major');
+const upgrade = gulp.series(upgradePatch, upgradeMinor, upgradeMajor);
+
+module.exports = {
+	outdated,
+	upgradePatch,
+	upgradeMinor,
+	upgradeMajor,
+	upgrade,
+	default: defaultTask,
+};
