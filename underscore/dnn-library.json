@@ -1,4 +1,4 @@
 {
   "files": ["node_modules/underscore/underscore-min.js"],
-  "resources": ["node_modules/underscore/underscore-min.map"]
+  "resources": ["node_modules/underscore/underscore-min.js.map"]
 }
