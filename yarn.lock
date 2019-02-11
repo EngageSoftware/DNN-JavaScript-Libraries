@@ -4963,10 +4963,10 @@ swiper@4.4.6:
     dom7 "^2.1.2"
     ssr-window "^1.0.1"
 
-systemjs@2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/systemjs/-/systemjs-2.1.1.tgz#453a123aa3bb2dcb581d0e99fabd2f29eadbe10d"
-  integrity sha512-T8bqkkIl56bLGrMzQh3+Ug2Oxg7NSyj+JFHv5Gi8V81mQr5XQKHEDooqvixbchYM9ZoeZedJFCMiPyN+nIEj4Q==
+systemjs@2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/systemjs/-/systemjs-2.1.2.tgz#f97b31352583dde393ff86e412146490488c50b7"
+  integrity sha512-zWKz0FMcnqnMuqSQ9htSeDCAWSLWmBaY6VypVtcVhY4VWJzp7RfNGuOT+2ABAHZR7GuPmEjDmvBV48khHfqxAw==
 
 tableexport@5.0.5:
   version "5.0.5"
