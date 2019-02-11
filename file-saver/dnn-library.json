@@ -1,4 +1,4 @@
 {
-  "files": ["node_modules/file-saver/FileSaver.min.js"],
+  "files": ["node_modules/file-saver/dist/FileSaver.min.js"],
   "resources": []
 }
