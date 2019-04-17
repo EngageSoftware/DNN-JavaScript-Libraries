@@ -1865,10 +1865,10 @@ flagged-respawn@^1.0.0:
   resolved "https://registry.yarnpkg.com/flagged-respawn/-/flagged-respawn-1.0.1.tgz#e7de6f1279ddd9ca9aac8a5971d618606b3aab41"
   integrity sha512-lNaHNVymajmk0OJMBn8fVUAU1BtDeKIqKoVhk4xAALB57aALg6b4W0MfJ/cUE0g9YBXy5XhSlPIpYIJ7HaY/3Q==
 
-flexslider@2.7.1:
-  version "2.7.1"
-  resolved "https://registry.yarnpkg.com/flexslider/-/flexslider-2.7.1.tgz#6752b0b31c90cde9207ee6406aea70ad299c3ac3"
-  integrity sha512-UkFiHHDjYEkP9yH5KrfEBl+Zhb6enQorY2pL/5dC+Njh7ua3K0IxGTLRuaV99E+o3LLNnNJXpX4gbUzo/4v/YQ==
+flexslider@2.7.2:
+  version "2.7.2"
+  resolved "https://registry.yarnpkg.com/flexslider/-/flexslider-2.7.2.tgz#c0f4d36559b86feb8a3bc7d6a5abb9aa01bcf909"
+  integrity sha512-ayzD+g+zYPG+sM+LXyXbfm4gS4unLB0PGsjwIu03TeRNZ+JLQTtbV3J42VO9ooRZ9idmuWgR5s3r4hw6shS1tQ==
   dependencies:
     jquery ">=1.11.3"
 
