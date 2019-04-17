@@ -5621,10 +5621,10 @@ tiny-emitter@^2.0.0:
   resolved "https://registry.yarnpkg.com/tiny-emitter/-/tiny-emitter-2.0.2.tgz#82d27468aca5ade8e5fd1e6d22b57dd43ebdfb7c"
   integrity sha512-2NM0auVBGft5tee/OxP4PI3d8WItkDM+fPnaRAVo6xTDI2knbz9eC5ArWGqtGlYqiH3RU5yMpdyTTO7MguC4ow==
 
-tinymce@5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/tinymce/-/tinymce-5.0.1.tgz#ec8e05526f2ba7c5ce077a0ef2a1329b40579526"
-  integrity sha512-bAKaEEtRd4BsXu6ySYflhO83Cg844LHrplcaWalbdeZjFXwkodtv3G6H1x2r6ThaOdyE4+otJtxPYlfzwyKDdw==
+tinymce@5.0.3:
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/tinymce/-/tinymce-5.0.3.tgz#40fa8658b5bdf58e7f04c816b38e1b06f96f6cfe"
+  integrity sha512-x7D0ttqn176Z4CWQIITMjcEtMGUjiaK0Y2FN2vO8DiyUeIHCdr70jJDSoGhuXtXX70Sw4Bd5UFfqIn/bG3HXcg==
 
 titleize@^1.0.1:
   version "1.0.1"
