@@ -21,7 +21,7 @@
         <component type="JavaScript_Library">
           <javaScriptLibrary>
             <libraryName>pepjs</libraryName>
-            <fileName>pep.min.js</fileName>
+            <fileName>pep.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
             <CDNPath>https://cdn.jsdelivr.net/npm/pepjs@<~=version~>/dist/pep.min.js</CDNPath>
             <objectName>PointerEventsPolyfill</objectName>
@@ -31,7 +31,7 @@
           <jsfiles>
             <libraryFolderName>pepjs</libraryFolderName>
             <jsfile>
-              <name>pep.min.js</name>
+              <name>pep.js</name>
             </jsfile>
           </jsfiles>
         </component>
