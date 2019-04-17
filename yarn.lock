@@ -2714,10 +2714,10 @@ interpret@^1.1.0:
   resolved "https://registry.yarnpkg.com/interpret/-/interpret-1.2.0.tgz#d5061a6224be58e8083985f5014d844359576296"
   integrity sha512-mT34yGKMNceBQUoVn7iCDKDntA7SC6gycMAWzGx1z/CMCTV7b2AAtXlo3nRyHZ1FelRkQbQjprHSYGwzLtkVbw==
 
-intl-tel-input@15.0.0:
-  version "15.0.0"
-  resolved "https://registry.yarnpkg.com/intl-tel-input/-/intl-tel-input-15.0.0.tgz#f7cfe93858e9b436ef2e6db9757a12de0b0d41da"
-  integrity sha512-5lD+YyBgLm6hyerCIfhU0rvfztxE8jqKJcPPPEft5PIGK57tx0JPO9ssGJNLBjK39ChvEX7BmKHunYY/2K0fcw==
+intl-tel-input@15.0.2:
+  version "15.0.2"
+  resolved "https://registry.yarnpkg.com/intl-tel-input/-/intl-tel-input-15.0.2.tgz#75a3f5eaaf80de042373cb9575d7db9aa53c0ce5"
+  integrity sha512-X2rjM7gWDiv2N3H00Zv30VwCxAI14iflQjNqLjcCQxRp3ldGz731xrjryNXcWMBjATBLfr5pSTZALtjxShQqOg==
 
 into-stream@^3.1.0:
   version "3.1.0"
