@@ -2,29 +2,27 @@
   <packages>
     <package name="jQuery" type="JavaScript_Library" version="<~=version~>">
       <friendlyName>jQuery</friendlyName>
-      <description><![CDATA[jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.]]></description>
+      <description>
+        <![CDATA[JavaScript library for DOM operations]]>
+      </description>
       <owner>
         <name>Engage Software</name>
         <organization>Engage Software</organization>
-        <url>http://www.engagesoftware.com</url>
+        <url>https://engagesoftware.com/</url>
         <email>support@engagesoftware.com</email>
       </owner>
       <license src="LICENSE.htm" />
       <releaseNotes src="CHANGES.htm" />
       <azureCompatible>true</azureCompatible>
-      <dependencies>
-      <!--
-        <dependency type="managedPackage" version="1.0.0">jQuery</dependency>
-        -->
-      </dependencies>
+      <dependencies></dependencies>
       <components>
         <component type="JavaScript_Library">
           <javaScriptLibrary>
             <libraryName>jQuery</libraryName>
             <fileName>jquery.min.js</fileName>
             <preferredScriptLocation>PageHead</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/npm/jquery@<~=version~>/dist/jquery.min.js</CDNPath>
             <objectName>jQuery</objectName>
+            <cdnUrl>https://code.jquery.com/jquery-<~=version~>.min.js</cdnUrl>
           </javaScriptLibrary>
         </component>
         <component type="JavaScriptFile">
