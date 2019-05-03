@@ -5045,10 +5045,10 @@ scoped-regex@^1.0.0:
   resolved "https://registry.yarnpkg.com/scoped-regex/-/scoped-regex-1.0.0.tgz#a346bb1acd4207ae70bd7c0c7ca9e566b6baddb8"
   integrity sha1-o0a7Gs1CB65wvXwMfKnlZra63bg=
 
-select2@4.0.5:
-  version "4.0.5"
-  resolved "https://registry.yarnpkg.com/select2/-/select2-4.0.5.tgz#7aac50692561985b34d3b82ec55e226f8960d40a"
-  integrity sha1-eqxQaSVhmFs007guxV4ib4lg1Ao=
+select2@4.0.6:
+  version "4.0.6"
+  resolved "https://registry.yarnpkg.com/select2/-/select2-4.0.6.tgz#88697c96e08b65a5963c2806c1d5eefbceec0a7e"
+  integrity sha512-P5NqUcH+FFBwHAbC2mEWMDS446YdIGvXRM9tSGFLuNIFRP/ng0IOtjJ4zkzVyCl43RM/NyXJa6SAPT9MGg634A==
   dependencies:
     almond "~0.3.1"
     jquery-mousewheel "~3.1.13"
