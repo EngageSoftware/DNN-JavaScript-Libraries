@@ -68,10 +68,10 @@ almond@~0.3.1:
   resolved "https://registry.yarnpkg.com/almond/-/almond-0.3.3.tgz#a0e7c95ac7624d6417b4494b1e68bff693168a20"
   integrity sha1-oOfJWsdiTWQXtElLHmi/9pMWiiA=
 
-alpaca@1.5.24:
-  version "1.5.24"
-  resolved "https://registry.yarnpkg.com/alpaca/-/alpaca-1.5.24.tgz#80969be521fed103c11c61e34ed61b703c2d79ec"
-  integrity sha512-U7qF6wdND/2FL3N8RZsgbCKP3azdY16gjuI4VFIrgCAZYzEgD8tvfyWbtqP/sHiXa3vnleNNqvicZ6K9r1AxMw==
+alpaca@1.5.27:
+  version "1.5.27"
+  resolved "https://registry.yarnpkg.com/alpaca/-/alpaca-1.5.27.tgz#07ec405734b448509be5e4cf451ef6a0ba72dfc6"
+  integrity sha512-NLiH923aL0Tv/EvyhmFSjJsOGKyR5/EhO/UYqlfCztcwZFDy6mmhCRiKiWvWXKyUMNQ5vEBm3WoX5RlkIyJb8A==
 
 ansi-align@^2.0.0:
   version "2.0.0"
