@@ -3,8 +3,36 @@
 const path = require('path');
 const glob = require('glob');
 const semver = require('semver');
+const log = require('fancy-log');
+const chalk = require('chalk');
 const packageJson = require('package-json');
 const { dependencies } = require('../package.json');
+
+const validLibraryNames = new Set(Object.keys(dependencies));
+
+/**
+ * Gets the name of the npm package from a path to a library
+ *
+ * @private
+ * @param {string} libraryPath - The path to the library directory
+ * @returns {string} The name of the library on the npm registry
+ */
+function resolveLibraryName(libraryPath) {
+	const name = path.basename(libraryPath);
+	if (validLibraryNames.has(name)) {
+		return name;
+	}
+
+	for (const libraryName of validLibraryNames) {
+		if (libraryName.endsWith(`/${name}`)) {
+			return libraryName;
+		}
+	}
+
+	log.warn(chalk`Unable to find npm package name for {yellow ${name}}`);
+
+	return null;
+}
 
 /**
  * Gets the current list of DNN JS libraries in this repo
@@ -19,7 +47,7 @@ function getLibraries() {
 			manifest: require(path.resolve(manifestPath)),
 		}))
 		.map(library =>
-			Object.assign(library, { name: path.basename(library.path) })
+			Object.assign(library, { name: resolveLibraryName(library.path) })
 		)
 		.map(library =>
 			Object.assign(library, { version: dependencies[library.name] })

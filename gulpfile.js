@@ -16,8 +16,14 @@ const {
 
 const libraries = getLibraries();
 
+/**
+ * Creates a Gulp task function to package the given library
+ *
+ * @param {Library} library - A library object
+ * @returns {Task} A Gulp task function
+ */
 function makePackageTask(library) {
-	const packageFn = function() {
+	const packageFn = () => {
 		const resourceZipStream =
 			library.manifest.resources && library.manifest.resources.length
 				? gulp
@@ -46,11 +52,17 @@ function makePackageTask(library) {
 	};
 
 	packageFn.displayName = `Generate ${library.name}_${library.version}.zip`;
+
 	return packageFn;
 }
 
 const defaultTask = gulp.parallel(...libraries.map(makePackageTask));
 
+/**
+ * A Gulp task to output a table of outdated libraries
+ *
+ * @returns {Promise} A promise which resolves when the outdated table is complete
+ */
 function outdated() {
 	const allUpgradesPromises = libraries.map(library =>
 		getUpgradeVersions(library).then(upgrades =>
@@ -76,8 +88,14 @@ ${formatPackageUpgrades(validUpgrades)}`);
 	});
 }
 
+/**
+ * Creates a Gulp task function to upgrade libraries
+ *
+ * @param {string} upgradeType - patch, minor, or major
+ * @returns {Task} A Gulp task function
+ */
 function makeUpgradeTask(upgradeType) {
-	const upgradeFn = function() {
+	const upgradeFn = () => {
 		const allUpgradesPromises = libraries.map(library =>
 			getUpgradeVersions(library).then(upgrades =>
 				Object.assign(library, { upgrades })
