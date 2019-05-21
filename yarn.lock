@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@khanacademy/tota11y@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@khanacademy/tota11y/-/tota11y-0.2.0.tgz#35f184ca1ed09ba1f237350e4c514e2b8e176de3"
+  integrity sha512-myvvtej7h/KQBPZAQ1XsJNrh7teEpN+qUwtVU6+t8U4Kf9/SnOlGpfxM2833Dlc0bORw+VJSwmHk/v5BNcPF1w==
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -5686,11 +5691,6 @@ to-through@^2.0.0:
   integrity sha1-/JKtq6ByZHvAtn1rA2ZKoZUJOvY=
   dependencies:
     through2 "^2.0.3"
-
-tota11y@0.1.6:
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/tota11y/-/tota11y-0.1.6.tgz#312723614ff95ffbb874e56880494077471e1547"
-  integrity sha1-MScjYU/5X/u4dOVogElAd0ceFUc=
 
 tough-cookie@^2.0.0, tough-cookie@~2.3.3:
   version "2.3.3"

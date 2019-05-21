@@ -23,7 +23,7 @@
             <libraryName>tota11y</libraryName>
             <fileName>tota11y.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/npm/tota11y@<~=version~>/build/tota11y.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/@khanacademy/tota11y@<~=version~>/dist/tota11y.min.js</CDNPath>
             <objectName></objectName>
           </javaScriptLibrary>
         </component>

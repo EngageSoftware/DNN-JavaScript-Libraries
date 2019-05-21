@@ -12,6 +12,7 @@
     "new": "yo ./_new"
   },
   "dependencies": {
+    "@khanacademy/tota11y": "0.2.0",
     "alpaca": "1.5.27",
     "blob.js": "1.0.1",
     "bluebird": "3.5.4",
@@ -72,7 +73,6 @@
     "systemjs": "3.1.6",
     "tableexport": "5.2.0",
     "tinymce": "5.0.5",
-    "tota11y": "0.1.6",
     "underscore": "1.9.1",
     "unitegallery": "1.7.28",
     "urijs": "1.19.1",
