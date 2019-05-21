@@ -18,7 +18,7 @@ build_script:
   - yarn run package
 
 artifacts:
-  - path: '_InstallPackages/*.zip'
+  - path: '_InstallPackages/**/*.zip'
 
 notifications:
   - provider: GitHubPullRequest
