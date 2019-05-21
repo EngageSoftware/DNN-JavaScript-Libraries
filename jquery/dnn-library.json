@@ -1,0 +1,7 @@
+{
+  "files": ["node_modules/jquery/dist/jquery.min.js"],
+  "resources": [
+    "node_modules/jquery/dist/**",
+    "!node_modules/jquery/dist/jquery.min.js"
+  ]
+}
