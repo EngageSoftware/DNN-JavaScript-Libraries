@@ -1,0 +1,35 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="Knockout" type="JavaScript_Library" version="<~=version~>">
+      <friendlyName>Knockout JavaScript Library</friendlyName>
+      <description><![CDATA[Knockout is an MVVM library that is used for client side databinding.]]></description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>http://www.engagesoftware.com</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes src="CHANGES.htm" />
+      <azureCompatible>true</azureCompatible>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>Knockout</libraryName>
+            <fileName>knockout-latest.js</fileName>
+            <objectName>ko</objectName>
+            <CDNPath>https://cdn.jsdelivr.net/npm/knockout@<~=version~>/build/output/knockout-latest.js</CDNPath>
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName>Knockout</libraryFolderName>
+            <jsfile>
+              <name>knockout-latest.js</name>
+            </jsfile>
+          </jsfiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
