@@ -2551,10 +2551,10 @@ ignore@^4.0.3:
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-4.0.6.tgz#750e3db5862087b4737ebac8207ffd1ef27b25fc"
   integrity sha512-cyFDKrqc/YdcWFniJhzI42+AzS+gNwmUzOSFcRCQYwySuBBBy/KjuxWLZ/FHEH6Moq1NizMOBWyTcv8O4OZIMg==
 
-image-map@1.1.5:
-  version "1.1.5"
-  resolved "https://registry.yarnpkg.com/image-map/-/image-map-1.1.5.tgz#3600a7f5581b9ca9967f473ba49c346183bd69c1"
-  integrity sha512-v3Bc0mRcEnJOev8Uk8NHiS/EI7wHHOqPtMgoRdw+4lOIdVIUlOQJc1k5/lag68cy9xS6T7pd4xLvbXnGT4m/HA==
+image-map@1.1.6:
+  version "1.1.6"
+  resolved "https://registry.yarnpkg.com/image-map/-/image-map-1.1.6.tgz#50107196c69cc597b63511d1be416f5613acab15"
+  integrity sha512-5gW1BaSEK2Tz9dDtxbLamN3FiybVxzQCGOScm/1vKZMez4c4L285RA5xfAYvV7X7r8r/J6QJVRreImfIq5Ko9Q==
 
 image-size@~0.5.0:
   version "0.5.5"
