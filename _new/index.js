@@ -6,6 +6,8 @@ const chalk = require('chalk');
 const yosay = require('yosay');
 const inquirer = require('inquirer');
 const packageJson = require('package-json');
+const spawn = require('cross-spawn');
+const eos = require('end-of-stream');
 const globby = require('globby');
 const { formatVersionFolder } = require('../utility');
 
@@ -18,15 +20,22 @@ module.exports = class extends Generator {
 			)
 		);
 
+		let yarnAdd;
+
 		const prompts = [
 			{
 				type: 'input',
 				name: 'libraryName',
 				message: "What is the npm module's name?",
 				validate: (libraryName, answers) => {
-					this.spawnCommand('yarn', ['add', libraryName], {
-						stdio: 'ignore',
-					});
+					yarnAdd = new Promise((resolve, reject) =>
+						eos(
+							spawn('yarn', ['add', libraryName], {
+								stdio: 'ignore',
+							}),
+							err => (err ? reject(err) : resolve())
+						)
+					);
 
 					return packageJson(libraryName, {
 						fullMetadata: true,
@@ -86,32 +95,36 @@ module.exports = class extends Generator {
 				type: 'list',
 				name: 'relativePath',
 				message: 'What is the main JavaScript file?',
-				choices: answers => {
-					try {
-						return globby
-							.sync(`node_modules/${answers.libraryName}/**/*.js`)
-							.map(file =>
-								file.replace(
-									`node_modules/${answers.libraryName}/`,
-									''
+				choices: ({ libraryName }) =>
+					yarnAdd
+						.then(() =>
+							globby([
+								`node_modules/${libraryName}/**/*.js`,
+								`!node_modules/${libraryName}/node_modules/**/*.js`,
+							])
+						)
+						.then(files =>
+							files
+								.map(file =>
+									file.replace(
+										`node_modules/${libraryName}/`,
+										''
+									)
 								)
-							)
-							.map(path.normalize)
-							.map(file => file.replace(/\\/g, '/'))
-							.concat([new inquirer.Separator(), 'Other']);
-					} catch (err) {
-						this.log.error(
-							'There was an unexpected error retrieving files: \n %O',
-							err
-						);
+								.map(path.normalize)
+								.map(file => file.replace(/\\/g, '/'))
+								.concat([new inquirer.Separator(), 'Other'])
+						)
+						.catch(err => {
+							this.log.error(
+								'There was an unexpected error retrieving files: \n %O',
+								err
+							);
 
-						return ['Other'];
-					}
-				},
-				default: answers =>
-					path
-						.normalize(answers.pkg.browser || answers.pkg.main)
-						.replace(/\\/g, '/'),
+							return ['Other'];
+						}),
+				default: ({ pkg }) =>
+					path.normalize(pkg.browser || pkg.main).replace(/\\/g, '/'),
 				filter: relativePath => relativePath.replace(/\\/g, '/'),
 			},
 			{
