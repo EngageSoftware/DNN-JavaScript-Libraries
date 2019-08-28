@@ -3293,10 +3293,10 @@ liftoff@^3.1.0:
     rechoir "^0.6.2"
     resolve "^1.1.7"
 
-lightbox2@2.11.0:
-  version "2.11.0"
-  resolved "https://registry.yarnpkg.com/lightbox2/-/lightbox2-2.11.0.tgz#fe3df40010a732a680296f6f554360f06e0f3bfa"
-  integrity sha512-ABzZ96qKu1KqzVAwrmkXwoW7GWOsR9vLTr7i9UIj36T01euVivDPrGuBl51ZK1UskmdqEkOYKqoYX6pqxBL6Zg==
+lightbox2@2.11.1:
+  version "2.11.1"
+  resolved "https://registry.yarnpkg.com/lightbox2/-/lightbox2-2.11.1.tgz#26af900e308e3bed1a9e3b828d40bd7162bcd35d"
+  integrity sha512-24vsIspqtcnkVlh6XgGK+vHm9tUc2/x4tNpAQdEAbafIrTk4fzVgozcIX7ExUG0TAlhsE7VMtWc+WD5Sb7PiXA==
 
 lines-and-columns@^1.1.6:
   version "1.1.6"
