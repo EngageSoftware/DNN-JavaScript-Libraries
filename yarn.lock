@@ -5378,10 +5378,10 @@ swiper@4.5.0:
     dom7 "^2.1.3"
     ssr-window "^1.0.1"
 
-systemjs@4.0.2:
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/systemjs/-/systemjs-4.0.2.tgz#9ccab407bb1e7ef774e0a8e6ebab1a2104045585"
-  integrity sha512-pwVxyK545WKMi4Duw1LQprulXi1Z8/xiT8P4TkXAXd3oEsusOI2XFTSfldg+/NMfPC+CfQGI5B7MUpqdhflHpg==
+systemjs@4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/systemjs/-/systemjs-4.1.1.tgz#c90061456f9707478d487b47f3b92b9896032889"
+  integrity sha512-/0x3bcMrl1pxDCLw6sJWEKPVy0ZGEu7I0nItFSHxfPoDU2Lll6TUyB1wqltvbm7n5y5jVOoK4lei4oMpmW7XJQ==
 
 tableexport@5.2.0:
   version "5.2.0"
