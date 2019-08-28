@@ -683,7 +683,7 @@ cfb@^1.1.0:
     crc-32 "~1.2.0"
     printj "~1.1.2"
 
-cfb@^1.1.2:
+cfb@^1.1.3:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/cfb/-/cfb-1.1.3.tgz#05de6816259c8e8bc32713aba905608ee385df66"
   integrity sha512-joXBW0nMuwV9no7UTMiyVJnQL6XIU3ThXVjFUDHgl9MpILPOomyfaGqC290VELZ48bbQKZXnQ81UT5HouTxHsw==
@@ -5989,13 +5989,13 @@ xdg-basedir@^3.0.0:
   resolved "https://registry.yarnpkg.com/xdg-basedir/-/xdg-basedir-3.0.0.tgz#496b2cc109eca8dbacfe2dc72b603c17c5870ad4"
   integrity sha1-SWsswQnsqNus/i3HK2A8F8WHCtQ=
 
-xlsx@0.14.5:
-  version "0.14.5"
-  resolved "https://registry.yarnpkg.com/xlsx/-/xlsx-0.14.5.tgz#3637e914d791bdca7382816e173f7d725ed0e0d2"
-  integrity sha512-s/5f4/mjeWREmIWZ+HtDfh/rnz51ar+dZ4LWKZU3u9VBx2zLdSIWTdXgoa52/pnZ9Oe/Vu1W1qzcKzLVe+lq4w==
+xlsx@0.15.1:
+  version "0.15.1"
+  resolved "https://registry.yarnpkg.com/xlsx/-/xlsx-0.15.1.tgz#a767c4d412cbd0c95b30dbcd48bed7de428eb107"
+  integrity sha512-z+o4+QPMc32EPboLCzJAz94o0Zyy+8jrmWTsVpfzwknFln9qDO6/HN1KrGGVC4//sGA7dh4R3HA4fhbGIKCDOA==
   dependencies:
     adler-32 "~1.2.0"
-    cfb "^1.1.2"
+    cfb "^1.1.3"
     codepage "~1.14.0"
     commander "~2.17.1"
     crc-32 "~1.2.0"
