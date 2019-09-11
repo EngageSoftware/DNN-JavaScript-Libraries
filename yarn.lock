@@ -4861,10 +4861,10 @@ root-check@^1.0.0:
     downgrade-root "^1.0.0"
     sudo-block "^1.1.0"
 
-routerjs@1.0.10:
-  version "1.0.10"
-  resolved "https://registry.yarnpkg.com/routerjs/-/routerjs-1.0.10.tgz#d6ac7e79dcf58b281702801f3da221d00052ec31"
-  integrity sha1-1qx+edz1iygXAoAfPaIh0ABS7DE=
+routerjs@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/routerjs/-/routerjs-2.1.0.tgz#468cc0be8f5c207f389970519170473a379f8dc5"
+  integrity sha512-RUbVdtR1drp/sz63ufs05FsQTOl+yCWerANDbIP7WM0Q5e2QCZ+cELKvmhlMqgPlsF2sSJopKNpYxAHz4seYng==
 
 run-async@^2.0.0, run-async@^2.2.0:
   version "2.3.0"
