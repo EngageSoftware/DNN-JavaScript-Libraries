@@ -1,4 +1,7 @@
 {
-  "files": ["node_modules/swiper/dist/js/swiper.min.js"],
-  "resources": ["node_modules/swiper/dist/**"]
+  "files": ["node_modules/swiper/js/swiper.min.js"],
+  "resources": [
+    "node_modules/swiper/js/**",
+    "node_modules/swiper/css/**"
+  ]
 }
