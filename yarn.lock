@@ -2562,10 +2562,10 @@ ignore@^5.1.1:
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-5.1.2.tgz#e28e584d43ad7e92f96995019cc43b9e1ac49558"
   integrity sha512-vdqWBp7MyzdmHkkRWV5nY+PfGRbYbahfuvsBCh277tq+w9zyNi7h5CYJCK0kmzti9kU+O/cB7sE8HvKv6aXAKQ==
 
-image-map@1.1.6:
-  version "1.1.6"
-  resolved "https://registry.yarnpkg.com/image-map/-/image-map-1.1.6.tgz#50107196c69cc597b63511d1be416f5613acab15"
-  integrity sha512-5gW1BaSEK2Tz9dDtxbLamN3FiybVxzQCGOScm/1vKZMez4c4L285RA5xfAYvV7X7r8r/J6QJVRreImfIq5Ko9Q==
+image-map@1.1.7:
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/image-map/-/image-map-1.1.7.tgz#3079afac21f768779c7aca322d833ed7fae2af6d"
+  integrity sha512-7V/Ep9pIdHMZUYm6nNrlwxaPDaI9Jxg8/UekINSVYRIwRQ6018k7G6KkYhvrQSB1+vP0BgPjfWoeamkyvxD7iQ==
 
 image-size@~0.5.0:
   version "0.5.5"
