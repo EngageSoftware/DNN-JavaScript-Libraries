@@ -46,6 +46,42 @@ async function validatePackage(file) {
 			}
 		}
 
+		const fileNames = select(
+			doc,
+			'/dotnetnuke/packages/package/components/component/javaScriptLibrary/fileName/text()'
+		).map(({ data }) => data);
+		if (fileNames.length !== 1) {
+			validationMessages.push(
+				'Expected exactly one JavaScript_Library component file name, got ' +
+					fileNames.length
+			);
+		}
+
+		const jsFileNames = select(
+			doc,
+			'/dotnetnuke/packages/package/components/component/jsfiles/jsfile/name/text()'
+		).map(({ data }) => data);
+		if (jsFileNames.length !== 1) {
+			validationMessages.push(
+				'Expected exactly one JavaScriptFile component file name, got ' +
+					jsFileNames.length
+			);
+		}
+
+		if (
+			fileNames.length === 1 &&
+			jsFileNames.length === 1 &&
+			fileNames[0] !== jsFileNames[0]
+		) {
+			validationMessages.push(
+				`Expected JavaScriptFile component file name "${
+					jsFileNames[0]
+				}" to equal JavaScript_Library component file name "${
+					fileNames[0]
+				}"`
+			);
+		}
+
 		return validationMessages;
 	} catch (e) {
 		validationMessages.push('Unexpected error: ' + e);
