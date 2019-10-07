@@ -19,7 +19,7 @@
         <component type="JavaScript_Library">
           <javaScriptLibrary>
             <libraryName>knockout.validation</libraryName>
-            <fileName>knockout.validation.js</fileName>
+            <fileName>knockout.validation.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
             <CDNPath>https://cdn.jsdelivr.net/npm/knockout.validation@<~=version~>/dist/knockout.validation.min.js</CDNPath>
             <objectName>ko.validation</objectName>
@@ -29,7 +29,7 @@
           <jsfiles>
             <libraryFolderName>knockout.validation</libraryFolderName>
             <jsfile>
-              <name>knockout.validation.js</name>
+              <name>knockout.validation.min.js</name>
             </jsfile>
           </jsfiles>
         </component>

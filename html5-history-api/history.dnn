@@ -18,7 +18,7 @@
         <component type="JavaScript_Library">
           <javaScriptLibrary>
             <libraryName>history</libraryName>
-            <fileName>history.js</fileName>
+            <fileName>history.min.js</fileName>
             <objectName>window.history.location</objectName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
             <CDNPath>https://cdn.jsdelivr.net/npm/html5-history-api@<~=version~>/history.min.js</CDNPath>
@@ -28,7 +28,7 @@
           <jsfiles>
             <libraryFolderName>history</libraryFolderName>
             <jsfile>
-              <name>history.js</name>
+              <name>history.min.js</name>
             </jsfile>
           </jsfiles>
         </component>

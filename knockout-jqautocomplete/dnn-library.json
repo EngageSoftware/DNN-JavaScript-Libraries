@@ -1,4 +1,4 @@
 {
-  "files": ["node_modules/knockout-jqautocomplete/src/knockout-jqAutocomplete.js"],
+  "files": ["node_modules/knockout-jqautocomplete/build/knockout-jqAutocomplete.min.js"],
   "resources": []
 }
