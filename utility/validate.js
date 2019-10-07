@@ -6,6 +6,14 @@ const select = require('xpath.js');
 const { DOMParser } = require('xmldom');
 const got = require('got');
 
+function equalCaseInsensitive(a, b) {
+	if (!a || !b) {
+		return !a && !b;
+	}
+
+	return a.toUpperCase() === b.toUpperCase();
+}
+
 /**
  * Validates a package
  *
@@ -80,6 +88,16 @@ async function validatePackage(file) {
 					fileNames[0]
 				}"`
 			);
+		} else {
+			const fileName = fileNames[0];
+			const jsFiles = files.filter(file =>
+				equalCaseInsensitive(fileName, path.basename(file.path))
+			);
+			if (jsFiles.length === 0) {
+				validationMessages.push(
+					`File in manifest "${fileName}" is not in package zip`
+				);
+			}
 		}
 
 		return validationMessages;
