@@ -23,7 +23,7 @@
             <libraryName>jszip</libraryName>
             <fileName>jszip.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/jszip/<~=version~>/jszip.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/jszip@<~=version~>/dist/jszip.min.js</CDNPath>
             <objectName>JSZip</objectName>
           </javaScriptLibrary>
         </component>

@@ -29,7 +29,7 @@ sent to an external server.</p>]]>
             <libraryName>filesaverjs</libraryName>
             <fileName>FileSaver.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/npm/file-saver@<~=version~>/FileSaver.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/file-saver@<~=version~>/dist/FileSaver.min.js</CDNPath>
             <objectName>saveAs</objectName>
           </javaScriptLibrary>
         </component>
