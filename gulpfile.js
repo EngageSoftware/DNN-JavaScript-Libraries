@@ -6,6 +6,8 @@ const chalk = require('chalk');
 const del = require('del');
 const ejs = require('gulp-ejs');
 const zip = require('gulp-zip');
+const path = require('path');
+const globby = require('globby');
 const mergeStream = require('merge-stream');
 const {
 	formatVersionFolder,
@@ -13,6 +15,7 @@ const {
 	formatPackageUpgrades,
 	getLibraries,
 	getUpgradeVersions,
+	validatePackage,
 } = require('./utility');
 
 const libraries = getLibraries();
@@ -66,9 +69,33 @@ function makePackageTask(library) {
 	return packageFn;
 }
 
+/**
+ * A Gulp task which validates the packages
+ *
+ * @returns {Promise} A Promise which resolves when done
+ */
+async function validatePackages() {
+	let invalidCount = 0;
+	const zipFiles = await globby('./_InstallPackages/**/*.zip');
+	for (const zipFile of zipFiles) {
+		const fileName = path.basename(zipFile);
+		const validationResult = await validatePackage(zipFile);
+		if (validationResult.length > 0) {
+			invalidCount++;
+			log.error(`${fileName} was invalid:`);
+			validationResult.forEach(msg => log.error(msg));
+		}
+	}
+
+	if (invalidCount > 0) {
+		throw new Error(`${invalidCount} invalid package(s)`);
+	}
+}
+
 const defaultTask = gulp.series(
 	clean,
-	gulp.parallel(...libraries.map(makePackageTask))
+	gulp.parallel(...libraries.map(makePackageTask)),
+	validatePackages
 );
 
 /**

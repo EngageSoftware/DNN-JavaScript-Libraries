@@ -81,11 +81,13 @@
     "chalk": "^2.4.2",
     "cliui": "5.0.0",
     "cross-spawn": "6.0.5",
+    "decompress": "4.2.0",
     "del": "5.1.0",
     "end-of-stream": "1.4.1",
     "fancy-log": "1.3.3",
     "glob": "^7.1.3",
-    "globby": "^10.0.1",
+    "globby": "10.0.1",
+    "got": "9.6.0",
     "gulp": "^4.0.0",
     "gulp-ejs": "^4.1.1",
     "gulp-zip": "^5.0.0",
@@ -93,6 +95,8 @@
     "merge-stream": "^2.0.0",
     "package-json": "^6.0.0",
     "semver": "6.2.0",
+    "xmldom": "0.1.27",
+    "xpath.js": "1.1.0",
     "yeoman-generator": "^4.0.1",
     "yo": "^3.1.0"
   }

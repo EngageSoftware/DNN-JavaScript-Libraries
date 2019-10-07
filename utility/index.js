@@ -3,6 +3,7 @@
 const { padStart } = require('lodash');
 const { formatPackageUpgrades } = require('./ui');
 const { getLibraries, getUpgradeVersions } = require('./packages');
+const { validatePackage } = require('./validate');
 
 /**
  * Format a version number in the format used by DNN JS library folders
@@ -46,4 +47,5 @@ module.exports = {
 	formatPackageUpgrades,
 	getLibraries,
 	getUpgradeVersions,
+	validatePackage,
 };
