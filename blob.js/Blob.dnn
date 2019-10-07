@@ -24,7 +24,7 @@ not natively support it.]]>
         <component type="JavaScript_Library">
           <javaScriptLibrary>
             <libraryName>Blob</libraryName>
-            <fileName>Blob.min.js</fileName>
+            <fileName>Blob.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
             <CDNPath>https://cdn.jsdelivr.net/npm/blob.js@<~=version~>/Blob.min.js</CDNPath>
             <objectName>Blob</objectName>
@@ -34,7 +34,7 @@ not natively support it.]]>
           <jsfiles>
             <libraryFolderName>Blob</libraryFolderName>
             <jsfile>
-              <name>Blob.min.js</name>
+              <name>Blob.js</name>
             </jsfile>
           </jsfiles>
         </component>
