@@ -100,6 +100,25 @@ async function validatePackage(file) {
 			}
 		}
 
+		const resourcesFiles = files.filter(
+			file => path.basename(file.path) === 'Resources.zip'
+		);
+		const resourcesFileNames = select(
+			doc,
+			'/dotnetnuke/packages/package/components/component/resourceFiles/resourceFile/name/text()'
+		).map(({ data }) => data);
+		if (resourcesFiles.length < resourcesFileNames.length) {
+			validationMessages.push(
+				`"${
+					resourcesFileNames[0]
+				}" specified in manifest but is not in package zip`
+			);
+		} else if (resourcesFiles.length > resourcesFileNames.length) {
+			validationMessages.push(
+				`"${resourcesFiles[0].path}" is in package zip but is not specified in manifest`
+			);
+		}
+
 		return validationMessages;
 	} catch (e) {
 		validationMessages.push('Unexpected error: ' + e);
