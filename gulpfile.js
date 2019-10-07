@@ -3,6 +3,7 @@
 const gulp = require('gulp');
 const log = require('fancy-log');
 const chalk = require('chalk');
+const del = require('del');
 const ejs = require('gulp-ejs');
 const zip = require('gulp-zip');
 const mergeStream = require('merge-stream');
@@ -15,6 +16,15 @@ const {
 } = require('./utility');
 
 const libraries = getLibraries();
+
+/**
+ * A Gulp task which deletes the _InstallPackages folder
+ *
+ * @returns {Promise} A Promise which resolves when the folder is deleted
+ */
+function clean() {
+	return del('./_InstallPackages/');
+}
 
 /**
  * Creates a Gulp task function to package the given library
@@ -56,7 +66,10 @@ function makePackageTask(library) {
 	return packageFn;
 }
 
-const defaultTask = gulp.parallel(...libraries.map(makePackageTask));
+const defaultTask = gulp.series(
+	clean,
+	gulp.parallel(...libraries.map(makePackageTask))
+);
 
 /**
  * A Gulp task to output a table of outdated libraries
