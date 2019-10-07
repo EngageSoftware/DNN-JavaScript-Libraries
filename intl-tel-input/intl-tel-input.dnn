@@ -23,7 +23,7 @@
             <libraryName>intl-tel-input</libraryName>
             <fileName>intlTelInput.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/<~=version~>/js/intlTelInput.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/intl-tel-input@<~=version~>/build/js/intlTelInput.min.js</CDNPath>
             <objectName>jQuery.fn.intlTelInput</objectName>
           </javaScriptLibrary>
         </component>

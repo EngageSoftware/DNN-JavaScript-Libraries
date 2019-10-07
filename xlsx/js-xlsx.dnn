@@ -25,7 +25,7 @@
             <libraryName>js-xlsx</libraryName>
             <fileName>xlsx.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/npm/xlsx@0.11.10/dist/xlsx.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/xlsx@<~=version~>/dist/xlsx.min.js</CDNPath>
             <objectName>XLSX</objectName>
           </javaScriptLibrary>
         </component>

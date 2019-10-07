@@ -23,7 +23,7 @@
             <libraryName>tinymce</libraryName>
             <fileName>tinymce.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdnjs.cloudflare.com/ajax/libs/tinymce/<~=version~>/tinymce.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/tinymce@<~=version~>/tinymce.min.js</CDNPath>
             <objectName>tinymce</objectName>
           </javaScriptLibrary>
         </component>

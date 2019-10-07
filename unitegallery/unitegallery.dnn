@@ -23,7 +23,7 @@
             <libraryName>unitegallery</libraryName>
             <fileName>unitegallery.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdnjs.cloudflare.com/ajax/libs/unitegallery/<~=version~>/js/unitegallery.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/unitegallery@<~=version~>/dist/js/unitegallery.min.js</CDNPath>
             <objectName>jQuery.fn.unitegallery</objectName>
           </javaScriptLibrary>
         </component>
