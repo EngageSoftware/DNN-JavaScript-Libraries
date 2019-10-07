@@ -42,14 +42,6 @@
             </resourceFile>
           </resourceFiles>
         </component>
-        <component type="ResourceFile">
-          <resourceFiles>
-            <basePath>Resources\Libraries\bootsrap-datepicker\<~=versionFolder~></basePath>
-            <resourceFile>
-              <name>Resources.zip</name>
-            </resourceFile>
-          </resourceFiles>
-        </component>
       </components>
     </package>
   </packages>
