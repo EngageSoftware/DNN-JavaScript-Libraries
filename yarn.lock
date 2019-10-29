@@ -18,6 +18,11 @@
     esutils "^2.0.2"
     js-tokens "^4.0.0"
 
+"@fancyapps/fancybox@3.5.7":
+  version "3.5.7"
+  resolved "https://registry.yarnpkg.com/@fancyapps/fancybox/-/fancybox-3.5.7.tgz#12f8734663ec6eae7f9236b92ca236e6e07fdfd5"
+  integrity sha512-rcEtu8t+WnmqIDV/Wfm1yvy/nDdwc7YV25j9HLxGC2/WOsUhk9rcWg2nB8g1BrjRt9zaoADdjHTU6ILYTJzBBg==
+
 "@khanacademy/tota11y@0.2.0":
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/@khanacademy/tota11y/-/tota11y-0.2.0.tgz#35f184ca1ed09ba1f237350e4c514e2b8e176de3"
