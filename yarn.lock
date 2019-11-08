@@ -3416,10 +3416,10 @@ knockout-sortable@1.1.1:
   resolved "https://registry.yarnpkg.com/knockout-sortable/-/knockout-sortable-1.1.1.tgz#5375f02c61c30dcef4622f6e57e1bafa970d6a0e"
   integrity sha512-OpANMoBHut5ehTm4x71wqggsjiA0y3Vdv9Z8TcOQ1Cr8VB1PVe1wPNUwz1DpmWSLrQGqU9B12q/bUcgIUkrqAA==
 
-knockout.validation@2.0.3:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/knockout.validation/-/knockout.validation-2.0.3.tgz#899de5232364e1ecd5d946e080f6a26293046329"
-  integrity sha1-iZ3lIyNk4ezV2UbggPaiYpMEYyk=
+knockout.validation@2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/knockout.validation/-/knockout.validation-2.0.4.tgz#e87f82f41b5bdcb7029ea6be3fef2a903054558b"
+  integrity sha512-64eDuEvALXf5GsRK5b2WIetF/eSIlTsw/ZDerrhKt+3eRBBk95SXdczTLhcoNL4Hi8Gym14YYIjj7vLCXEeHDA==
 
 knockout@3.5.0, knockout@^3.4.2:
   version "3.5.0"
