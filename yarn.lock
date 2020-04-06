@@ -5956,10 +5956,10 @@ swiper@5.3.6:
     dom7 "^2.1.3"
     ssr-window "^1.0.1"
 
-systemjs@6.2.4:
-  version "6.2.4"
-  resolved "https://registry.yarnpkg.com/systemjs/-/systemjs-6.2.4.tgz#14be849f3fe6822a9f9048038043f6dc37476ded"
-  integrity sha512-e++CM66/hoVcpWyfj2TVdj4pqMq8PQQLPgQUjb17W0uD7fpRYmO/ahmNfSDwtLoXxF03YUrBcLgg8RahwpZVig==
+systemjs@6.2.6:
+  version "6.2.6"
+  resolved "https://registry.yarnpkg.com/systemjs/-/systemjs-6.2.6.tgz#9e529d6eb4a17929d2052ca0e4699ad5fb0eeed1"
+  integrity sha512-cIGKuf8PwDPsiuC+op7tiyvQTWLDzzXYSx9aYmSrHiz6mVal6VT7uAS0gTEBs5WIWc03RqhvnNbNgodaauBsbg==
 
 tableexport@5.2.0:
   version "5.2.0"
