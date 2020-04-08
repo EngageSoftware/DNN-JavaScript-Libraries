@@ -1,0 +1,39 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="evrythng" type="JavaScript_Library" version="<~=version~>">
+      <friendlyName>evrythng.js</friendlyName>
+      <description>
+        <![CDATA[Official Javascript SDK for the EVRYTHNG API.]]>
+      </description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>https://engagesoftware.com/</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes src="CHANGES.htm" />
+      <azureCompatible>true</azureCompatible>
+      <dependencies></dependencies>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>evrythng</libraryName>
+            <fileName>evrythng.browser.js</fileName>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+            <objectName>evrythng</objectName>
+            <cdnUrl>https://cdn.jsdelivr.net/npm/evrythng@<~=version~>/dist/evrythng.browser.js</cdnUrl>
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName>evrythng</libraryFolderName>
+            <jsfile>
+              <name>evrythng.browser.js</name>
+            </jsfile>
+          </jsfiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
