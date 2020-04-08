@@ -1,0 +1,41 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="scanthng" type="JavaScript_Library" version="<~=version~>">
+      <friendlyName>scanthng.js</friendlyName>
+      <description>
+        <![CDATA[A JS library enabling scanning products directly from (mobile) browsers. Supports Image Recognition and more than 20 barcode types including UPC, EAN, QR codes and DataMatrix codes.]]>
+      </description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>https://engagesoftware.com/</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes src="CHANGES.htm" />
+      <azureCompatible>true</azureCompatible>
+      <dependencies>
+        <dependency type="managedPackage" version="5.0.0">evrythng</dependency>
+      </dependencies>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>scanthng</libraryName>
+            <fileName>scanthng.js</fileName>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+            <objectName>ScanThng</objectName>
+            <cdnUrl>https://cdn.jsdelivr.net/npm/scanthng@<~=version~>/dist/scanthng.js</cdnUrl>
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName>scanthng</libraryFolderName>
+            <jsfile>
+              <name>scanthng.js</name>
+            </jsfile>
+          </jsfiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>

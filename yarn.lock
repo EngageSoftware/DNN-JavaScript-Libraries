@@ -5290,6 +5290,11 @@ safe-regex@^1.1.0:
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
 
+scanthng@4.2.1:
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/scanthng/-/scanthng-4.2.1.tgz#eaf0806f4e95d4bef902e14ee562a35979e630bc"
+  integrity sha512-ubPJNKEUIj3u8CRXfqTXy909K6iaKevgW6L8v7j2MIE9ka+NLjdyZAUjl3Yv+cibC3YqPn8q9q5c7G515X3kKg==
+
 scoped-regex@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/scoped-regex/-/scoped-regex-1.0.0.tgz#a346bb1acd4207ae70bd7c0c7ca9e566b6baddb8"
