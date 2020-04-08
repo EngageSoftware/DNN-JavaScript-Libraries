@@ -1,0 +1,39 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="jsqr" type="JavaScript_Library" version="<~=version~>">
+      <friendlyName>jsQR</friendlyName>
+      <description>
+        <![CDATA[A pure javascript QR code reading library that takes in raw images and will locate, extract and parse any QR code found within.]]>
+      </description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>https://engagesoftware.com/</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes src="CHANGES.htm" />
+      <azureCompatible>true</azureCompatible>
+      <dependencies></dependencies>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>jsqr</libraryName>
+            <fileName>jsQR.js</fileName>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+            <objectName>jsQR</objectName>
+            <cdnUrl>https://cdn.jsdelivr.net/npm/jsqr@<~=version~>/dist/jsQR.js</cdnUrl>
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName>jsqr</libraryFolderName>
+            <jsfile>
+              <name>jsQR.js</name>
+            </jsfile>
+          </jsfiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
