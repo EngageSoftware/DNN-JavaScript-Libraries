@@ -8,7 +8,7 @@
   "scripts": {
     "package": "gulp",
     "outdated": "gulp outdated",
-    "upgrade": "gulp upgradePatch && gulp upgradeMinor && gulp upgradeMajor",
+    "upgrade": "gulp upgrade",
     "new": "yo ./_new"
   },
   "dependencies": {
@@ -71,7 +71,7 @@
     "scanthng": "4.2.1",
     "select2": "4.0.13",
     "spectrum-colorpicker": "1.8.0",
-    "swiper": "5.3.6",
+    "swiper": "5.3.7",
     "systemjs": "6.2.6",
     "tableexport": "5.2.0",
     "tinymce": "5.2.1",
