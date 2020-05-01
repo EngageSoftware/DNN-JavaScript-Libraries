@@ -2877,10 +2877,10 @@ ignore@^5.1.1, ignore@^5.1.4:
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-5.1.4.tgz#84b7b3dbe64552b6ef0eca99f6743dbec6d97adf"
   integrity sha512-MzbUSahkTW1u7JpKKjY7LCARd1fU5W2rLdxlM4kdkayuCwZImjkpluF9CM1aLewYJguPDqewLam18Y6AU69A8A==
 
-image-map@1.1.7:
-  version "1.1.7"
-  resolved "https://registry.yarnpkg.com/image-map/-/image-map-1.1.7.tgz#3079afac21f768779c7aca322d833ed7fae2af6d"
-  integrity sha512-7V/Ep9pIdHMZUYm6nNrlwxaPDaI9Jxg8/UekINSVYRIwRQ6018k7G6KkYhvrQSB1+vP0BgPjfWoeamkyvxD7iQ==
+image-map@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/image-map/-/image-map-2.0.0.tgz#0b3a1bc8e6d0a0cc2c89c37ea1bc4d20c6ea86d4"
+  integrity sha512-+KotLwEfpoNA9+NTrrUOa3zuu0AlClZvi9vURMK2MQ3vGW3ZMPpTfDbSyMTNUiJhHd6FfGbsALcv8G/2IakSUA==
 
 image-size@~0.5.0:
   version "0.5.5"
