@@ -19,17 +19,17 @@
         <component type="JavaScript_Library">
           <javaScriptLibrary>
             <libraryName>image-map</libraryName>
-            <fileName>image-map.min.js</fileName>
+            <fileName>image-map.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
             <objectName>ImageMap</objectName>
-            <cdnUrl>https://cdn.jsdelivr.net/npm/image-map@<~=version~>/image-map.min.js</cdnUrl>
+            <cdnUrl>https://cdn.jsdelivr.net/npm/image-map@<~=version~>/dist/image-map.min.js</cdnUrl>
           </javaScriptLibrary>
         </component>
         <component type="JavaScriptFile">
           <jsfiles>
             <libraryFolderName>image-map</libraryFolderName>
             <jsfile>
-              <name>image-map.min.js</name>
+              <name>image-map.js</name>
             </jsfile>
           </jsfiles>
         </component>
