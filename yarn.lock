@@ -4262,10 +4262,10 @@ normalize-url@^4.1.0:
   resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-4.5.0.tgz#453354087e6ca96957bd8f5baf753f5982142129"
   integrity sha512-2s47yzUxdexf1OhyRi4Em83iQk0aPvwTddtFz4hnSSw9dCEsLEGf6SwIO8ss/19S9iBb5sJaOuTvTGDeZI00BQ==
 
-nouislider@14.3.0:
-  version "14.3.0"
-  resolved "https://registry.yarnpkg.com/nouislider/-/nouislider-14.3.0.tgz#8fc617984b99cd765674f6a05ed775a9aeee47ba"
-  integrity sha512-6GaIonvZxkDv3Q4Qk+56Yfc1DxfVwY3u8A+LLmE/1CmoY1b1N/1W9CHQnjknOguOaYDf3wat8DBrpAG0kumiXQ==
+nouislider@14.4.0:
+  version "14.4.0"
+  resolved "https://registry.yarnpkg.com/nouislider/-/nouislider-14.4.0.tgz#c0d6018532219ec4f2e44842dc739a232e8427c8"
+  integrity sha512-D1aYsT73yWrSNcRfqcovE//htpfFqQwd+m+9UCIVSsRupwD7kodSj6j/DTJur5mqnv5HckSJvjHekyVZKLi6dA==
 
 now-and-later@^2.0.0:
   version "2.0.1"
