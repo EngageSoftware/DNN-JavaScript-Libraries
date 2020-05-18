@@ -6619,10 +6619,10 @@ xdg-basedir@^3.0.0:
   resolved "https://registry.yarnpkg.com/xdg-basedir/-/xdg-basedir-3.0.0.tgz#496b2cc109eca8dbacfe2dc72b603c17c5870ad4"
   integrity sha1-SWsswQnsqNus/i3HK2A8F8WHCtQ=
 
-xlsx@0.16.0:
-  version "0.16.0"
-  resolved "https://registry.yarnpkg.com/xlsx/-/xlsx-0.16.0.tgz#2a86ba433ca198f7e87343da86a831d48d713943"
-  integrity sha512-W/LQZjh6o7WDGmCIUXp2FUPSej2XRdaiTgZN31Oh68JlL7jpm796p3eI5zOpphYNT12qkgnXYaCysAsoiyZvOQ==
+xlsx@0.16.1:
+  version "0.16.1"
+  resolved "https://registry.yarnpkg.com/xlsx/-/xlsx-0.16.1.tgz#fb1a59d2c4a540a08556492ec786f98f973f1260"
+  integrity sha512-0feXqUm6W6/h+2bGSX2nkjVHCJ7cjq6pjcFixMTLlmNYrvm+nHg1BUIqyu+3Hlax7K5EbmUWqVxS3X0kuZQGvg==
   dependencies:
     adler-32 "~1.2.0"
     cfb "^1.1.4"
