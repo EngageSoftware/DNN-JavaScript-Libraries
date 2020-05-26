@@ -84,7 +84,7 @@
   "devDependencies": {
     "chalk": "^4.0.0",
     "cliui": "6.0.0",
-    "cross-spawn": "7.0.2",
+    "cross-spawn": "7.0.3",
     "decompress": "4.2.1",
     "del": "5.1.0",
     "end-of-stream": "1.4.4",
