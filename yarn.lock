@@ -6077,10 +6077,10 @@ tiny-emitter@^2.0.0:
   resolved "https://registry.yarnpkg.com/tiny-emitter/-/tiny-emitter-2.1.0.tgz#1d1a56edfc51c43e863cbb5382a72330e3555423"
   integrity sha512-NB6Dk1A9xgQPMoGqC5CVXn123gWyte215ONT5Pp5a0yt4nlEoO1ZWeCwpncaekPHXO60i47ihFnZPiRPjRMq4Q==
 
-tinymce@5.3.0:
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/tinymce/-/tinymce-5.3.0.tgz#5e239cadd37bde049d53bf13c3aa2185e1486b7f"
-  integrity sha512-uqEvypPRWnFT93PcoIJ4e56Azjbk3/O6W3A68+fifGRHbWkLNqcP2EMPEBdTdzYRXu9iOHnTgqMScYwLK3nYUA==
+tinymce@5.3.1:
+  version "5.3.1"
+  resolved "https://registry.yarnpkg.com/tinymce/-/tinymce-5.3.1.tgz#e7f32d276272db0bfe53971116c5cb074bd1b224"
+  integrity sha512-pIo0yb9oncUXjB+aA06v/hmUTbY7MU5K2qvpP0XPo3ng2sAFR4DnX1QzDKBi0nEomjNKwYs/82cyBXO1KA9HNw==
 
 titleize@^1.0.1:
   version "1.0.1"
