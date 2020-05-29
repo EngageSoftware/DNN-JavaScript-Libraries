@@ -2703,10 +2703,10 @@ gulp-cli@^2.2.0:
     v8flags "^3.0.1"
     yargs "^7.1.0"
 
-gulp-ejs@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/gulp-ejs/-/gulp-ejs-5.0.0.tgz#c77425450bda189dc10b50e9c2a25d6b511984ae"
-  integrity sha512-Av/29FvwlpP084m1wbojnUEBE6EBBfEDfPrJ9ZlLIQn20fqTpLyppnyJJCNStH9B0sZWgmSy7pkZRvCFk4tDtw==
+gulp-ejs@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/gulp-ejs/-/gulp-ejs-5.1.0.tgz#0e53baf9f4f5f1a97897243dc7f3db320bbee273"
+  integrity sha512-Nygek+aV5+Fk8pneX8ztR6XqWuOp19AglVJ+qpIxPzyx/qsN8HHtroi3yiKhFDCDblIGhKcbmPonBEOB8NYbZQ==
   dependencies:
     ejs "^3.0.1"
     plugin-error "^1.0.0"

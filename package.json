@@ -93,7 +93,7 @@
     "globby": "11.0.0",
     "got": "11.1.4",
     "gulp": "^4.0.0",
-    "gulp-ejs": "^5.0.0",
+    "gulp-ejs": "^5.1.0",
     "gulp-zip": "^5.0.0",
     "lodash": "4.17.15",
     "merge-stream": "^2.0.0",
