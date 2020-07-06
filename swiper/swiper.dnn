@@ -25,9 +25,9 @@
         <component type="JavaScript_Library">
           <javaScriptLibrary>
             <libraryName>swiper</libraryName>
-            <fileName>swiper.min.js</fileName>
+            <fileName>swiper-bundle.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/npm/swiper@<~=version~>/js/swiper.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/swiper@<~=version~>/swiper-bundle.min.js</CDNPath>
             <objectName>Swiper</objectName>
           </javaScriptLibrary>
         </component>
@@ -35,7 +35,7 @@
           <jsfiles>
             <libraryFolderName>swiper</libraryFolderName>
             <jsfile>
-              <name>swiper.min.js</name>
+              <name>swiper-bundle.min.js</name>
             </jsfile>
           </jsfiles>
         </component>
