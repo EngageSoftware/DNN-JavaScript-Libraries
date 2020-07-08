@@ -95,7 +95,7 @@
     "gulp": "^4.0.0",
     "gulp-ejs": "^5.1.0",
     "gulp-zip": "^5.0.2",
-    "lodash": "4.17.15",
+    "lodash": "4.17.16",
     "merge-stream": "^2.0.0",
     "package-json": "^6.0.0",
     "semver": "7.3.2",
