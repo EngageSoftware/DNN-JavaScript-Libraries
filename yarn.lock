@@ -2929,10 +2929,10 @@ ignore@^5.1.1, ignore@^5.1.4:
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-5.1.4.tgz#84b7b3dbe64552b6ef0eca99f6743dbec6d97adf"
   integrity sha512-MzbUSahkTW1u7JpKKjY7LCARd1fU5W2rLdxlM4kdkayuCwZImjkpluF9CM1aLewYJguPDqewLam18Y6AU69A8A==
 
-image-map@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/image-map/-/image-map-2.0.0.tgz#0b3a1bc8e6d0a0cc2c89c37ea1bc4d20c6ea86d4"
-  integrity sha512-+KotLwEfpoNA9+NTrrUOa3zuu0AlClZvi9vURMK2MQ3vGW3ZMPpTfDbSyMTNUiJhHd6FfGbsALcv8G/2IakSUA==
+image-map@2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/image-map/-/image-map-2.0.1.tgz#d9e87184cd944b263135d9f2e8dec5a75a8a5c7a"
+  integrity sha512-6SVn3CK7n4wtaWqW3vRSFvKKyQpChr7ADECmLTS9WsD4mTivkRgZ8OqfUBsg7bo5hm81oiO02aAyZ1dNu20xXQ==
 
 image-size@~0.5.0:
   version "0.5.5"
