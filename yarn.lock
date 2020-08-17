@@ -5420,10 +5420,10 @@ safe-regex@^1.1.0:
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
 
-scanthng@4.4.0:
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/scanthng/-/scanthng-4.4.0.tgz#5d85e48cd22665d0adb384ccab08c286467770bd"
-  integrity sha512-fX3DS/b99d6NeWjtEzNItgV40wOrCfz5CxRnjs41/vWXnwW07+rOPbRCfiH+IaW3C4ZxUJAUbTPDzgnB6HbTxA==
+scanthng@4.4.1:
+  version "4.4.1"
+  resolved "https://registry.yarnpkg.com/scanthng/-/scanthng-4.4.1.tgz#d36e7284960a8122c3e6110fb20c1dc1682e5a4f"
+  integrity sha512-AablZff/+IuyMYDGFewPxdOUppo/9BoHT0Klc1W9o1GGKGp67MB4qlDauXIs5s++0K+qJsf6GFbIRu8h3HFPnA==
 
 scoped-regex@^1.0.0:
   version "1.0.0"
