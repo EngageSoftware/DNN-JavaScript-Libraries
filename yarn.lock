@@ -5955,10 +5955,10 @@ sver-compat@^1.5.0:
     es6-iterator "^2.0.1"
     es6-symbol "^3.1.1"
 
-swiper@6.3.1:
-  version "6.3.1"
-  resolved "https://registry.yarnpkg.com/swiper/-/swiper-6.3.1.tgz#d355723efa9eccf8077e680aa05a5cc2685633d2"
-  integrity sha512-gPWvTfml+tcX+saSBYbEmJqrt7LAgMJ1GGx3o3HEcqNL3tsGrZgTVKciCIsq+KocEk6246IuLlGUB5JC/Gcipw==
+swiper@6.3.2:
+  version "6.3.2"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-6.3.2.tgz#3eb337ff58f425841a27400a7b0215234d94f3c1"
+  integrity sha512-mseVNXAsNNSfp3fHuZlMnsToc3ulM3X3on2EC8GMi4+/DwD9SSieSSIQroUbxkIMmCCIvpDN1Ese7o0Ls9I4lw==
   dependencies:
     dom7 "^3.0.0-alpha.7"
     ssr-window "^3.0.0-alpha.4"
