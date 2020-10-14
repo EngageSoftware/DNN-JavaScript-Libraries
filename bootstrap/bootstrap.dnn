@@ -23,7 +23,7 @@
             <libraryName>bootstrap</libraryName>
             <fileName>bootstrap.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://maxcdn.bootstrapcdn.com/bootstrap/<~=version~>/js/bootstrap.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/bootstrap@<~=version~>/dist/js/bootstrap.min.js</CDNPath>
             <objectName>jQuery.fn.scrollspy</objectName>
           </javaScriptLibrary>
         </component>
