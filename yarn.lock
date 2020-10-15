@@ -5390,10 +5390,10 @@ safe-regex@^1.1.0:
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
 
-scanthng@4.4.2:
-  version "4.4.2"
-  resolved "https://registry.yarnpkg.com/scanthng/-/scanthng-4.4.2.tgz#008ae95f4128baef056cf445d104e829ddb37384"
-  integrity sha512-9gZTI3pB19g60q2ypxUqZnWfJHdmR6a/1mMEcNGl4lKG9RFbiXVe3HX1s5v/prM1ROHFnHs7T/xH3C/vZj3oyA==
+scanthng@4.4.3:
+  version "4.4.3"
+  resolved "https://registry.yarnpkg.com/scanthng/-/scanthng-4.4.3.tgz#61bedff7887de088313a2312553410db4d1ab525"
+  integrity sha512-aj3w3+cJ6sokJeLoRMqRLZhclJFwK/mCt3gCSM0g02hz15fgwfPHSmgmGTUF8iDQH9NKw+ue+E6wwUgjarkOMA==
 
 scoped-regex@^1.0.0:
   version "1.0.0"
