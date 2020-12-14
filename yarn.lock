@@ -4897,10 +4897,10 @@ psl@^1.1.28:
   resolved "https://registry.yarnpkg.com/psl/-/psl-1.8.0.tgz#9326f8bcfb013adcc005fdff056acce020e51c24"
   integrity sha512-RIdOzyoavK+hA18OGGWDqUTsCLhtA7IcZ/6NCs4fFJaHBDab+pDDmDIByWFRQJq2Cd7r1OoQxBGKOaztq+hjIQ==
 
-pubsub-js@1.9.1:
-  version "1.9.1"
-  resolved "https://registry.yarnpkg.com/pubsub-js/-/pubsub-js-1.9.1.tgz#49f4252fca1439dcc72f0795b354e167861b004c"
-  integrity sha512-m4XKhojoruI/fU+poB9wkwIPiYuiFHdxgiFeH55BnqQ04lPNW6nrv6FI3yZ7I8/R1ulXYh95/i6nLeZZ1KegHQ==
+pubsub-js@1.9.2:
+  version "1.9.2"
+  resolved "https://registry.yarnpkg.com/pubsub-js/-/pubsub-js-1.9.2.tgz#4d01fe4df7d1957efa681f6338ebc9ba11b7ef3a"
+  integrity sha512-t+djzDvEKv4GoP5nPJ5Ar5h+4MrwPw+C9/9l75GV8TzO49HezXnxR1G6E/QJZdE2EDsXRNMu6O9MFjpjkSV7zg==
 
 pump@^2.0.0:
   version "2.0.1"
