@@ -5962,10 +5962,10 @@ swiper@6.4.1:
     ssr-window "^3.0.0"
     tslib "^2.0.0"
 
-systemjs@6.8.1:
-  version "6.8.1"
-  resolved "https://registry.yarnpkg.com/systemjs/-/systemjs-6.8.1.tgz#556f9254b3867568d6b3e43c4732aca8c29bc981"
-  integrity sha512-HjxELHbx2LpfHfrsrYFMvkK1Hfh3IpUxPUNUzClxThW0POUlv53qb8N0FZ48+hlfIC4OANFwzxwRp4fTXSfYKw==
+systemjs@6.8.2:
+  version "6.8.2"
+  resolved "https://registry.yarnpkg.com/systemjs/-/systemjs-6.8.2.tgz#6200ce215ee5eb8d6c2815b9470c52015cb3c867"
+  integrity sha512-YknH4S+Xq7Rlwdnvyj4QKHWm5YQGPJnnkVXFQLC/Wl/O21nZ+NrV9IjwUQQ0Pl0Jh0Wgf91IeGzSHGELsv5kkA==
 
 tableexport@5.2.0:
   version "5.2.0"
