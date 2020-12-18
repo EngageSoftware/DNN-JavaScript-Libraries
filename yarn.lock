@@ -1679,13 +1679,13 @@ env-paths@^1.0.0:
   resolved "https://registry.yarnpkg.com/env-paths/-/env-paths-1.0.0.tgz#4168133b42bb05c38a35b1ae4397c8298ab369e0"
   integrity sha1-QWgTO0K7BcOKNbGuQ5fIKYqzaeA=
 
-eonasdan-bootstrap-datetimepicker@4.17.47:
-  version "4.17.47"
-  resolved "https://registry.yarnpkg.com/eonasdan-bootstrap-datetimepicker/-/eonasdan-bootstrap-datetimepicker-4.17.47.tgz#7a49970044065276e7965efd16f822735219e735"
-  integrity sha1-ekmXAEQGUnbnll79Fvgic1IZ5zU=
+eonasdan-bootstrap-datetimepicker@4.17.49:
+  version "4.17.49"
+  resolved "https://registry.yarnpkg.com/eonasdan-bootstrap-datetimepicker/-/eonasdan-bootstrap-datetimepicker-4.17.49.tgz#5534ba581c1e7eb988dbf773e2fed8a7f48cc76a"
+  integrity sha512-7KZeDpkj+A6AtPR3XjX8gAnRPUkPSfW0OmMANG1dkUOPMtLSzbyoCjDIdEcfRtQPU5X0D9Gob7wWKn0h4QWy7A==
   dependencies:
     bootstrap "^3.3"
-    jquery "^1.8.3 || ^2.0 || ^3.0"
+    jquery "^3.5.1"
     moment "^2.10"
     moment-timezone "^0.4.0"
 
@@ -3502,7 +3502,7 @@ jquery.tipsy@1.0.3:
   dependencies:
     jquery "*"
 
-jquery@*, jquery@3.5.1, "jquery@>= 3.1.1", jquery@>=1.11.3, jquery@>=1.7, "jquery@>=1.7.1 <4.0.0", jquery@>=1.8, "jquery@^1.8.3 || ^2.0 || ^3.0", jquery@^3.2.1:
+jquery@*, jquery@3.5.1, "jquery@>= 3.1.1", jquery@>=1.11.3, jquery@>=1.7, "jquery@>=1.7.1 <4.0.0", jquery@>=1.8, jquery@^3.2.1, jquery@^3.5.1:
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.5.1.tgz#d7b4d08e1bfdb86ad2f1a3d039ea17304717abb5"
   integrity sha512-XwIBPqcMn57FxfT+Go5pzySnm4KWkT1Tv7gjrpT1srtf8Weynl6R273VJ5GjkRb51IzMp5nbaPjJXMWeju2MKg==
