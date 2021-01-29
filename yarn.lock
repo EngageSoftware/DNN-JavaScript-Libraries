@@ -5983,10 +5983,10 @@ sver-compat@^1.5.0:
     es6-iterator "^2.0.1"
     es6-symbol "^3.1.1"
 
-swiper@6.4.9:
-  version "6.4.9"
-  resolved "https://registry.yarnpkg.com/swiper/-/swiper-6.4.9.tgz#a20896df24cc3669845fcf145fb50edca3a6a5c5"
-  integrity sha512-0+omdc7oiU1guakr6PIrQokre1dW5HKLn8YQB88/hcjn7XSD+3YGlTukcYuTAjL6Pc4MELiusGHk+an8CRmLJQ==
+swiper@6.4.10:
+  version "6.4.10"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-6.4.10.tgz#d2a8bce471717b770d005fcd5e8af42ac630cac6"
+  integrity sha512-uNTdbkcVjNQVOwXhr+e8rTB4Uu8QfWHaZQSSptykWJX/QjSBuAPxAUFnHG8IKGQfTljGol9eLv6g8KTwvGjYNA==
   dependencies:
     dom7 "^3.0.0"
     ssr-window "^3.0.0"
