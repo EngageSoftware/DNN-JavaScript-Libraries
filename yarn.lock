@@ -3492,10 +3492,10 @@ jquery.localscroll@2.0.0:
   resolved "https://registry.yarnpkg.com/jquery.localscroll/-/jquery.localscroll-2.0.0.tgz#98983b75efed8c268bf4db2c60bdf0aa43903c4b"
   integrity sha1-mJg7de/tjCaL9NssYL3wqkOQPEs=
 
-jquery.scrollto@2.1.2, jquery.scrollto@>=2.1.0:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/jquery.scrollto/-/jquery.scrollto-2.1.2.tgz#e7580d9c7ac46ef5bb25319483f6f45713fd7c6c"
-  integrity sha1-51gNnHrEbvW7JTGUg/b0VxP9fGw=
+jquery.scrollto@2.1.3, jquery.scrollto@>=2.1.0:
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/jquery.scrollto/-/jquery.scrollto-2.1.3.tgz#0ec03d5a64398f2e4dd6f3d316e091812ce4f29d"
+  integrity sha512-4M+t5R4QRnq1CSRU9gswZ7Z4zRfcoWmgD31HRrLYCCI4J7tLWeE0ZoT+0JpI7GcT0YKTqcfw+p8t2yYEKFfrHA==
   dependencies:
     jquery ">=1.8"
 
