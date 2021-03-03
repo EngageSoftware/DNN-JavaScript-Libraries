@@ -1272,6 +1272,13 @@ create-error-class@^3.0.0:
   dependencies:
     capture-stack-trace "^1.0.0"
 
+croppic-js@1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/croppic-js/-/croppic-js-1.0.3.tgz#c3f09de7903b9265344850145c20b2797c85a914"
+  integrity sha512-wJ7rOS8bbt3qxg0DQMhoTeY7/4ex1AAlZoaOCCSmpGXDDt7CAVJg3/2X1zEaxuBoRJ3bL4nHQhiMz/GyCIJETw==
+  dependencies:
+    jquery "^3.4.1"
+
 cross-fetch@^3.0.6:
   version "3.0.6"
   resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-3.0.6.tgz#3a4040bc8941e653e0e9cf17f29ebcd177d3365c"
@@ -3459,6 +3466,11 @@ jquery@*, jquery@3.5.1, "jquery@>= 3.1.1", jquery@>=1.11.3, jquery@>=1.7, "jquer
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-2.2.4.tgz#2c89d6889b5eac522a7eea32c14521559c6cbf02"
   integrity sha1-LInWiJterFIqfuoywUUhVZxsvwI=
+
+jquery@^3.4.1:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.6.0.tgz#c72a09f15c1bdce142f49dbf1170bdf8adac2470"
+  integrity sha512-JVzAR/AjBvVt2BmYhxRCSYysDsPcssdmTFnzyLEts9qNwmjmu4JTAMYubEfwVOSwpQ1I1sKKFcxhZCI2buerfw==
 
 js-tokens@^4.0.0:
   version "4.0.0"
