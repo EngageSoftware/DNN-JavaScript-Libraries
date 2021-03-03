@@ -14,7 +14,9 @@
       <license src="LICENSE.htm" />
       <releaseNotes src="CHANGES.htm" />
       <azureCompatible>true</azureCompatible>
-      <dependencies></dependencies>
+      <dependencies>
+        <dependency type="managedPackage" version="3.4.1">jQuery</dependency>
+      </dependencies>
       <components>
         <component type="JavaScript_Library">
           <javaScriptLibrary>
