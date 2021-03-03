@@ -22,7 +22,7 @@
           <javaScriptLibrary>
             <libraryName>croppic-js</libraryName>
             <fileName>croppic.min.js</fileName>
-            <preferredScriptLocation>PageHead</preferredScriptLocation>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
             <objectName>Croppic</objectName>
             <cdnUrl>https://cdn.jsdelivr.net/npm/croppic-js@<~=version~>/croppic.min.js</cdnUrl>
           </javaScriptLibrary>
