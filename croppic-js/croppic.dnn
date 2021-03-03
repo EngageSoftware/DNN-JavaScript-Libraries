@@ -1,0 +1,49 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="croppic-js" type="JavaScript_Library" version="<~=version~>">
+      <friendlyName>croppic-js</friendlyName>
+      <description>
+        <![CDATA[Croppic is an image cropping jquery plugin that will satisfy your needs and much more.]]>
+      </description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>https://engagesoftware.com/</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes src="CHANGES.htm" />
+      <azureCompatible>true</azureCompatible>
+      <dependencies>
+        <dependency type="managedPackage" version="3.4.1">jQuery</dependency>
+      </dependencies>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>croppic-js</libraryName>
+            <fileName>croppic.min.js</fileName>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+            <objectName>Croppic</objectName>
+            <cdnUrl>https://cdn.jsdelivr.net/npm/croppic-js@<~=version~>/croppic.min.js</cdnUrl>
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName>croppic-js</libraryFolderName>
+            <jsfile>
+              <name>croppic.min.js</name>
+            </jsfile>
+          </jsfiles>
+        </component>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>Resources\Libraries\croppic-js\<~=versionFolder~></basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>

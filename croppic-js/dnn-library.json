@@ -1,0 +1,4 @@
+{
+    "files": ["node_modules/croppic-js/croppic.min.js"],
+    "resources": ["node_modules/croppic-js/**"]
+}
