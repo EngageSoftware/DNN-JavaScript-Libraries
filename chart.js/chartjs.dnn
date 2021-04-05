@@ -2,7 +2,7 @@
   <packages>
     <package name="chartjs" type="JavaScript_Library" version="<~=version~>">
       <friendlyName>Chart.js</friendlyName>
-      <description><![CDATA[Simple HTML5 Charts using the &lt;canvas&gt; tag]]></description>
+      <description><![CDATA[Simple yet flexible JavaScript charting for designers & developers]]></description>
       <owner>
         <name>Engage Software</name>
         <organization>Engage Software</organization>
@@ -23,7 +23,7 @@
             <libraryName>chartjs</libraryName>
             <fileName>Chart.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/npm/chart.js@<~=version~>/dist/Chart.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/chart.js@<~=version~>/dist/chart.min.js</CDNPath>
             <objectName>Chart</objectName>
           </javaScriptLibrary>
         </component>
