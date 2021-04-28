@@ -4,12 +4,5 @@ updates:
   directory: "/"
   schedule:
     interval: daily
-    time: "11:00"
-  open-pull-requests-limit: 10
-  ignore:
-  - dependency-name: yeoman-generator
-    versions:
-    - 5.0.0
-  - dependency-name: swiper
-    versions:
-    - 6.4.11
+    time: "06:00"
+    timezone: "America/Chicago"
