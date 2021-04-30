@@ -2143,10 +2143,10 @@ eventemitter3@^2.0.3:
   resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-2.0.3.tgz#b5e1079b59fb5e1ba2771c0a993be060a58c99ba"
   integrity sha1-teEHm1n7XhuidxwKmTvgYKWMmbo=
 
-evrythng@6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/evrythng/-/evrythng-6.0.0.tgz#63dd37333f682d8d6d18dd3bc43ee46825369ae4"
-  integrity sha512-dpp93i85FdAag2y8JRI+Rv5uYZN/t0Fkt4E5rgje1sCvEu6ZRfx34s+IMSVDRTHhwyyC8/TpEANS5jCWdpmzMQ==
+evrythng@6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/evrythng/-/evrythng-6.0.1.tgz#ecc107d91cc7faff5902e1d14f8c0d0ea4f47f9b"
+  integrity sha512-FPtLU/2ZFMcIPFGZBqERzLhhaHh/nlYbS6DiYsQY8RLxBYtY9yj36GM6WGkInuoIxu8nXWeYGnhK242GpaBWBQ==
   dependencies:
     "@babel/runtime" "^7.4.3"
     cross-fetch "^3.0.6"
