@@ -1,7 +1,7 @@
 {
-  "files": ["node_modules/nouislider/distribute/nouislider.min.js"],
+  "files": ["node_modules/nouislider/dist/nouislider.min.js"],
   "resources": [
-    "node_modules/nouislider/distribute/**",
-    "!node_modules/nouislider/distribute/nouislider.min.js"
+    "node_modules/nouislider/dist/**",
+    "!node_modules/nouislider/dist/nouislider.min.js"
   ]
 }
