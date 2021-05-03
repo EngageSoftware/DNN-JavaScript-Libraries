@@ -20,7 +20,7 @@
             <libraryName>nouislider</libraryName>
             <fileName>nouislider.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/npm/nouislider@<~=version~>/distribute/nouislider.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/nouislider@<~=version~>/dist/nouislider.min.js</CDNPath>
             <objectName>noUiSlider</objectName>
           </javaScriptLibrary>
         </component>
