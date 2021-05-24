@@ -1628,7 +1628,7 @@ dateformat@^4.5.0:
   resolved "https://registry.yarnpkg.com/dateformat/-/dateformat-4.5.1.tgz#c20e7a9ca77d147906b6dc2261a8be0a5bd2173c"
   integrity sha512-OD0TZ+B7yP7ZgpJf5K2DIbj3FZvFvxgFUuaqA/V5zTjAtAAXZ1E8bktHxmAGs4x5b7PflqA9LeQ84Og7wYtF7Q==
 
-debug@4, debug@^4.1.0:
+debug@4, debug@^4.1.0, debug@^4.1.1:
   version "4.3.1"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.1.tgz#f0d229c505e0c6d8c49ac553d1b13dc183f6b2ee"
   integrity sha512-doEwdvm4PCeK4K3RQN2ZC2BYUBaxwLARCqZmMjtF8a51J2Rb0xpVloFRnCODwqjpwnAoao4pelN8l3RJdv3gRQ==
@@ -1646,13 +1646,6 @@ debug@^3.2.6:
   version "3.2.7"
   resolved "https://registry.yarnpkg.com/debug/-/debug-3.2.7.tgz#72580b7e9145fb39b6676f9c5e5fb100b934179a"
   integrity sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ==
-  dependencies:
-    ms "^2.1.1"
-
-debug@^4.1.1:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/debug/-/debug-4.1.1.tgz#3b72260255109c6b589cee050f1d516139664791"
-  integrity sha512-pYAIzeRo8J6KPEaJ0VWOh5Pzkbw/RetuzehGM7QRRX5he4fPHx2rdKMB256ehJCkX+XRQm16eZLqLNS8RSZXZw==
   dependencies:
     ms "^2.1.1"
 
@@ -7661,10 +7654,10 @@ yeoman-environment@~3.4.0:
     textextensions "^5.12.0"
     untildify "^4.0.0"
 
-yeoman-generator@^5.2.0:
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/yeoman-generator/-/yeoman-generator-5.2.0.tgz#0260d9472c87d6f32c394f9376900cbcfd6627ba"
-  integrity sha512-LCHaYrcgtC4NpYAkritCEteuDSjBdhsQNYrssZjnK0okRFvroMXDX4//CA1RfVsjCHKi4Df6lILOUYCRiYKG4g==
+yeoman-generator@^5.3.0:
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/yeoman-generator/-/yeoman-generator-5.3.0.tgz#06ec2d00a2521e299b2581b6ed0eaed01c928187"
+  integrity sha512-OE+qDs/c5V3HP29hUlyUO7ejpLSJX93LZ+KFRmyYmPMvcbnsdHynF6LyOh0vLPuqsi/x50MxZfob/EIQ06E4EQ==
   dependencies:
     chalk "^4.1.0"
     dargs "^7.0.0"
