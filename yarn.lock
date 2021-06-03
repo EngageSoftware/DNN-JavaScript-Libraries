@@ -4086,10 +4086,10 @@ knockout-postbox@0.6.0:
   resolved "https://registry.yarnpkg.com/knockout-postbox/-/knockout-postbox-0.6.0.tgz#d35c84d812bed86a80d0c069749109fefdf436a7"
   integrity sha1-01yE2BK+2GqA0MBpdJEJ/v30Nqc=
 
-knockout-sortable@1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/knockout-sortable/-/knockout-sortable-1.2.0.tgz#e63c21a009cd0686bf1d40effa3ff12c12372566"
-  integrity sha512-cJq4jm4SWdaCIkuYIrNZpVaNYFUafJT83RlFEP/dsPOqIi3xWkCnm1Y5zLEQ2QqMDRT9GI9HxN9Jz+lhZNFHPA==
+knockout-sortable@1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/knockout-sortable/-/knockout-sortable-1.2.1.tgz#1f62c7d765e2bc5a107be1418f2f9c3a2c898369"
+  integrity sha512-hWvw20+pMkWgCLViJ+NKZlUSOAbLevz4RWEUMO1X9VIjn5lIalCV5UdlDhDe4efqe/U8+rcz4YISZ7Xe02unag==
 
 knockout.validation@2.0.4:
   version "2.0.4"
