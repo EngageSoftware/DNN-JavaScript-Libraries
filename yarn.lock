@@ -6767,10 +6767,10 @@ swiper@6.7.0:
     dom7 "^3.0.0"
     ssr-window "^3.0.0"
 
-systemjs@6.9.0:
-  version "6.9.0"
-  resolved "https://registry.yarnpkg.com/systemjs/-/systemjs-6.9.0.tgz#f01a0093d4d70332fff59f2e5ff385de28284ff5"
-  integrity sha512-THLzcb7WzoW0I+tHB4PQge0BqqN+CAUQJ9gPc1MieqD1gnhxNUKYrhRlN5ov94saOYVVR5NZFQqQhnxi9/WEGg==
+systemjs@6.10.0:
+  version "6.10.0"
+  resolved "https://registry.yarnpkg.com/systemjs/-/systemjs-6.10.0.tgz#4392b040f054d1f7beead4f8cf2f7371469d66df"
+  integrity sha512-DBkidP/UR/GfCjREpXAyeBWgIhxD2ybUs5HW2a7sng7ZTNSmW6LNX8A18D0OcyD2mNupBIVaDXG47zi81Ymp0Q==
 
 tableexport@5.2.0:
   version "5.2.0"
