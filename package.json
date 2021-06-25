@@ -98,7 +98,7 @@
     "gulp-zip": "^5.1.0",
     "lodash": "4.17.21",
     "merge-stream": "^2.0.0",
-    "package-json": "^6.0.0",
+    "package-json": "^7.0.0",
     "semver": "7.3.5",
     "xmldom": "0.6.0",
     "xpath.js": "1.1.0",
