@@ -6116,10 +6116,10 @@ sax@^1.2.4:
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
 
-scanthng@4.7.1:
-  version "4.7.1"
-  resolved "https://registry.yarnpkg.com/scanthng/-/scanthng-4.7.1.tgz#62fd58c4981a9271c5de356b18e8c625f61d639f"
-  integrity sha512-8sp34Z0yQMTmdXS4kVqw5YEkJ8IZNiRhr+H0khi3LQlyzJyZ3CaBPmpsRXBgPtY3x4QfnMT0LW9B3WEveg6Lqg==
+scanthng@4.8.2:
+  version "4.8.2"
+  resolved "https://registry.yarnpkg.com/scanthng/-/scanthng-4.8.2.tgz#c792f0802e1a68c7cf7ed9b493d155601a4193d5"
+  integrity sha512-mfO+ExeVfDhGOkueP+cAO9vLr1yqGoNRPVu89fthb4SKlR6B7aQ7nHTrQ+PeGTD818dWZ8upMbOVzolsBkmMbw==
 
 scoped-regex@^2.0.0:
   version "2.1.0"
