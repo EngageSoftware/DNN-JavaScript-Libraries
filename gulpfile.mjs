@@ -1,22 +1,20 @@
-'use strict';
-
-const gulp = require('gulp');
-const log = require('fancy-log');
-const chalk = require('chalk');
-const del = require('del');
-const ejs = require('gulp-ejs');
-const zip = require('gulp-zip');
-const path = require('path');
-const globby = require('globby');
-const mergeStream = require('merge-stream');
-const {
+import gulp from 'gulp';
+import log from 'fancy-log';
+import chalk from 'chalk';
+import del from 'del';
+import ejs from 'gulp-ejs';
+import zip from 'gulp-zip';
+import path from 'path';
+import { globby } from 'globby';
+import mergeStream from 'merge-stream';
+import {
 	formatVersionFolder,
 	compareStrings,
 	formatPackageUpgrades,
 	getLibraries,
 	getUpgradeVersions,
 	validatePackage,
-} = require('./utility');
+} from './utility/index.js';
 
 const libraries = getLibraries();
 
@@ -83,7 +81,7 @@ async function validatePackages() {
 		if (validationResult.length > 0) {
 			invalidCount++;
 			log.error(`${fileName} was invalid:`);
-			validationResult.forEach(msg => log.error(msg));
+			validationResult.forEach((msg) => log.error(msg));
 		}
 	}
 
@@ -104,13 +102,13 @@ const defaultTask = gulp.series(
  * @returns {Promise} A promise which resolves when the outdated table is complete
  */
 function outdated() {
-	const allUpgradesPromises = libraries.map(library =>
-		getUpgradeVersions(library).then(upgrades =>
+	const allUpgradesPromises = libraries.map((library) =>
+		getUpgradeVersions(library).then((upgrades) =>
 			Object.assign(library, { upgrades })
 		)
 	);
 
-	return Promise.all(allUpgradesPromises).then(allUpgrades => {
+	return Promise.all(allUpgradesPromises).then((allUpgrades) => {
 		const validUpgrades = allUpgrades
 			.filter(({ upgrades }) => upgrades.size > 0)
 			.sort(({ name: a }, { name: b }) => compareStrings(a, b));
@@ -136,13 +134,13 @@ ${formatPackageUpgrades(validUpgrades)}`);
  */
 function makeUpgradeTask(upgradeType) {
 	const upgradeFn = () => {
-		const allUpgradesPromises = libraries.map(library =>
-			getUpgradeVersions(library).then(upgrades =>
+		const allUpgradesPromises = libraries.map((library) =>
+			getUpgradeVersions(library).then((upgrades) =>
 				Object.assign(library, { upgrades })
 			)
 		);
 
-		return Promise.all(allUpgradesPromises).then(allUpgrades => {
+		return Promise.all(allUpgradesPromises).then((allUpgrades) => {
 			const validUpgrades = allUpgrades.filter(({ upgrades }) =>
 				upgrades.get(upgradeType)
 			);
@@ -199,7 +197,7 @@ function makeUpgradeTask(upgradeType) {
 						manifest.resources || []
 					);
 					const hasExtraFiles = fileGlobs.some(
-						f => f[0] !== '!' && !f.startsWith('node_modules')
+						(f) => f[0] !== '!' && !f.startsWith('node_modules')
 					);
 
 					return hasExtraFiles ? name : null;
@@ -207,8 +205,8 @@ function makeUpgradeTask(upgradeType) {
 			);
 
 			upgradeWarnings
-				.filter(libraryName => libraryName !== null)
-				.forEach(libraryName =>
+				.filter((libraryName) => libraryName !== null)
+				.forEach((libraryName) =>
 					log.warn(
 						chalk`The library {magenta ${libraryName}} has some resources that do not come from {gray node_modules}, please verify that the upgrade was complete`
 					)
@@ -226,11 +224,5 @@ const upgradeMinor = makeUpgradeTask('minor');
 const upgradeMajor = makeUpgradeTask('major');
 const upgrade = gulp.series(upgradePatch, upgradeMinor, upgradeMajor);
 
-module.exports = {
-	outdated,
-	upgradePatch,
-	upgradeMinor,
-	upgradeMajor,
-	upgrade,
-	default: defaultTask,
-};
+export default defaultTask;
+export { outdated, upgradePatch, upgradeMinor, upgradeMajor, upgrade };
