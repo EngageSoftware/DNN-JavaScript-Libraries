@@ -4049,10 +4049,10 @@ knockout-postbox@0.6.0:
   resolved "https://registry.yarnpkg.com/knockout-postbox/-/knockout-postbox-0.6.0.tgz#d35c84d812bed86a80d0c069749109fefdf436a7"
   integrity sha1-01yE2BK+2GqA0MBpdJEJ/v30Nqc=
 
-knockout-sortable@1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/knockout-sortable/-/knockout-sortable-1.2.1.tgz#1f62c7d765e2bc5a107be1418f2f9c3a2c898369"
-  integrity sha512-hWvw20+pMkWgCLViJ+NKZlUSOAbLevz4RWEUMO1X9VIjn5lIalCV5UdlDhDe4efqe/U8+rcz4YISZ7Xe02unag==
+knockout-sortable@1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/knockout-sortable/-/knockout-sortable-1.2.2.tgz#6498405fcc4ff7c5cb319862488527228c0f0a81"
+  integrity sha512-wJmSRr/iMQarItUF9j/98UsIPLXlRokJx6HBsAyUrHi/YYKA+MRI2X1QVqq9CPiM4EIRp4N3lPaSFOQ1jqP4Ng==
 
 knockout.validation@2.0.4:
   version "2.0.4"
