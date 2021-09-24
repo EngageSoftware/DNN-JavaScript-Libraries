@@ -6371,10 +6371,10 @@ saxes@^5.0.1:
   dependencies:
     xmlchars "^2.2.0"
 
-scanthng@4.8.2:
-  version "4.8.2"
-  resolved "https://registry.yarnpkg.com/scanthng/-/scanthng-4.8.2.tgz#c792f0802e1a68c7cf7ed9b493d155601a4193d5"
-  integrity sha512-mfO+ExeVfDhGOkueP+cAO9vLr1yqGoNRPVu89fthb4SKlR6B7aQ7nHTrQ+PeGTD818dWZ8upMbOVzolsBkmMbw==
+scanthng@4.9.0:
+  version "4.9.0"
+  resolved "https://registry.yarnpkg.com/scanthng/-/scanthng-4.9.0.tgz#c6b244b6474e3dea91bfadaf6b0431f1811b1da8"
+  integrity sha512-nNIzUFAB1McxwUCdPsWr9P7sznC8eAtCT7K1DOsHnjCMTVtvg09RME+KFM+Tpw9KiawerodJcomEnQWLrDJhkw==
 
 scoped-regex@^2.0.0:
   version "2.1.0"
