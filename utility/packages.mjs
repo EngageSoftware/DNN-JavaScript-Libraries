@@ -1,12 +1,15 @@
-'use strict';
+import path from 'path';
+import glob from 'glob';
+import semver from 'semver';
+import log from 'fancy-log';
+import chalk from 'chalk';
+import packageJson from 'package-json';
+import { readFile } from 'fs/promises';
+import { readFileSync } from 'fs';
 
-const path = require('path');
-const glob = require('glob');
-const semver = require('semver');
-const log = require('fancy-log');
-const chalk = require('chalk');
-const packageJson = require('package-json');
-const { dependencies } = require('../package.json');
+const { dependencies } = JSON.parse(
+	await readFile(new URL('../package.json', import.meta.url))
+);
 
 const validLibraryNames = new Set(Object.keys(dependencies));
 
@@ -39,17 +42,17 @@ function resolveLibraryName(libraryPath) {
  *
  * @returns {object[]} An array of objects with path, manifest, name, and version
  */
-function getLibraries() {
+export function getLibraries() {
 	return glob
 		.sync('*/dnn-library.json')
-		.map(manifestPath => ({
+		.map((manifestPath) => ({
 			path: path.dirname(manifestPath),
-			manifest: require(path.resolve(manifestPath)),
+			manifest: JSON.parse(readFileSync(path.resolve(manifestPath))),
 		}))
-		.map(library =>
+		.map((library) =>
 			Object.assign(library, { name: resolveLibraryName(library.path) })
 		)
-		.map(library =>
+		.map((library) =>
 			Object.assign(library, { version: dependencies[library.name] })
 		);
 }
@@ -60,12 +63,12 @@ function getLibraries() {
  * @param {object} library - A library object
  * @returns {Promise} A Promise which returns a Map with available version upgrades
  */
-function getUpgradeVersions(library) {
+export function getUpgradeVersions(library) {
 	return packageJson(library.name, {
 		allVersions: true,
 	}).then(({ versions }) =>
 		Object.keys(versions)
-			.filter(version => semver.gt(version, library.version))
+			.filter((version) => semver.gt(version, library.version))
 			.sort(semver.compare)
 			.reduce(
 				(upgrades, version) =>
@@ -77,8 +80,3 @@ function getUpgradeVersions(library) {
 			)
 	);
 }
-
-module.exports = {
-	getLibraries,
-	getUpgradeVersions,
-};

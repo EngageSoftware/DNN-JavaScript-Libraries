@@ -1,5 +1,4 @@
-'use strict';
-
+import CliUi from 'cliui';
 const versionColumnWidth = 12;
 
 /**
@@ -40,14 +39,14 @@ function createVersionColumn(version) {
  * available upgrade versions
  * @returns {string} A CLI UI string
  */
-function formatPackageUpgrades(packages) {
+export function formatPackageUpgrades(packages) {
 	const maxNameLength = packages.reduce(
 		(max, { name }) => Math.max(max, name.length),
 		0
 	);
 	const nameColumnWidth = 1 + maxNameLength + 1;
 
-	const ui = require('cliui')();
+	const ui = CliUi();
 	ui.div(
 		{
 			text: 'Name',
@@ -78,7 +77,3 @@ function formatPackageUpgrades(packages) {
 
 	return ui.toString();
 }
-
-module.exports = {
-	formatPackageUpgrades,
-};

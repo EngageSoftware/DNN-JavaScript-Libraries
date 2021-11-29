@@ -7,6 +7,7 @@ import zip from 'gulp-zip';
 import path from 'path';
 import { globby } from 'globby';
 import mergeStream from 'merge-stream';
+import spawn from 'cross-spawn';
 import {
 	formatVersionFolder,
 	compareStrings,
@@ -14,7 +15,7 @@ import {
 	getLibraries,
 	getUpgradeVersions,
 	validatePackage,
-} from './utility/index.js';
+} from './utility/index.mjs';
 
 const libraries = getLibraries();
 
@@ -115,7 +116,7 @@ function outdated() {
 
 		if (validUpgrades.length === 0) {
 			log.warn(
-				chalk`All {yellow ${allUpgrades.length}} packages up-to-date`
+				`All ${chalk.yellow(allUpgrades.length)} packages up-to-date`
 			);
 
 			return;
@@ -155,10 +156,11 @@ function makeUpgradeTask(upgradeType) {
 				({ name, version, upgrades, manifest }) => {
 					const newVersion = upgrades.get(upgradeType);
 					log(
-						chalk`Upgrading {magenta ${name}} from {yellow ${version}} to {yellow ${newVersion}}`
+						`Upgrading ${chalk.magenta(name)} from ${chalk.yellow(
+							version
+						)} to ${chalk.yellow(newVersion)}`
 					);
 
-					const spawn = require('cross-spawn');
 					spawn.sync(
 						'yarn',
 						[
@@ -208,7 +210,11 @@ function makeUpgradeTask(upgradeType) {
 				.filter((libraryName) => libraryName !== null)
 				.forEach((libraryName) =>
 					log.warn(
-						chalk`The library {magenta ${libraryName}} has some resources that do not come from {gray node_modules}, please verify that the upgrade was complete`
+						`The library ${chalk.magenta(
+							libraryName
+						)} has some resources that do not come from ${chalk.gray(
+							'node_modules'
+						)}, please verify that the upgrade was complete`
 					)
 				);
 		});

@@ -1,9 +1,9 @@
-'use strict';
-
-const { padStart } = require('lodash');
-const { formatPackageUpgrades } = require('./ui');
-const { getLibraries, getUpgradeVersions } = require('./packages');
-const { validatePackage } = require('./validate');
+import lodash from 'lodash';
+const { padStart } = lodash;
+export { padStart };
+export { formatPackageUpgrades } from './ui.mjs';
+export { getLibraries, getUpgradeVersions } from './packages.mjs';
+export { validatePackage } from './validate.mjs';
 
 /**
  * Format a version number in the format used by DNN JS library folders
@@ -11,12 +11,12 @@ const { validatePackage } = require('./validate');
  * @param {string} version - the version number
  * @returns {string} the version number in the correct format
  */
-function formatVersionFolder(version) {
+export function formatVersionFolder(version) {
 	const versionFolderPadding = 2;
 
 	return version
 		.split('.')
-		.map(n => padStart(n, versionFolderPadding, '0'))
+		.map((n) => padStart(n, versionFolderPadding, '0'))
 		.join('_');
 }
 
@@ -27,7 +27,7 @@ function formatVersionFolder(version) {
  * @param {string|undefined} b - The other string value
  * @returns {-1|0|1} The comparison value (-1 if a is less than b, 1 if a is greater than b, 0 if they're equal)
  */
-function compareStrings(a, b) {
+export function compareStrings(a, b) {
 	const upperA = a ? a.toUpperCase() : a;
 	const upperB = b ? b.toUpperCase() : b;
 	if (upperA < upperB) {
@@ -40,12 +40,3 @@ function compareStrings(a, b) {
 
 	return 0;
 }
-
-module.exports = {
-	formatVersionFolder,
-	compareStrings,
-	formatPackageUpgrades,
-	getLibraries,
-	getUpgradeVersions,
-	validatePackage,
-};
