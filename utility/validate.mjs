@@ -1,10 +1,8 @@
-'use strict';
-
-const path = require('path');
-const decompress = require('decompress');
-const select = require('xpath.js');
-const { DOMParser } = require('xmldom');
-const got = require('got');
+import path from 'path';
+import decompress from 'decompress';
+import select from 'xpath.js';
+import { DOMParser } from 'xmldom';
+import got from 'got';
 
 function equalCaseInsensitive(a, b) {
 	if (!a || !b) {
@@ -20,12 +18,12 @@ function equalCaseInsensitive(a, b) {
  * @param {String} file - Path to a zip package file
  * @returns {Promise<String[]>} Resolves to a list of error messages
  */
-async function validatePackage(file) {
+export async function validatePackage(file) {
 	const validationMessages = [];
 	try {
 		const files = await decompress(file);
 		const manifestFiles = files.filter(
-			file => path.extname(file.path) === '.dnn'
+			(file) => path.extname(file.path) === '.dnn'
 		);
 		if (manifestFiles.length > 1) {
 			return ['Too many .dnn manifest files'];
@@ -44,8 +42,8 @@ async function validatePackage(file) {
 		);
 		const cdnResponses = cdnPathNodes
 			.map(({ data }) => data)
-			.filter(data => Boolean(data))
-			.map(url => got.head(url));
+			.filter((data) => Boolean(data))
+			.map((url) => got.head(url));
 		for (const response of cdnResponses) {
 			try {
 				await response;
@@ -82,15 +80,11 @@ async function validatePackage(file) {
 			fileNames[0] !== jsFileNames[0]
 		) {
 			validationMessages.push(
-				`Expected JavaScriptFile component file name "${
-					jsFileNames[0]
-				}" to equal JavaScript_Library component file name "${
-					fileNames[0]
-				}"`
+				`Expected JavaScriptFile component file name "${jsFileNames[0]}" to equal JavaScript_Library component file name "${fileNames[0]}"`
 			);
 		} else {
 			const fileName = fileNames[0];
-			const jsFiles = files.filter(file =>
+			const jsFiles = files.filter((file) =>
 				equalCaseInsensitive(fileName, path.basename(file.path))
 			);
 			if (jsFiles.length === 0) {
@@ -101,7 +95,7 @@ async function validatePackage(file) {
 		}
 
 		const resourcesFiles = files.filter(
-			file => path.basename(file.path) === 'Resources.zip'
+			(file) => path.basename(file.path) === 'Resources.zip'
 		);
 		const resourcesFileNames = select(
 			doc,
@@ -109,9 +103,7 @@ async function validatePackage(file) {
 		).map(({ data }) => data);
 		if (resourcesFiles.length < resourcesFileNames.length) {
 			validationMessages.push(
-				`"${
-					resourcesFileNames[0]
-				}" specified in manifest but is not in package zip`
+				`"${resourcesFileNames[0]}" specified in manifest but is not in package zip`
 			);
 		} else if (resourcesFiles.length > resourcesFileNames.length) {
 			validationMessages.push(
@@ -125,7 +117,3 @@ async function validatePackage(file) {
 		return validationMessages;
 	}
 }
-
-module.exports = {
-	validatePackage,
-};
