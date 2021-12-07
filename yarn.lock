@@ -6174,10 +6174,10 @@ sax@^1.2.4:
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
 
-scanthng@4.10.0:
-  version "4.10.0"
-  resolved "https://registry.yarnpkg.com/scanthng/-/scanthng-4.10.0.tgz#147bf4109623d4b03e306f2ee6109d5efd6aebae"
-  integrity sha512-5RPoeKexAYVSYRPeW2JCswOrQ7lWdsDfZ1BQd1F3zOM88tOiMqbwEkDP5mAq066b9mbP2eQF6xTwDqHrZJDzAA==
+scanthng@4.11.0:
+  version "4.11.0"
+  resolved "https://registry.yarnpkg.com/scanthng/-/scanthng-4.11.0.tgz#08f54ed64f77da4c77406a5daf6709d5764112ed"
+  integrity sha512-7W6wRoaGZgr3FotbZIibfQ5ss/MfB6KSD/9n25isrI/LerbU3jAkUjoD/IWBbxwu7O39bIspu96Zizqn1hpuxg==
 
 scoped-regex@^2.0.0:
   version "2.1.0"
