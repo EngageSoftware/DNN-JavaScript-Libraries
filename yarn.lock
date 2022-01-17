@@ -1586,24 +1586,24 @@ dashdash@^1.12.0:
   dependencies:
     assert-plus "^1.0.0"
 
-datatables.net-buttons-dt@2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/datatables.net-buttons-dt/-/datatables.net-buttons-dt-2.2.0.tgz#1209affdacfe1aecf289efcff260cee5751e517b"
-  integrity sha1-Egmv/az+Guzyie/P8mDO5XUeUXs=
+datatables.net-buttons-dt@2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/datatables.net-buttons-dt/-/datatables.net-buttons-dt-2.2.1.tgz#94871de5cdb0b91eb7e950da0a3fd4e8cce7e8f2"
+  integrity sha512-L2C/pv708tv+conCDOqexyl9LmQLTl5H8+GcJBRoLRXSuBg8h9L9zMOObUs1ZAkenunHJupR48+xBKmaxQP/jg==
   dependencies:
-    datatables.net ">=1.10.9"
-    datatables.net-buttons ">=1.0.3"
+    datatables.net-buttons ">=2.0.1"
+    datatables.net-dt ">=1.11.3"
     jquery ">=1.7"
 
-datatables.net-buttons@>=1.0.3:
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/datatables.net-buttons/-/datatables.net-buttons-1.6.1.tgz#f62847e7c6f905fcf7339e7541a40741bbb3b8fb"
-  integrity sha512-Lcgvi/xGB2X0jr1n/uQMmg43Z1JQO6aaGjPHO+sAQAMfBGBi9cK1hhfM4Vg8gzC5fz3sW4QrtjAdKvOPnQ1A3w==
+datatables.net-buttons@>=2.0.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/datatables.net-buttons/-/datatables.net-buttons-2.2.1.tgz#4f4b1ca8b1175b035e15f91dd08330daf592ad7d"
+  integrity sha512-eZQyt5TElvs3QLsLfDCVR6v60g1wff6fAXPTCm5TzJkCAI/vsRLpv0ZRRc9wKW35LsdkaXBBya5vqY/1wzhcJQ==
   dependencies:
-    datatables.net "^1.10.15"
+    datatables.net ">=1.11.3"
     jquery ">=1.7"
 
-datatables.net-dt@1.11.3:
+datatables.net-dt@1.11.3, datatables.net-dt@>=1.11.3:
   version "1.11.3"
   resolved "https://registry.yarnpkg.com/datatables.net-dt/-/datatables.net-dt-1.11.3.tgz#242556a490585b457b7d2b9f5fd8fb10761d621b"
   integrity sha512-EX/thRwXpQRj8hZSb+ZMDNQ4uW1zLZa9BoAhhw1b5HIDH1nJ9WRTkERsoxE+3WISeX8bDiaEydf8TTQBSqxXVw==
@@ -1611,7 +1611,7 @@ datatables.net-dt@1.11.3:
     datatables.net ">=1.10.25"
     jquery ">=1.7"
 
-datatables.net@>=1.10.25, datatables.net@>=1.10.9, datatables.net@^1.10.15:
+datatables.net@>=1.10.25, datatables.net@>=1.11.3:
   version "1.11.3"
   resolved "https://registry.yarnpkg.com/datatables.net/-/datatables.net-1.11.3.tgz#80e691036efcd62467558ee64c07dd566cb761b4"
   integrity sha512-VMj5qEaTebpNurySkM6jy6sGpl+s6onPK8xJhYr296R/vUBnz1+id16NVqNf9z5aR076OGcpGHCuiTuy4E05oQ==
