@@ -1,5 +1,5 @@
 {
-  "files": ["node_modules/xlsx/dist/xlsx.min.js"],
+  "files": ["node_modules/xlsx/dist/xlsx.mini.min.js"],
   "resources": [
     "node_modules/xlsx/dist/**",
     "!node_modules/xlsx/dist/xlsx.min.js"

@@ -1,9 +1,9 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
     <package name="js-xlsx" type="JavaScript_Library" version="<~=version~>">
-      <friendlyName>JS-XLSX</friendlyName>
+      <friendlyName>SheetJS</friendlyName>
       <description>
-        <![CDATA[Parser and writer for various spreadsheet formats. Pure-JS cleanroom implementation from official specifications and related documents.]]>
+        <![CDATA[The SheetJS Community Edition offers battle-tested open-source solutions for extracting useful data from almost any complex spreadsheet and generating new spreadsheets that will work with legacy and modern software alike.]]>
       </description>
       <owner>
         <name>Engage Software</name>
@@ -23,9 +23,9 @@
         <component type="JavaScript_Library">
           <javaScriptLibrary>
             <libraryName>js-xlsx</libraryName>
-            <fileName>xlsx.min.js</fileName>
+            <fileName>xlsx.mini.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/npm/xlsx@<~=version~>/dist/xlsx.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/xlsx@<~=version~>/dist/xlsx.mini.min.js</CDNPath>
             <objectName>XLSX</objectName>
           </javaScriptLibrary>
         </component>
@@ -33,7 +33,7 @@
           <jsfiles>
             <libraryFolderName>js-xlsx</libraryFolderName>
             <jsfile>
-              <name>xlsx.min.js</name>
+              <name>xlsx.mini.min.js</name>
             </jsfile>
           </jsfiles>
         </component>
