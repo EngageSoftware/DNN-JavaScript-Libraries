@@ -6880,10 +6880,10 @@ sver-compat@^1.5.0:
     es6-iterator "^2.0.1"
     es6-symbol "^3.1.1"
 
-swiper@8.2.1:
-  version "8.2.1"
-  resolved "https://registry.yarnpkg.com/swiper/-/swiper-8.2.1.tgz#95f72268b68fbf2df614089763b9ff4fef6faf69"
-  integrity sha512-hdS1JRG5WqHLzlRMJGOFJRYAl5wdEoj2AEAQFuDzidsBxsKMdF1mZqnboqKOdDmfaogloAaFcDrNQlJbYbGaWQ==
+swiper@8.2.2:
+  version "8.2.2"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-8.2.2.tgz#d16e9d92ec9b5548399c06f2cda9c400f9f32352"
+  integrity sha512-t7Tts4ZD2ahM3InsHDlZ6YY4gi47zepGHx25cACd6fzgcVdAtYLbUihnEmck0HsDzqtkhciyfKsoUEhummZDEA==
   dependencies:
     dom7 "^4.0.4"
     ssr-window "^4.0.2"
