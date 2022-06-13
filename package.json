@@ -91,7 +91,7 @@
 		"end-of-stream": "1.4.4",
 		"fancy-log": "2.0.0",
 		"glob": "^8.0.3",
-		"globby": "13.1.1",
+		"globby": "13.1.2",
 		"got": "12.1.0",
 		"gulp": "^4.0.0",
 		"gulp-cli": "2.3.0",
