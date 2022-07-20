@@ -1,7 +1,7 @@
 import gulp from 'gulp';
 import log from 'fancy-log';
 import chalk from 'chalk';
-import del from 'del';
+import { deleteAsync } from 'del';
 import ejs from 'gulp-ejs';
 import zip from 'gulp-zip';
 import path from 'path';
@@ -25,7 +25,7 @@ const libraries = getLibraries();
  * @returns {Promise} A Promise which resolves when the folder is deleted
  */
 function clean() {
-	return del('./_InstallPackages/');
+	return deleteAsync('./_InstallPackages/');
 }
 
 /**
