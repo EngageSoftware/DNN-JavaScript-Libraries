@@ -3454,10 +3454,10 @@ interpret@^1.0.0, interpret@^1.1.0, interpret@^1.4.0:
   resolved "https://registry.yarnpkg.com/interpret/-/interpret-1.4.0.tgz#665ab8bc4da27a774a40584e812e3e0fa45b1a1e"
   integrity sha512-agE4QfB2Lkp9uICn7BAqoscw4SZP9kTE2hxiFI3jBPmXJfdqiahTbUuKGsMoN2GtqL9AxhYioAcVvgsb1HvRbA==
 
-intl-tel-input@17.0.18:
-  version "17.0.18"
-  resolved "https://registry.yarnpkg.com/intl-tel-input/-/intl-tel-input-17.0.18.tgz#dd6eeefc5b33bfbea32cbba770270ac138c5cda3"
-  integrity sha512-U+ugXhOrYO/6ggIWKccsXcfAEWzjnTBLXK8c/71zvatjSPNz3TgVnXH8KhotaPh+4mBxXy4SlNOgsbXiecfPSA==
+intl-tel-input@17.0.19:
+  version "17.0.19"
+  resolved "https://registry.yarnpkg.com/intl-tel-input/-/intl-tel-input-17.0.19.tgz#4c277e3bf02069fac2ef3821a62a3d7e8b55740a"
+  integrity sha512-GBNoUT4JVgm2e1N+yFMaBQ24g5EQfZhDznGneCM9IEZwfKsMUAUa1dS+v0wOiKpRAZ5IPNLJMIEEFGgqlCI22A==
 
 into-stream@^3.1.0:
   version "3.1.0"
