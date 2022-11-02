@@ -1,7 +1,7 @@
 import path from 'path';
 import decompress from 'decompress';
 import select from 'xpath.js';
-import { DOMParser } from 'xmldom';
+import { DOMParser } from '@xmldom/xmldom';
 import got from 'got';
 
 function equalCaseInsensitive(a, b) {
