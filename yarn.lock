@@ -1667,10 +1667,10 @@ dashdash@^1.12.0:
   dependencies:
     assert-plus "^1.0.0"
 
-datatables.net-buttons-dt@2.3.1:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/datatables.net-buttons-dt/-/datatables.net-buttons-dt-2.3.1.tgz#55335b233e7e2e40311a616980fce6963d8260d4"
-  integrity sha512-mRkqMSyj707lwoT06esYQELBLDGDY5zpSASHOSMSv9ys3hApML9nZRY0Zx2igEl4cRkHoF+/aqRjHd2YIZI7/w==
+datatables.net-buttons-dt@2.3.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/datatables.net-buttons-dt/-/datatables.net-buttons-dt-2.3.2.tgz#f7c4f9c9e87afaeffd0403d29d339667913eab47"
+  integrity sha512-6GCW3GwiqGxDzVxjz4apgnrQlF9cH6CLyf5csIZ6VqfsFwNhveuetT8J4ccNCda2oRrZoTQtTyR1YnAkCR6NFA==
   dependencies:
     datatables.net-buttons ">=2.2.3"
     datatables.net-dt ">=1.12.1"
