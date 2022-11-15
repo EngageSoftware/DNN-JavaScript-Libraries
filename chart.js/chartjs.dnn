@@ -21,9 +21,9 @@
         <component type="JavaScript_Library">
           <javaScriptLibrary>
             <libraryName>chartjs</libraryName>
-            <fileName>Chart.min.js</fileName>
+            <fileName>Chart.umd.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/npm/chart.js@<~=version~>/dist/chart.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/chart.js@<~=version~>/dist/chart.umd.js</CDNPath>
             <objectName>Chart</objectName>
           </javaScriptLibrary>
         </component>
@@ -31,7 +31,7 @@
           <jsfiles>
             <libraryFolderName>chartjs</libraryFolderName>
             <jsfile>
-              <name>Chart.min.js</name>
+              <name>Chart.umd.js</name>
             </jsfile>
           </jsfiles>
         </component>
