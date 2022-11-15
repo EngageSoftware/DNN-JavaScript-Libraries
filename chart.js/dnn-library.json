@@ -1,4 +1,4 @@
 {
-  "files": ["node_modules/chart.js/dist/chart.min.js"],
-  "resources": ["node_modules/chart.js/dist/**"]
+	"files": ["node_modules/chart.js/dist/chart.umd.js"],
+	"resources": ["node_modules/chart.js/dist/**"]
 }
