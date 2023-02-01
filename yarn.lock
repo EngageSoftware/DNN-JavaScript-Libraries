@@ -1983,13 +1983,6 @@ dir-glob@^3.0.1:
   dependencies:
     path-type "^4.0.0"
 
-dom7@^4.0.4:
-  version "4.0.4"
-  resolved "https://registry.yarnpkg.com/dom7/-/dom7-4.0.4.tgz#8b68c5d8e5e2ed0fddb1cb93e433bc9060c8f3fb"
-  integrity sha512-DSSgBzQ4rJWQp1u6o+3FVwMNnT5bzQbMb+o31TjYYeRi05uAcpF8koxdfzeoe5ElzPmua7W7N28YJhF7iEKqIw==
-  dependencies:
-    ssr-window "^4.0.0"
-
 dot-prop@^5.0.0, dot-prop@^5.2.0:
   version "5.3.0"
   resolved "https://registry.yarnpkg.com/dot-prop/-/dot-prop-5.3.0.tgz#90ccce708cd9cd82cc4dc8c3ddd9abdd55b20e88"
@@ -6739,7 +6732,7 @@ sshpk@^1.7.0:
     safer-buffer "^2.0.2"
     tweetnacl "~0.14.0"
 
-ssr-window@^4.0.0, ssr-window@^4.0.2:
+ssr-window@^4.0.2:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/ssr-window/-/ssr-window-4.0.2.tgz#dc6b3ee37be86ac0e3ddc60030f7b3bc9b8553be"
   integrity sha512-ISv/Ch+ig7SOtw7G2+qkwfVASzazUnvlDTwypdLoPoySv+6MqlOV10VwPSE6EWkGjhW50lUmghPmpYZXMu/+AQ==
@@ -6993,12 +6986,11 @@ sver-compat@^1.5.0:
     es6-iterator "^2.0.1"
     es6-symbol "^3.1.1"
 
-swiper@8.4.7:
-  version "8.4.7"
-  resolved "https://registry.yarnpkg.com/swiper/-/swiper-8.4.7.tgz#0301d385c3efc8efe8b66a64187edcb30e3067ee"
-  integrity sha512-VwO/KU3i9IV2Sf+W2NqyzwWob4yX9Qdedq6vBtS0rFqJ6Fa5iLUJwxQkuD4I38w0WDJwmFl8ojkdcRFPHWD+2g==
+swiper@9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-9.0.0.tgz#56e093cd6f5a6770313f31eadc77999a5f3d281f"
+  integrity sha512-7MbA7gg8VEFwCTd14KK5HL8KagT2sKQwu04Oud+gR+ivg8gAFK5xtZrPNkXg1wjpQB0gdA34YBqsPkFJ5HiRdA==
   dependencies:
-    dom7 "^4.0.4"
     ssr-window "^4.0.2"
 
 systemjs@6.13.0:
