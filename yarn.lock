@@ -828,6 +828,11 @@ binaryextensions@^4.15.0:
   resolved "https://registry.yarnpkg.com/binaryextensions/-/binaryextensions-4.15.0.tgz#c63a502e0078ff1b0e9b00a9f74d3c2b0f8bd32e"
   integrity sha512-MkUl3szxXolQ2scI1PM14WOT951KnaTNJ0eMKg7WzOI4kvSxyNo/Cygx4LOBNhwyINhAuSQpJW1rYD9aBSxGaw==
 
+binaryextensions@^4.16.0:
+  version "4.18.0"
+  resolved "https://registry.yarnpkg.com/binaryextensions/-/binaryextensions-4.18.0.tgz#22aeada2d14de062c60e8ca59a504a5636a76ceb"
+  integrity sha512-PQu3Kyv9dM4FnwB7XGj1+HucW+ShvJzJqjuw1JkKVs1mWdwOKVcRjOi+pV9X52A0tNvrPCsPkbFFQb+wE1EAXw==
+
 bindings@^1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/bindings/-/bindings-1.5.0.tgz#10353c9e945334bc0511a6d90b38fbc7c9c504df"
@@ -2029,10 +2034,17 @@ ecc-jsbn@~0.1.1:
     jsbn "~0.1.0"
     safer-buffer "^2.1.0"
 
-ejs@^3.0.1, ejs@^3.1.6:
+ejs@^3.0.1:
   version "3.1.7"
   resolved "https://registry.yarnpkg.com/ejs/-/ejs-3.1.7.tgz#c544d9c7f715783dd92f0bddcf73a59e6962d006"
   integrity sha512-BIar7R6abbUxDA3bfXrO4DSgwo8I+fB5/1zgujl3HLLjwd6+9iOnrT+t3grn2qbk9vOgBubXOFwX2m9axoFaGw==
+  dependencies:
+    jake "^10.8.5"
+
+ejs@^3.1.8:
+  version "3.1.8"
+  resolved "https://registry.yarnpkg.com/ejs/-/ejs-3.1.8.tgz#758d32910c78047585c7ef1f92f9ee041c1c190b"
+  integrity sha512-/sXZeMlhS0ArkfX2Aw780gJzXSMPnKjtspYZv+f3NiKLlubezAHDU5+9xz6gd3/NhG3txQCo6xlglmTS+oTGEQ==
   dependencies:
     jake "^10.8.5"
 
@@ -2385,6 +2397,17 @@ fast-glob@^3.1.1, fast-glob@^3.2.11:
   version "3.2.11"
   resolved "https://registry.yarnpkg.com/fast-glob/-/fast-glob-3.2.11.tgz#a1172ad95ceb8a16e20caa5c5e56480e5129c1d9"
   integrity sha512-xrO3+1bxSo3ZVHAnqzyuewYT6aMFHRAd4Kcs92MAonjwQZLsK9d0SF1IyQ3k5PoirxTW0Oe/RqFgMQ6TcNE5Ew==
+  dependencies:
+    "@nodelib/fs.stat" "^2.0.2"
+    "@nodelib/fs.walk" "^1.2.3"
+    glob-parent "^5.1.2"
+    merge2 "^1.3.0"
+    micromatch "^4.0.4"
+
+fast-glob@^3.2.9:
+  version "3.2.12"
+  resolved "https://registry.yarnpkg.com/fast-glob/-/fast-glob-3.2.12.tgz#7f39ec99c2e6ab030337142da9e0c18f37afae80"
+  integrity sha512-DVj4CQIYYow0BlaelwK1pHl5n5cRSJfM60UA0zK891sVInoPri2Ekj7+e1CT3/3qxXenpI+nBBmQAcJPJgaj4w==
   dependencies:
     "@nodelib/fs.stat" "^2.0.2"
     "@nodelib/fs.walk" "^1.2.3"
@@ -2941,7 +2964,7 @@ globby@13.1.3, globby@^13.1.2:
     merge2 "^1.4.1"
     slash "^4.0.0"
 
-globby@^11.0.1, globby@^11.0.3:
+globby@^11.0.1:
   version "11.0.4"
   resolved "https://registry.yarnpkg.com/globby/-/globby-11.0.4.tgz#2cbaff77c2f2a62e71e9b2813a67b97a3a3001a5"
   integrity sha512-9O4MVG9ioZJ08ffbcyVYyLOJLk5JQ688pJ4eMGLpdWLHq/Wr1D9BlriLQyL0E+jbkuePVZXYFj47QM/v093wHg==
@@ -2951,6 +2974,18 @@ globby@^11.0.1, globby@^11.0.3:
     fast-glob "^3.1.1"
     ignore "^5.1.4"
     merge2 "^1.3.0"
+    slash "^3.0.0"
+
+globby@^11.1.0:
+  version "11.1.0"
+  resolved "https://registry.yarnpkg.com/globby/-/globby-11.1.0.tgz#bd4be98bb042f83d796f7e3811991fbe82a0d34b"
+  integrity sha512-jhIXaOzy1sb8IyocaruWSn1TjmnBVs8Ayhcy83rmxNJ8q2uWKCAj3CnJY+KpGSXCueAPc0i05kVvVKtP1t9S3g==
+  dependencies:
+    array-union "^2.1.0"
+    dir-glob "^3.0.1"
+    fast-glob "^3.2.9"
+    ignore "^5.2.0"
+    merge2 "^1.4.1"
     slash "^3.0.0"
 
 glogg@^1.0.0:
@@ -4547,20 +4582,21 @@ matcher@^3.0.0:
   dependencies:
     escape-string-regexp "^4.0.0"
 
-"mem-fs-editor@^8.1.2 || ^9.0.0", mem-fs-editor@^9.0.1:
-  version "9.0.1"
-  resolved "https://registry.yarnpkg.com/mem-fs-editor/-/mem-fs-editor-9.0.1.tgz#c700117476ff004cdacf5fa66f4fd1b5410b23c9"
-  integrity sha512-SqW+DkPbxZVzVldNHexoo5MiUR3YpIqiCVcZ/SZ6f7KToaSV7pMd4/URrkD5mnj35bd6NAK7SlftHSyW+Kgk4w==
+"mem-fs-editor@^8.1.2 || ^9.0.0", mem-fs-editor@^9.0.0, mem-fs-editor@^9.0.1:
+  version "9.6.0"
+  resolved "https://registry.yarnpkg.com/mem-fs-editor/-/mem-fs-editor-9.6.0.tgz#a867377737b12c0d02ca756d90bc70c51883aa38"
+  integrity sha512-CsuAd+s0UPZnGzm3kQ5X7gGmVmwiX9XXRAmXj9Mbq0CJa8YWUkPqneelp0aG2g+7uiwCBHlJbl30FYtToLT3VQ==
   dependencies:
-    binaryextensions "^4.15.0"
+    binaryextensions "^4.16.0"
     commondir "^1.0.1"
     deep-extend "^0.6.0"
-    ejs "^3.1.6"
-    globby "^11.0.3"
+    ejs "^3.1.8"
+    globby "^11.1.0"
     isbinaryfile "^4.0.8"
+    minimatch "^3.1.2"
     multimatch "^5.0.0"
     normalize-path "^3.0.0"
-    textextensions "^5.12.0"
+    textextensions "^5.13.0"
 
 "mem-fs@^1.2.0 || ^2.0.0":
   version "2.1.0"
@@ -4683,7 +4719,7 @@ minimatch@3.0.x:
   dependencies:
     brace-expansion "^1.1.7"
 
-minimatch@^3.0.4:
+minimatch@^3.0.4, minimatch@^3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.1.2.tgz#19cd194bfd3e428f049a70817c038d89ab4be35b"
   integrity sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==
@@ -7062,6 +7098,11 @@ textextensions@^5.12.0:
   resolved "https://registry.yarnpkg.com/textextensions/-/textextensions-5.12.0.tgz#b908120b5c1bd4bb9eba41423d75b176011ab68a"
   integrity sha512-IYogUDaP65IXboCiPPC0jTLLBzYlhhw2Y4b0a2trPgbHNGGGEfuHE6tds+yDcCf4mpNDaGISFzwSSezcXt+d6w==
 
+textextensions@^5.13.0:
+  version "5.15.0"
+  resolved "https://registry.yarnpkg.com/textextensions/-/textextensions-5.15.0.tgz#4bb3296ad6fc111cf4b39c589dd028d8aaaf7060"
+  integrity sha512-MeqZRHLuaGamUXGuVn2ivtU3LA3mLCCIO5kUGoohTCoGmCBg/+8yPhWVX9WSl9telvVd8erftjFk9Fwb2dD6rw==
+
 through2-filter@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/through2-filter/-/through2-filter-3.0.0.tgz#700e786df2367c2c88cd8aa5be4cf9c1e7831254"
@@ -7897,10 +7938,10 @@ yeoman-environment@^3.5.1:
     textextensions "^5.12.0"
     untildify "^4.0.0"
 
-yeoman-generator@^5.7.1:
-  version "5.7.1"
-  resolved "https://registry.yarnpkg.com/yeoman-generator/-/yeoman-generator-5.7.1.tgz#9bfd6d04978dfcb5fb0613df95e0c3f1eebd090c"
-  integrity sha512-5X9Ep5Zu7gw6JDpahkgCorsz8BUQ0iDbnLO3Ov0UgLc9GedTUMk0a2DMkEspq7+fZHtVcOQ2C/YIbzpDH/5OMg==
+yeoman-generator@^5.8.0:
+  version "5.8.0"
+  resolved "https://registry.yarnpkg.com/yeoman-generator/-/yeoman-generator-5.8.0.tgz#a1951ce0d95555f94adc5975a517d4741b5ce24d"
+  integrity sha512-dsrwFn9/c2/MOe80sa2nKfbZd/GaPTgmmehdgkFifs1VN/I7qPsW2xcBfvSkHNGK+PZly7uHyH8kaVYSFNUDhQ==
   dependencies:
     chalk "^4.1.0"
     dargs "^7.0.0"
@@ -7908,6 +7949,7 @@ yeoman-generator@^5.7.1:
     execa "^5.1.1"
     github-username "^6.0.0"
     lodash "^4.17.11"
+    mem-fs-editor "^9.0.0"
     minimist "^1.2.5"
     read-pkg-up "^7.0.1"
     run-async "^2.0.0"
