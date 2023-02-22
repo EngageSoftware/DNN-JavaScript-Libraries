@@ -4341,10 +4341,10 @@ liftoff@^3.1.0:
     rechoir "^0.6.2"
     resolve "^1.1.7"
 
-lightbox2@2.11.3:
-  version "2.11.3"
-  resolved "https://registry.yarnpkg.com/lightbox2/-/lightbox2-2.11.3.tgz#057d9244badb0f0fd4603c25d739a19a85a71978"
-  integrity sha512-Q4v6il/OK9ttgEkAxSok/jrI/LUbqTrePFchqP2x/59qaDIZgJjEEc5Xf7peSMc/55Zo5PAgmX6EiN/BeEeUBQ==
+lightbox2@2.11.4:
+  version "2.11.4"
+  resolved "https://registry.yarnpkg.com/lightbox2/-/lightbox2-2.11.4.tgz#3ba020011ecea9237d0905c47db4026e9ab64400"
+  integrity sha512-Fof7RJFWV3Fe4CWTjpto30h04Led97nRStFNLaUD/VrlEs72r7LF9WMndENYvU2e4o8WboSuy+dmetXSKSnQ2Q==
 
 lines-and-columns@^1.1.6:
   version "1.1.6"
