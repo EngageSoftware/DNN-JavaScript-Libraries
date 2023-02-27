@@ -7029,10 +7029,10 @@ swiper@9.0.5:
   dependencies:
     ssr-window "^4.0.2"
 
-systemjs@6.13.0:
-  version "6.13.0"
-  resolved "https://registry.yarnpkg.com/systemjs/-/systemjs-6.13.0.tgz#7b28e74b44352e1650e8652499f42de724c3fc7f"
-  integrity sha512-P3cgh2bpaPvAO2NE3uRp/n6hmk4xPX4DQf+UzTlCAycssKdqhp6hjw+ENWe+aUS7TogKRFtptMosTSFeC6R55g==
+systemjs@6.14.0:
+  version "6.14.0"
+  resolved "https://registry.yarnpkg.com/systemjs/-/systemjs-6.14.0.tgz#0b6665de005b49624e94a2a5b5b936231e3cf97e"
+  integrity sha512-OMf+kFCYG9fLQerUyw/QVIPfZ+lo579R+usrDzSrZAkvMl6B0tHtc4rUP7DFaPCr7Sy6p5DYD4V9OCF1Sp6+vA==
 
 tableexport@5.2.0:
   version "5.2.0"
