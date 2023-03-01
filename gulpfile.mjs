@@ -5,7 +5,7 @@ import { deleteAsync } from 'del';
 import ejs from 'gulp-ejs';
 import zip from 'gulp-zip';
 import path from 'path';
-import { globby } from 'globby';
+import glob from 'glob';
 import mergeStream from 'merge-stream';
 import spawn from 'cross-spawn';
 import {
@@ -75,7 +75,7 @@ function makePackageTask(library) {
  */
 async function validatePackages() {
 	let invalidCount = 0;
-	const zipFiles = await globby('./_InstallPackages/**/*.zip');
+	const zipFiles = await glob('./_InstallPackages/**/*.zip');
 	for (const zipFile of zipFiles) {
 		const fileName = path.basename(zipFile);
 		const validationResult = await validatePackage(zipFile);
