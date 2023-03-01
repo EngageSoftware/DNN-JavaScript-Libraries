@@ -1,5 +1,5 @@
 import path from 'path';
-import glob from 'glob';
+import {globSync} from 'glob';
 import semver from 'semver';
 import log from 'fancy-log';
 import chalk from 'chalk';
@@ -43,8 +43,7 @@ function resolveLibraryName(libraryPath) {
  * @returns {object[]} An array of objects with path, manifest, name, and version
  */
 export function getLibraries() {
-	return glob
-		.sync('*/dnn-library.json')
+	return globSync('*/dnn-library.json')
 		.map((manifestPath) => ({
 			path: path.dirname(manifestPath),
 			manifest: JSON.parse(readFileSync(path.resolve(manifestPath))),
