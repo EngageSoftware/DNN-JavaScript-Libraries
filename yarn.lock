@@ -4317,10 +4317,10 @@ knockout-jqautocomplete@0.5.0:
     jquery-ui "^1.12.1"
     knockout "^3.4.2"
 
-knockout-postbox@0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/knockout-postbox/-/knockout-postbox-0.6.0.tgz#d35c84d812bed86a80d0c069749109fefdf436a7"
-  integrity sha1-01yE2BK+2GqA0MBpdJEJ/v30Nqc=
+knockout-postbox@0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/knockout-postbox/-/knockout-postbox-0.6.1.tgz#4e706d72c7188ae42577071e527eece45ca6db38"
+  integrity sha512-d7SJl4eWDrMziO/y+7lZ6cFF9VnZXerLDgUJrVHnWptG7leclXAVthj0vTaZYiMvIY7fGpcOEf0gAK+fUErk2w==
 
 knockout-sortable@1.2.2:
   version "1.2.2"
