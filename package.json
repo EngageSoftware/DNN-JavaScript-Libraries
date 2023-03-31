@@ -14,7 +14,7 @@
 	"dependencies": {
 		"@fancyapps/fancybox": "3.5.7",
 		"@khanacademy/tota11y": "0.2.0",
-		"@xmldom/xmldom": "^0.8.6",
+		"@xmldom/xmldom": "^0.8.7",
 		"alpaca": "1.5.27",
 		"blob.js": "1.0.1",
 		"bluebird": "3.7.2",
