@@ -5,7 +5,7 @@ import { deleteAsync } from 'del';
 import ejs from 'gulp-ejs';
 import zip from 'gulp-zip';
 import path from 'path';
-import glob from 'glob';
+import { glob } from 'glob';
 import mergeStream from 'merge-stream';
 import spawn from 'cross-spawn';
 import {

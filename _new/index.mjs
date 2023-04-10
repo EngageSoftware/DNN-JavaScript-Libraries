@@ -6,7 +6,7 @@ import inquirer from 'inquirer';
 import packageJson from 'package-json';
 import spawn from 'cross-spawn';
 import eos from 'end-of-stream';
-import glob from 'glob';
+import { glob } from 'glob';
 import { formatVersionFolder } from '../utility/index.mjs';
 
 export default class extends Generator {
@@ -98,10 +98,9 @@ export default class extends Generator {
 				choices: ({ libraryName }) =>
 					yarnAdd
 						.then(() =>
-							glob(
-								`node_modules/${libraryName}/**/*.js`, {
+							glob(`node_modules/${libraryName}/**/*.js`, {
 								ignore: `node_modules/${libraryName}/node_modules/**/*.js`,
-                                })
+							})
 						)
 						.then((files) =>
 							files
