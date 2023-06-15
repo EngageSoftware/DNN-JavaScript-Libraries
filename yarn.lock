@@ -6036,10 +6036,10 @@ package-json@^7.0.0:
     registry-url "^5.0.0"
     semver "^7.3.5"
 
-package-json@^8.1.0:
-  version "8.1.0"
-  resolved "https://registry.yarnpkg.com/package-json/-/package-json-8.1.0.tgz#2a22806f1ed7c786c8e6ff26cfe20003bf4c6850"
-  integrity sha512-hySwcV8RAWeAfPsXb9/HGSPn8lwDnv6fabH+obUZKX169QknRkRhPxd1yMubpKDskLFATkl3jHpNtVtDPFA0Wg==
+package-json@^8.1.1:
+  version "8.1.1"
+  resolved "https://registry.yarnpkg.com/package-json/-/package-json-8.1.1.tgz#3e9948e43df40d1e8e78a85485f1070bf8f03dc8"
+  integrity sha512-cbH9IAIJHNj9uXi196JVsRlt7cHKak6u/e6AkL/bkRelZ7rlL3X1YKxsZwa36xipOEKAsdtmaG6aAJoM1fx2zA==
   dependencies:
     got "^12.1.0"
     registry-auth-token "^5.0.1"
