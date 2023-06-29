@@ -84,7 +84,7 @@
 		"zeroclipboard": "2.3.0"
 	},
 	"devDependencies": {
-		"chalk": "^5.2.0",
+		"chalk": "^5.3.0",
 		"cliui": "8.0.1",
 		"cross-spawn": "7.0.3",
 		"decompress": "4.2.1",
