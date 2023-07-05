@@ -3,6 +3,7 @@
   "resources": [
     "node_modules/swiper/*.css",
     "node_modules/swiper/*.js",
+    "node_modules/swiper/*.mjs",
     "node_modules/swiper/*.map",
     "!node_modules/swiper/swiper-bundle.min.js"
   ]
