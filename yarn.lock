@@ -7776,10 +7776,10 @@ sver-compat@^1.5.0:
     es6-iterator "^2.0.1"
     es6-symbol "^3.1.1"
 
-swiper@11.0.4:
-  version "11.0.4"
-  resolved "https://registry.yarnpkg.com/swiper/-/swiper-11.0.4.tgz#58253ef9a7a4ef5e37d5a0613783f5a3debc48da"
-  integrity sha512-qtUxILrD4aD++rpKzGrkz3IAWL92f9uTrDwjb6HaNLmPvJhZCE/83DL+9w4kIgDDJeF6QKalV47rMBN77UOVYQ==
+swiper@11.0.5:
+  version "11.0.5"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-11.0.5.tgz#6ed1ad06e6906ba42fd4b93d4988f0626a49046e"
+  integrity sha512-rhCwupqSyRnWrtNzWzemnBLMoyYuoDgGgspAm/8iBD3jCvAWycPLH4Z3TB0O5520DHLzMx94yUMH/B9Efpa48w==
 
 systemjs@6.14.2:
   version "6.14.2"
