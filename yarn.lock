@@ -4045,10 +4045,10 @@ interpret@^1.0.0, interpret@^1.1.0, interpret@^1.4.0:
   resolved "https://registry.yarnpkg.com/interpret/-/interpret-1.4.0.tgz#665ab8bc4da27a774a40584e812e3e0fa45b1a1e"
   integrity sha512-agE4QfB2Lkp9uICn7BAqoscw4SZP9kTE2hxiFI3jBPmXJfdqiahTbUuKGsMoN2GtqL9AxhYioAcVvgsb1HvRbA==
 
-intl-tel-input@19.0.2:
-  version "19.0.2"
-  resolved "https://registry.yarnpkg.com/intl-tel-input/-/intl-tel-input-19.0.2.tgz#99af2ab2cad1efa7bc95ba4fed188b3464bbf4d5"
-  integrity sha512-1I6dK3RKPnlBNPhNMpyH/Kyo0CDS9SNPMw32wuPvBVxk9zz3TJD1I3J882fPsP313VUWHQaSkIUYdxrWhUtFZw==
+intl-tel-input@19.1.1:
+  version "19.1.1"
+  resolved "https://registry.yarnpkg.com/intl-tel-input/-/intl-tel-input-19.1.1.tgz#37d9df5e42ce68e85221eb200781a2459638b564"
+  integrity sha512-TQso0OURUW9McdcXOdNyauAA/2GjXnoI7CIvv5EECJCFwuNIk5sADJyezzqALuNbLO84ksLbp8LaPFX6DbGbtQ==
 
 invert-kv@^1.0.0:
   version "1.0.0"
