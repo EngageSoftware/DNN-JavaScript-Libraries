@@ -100,7 +100,7 @@
 		"lodash": "4.17.21",
 		"merge-stream": "^2.0.0",
 		"package-json": "^9.0.0",
-		"semver": "7.5.4",
+		"semver": "7.6.0",
 		"xpath.js": "1.1.0",
 		"yeoman-generator": "^5.9.0",
 		"yo": "^5.0.0"
