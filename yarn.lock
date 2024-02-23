@@ -4181,10 +4181,10 @@ interpret@^1.0.0, interpret@^1.1.0, interpret@^1.4.0:
   resolved "https://registry.yarnpkg.com/interpret/-/interpret-1.4.0.tgz#665ab8bc4da27a774a40584e812e3e0fa45b1a1e"
   integrity sha512-agE4QfB2Lkp9uICn7BAqoscw4SZP9kTE2hxiFI3jBPmXJfdqiahTbUuKGsMoN2GtqL9AxhYioAcVvgsb1HvRbA==
 
-intl-tel-input@19.2.20:
-  version "19.2.20"
-  resolved "https://registry.yarnpkg.com/intl-tel-input/-/intl-tel-input-19.2.20.tgz#3f2c008ca57f9c83444b5a455f81979edf2dba8b"
-  integrity sha512-44NHpkB8mVixcGqAgylPgcc+zw9vGt0uCk21T9dPQA531Cws0ALxhhXRTiZvKcre32UCUAiZgvRML/h23jGtog==
+intl-tel-input@19.3.0:
+  version "19.3.0"
+  resolved "https://registry.yarnpkg.com/intl-tel-input/-/intl-tel-input-19.3.0.tgz#4dc77fe1777ffecb31aab2088663eb5b51780d6e"
+  integrity sha512-6bNb1/JDn1svPERnDiVIM7ZZyDi0ioZqM+MzkbhYTFxGrywivWV/qHnj2HzsU7opkcRegNKsZqfxUM4XfudCOQ==
   dependencies:
     esbuild "^0.19.11"
     prop-types "^15.8.1"
