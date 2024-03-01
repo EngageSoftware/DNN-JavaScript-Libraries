@@ -4029,10 +4029,10 @@ interpret@^1.0.0, interpret@^1.1.0, interpret@^1.4.0:
   resolved "https://registry.yarnpkg.com/interpret/-/interpret-1.4.0.tgz#665ab8bc4da27a774a40584e812e3e0fa45b1a1e"
   integrity sha512-agE4QfB2Lkp9uICn7BAqoscw4SZP9kTE2hxiFI3jBPmXJfdqiahTbUuKGsMoN2GtqL9AxhYioAcVvgsb1HvRbA==
 
-intl-tel-input@19.5.3:
-  version "19.5.3"
-  resolved "https://registry.yarnpkg.com/intl-tel-input/-/intl-tel-input-19.5.3.tgz#9c9d094c93a149db0bc1b65622d0b75014ead161"
-  integrity sha512-lozgP7hGTAHcTD1uVULeRIJm1RXrRU36PCq8chPzvdX8H9eW1n3eUYVi/UxmO+TmqRI+cbqIVOT6OyQlL0NLxw==
+intl-tel-input@19.5.4:
+  version "19.5.4"
+  resolved "https://registry.yarnpkg.com/intl-tel-input/-/intl-tel-input-19.5.4.tgz#23f82699ccf2065360ac94992f1661a6fb75f7cc"
+  integrity sha512-k66mJqwJ9e13CDeMkCCYJLq/Rl7bl2vaNejtCoVVSpCoqjyryh9m5M4Bl4puM/W+4WHN/ETtB7MBCkTcuw6uxg==
   dependencies:
     prop-types "^15.8.1"
     react "^18.2.0"
