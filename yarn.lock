@@ -4029,10 +4029,10 @@ interpret@^1.0.0, interpret@^1.1.0, interpret@^1.4.0:
   resolved "https://registry.yarnpkg.com/interpret/-/interpret-1.4.0.tgz#665ab8bc4da27a774a40584e812e3e0fa45b1a1e"
   integrity sha512-agE4QfB2Lkp9uICn7BAqoscw4SZP9kTE2hxiFI3jBPmXJfdqiahTbUuKGsMoN2GtqL9AxhYioAcVvgsb1HvRbA==
 
-intl-tel-input@20.0.5:
-  version "20.0.5"
-  resolved "https://registry.yarnpkg.com/intl-tel-input/-/intl-tel-input-20.0.5.tgz#93c7dc5c31fd5da00d52852a20a9762c3460e8a3"
-  integrity sha512-xaG+aE0Jm/c6fn209FrjjJqU9BVvyXInhvis3CI/Qe9TqUQHv6OQ3RAb09N2Dw5puMAL1Asy12Kwyoqpd7bjiw==
+intl-tel-input@20.1.0:
+  version "20.1.0"
+  resolved "https://registry.yarnpkg.com/intl-tel-input/-/intl-tel-input-20.1.0.tgz#342ce6334353075d1571a2a34a382210c9c66abc"
+  integrity sha512-ockA+MT+mrcbyX6lsdDB66o6k6cSbia4vt3swu5xi1ofpYiBmbFADMknmTSa8BORDJDjyct6M/nTxnP+RZO1BQ==
 
 invert-kv@^1.0.0:
   version "1.0.0"
