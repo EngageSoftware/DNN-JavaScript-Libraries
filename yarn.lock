@@ -4094,10 +4094,10 @@ interpret@^3.1.1:
   resolved "https://registry.yarnpkg.com/interpret/-/interpret-3.1.1.tgz#5be0ceed67ca79c6c4bc5cf0d7ee843dcea110c4"
   integrity sha512-6xwYfHbajpoF0xLW+iwLkhwgvLoZDfjYfoFNu8ftMoXINzwuymNLd9u/KmwtdT2GbR+/Cz66otEGEVVUHX9QLQ==
 
-intl-tel-input@23.0.4:
-  version "23.0.4"
-  resolved "https://registry.yarnpkg.com/intl-tel-input/-/intl-tel-input-23.0.4.tgz#7d7ad4dee48f27bd400cfa1eb4ca1b5c4a4179b6"
-  integrity sha512-meUomkOF7W+qY2ch/LOLFuQXwFUuRod7YwHP6qgK2keYFAdDz+dB171KQAjUZhgTwDLejS6Ui/Qc7IHQBO1MKQ==
+intl-tel-input@23.0.7:
+  version "23.0.7"
+  resolved "https://registry.yarnpkg.com/intl-tel-input/-/intl-tel-input-23.0.7.tgz#efe3ff63e8a084b70488659092ae1ec41a7ca8de"
+  integrity sha512-J0ES6cPFfkyzKtwOyoPQr4RKeOA07VJF9pdPHV6+/Lek2OpndUZMBBAIlUEAuZ0FoL88jPJJNzigx8aPMRgJmQ==
 
 invert-kv@^1.0.0:
   version "1.0.0"
