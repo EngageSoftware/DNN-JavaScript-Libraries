@@ -4108,10 +4108,10 @@ interpret@^3.1.1:
   resolved "https://registry.yarnpkg.com/interpret/-/interpret-3.1.1.tgz#5be0ceed67ca79c6c4bc5cf0d7ee843dcea110c4"
   integrity sha512-6xwYfHbajpoF0xLW+iwLkhwgvLoZDfjYfoFNu8ftMoXINzwuymNLd9u/KmwtdT2GbR+/Cz66otEGEVVUHX9QLQ==
 
-intl-tel-input@23.0.10:
-  version "23.0.10"
-  resolved "https://registry.yarnpkg.com/intl-tel-input/-/intl-tel-input-23.0.10.tgz#c7c182d2c04b97faa2de7e8b6912eb8155746bad"
-  integrity sha512-e7vOl/9NCkorU+Qyk8qi9GTBpGrcFKsGw5gO8rrkkg7VdOpHK8MkNo855l2dgr5FSIiRDPhqczhfxivVBAsdew==
+intl-tel-input@23.0.11:
+  version "23.0.11"
+  resolved "https://registry.yarnpkg.com/intl-tel-input/-/intl-tel-input-23.0.11.tgz#9a9b3f2e5e2ce9b2ec5487d269854d138fba6442"
+  integrity sha512-LtWn4hATgkKPLmDeSyAwB8oPyP6kuYaPvl//+0lJbJzyVrv3+qa9lYIvndSd71Qxl8ThlqO5deH7iz3ufNKPjw==
 
 invert-kv@^1.0.0:
   version "1.0.0"
