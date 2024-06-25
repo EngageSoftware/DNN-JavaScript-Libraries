@@ -5685,10 +5685,10 @@ normalize-url@^8.0.1:
   resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-8.0.1.tgz#9b7d96af9836577c58f5883e939365fa15623a4a"
   integrity sha512-IO9QvjUMWxPQQhs60oOu10CRkWCiZzSUkzbXGGV9pviYl1fXYcvkzQ5jV9z8Y6un8ARoVRl4EtC6v6jNqbaJ/w==
 
-nouislider@15.8.0:
-  version "15.8.0"
-  resolved "https://registry.yarnpkg.com/nouislider/-/nouislider-15.8.0.tgz#ca3c18710d8926775b58459e42a89b826530c811"
-  integrity sha512-E7Rvt2Uc5IIl7Hv7+mO8XH8uFyqe3ofxi5j2QMi2B7w8JHVLAEzTpgDBk0oYZBaplsk60QOso3qrq8qk3JPHEQ==
+nouislider@15.8.1:
+  version "15.8.1"
+  resolved "https://registry.yarnpkg.com/nouislider/-/nouislider-15.8.1.tgz#18729ed29738d2d328a1b5e0429d38eb8be8a696"
+  integrity sha512-93TweAi8kqntHJSPiSWQ1o/uZ29VWOmal9YKb6KKGGlCkugaNfAupT7o1qTHqdJvNQ7S0su5rO6qRFCjP8fxtw==
 
 now-and-later@^2.0.0:
   version "2.0.1"
