@@ -99,7 +99,7 @@
 		"gulp-zip": "^6.0.0",
 		"lodash": "4.17.21",
 		"merge-stream": "^2.0.0",
-		"package-json": "^10.0.0",
+		"package-json": "^10.0.1",
 		"semver": "7.6.2",
 		"xpath.js": "1.1.0",
 		"yeoman-generator": "^5.9.0",
