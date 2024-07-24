@@ -36,29 +36,25 @@ function clean() {
  */
 function makePackageTask(library) {
 	const packageFn = () => {
-		const resourceZipStream =
-			library.manifest.resources && library.manifest.resources.length
-				? gulp
-						.src(library.manifest.resources)
-						.pipe(zip('Resources.zip'))
-				: null;
+		const resources = library.manifest.resources ?? [];
+		const allowEmpty = !resources || resources.length === 0;
+		if (resources.length === 0) {
+			resources.push('does_not-match-Þõý');
+		}
 
 		const templateData = {
 			version: library.version,
 			versionFolder: formatVersionFolder(library.version),
 		};
-		const filesStream = gulp
-			.src(['LICENSE.htm', 'CHANGES.htm', '*.dnn'], {
-				cwd: library.path,
-			})
-			.pipe(ejs(templateData, { delimiter: '~' }))
-			.pipe(gulp.src(library.manifest.files));
-
-		const packageStream = resourceZipStream
-			? mergeStream(filesStream, resourceZipStream)
-			: filesStream;
-
-		return packageStream
+		return mergeStream(
+			gulp.src(resources, { allowEmpty }).pipe(zip('Resources.zip')),
+			gulp
+				.src(['LICENSE.htm', 'CHANGES.htm', '*.dnn'], {
+					cwd: library.path,
+				})
+				.pipe(ejs(templateData, { delimiter: '~' }))
+		)
+			.pipe(gulp.src(library.manifest.files))
 			.pipe(zip(`${library.name}_${library.version}.zip`))
 			.pipe(gulp.dest('./_InstallPackages/'));
 	};
