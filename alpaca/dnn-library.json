@@ -1,7 +1,7 @@
 {
-  "files": ["node_modules/alpaca/dist/alpaca/web/alpaca.min.js"],
-  "resources": [
-    "node_modules/alpaca/dist/alpaca/web/**",
-    "node_modules/alpaca/dist/alpaca/web/alpaca.min.js"
-  ]
+	"files": ["node_modules/alpaca/dist/alpaca/web/alpaca.min.js"],
+	"resources": [
+		"node_modules/alpaca/dist/alpaca/web/**",
+		"!node_modules/alpaca/dist/alpaca/web/alpaca.min.js"
+	]
 }
