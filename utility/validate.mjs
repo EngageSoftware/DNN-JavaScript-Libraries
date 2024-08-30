@@ -35,7 +35,7 @@ export async function validatePackage(file) {
 		const manifestContents = manifestFile.data.toString('utf-8');
 		const parser = new DOMParser();
 
-		const doc = parser.parseFromString(manifestContents);
+		const doc = parser.parseFromString(manifestContents, 'text/xml');
 		const cdnPathNodes = select(
 			doc,
 			'/dotnetnuke/packages/package/components/component/javaScriptLibrary/CDNPath/text()'
