@@ -1774,10 +1774,10 @@ cross-fetch@^3.0.6:
   dependencies:
     node-fetch "2.6.7"
 
-cross-spawn@7.0.3, cross-spawn@^7.0.0, cross-spawn@^7.0.3:
-  version "7.0.3"
-  resolved "https://registry.npmjs.org/cross-spawn/-/cross-spawn-7.0.3.tgz"
-  integrity sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==
+cross-spawn@7.0.4, cross-spawn@^7.0.0, cross-spawn@^7.0.3:
+  version "7.0.4"
+  resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-7.0.4.tgz#36d9cb36c32ae7a0df935f0191f79959962a2165"
+  integrity sha512-9KdyVPPtLHjPAD7tcuzSFs64UfHlLJt7U6qP4/bFVLyjLceyizj6s6jO6YBaV5d0G7g/9KnY/dOpLR4Rcg8YDg==
   dependencies:
     path-key "^3.1.0"
     shebang-command "^2.0.0"
