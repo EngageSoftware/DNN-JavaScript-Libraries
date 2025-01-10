@@ -654,7 +654,15 @@
   dependencies:
     "@types/node" "*"
 
-"@types/vinyl@^2.0.7", "@types/vinyl@^2.0.8", "@types/vinyl@^2.0.9":
+"@types/vinyl@^2.0.12":
+  version "2.0.12"
+  resolved "https://registry.yarnpkg.com/@types/vinyl/-/vinyl-2.0.12.tgz#17642ca9a8ae10f3db018e9f885da4188db4c6e6"
+  integrity sha512-Sr2fYMBUVGYq8kj3UthXFAu5UN6ZW+rYr4NACjZQJvHvj+c8lYv0CahmZ2P/r7iUkN44gGUBwqxZkrKXYPb7cw==
+  dependencies:
+    "@types/expect" "^1.20.4"
+    "@types/node" "*"
+
+"@types/vinyl@^2.0.7", "@types/vinyl@^2.0.8":
   version "2.0.9"
   resolved "https://registry.npmjs.org/@types/vinyl/-/vinyl-2.0.9.tgz"
   integrity sha512-KCr4aTEUkzSF89qw09e2oxsC/RXXT3K5ZPv4gvj3XTiWVrxNoi7WrqNTahNE/Hul5C9z3B8w+yWNTQgua12oag==
@@ -1179,6 +1187,11 @@ buffer-alloc@^1.2.0:
   dependencies:
     buffer-alloc-unsafe "^1.1.0"
     buffer-fill "^1.0.0"
+
+buffer-crc32@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/buffer-crc32/-/buffer-crc32-1.0.0.tgz#a10993b9055081d55304bd9feb4a072de179f405"
+  integrity sha512-Db1SbgBS/fg/392AblrMJk97KggmvYhr4pB5ZIMTWtaivCPMWLkmb7m21cJvpvgK+J3nsU2CmmixNBZx4vFj/w==
 
 buffer-crc32@~0.2.3:
   version "0.2.13"
@@ -3096,24 +3109,24 @@ gulp-ejs@^5.1.0:
     plugin-error "^1.0.0"
     through2 "^3.0.1"
 
-gulp-plugin-extras@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.npmjs.org/gulp-plugin-extras/-/gulp-plugin-extras-0.3.0.tgz"
-  integrity sha512-I/kOBSpo61QsGQZcqozZYEnDseKvpudUafVVWDLYgBFAUJ37kW5R8Sjw9cMYzpGyPUfEYOeoY4p+dkfLqgyJUQ==
+gulp-plugin-extras@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/gulp-plugin-extras/-/gulp-plugin-extras-1.1.0.tgz#47bb1022bed0ea0216ac6c6a61a35c4fe014318e"
+  integrity sha512-T0AXOEVoKYzLIBlwEZ7LtAx2w4ExIozIoxVeYEVLFbdxI7i0sWvFDq0F8mm47djixDF3vAqDPoyGwh3Sg/PWtQ==
   dependencies:
-    "@types/vinyl" "^2.0.9"
+    "@types/vinyl" "^2.0.12"
     chalk "^5.3.0"
     easy-transform-stream "^1.0.1"
 
-gulp-zip@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.npmjs.org/gulp-zip/-/gulp-zip-6.0.0.tgz"
-  integrity sha512-fPGvNve2dBoZxGKcviTU7mOa77eQibyhwgGLTxnF+ZCKX8RFaTZKkPbdPnmw0r4TNPRjPCkQB/0VuP+MzgkEYg==
+gulp-zip@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/gulp-zip/-/gulp-zip-6.1.0.tgz#53342be6dc629eb3ea8b25e1806ee717eb44a3d2"
+  integrity sha512-couiqfO4CSM4q3oKnihLhYq5mVmwyXfgLP/0eeM7oVlN+psn45vfvJHcCL3AkPgTi4NojnUFV2IozYqZClIujQ==
   dependencies:
-    get-stream "^8.0.1"
-    gulp-plugin-extras "^0.3.0"
+    get-stream "^9.0.1"
+    gulp-plugin-extras "^1.1.0"
     vinyl "^3.0.0"
-    yazl "^2.5.1"
+    yazl "^3.3.1"
 
 gulp@^5.0.0:
   version "5.0.0"
@@ -7512,12 +7525,12 @@ yauzl@^2.4.2:
     buffer-crc32 "~0.2.3"
     fd-slicer "~1.1.0"
 
-yazl@^2.5.1:
-  version "2.5.1"
-  resolved "https://registry.npmjs.org/yazl/-/yazl-2.5.1.tgz"
-  integrity sha512-phENi2PLiHnHb6QBVot+dJnaAZ0xosj7p3fWl+znIjBDlnMI2PsZCJZ306BPTFOaHf5qdDEI8x5qFrSOBN5vrw==
+yazl@^3.3.1:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/yazl/-/yazl-3.3.1.tgz#a69abad02d80739d3b1a7ffcca8434422477432c"
+  integrity sha512-BbETDVWG+VcMUle37k5Fqp//7SDOK2/1+T7X8TD96M3D9G8jK5VLUdQVdVjGi8im7FGkazX7kk5hkU8X4L5Bng==
   dependencies:
-    buffer-crc32 "~0.2.3"
+    buffer-crc32 "^1.0.0"
 
 yeoman-character@^1.0.0:
   version "1.1.0"
