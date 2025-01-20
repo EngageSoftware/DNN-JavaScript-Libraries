@@ -670,10 +670,10 @@
     "@types/expect" "^1.20.4"
     "@types/node" "*"
 
-"@xmldom/xmldom@^0.9.6":
-  version "0.9.6"
-  resolved "https://registry.yarnpkg.com/@xmldom/xmldom/-/xmldom-0.9.6.tgz#3eaefb585c1f920e06fb35e6dcb8d505445621c0"
-  integrity sha512-Su4xcxR0CPGwlDHNmVP09fqET9YxbyDXHaSob6JlBH7L6reTYaeim6zbk9o08UarO0L5GTRo3uzl0D+9lSxmvw==
+"@xmldom/xmldom@^0.9.7":
+  version "0.9.7"
+  resolved "https://registry.yarnpkg.com/@xmldom/xmldom/-/xmldom-0.9.7.tgz#f21bebdcde4af682a810062b14585c89bb7fab07"
+  integrity sha512-syvR8iIJjpTZ/stv7l89UAViwGFh6lbheeOaqSxkYx9YNmIVvPTRH+CT/fpykFtUx5N+8eSMDRvggF9J8GEPzQ==
 
 "@yeoman/adapter@^1.4.0":
   version "1.4.0"
