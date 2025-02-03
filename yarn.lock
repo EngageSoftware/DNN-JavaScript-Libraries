@@ -3507,10 +3507,10 @@ interpret@^3.1.1:
   resolved "https://registry.npmjs.org/interpret/-/interpret-3.1.1.tgz"
   integrity sha512-6xwYfHbajpoF0xLW+iwLkhwgvLoZDfjYfoFNu8ftMoXINzwuymNLd9u/KmwtdT2GbR+/Cz66otEGEVVUHX9QLQ==
 
-intl-tel-input@25.2.1:
-  version "25.2.1"
-  resolved "https://registry.yarnpkg.com/intl-tel-input/-/intl-tel-input-25.2.1.tgz#8d58da29cce81d6060105bca3b7c08e605ae1415"
-  integrity sha512-HBZlTji2yLCYBgaLzG0+oENqLT7UkSlGvmqtqmI5wLlxnfMmqt6YXnO3PrgG0zh0rkq8QNmQXc8wcaAWog2HHw==
+intl-tel-input@25.3.0:
+  version "25.3.0"
+  resolved "https://registry.yarnpkg.com/intl-tel-input/-/intl-tel-input-25.3.0.tgz#a22fcb0c8058f9d9ef071849d86e205283df14b8"
+  integrity sha512-w45O+cMpltGvZPdq36wkcpgCGIuOsihqrklJdvV2hYwKOT1rQuLjX8wjFQXLIs7ku0HK0qAU0MT6+DMh659qBw==
 
 ip-address@^9.0.5:
   version "9.0.5"
