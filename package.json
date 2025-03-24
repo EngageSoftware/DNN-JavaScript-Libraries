@@ -6,9 +6,9 @@
 		"_InstallPackages"
 	],
 	"scripts": {
-		"package": "gulp",
-		"outdated": "gulp outdated",
-		"upgrade": "gulp upgrade",
+		"package": "gulp --no-experimental-require-module",
+		"outdated": "gulp outdated --no-experimental-require-module",
+		"upgrade": "gulp upgrade --no-experimental-require-module",
 		"new": "yo ./_new/index.mjs"
 	},
 	"dependencies": {
