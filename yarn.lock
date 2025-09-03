@@ -3529,10 +3529,10 @@ interpret@^3.1.1:
   resolved "https://registry.npmjs.org/interpret/-/interpret-3.1.1.tgz"
   integrity sha512-6xwYfHbajpoF0xLW+iwLkhwgvLoZDfjYfoFNu8ftMoXINzwuymNLd9u/KmwtdT2GbR+/Cz66otEGEVVUHX9QLQ==
 
-intl-tel-input@25.7.0:
-  version "25.7.0"
-  resolved "https://registry.yarnpkg.com/intl-tel-input/-/intl-tel-input-25.7.0.tgz#c001e868b988c439328e0932fa22113aea8e2da3"
-  integrity sha512-58kX8dLP1b6L7BLTxso0Mxprxt6MseUOPnSlQRgBL2//juWrze+sWtrsONw9V5Fav7XswUBnTdVQo9JpVDKngg==
+intl-tel-input@25.8.1:
+  version "25.8.1"
+  resolved "https://registry.yarnpkg.com/intl-tel-input/-/intl-tel-input-25.8.1.tgz#28c7969677132076ba4a55a698e4e4391d304f05"
+  integrity sha512-6aEGdxSO5ksbj2dPhpTORxBkXtXe2bOL6XCYjHxLJMQ4b4sl71Z2C3NXjxFAgTITdqB6OwVupuYAVYzYhFOwMQ==
 
 ip-address@^9.0.5:
   version "9.0.5"
