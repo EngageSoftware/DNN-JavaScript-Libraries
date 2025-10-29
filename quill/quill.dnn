@@ -19,9 +19,9 @@
         <component type="JavaScript_Library">
           <javaScriptLibrary>
             <libraryName>quill</libraryName>
-            <fileName>quill.min.js</fileName>
+            <fileName>quill.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/npm/quill@<~=version~>/dist/quill.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/quill@<~=version~>/dist/quill.js</CDNPath>
             <objectName>Quill</objectName>
           </javaScriptLibrary>
         </component>
@@ -29,7 +29,7 @@
           <jsfiles>
             <libraryFolderName>quill</libraryFolderName>
             <jsfile>
-              <name>quill.min.js</name>
+              <name>quill.js</name>
             </jsfile>
           </jsfiles>
         </component>
