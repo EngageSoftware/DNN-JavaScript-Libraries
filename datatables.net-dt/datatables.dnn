@@ -2,7 +2,9 @@
   <packages>
     <package name="datatables.net" type="JavaScript_Library" version="<~=version~>">
       <friendlyName>DataTables</friendlyName>
-      <description>DataTables is a plug-in for the jQuery Javascript library. It is a highly flexible tool, based upon the foundations of progressive enhancement, and will add advanced interaction controls to any HTML table.</description>
+      <description>DataTables is a plug-in for the jQuery Javascript library. It is a highly
+        flexible tool, based upon the foundations of progressive enhancement, and will add advanced
+        interaction controls to any HTML table.</description>
       <owner>
         <name>Engage Software</name>
         <organization>Engage Software</organization>
@@ -19,17 +21,17 @@
         <component type="JavaScript_Library">
           <javaScriptLibrary>
             <libraryName>datatables.net</libraryName>
-            <fileName>jquery.dataTables.js</fileName>
+            <fileName>dataTables.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
             <objectName>jQuery.fn.DataTable</objectName>
-            <cdnUrl>https://cdn.datatables.net/<~=version~>/js/jquery.dataTables.min.js</cdnUrl>
+            <cdnUrl>https://cdn.datatables.net/<~=version~>/js/dataTables.min.js</cdnUrl>
           </javaScriptLibrary>
         </component>
         <component type="JavaScriptFile">
           <jsfiles>
             <libraryFolderName>datatables.net</libraryFolderName>
             <jsfile>
-              <name>jquery.dataTables.js</name>
+              <name>dataTables.min.js</name>
             </jsfile>
           </jsfiles>
         </component>
