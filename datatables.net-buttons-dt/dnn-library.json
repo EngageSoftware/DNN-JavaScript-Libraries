@@ -1,9 +1,11 @@
 {
-  "files": ["node_modules/datatables.net-buttons/js/dataTables.buttons.min.js"],
-  "resources": [
-    "node_modules/datatables.net-buttons/**",
-    "node_modules/datatables.net-buttons-dt/**",
-    "!**/package.json",
-    "!**/Readme.md"
-  ]
+	"files": [
+		"node_modules/datatables.net-buttons/js/dataTables.buttons.min.js"
+	],
+	"resources": [
+		"node_modules/datatables.net-buttons/**",
+		"node_modules/datatables.net-buttons-dt/**",
+		"!**/package.json",
+		"!**/Readme.md"
+	]
 }
