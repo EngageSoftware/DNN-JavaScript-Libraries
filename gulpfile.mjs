@@ -183,7 +183,6 @@ function makeUpgradeTask(upgradeType) {
 						'git',
 						[
 							'tag',
-							'--sign',
 							'--message',
 							`Automatic ${upgradeType} upgrade of ${name} to ${newVersion} (from ${version})`,
 							`${name}_${newVersion}`,
