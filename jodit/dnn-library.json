@@ -1,0 +1,12 @@
+{
+	"files": ["node_modules/jodit/es2021/jodit.min.js"],
+	"resources": [
+		"node_modules/jodit/**",
+		"!node_modules/jodit/.nvmrc",
+		"!node_modules/jodit/*.md",
+		"!node_modules/jodit/LICENSE.txt",
+		"!node_modules/jodit/package.json",
+		"!node_modules/jodit/examples/**",
+		"!node_modules/jodit/types/**"
+	]
+}
