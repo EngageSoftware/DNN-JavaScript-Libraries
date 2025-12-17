@@ -6229,10 +6229,10 @@ tinyglobby@^0.2.12:
     fdir "^6.5.0"
     picomatch "^4.0.3"
 
-tinymce@8.3.0:
-  version "8.3.0"
-  resolved "https://registry.yarnpkg.com/tinymce/-/tinymce-8.3.0.tgz#120552a38e34209db4e3cabc711b001aa638e68f"
-  integrity sha512-9IjrEo8HD5mg9QP6/rKcPSIcyRNVSf5eiYTqapb/q1zAIoISRJgI2DJUs4CJgZvio0hmEH394xSHUJuoGf4Msw==
+tinymce@8.3.1:
+  version "8.3.1"
+  resolved "https://registry.yarnpkg.com/tinymce/-/tinymce-8.3.1.tgz#04d53f0b18e6ff69afe2bd748b86e495c61d260e"
+  integrity sha512-mdQdTAA90aEIyhEteIwy+QQ6UnxPCd3qQ5MlGvvByOvnjyOSdBzBcmnXeqWuhGz3fIs3XBJjIw7JyIMiHjebqw==
 
 titleize@^4.0.0:
   version "4.0.0"
