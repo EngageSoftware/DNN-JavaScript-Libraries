@@ -3239,10 +3239,10 @@ interpret@^3.1.1:
   resolved "https://registry.npmjs.org/interpret/-/interpret-3.1.1.tgz"
   integrity sha512-6xwYfHbajpoF0xLW+iwLkhwgvLoZDfjYfoFNu8ftMoXINzwuymNLd9u/KmwtdT2GbR+/Cz66otEGEVVUHX9QLQ==
 
-intl-tel-input@26.0.7:
-  version "26.0.7"
-  resolved "https://registry.yarnpkg.com/intl-tel-input/-/intl-tel-input-26.0.7.tgz#2b690f5ff094ff01cdfa5db9234bf6d48ff9f0e5"
-  integrity sha512-Ta5lWBB8bSKEGnHX83648T7vPhTqzms1/hIizUsGKiO2h2ygd1CzZfSSZmrTWeJBbwaK2U02wtP7oudxPsc/Dw==
+intl-tel-input@26.0.9:
+  version "26.0.9"
+  resolved "https://registry.yarnpkg.com/intl-tel-input/-/intl-tel-input-26.0.9.tgz#31a554da4f980367e339087c405d016389eb50d0"
+  integrity sha512-stPMVEoT41vv5M7KnrgWAMn1T2qF6F9S+Uk/ogd4kAyzAIDvfDeuK3VrKgvlY8sZKMgpYLmaaqX8Gybf6S4abw==
 
 ip-address@^9.0.5:
   version "9.0.5"
