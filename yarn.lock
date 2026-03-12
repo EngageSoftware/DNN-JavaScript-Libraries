@@ -3624,10 +3624,10 @@ jake@^10.9.1:
     filelist "^1.0.4"
     picocolors "^1.1.1"
 
-jodit@4.11.6:
-  version "4.11.6"
-  resolved "https://registry.yarnpkg.com/jodit/-/jodit-4.11.6.tgz#74d7941ff9087fdf7455ccf2743d625420e902ac"
-  integrity sha512-a1Yojjkx6MCx8ltVb3dkW6iVgpZpHYWHqffBHBa1bUzcoTqNgvXnwsQzG9PY0alxX2W+7/mZEoJM8V7vh0o3SQ==
+jodit@4.11.13:
+  version "4.11.13"
+  resolved "https://registry.yarnpkg.com/jodit/-/jodit-4.11.13.tgz#7afbd1455af4fc4c1e95e37a25843dc6d99e8c55"
+  integrity sha512-G/Tx18n7dYxS8Ewpm21sIpARQzIKk/DombIgR9tll/so+HwIAlf3/vjG/nWmm7+w8Sr31JeCZicoGQ1+pYNHSQ==
 
 jquery-menu-aim@1.1.0:
   version "1.1.0"
