@@ -5227,10 +5227,10 @@ tinyglobby@^0.2.12, tinyglobby@^0.2.15:
     fdir "^6.5.0"
     picomatch "^4.0.3"
 
-tinymce@8.3.2:
-  version "8.3.2"
-  resolved "https://registry.yarnpkg.com/tinymce/-/tinymce-8.3.2.tgz#bfdba186b00d61598eafbc29cab778de7f8e1e33"
-  integrity sha512-iZ8aIUtrgGOw2AkukNf8spUM0LOzNLoCHRepwXQwWmHxP2TI5LzHjjG0SmXGxbya4EmoD5/pAox0ZXJfLO5DUw==
+tinymce@8.4.0:
+  version "8.4.0"
+  resolved "https://registry.yarnpkg.com/tinymce/-/tinymce-8.4.0.tgz#403ea8418b48d6120f373bce2f9e4166bb844006"
+  integrity sha512-Q/0/iLycB7hgSkOBoRqfceOz/7Obs9zIo0DwTRuvrReLxb6qdz/1vI7aVJMcW2BAuW80QqZiTyYdVM2amBkqIg==
 
 titleize@^4.0.0:
   version "4.0.0"
