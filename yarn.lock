@@ -3631,10 +3631,10 @@ minizlib@^3.0.1, minizlib@^3.1.0:
   dependencies:
     minipass "^7.1.2"
 
-moment-timezone@0.5.48:
-  version "0.5.48"
-  resolved "https://registry.yarnpkg.com/moment-timezone/-/moment-timezone-0.5.48.tgz#111727bb274734a518ae154b5ca589283f058967"
-  integrity sha512-f22b8LV1gbTO2ms2j2z13MuPogNoh5UzxL3nzNAYKGraILnbGc9NEE6dyiiiLv46DGRb8A4kg8UKWLjPthxBHw==
+moment-timezone@0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/moment-timezone/-/moment-timezone-0.6.1.tgz#c324a71a8285583eb679ced4ba3dcfa53fdce500"
+  integrity sha512-1B9lmAhB9D9/sHaPC1N7wLFEVUoFldxOpOO96lOD1PvJ43vCd0ozDPbu0FEL3++VvawOlDkq8YD373tJmP5JHw==
   dependencies:
     moment "^2.29.4"
 
