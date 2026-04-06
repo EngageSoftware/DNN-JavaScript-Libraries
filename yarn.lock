@@ -2741,10 +2741,10 @@ interpret@^3.1.1:
   resolved "https://registry.npmjs.org/interpret/-/interpret-3.1.1.tgz"
   integrity sha512-6xwYfHbajpoF0xLW+iwLkhwgvLoZDfjYfoFNu8ftMoXINzwuymNLd9u/KmwtdT2GbR+/Cz66otEGEVVUHX9QLQ==
 
-intl-tel-input@26.9.1:
-  version "26.9.1"
-  resolved "https://registry.yarnpkg.com/intl-tel-input/-/intl-tel-input-26.9.1.tgz#353c353f54983520e566ebe2d333db8785c4e750"
-  integrity sha512-Q8Erv3PJcgJlvdvKiBl3x/0adeXSCyRc0pI7XpQdsgK6ld90EDwImI9bHq7dMsGAr7UYnKCMa5A7B3rk+ZSstA==
+intl-tel-input@26.9.2:
+  version "26.9.2"
+  resolved "https://registry.yarnpkg.com/intl-tel-input/-/intl-tel-input-26.9.2.tgz#bb70af54d8fd81eefb3c5dd4edc4b47e98d4f40b"
+  integrity sha512-40v/uBlE7Wpg3Dz79T1AaE9eH66D86fCXucnI8UVCayypG91lBDyoXLXb7WAQuAdjLtB2+OuTJtlihjByWYL1g==
 
 ip-address@^9.0.5:
   version "9.0.5"
