@@ -2420,10 +2420,10 @@ good-listener@^1.2.2:
   dependencies:
     delegate "^3.1.2"
 
-got@15.0.0:
-  version "15.0.0"
-  resolved "https://registry.yarnpkg.com/got/-/got-15.0.0.tgz#7e9cd70ac72e1681e85b94514be23eed3c5dfebb"
-  integrity sha512-CUqLG9oFZRis7SZq5Bcxh42LpzxXgXwxWVwNljo60oki8Cq3GXVRpDY2K4GwTzYz3htyXf212nfNg2socz4esQ==
+got@15.0.1:
+  version "15.0.1"
+  resolved "https://registry.yarnpkg.com/got/-/got-15.0.1.tgz#c7b76d3260a112fda8b5402fa7c7fb2b5477b069"
+  integrity sha512-InYCBboAj9YmFiMcxbIRQ/WPoLsKSc9t9EGaUjGENtxunnx8USWtRY/SO/V3VsHLfDvUxAO2Qmx+6fQyG1jjaw==
   dependencies:
     "@sindresorhus/is" "^7.2.0"
     byte-counter "^0.1.0"
