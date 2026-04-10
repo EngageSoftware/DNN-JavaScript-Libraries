@@ -614,7 +614,7 @@
     "@types/expect" "^1.20.4"
     "@types/node" "*"
 
-"@types/vinyl@^2.0.7", "@types/vinyl@^2.0.8":
+"@types/vinyl@^2.0.7":
   version "2.0.9"
   resolved "https://registry.npmjs.org/@types/vinyl/-/vinyl-2.0.9.tgz"
   integrity sha512-KCr4aTEUkzSF89qw09e2oxsC/RXXT3K5ZPv4gvj3XTiWVrxNoi7WrqNTahNE/Hul5C9z3B8w+yWNTQgua12oag==
@@ -1619,6 +1619,15 @@ default-uid@^2.0.0:
   resolved "https://registry.yarnpkg.com/default-uid/-/default-uid-2.0.0.tgz#5f18eddc3299c88a55eb37d88286d7acd1d64455"
   integrity sha512-aMYTP7vinmUN/dR5n9JUNCB85jy+N+41jx53lMzR6DyGE6NeVPIxCPGbWjDYVNjz6Ei8C9hyeYAfuxVOe3UdsQ==
 
+define-data-property@^1.0.1:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/define-data-property/-/define-data-property-1.1.4.tgz#894dc141bb7d3060ae4366f6a0107e68fbe48c5e"
+  integrity sha512-rBMvIzlpA8v6E+SJZoo++HAYqsLrkg7MSfIinMPFhmkorw7X+dOXVJQs+QT69zGkzMyfDnIMN2Wid1+NbL3T+A==
+  dependencies:
+    es-define-property "^1.0.0"
+    es-errors "^1.3.0"
+    gopd "^1.0.1"
+
 define-lazy-prop@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/define-lazy-prop/-/define-lazy-prop-3.0.0.tgz#dbb19adfb746d7fc6d734a06b72f4a00d021255f"
@@ -1630,6 +1639,15 @@ define-properties@^1.1.3:
   integrity sha512-3MqfYKj2lLzdMSf8ZIZE/V+Zuy+BgD6f164e8K2w7dgnpKArBDerGYpM46IYYcjnkdPNMjPk9A6VFB8+3SKlXQ==
   dependencies:
     object-keys "^1.0.12"
+
+define-properties@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/define-properties/-/define-properties-1.2.1.tgz#10781cc616eb951a80a034bafcaa7377f6af2b6c"
+  integrity sha512-8QmQKqEASLd5nx0U1B1okLElbUuuttJ/AnYmRXbbbGDWh6uS208EjD4Xqq/I9wK7u0v6O08XhTWnt5XtEbR6Dg==
+  dependencies:
+    define-data-property "^1.0.1"
+    has-property-descriptors "^1.0.0"
+    object-keys "^1.1.1"
 
 del@8.0.1:
   version "8.0.1"
@@ -1790,6 +1808,16 @@ errno@^0.1.1:
   integrity sha512-MfrRBDWzIWifgq6tJj60gkAwtLNb6sQPlcFrSOflcP1aFmmruKQ2wRnze/8V6kgyz7H3FF8Npzv78mZ7XLLflg==
   dependencies:
     prr "~1.0.1"
+
+es-define-property@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/es-define-property/-/es-define-property-1.0.1.tgz#983eb2f9a6724e9303f61addf011c72e09e0b0fa"
+  integrity sha512-e3nRfgfUZ4rNGL232gUgX06QNyyez04KdjFrF+LTRoOXmrOgFKDg4BCdsjW8EnT69eqdYGmRpJwiPVYNrCaW3g==
+
+es-errors@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/es-errors/-/es-errors-1.3.0.tgz#05f75a25dab98e4fb1dcd5e1472c0546d5057c8f"
+  integrity sha512-Zf5H2Kxt2xjTvbJvP2ZWLEICxA6j+hAmMzIlypy4xcBg1vKVnx89Wy0GbS+kf5cwCVFFzdCFh2XSCFNULS6csw==
 
 es6-error@^4.1.1:
   version "4.1.1"
@@ -2348,6 +2376,16 @@ global-agent@^3.0.0:
     semver "^7.3.2"
     serialize-error "^7.0.1"
 
+global-agent@^4.1.3:
+  version "4.1.3"
+  resolved "https://registry.yarnpkg.com/global-agent/-/global-agent-4.1.3.tgz#318a8a132fcf76c74adb27de2e1466d7e9241125"
+  integrity sha512-KUJEViiuFT3I97t+GYMikLPJS2Lfo/S2F+DQuBWzuzaMPnvt5yyZePzArx36fBzpGTxZjIpDbXLeySLgh+k76g==
+  dependencies:
+    globalthis "^1.0.2"
+    matcher "^4.0.0"
+    semver "^7.3.5"
+    serialize-error "^8.1.0"
+
 global-directory@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/global-directory/-/global-directory-4.0.1.tgz#4d7ac7cfd2cb73f304c53b8810891748df5e361e"
@@ -2382,6 +2420,14 @@ globalthis@^1.0.1:
   dependencies:
     define-properties "^1.1.3"
 
+globalthis@^1.0.2:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/globalthis/-/globalthis-1.0.4.tgz#7430ed3a975d97bfb59bcce41f5cabbafa651236"
+  integrity sha512-DpLKbNU4WylpxJykQujfCcwYWiV/Jhm50Goo0wrVILAv5jOr9d+H+UR3PhSCD2rCCEIg0uc+G+muBTwD54JhDQ==
+  dependencies:
+    define-properties "^1.2.1"
+    gopd "^1.0.1"
+
 globby@^14.0.2:
   version "14.0.2"
   resolved "https://registry.npmjs.org/globby/-/globby-14.0.2.tgz"
@@ -2394,10 +2440,10 @@ globby@^14.0.2:
     slash "^5.1.0"
     unicorn-magic "^0.1.0"
 
-globby@^16.1.1:
-  version "16.1.1"
-  resolved "https://registry.yarnpkg.com/globby/-/globby-16.1.1.tgz#a26012f57b819f0491c834dbf09f89b0ce6ba104"
-  integrity sha512-dW7vl+yiAJSp6aCekaVnVJxurRv7DCOLyXqEG3RYMYUg7AuJ2jCqPkZTA8ooqC2vtnkaMcV5WfFBMuEnTu1OQg==
+globby@^16.2.0:
+  version "16.2.0"
+  resolved "https://registry.yarnpkg.com/globby/-/globby-16.2.0.tgz#6ab1351fbac1d9b9e47ed423814c2ad41af308ea"
+  integrity sha512-QrJia2qDf5BB/V6HYlDTs0I0lBahyjLzpGQg3KT7FnCdTonAyPy2RtY802m2k4ALx6Dp752f82WsOczEVr3l6Q==
   dependencies:
     "@sindresorhus/merge-streams" "^4.0.0"
     fast-glob "^3.3.3"
@@ -2419,6 +2465,11 @@ good-listener@^1.2.2:
   integrity sha1-1TswzfkxPf+33JoNR3CWqm0UXFA=
   dependencies:
     delegate "^3.1.2"
+
+gopd@^1.0.1:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/gopd/-/gopd-1.2.0.tgz#89f56b8217bdbc8802bd299df6d7f1081d7e51a1"
+  integrity sha512-ZUKRh6/kUFoAiTAtTYPZJ3hw9wNxx+BIBOijnlG9PnrJsCcSjs1wyyD6vJpaYtgnzDrKYRSqf3OO6Rfa93xsRg==
 
 got@15.0.1:
   version "15.0.1"
@@ -2537,6 +2588,13 @@ has-flag@^4.0.0:
   version "4.0.0"
   resolved "https://registry.npmjs.org/has-flag/-/has-flag-4.0.0.tgz"
   integrity sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==
+
+has-property-descriptors@^1.0.0:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/has-property-descriptors/-/has-property-descriptors-1.0.2.tgz#963ed7d071dc7bf5f084c5bfbe0d1b6222586854"
+  integrity sha512-55JNKuIW+vq4Ke1BjOTjM2YctQIvCT7GFzHwmfZPGo5wnrgkid0YQtnAleFSqumZm4az3n2BS+erby5ipJdgrg==
+  dependencies:
+    es-define-property "^1.0.0"
 
 hasown@^2.0.0:
   version "2.0.0"
@@ -3294,7 +3352,7 @@ locutus@^2.0.11:
   resolved "https://registry.yarnpkg.com/locutus/-/locutus-2.0.39.tgz#080277b4c766fdc58c053ecfdbd2ad7254db9d85"
   integrity sha512-v2iub44UtGpbIv+pFkkYhZ+JsbIM0bJsQcQ1+VayUNGVA/YhM8+CkBiRACcpuuE9Q0xI1pgNzGNwzZDCp1MCww==
 
-lodash-es@^4.17.21, lodash-es@^4.17.23:
+lodash-es@^4.17.21, lodash-es@^4.17.23, lodash-es@^4.18.1:
   version "4.18.1"
   resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.18.1.tgz#b962eeb80d9d983a900bf342961fb7418ca10b1d"
   integrity sha512-J8xewKD/Gk22OZbhpOVSwcs60zhd95ESDwezOFuA3/099925PdHJ7OFHNTGtajL3AlZkykD32HykiMo+BIBI8A==
@@ -3309,7 +3367,7 @@ lodash.isequal@^4.5.0:
   resolved "https://registry.yarnpkg.com/lodash.isequal/-/lodash.isequal-4.5.0.tgz#415c4478f2bcc30120c22ce10ed3226f7d3e18e0"
   integrity sha512-pDo3lu8Jhfjqls6GkMgpahsF9kCyayhgykjyLMNFTKWrpVdAQtYyB4muAMWozBB4ig/dtWAmsMxLEI8wuz+DYQ==
 
-lodash@4.18.1, lodash@^4.17.23:
+lodash@4.18.1, lodash@^4.18.1:
   version "4.18.1"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.18.1.tgz#ff2b66c1f6326d59513de2407bf881439812771c"
   integrity sha512-dMInicTPVE8d1e5otfwmmjlxkZoUpiVLwyeTdUsi/Caj/gfzzblBcCE5sRHV/AsjuCmxWrte2TNGSYuCeCq+0Q==
@@ -3429,6 +3487,13 @@ matcher@^3.0.0:
   dependencies:
     escape-string-regexp "^4.0.0"
 
+matcher@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/matcher/-/matcher-4.0.0.tgz#a42a05a09aaed92e2d241eb91fddac689461ea51"
+  integrity sha512-S6x5wmcDmsDRRU/c2dkccDwQPXoFczc5+HpQ2lON8pnvHlnvHAHj5WlLVvw6n6vNyHuVugYrFohYxbS+pvFpKQ==
+  dependencies:
+    escape-string-regexp "^4.0.0"
+
 mem-fs-editor@^12.0.2:
   version "12.0.2"
   resolved "https://registry.yarnpkg.com/mem-fs-editor/-/mem-fs-editor-12.0.2.tgz#f7411cb5c2d5effb1e799cf134cb648e2cf8a30b"
@@ -3449,14 +3514,34 @@ mem-fs-editor@^12.0.2:
     tinyglobby "^0.2.15"
     vinyl "^3.0.1"
 
-mem-fs@^4.1.2:
-  version "4.1.2"
-  resolved "https://registry.yarnpkg.com/mem-fs/-/mem-fs-4.1.2.tgz#9c09d1344d88968e940b0e3366048ed8973bb78a"
-  integrity sha512-CMwusHK+Kz0tu1qjgbd0rwcJxzgg76jlkPpqK+pDTv8Hth8JyM7JlgxNWaAFRKe969HATPTz/sp8T63QflyI+w==
+mem-fs-editor@^12.0.3:
+  version "12.0.3"
+  resolved "https://registry.yarnpkg.com/mem-fs-editor/-/mem-fs-editor-12.0.3.tgz#6c73144630442609f03cfb02aeaaba38891d0f79"
+  integrity sha512-RVfJmfthkI/2b8Woy0r1HXAq/vKbnIyvfn7y7JdKO9sngIwYKARvqf/XrdOr2eokn+shQi7TLwXHB0ZyMTnjog==
+  dependencies:
+    "@types/ejs" "^3.1.5"
+    "@types/picomatch" "^4.0.2"
+    binaryextensions "^6.11.0"
+    commondir "^1.0.1"
+    debug "^4.4.3"
+    deep-extend "^0.6.0"
+    ejs "^4.0.1"
+    isbinaryfile "5.0.7"
+    minimatch "^10.2.4"
+    multimatch "^8.0.0"
+    normalize-path "^3.0.0"
+    textextensions "^6.11.0"
+    tinyglobby "^0.2.15"
+    vinyl "^3.0.1"
+
+mem-fs@^4.1.4:
+  version "4.1.4"
+  resolved "https://registry.yarnpkg.com/mem-fs/-/mem-fs-4.1.4.tgz#4835fe66b98dbc5ae2a3bffd58dc2a974f8372f2"
+  integrity sha512-NlRHmUiEcxDHI7FeDlrrTZP5YFvnoS74wEf5OrQ7NAg83B2Rv3oF+FWr961I0rVdxkKbZMjq2BcV7VFWGFPkog==
   dependencies:
     "@types/node" ">=18"
-    "@types/vinyl" "^2.0.8"
-    vinyl "^3.0.0"
+    "@types/vinyl" "^2.0.12"
+    vinyl "^3.0.1"
     vinyl-file "^5.0.0"
 
 mem@^5.1.0:
@@ -3872,7 +3957,7 @@ object-assign@^4.0.1:
   resolved "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz"
   integrity sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM=
 
-object-keys@^1.0.12:
+object-keys@^1.0.12, object-keys@^1.1.1:
   version "1.1.1"
   resolved "https://registry.npmjs.org/object-keys/-/object-keys-1.1.1.tgz"
   integrity sha512-NuAESUOUMrlIXOfHKzD6bpPu3tYt3xvjNdRIQ+FeT0lNb4K8WR70CaDxhuNguS2XG+GjkyMwOzsN5ZktImfhLA==
@@ -4733,6 +4818,13 @@ serialize-error@^7.0.1:
   dependencies:
     type-fest "^0.13.1"
 
+serialize-error@^8.1.0:
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/serialize-error/-/serialize-error-8.1.0.tgz#3a069970c712f78634942ddd50fbbc0eaebe2f67"
+  integrity sha512-3NnuWfM6vBYoy5gZFvHiYsVbafvI9vZv/+jlIigFn4oP4zjNPK3LhcY0xSCgeb1a5L8jO71Mit9LlNoi2UfDDQ==
+  dependencies:
+    type-fest "^0.20.2"
+
 setimmediate@^1.0.5:
   version "1.0.5"
   resolved "https://registry.npmjs.org/setimmediate/-/setimmediate-1.0.5.tgz"
@@ -5288,6 +5380,11 @@ type-fest@^0.13.1:
   resolved "https://registry.npmjs.org/type-fest/-/type-fest-0.13.1.tgz"
   integrity sha512-34R7HTnG0XIJcBSn5XhDd7nNFPRcXYRZrBB2O2jdKqYODldSzBAqzsWoZYYvduky73toYS/ESqxPvkDf/F0XMg==
 
+type-fest@^0.20.2:
+  version "0.20.2"
+  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.20.2.tgz#1bf207f4b28f91583666cb5fbd327887301cd5f4"
+  integrity sha512-Ne+eE4r0/iWnpAxD852z3A+N0Bt5RN//NjJwRd2VFHEmrywxf5vsZlh4R6lixl6B+wz/8d+maTSAkN1FIkI3LQ==
+
 type-fest@^4.18.2, type-fest@^4.21.0, type-fest@^4.39.1, type-fest@^4.6.0:
   version "4.41.0"
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-4.41.0.tgz#6ae1c8e5731273c2bf1f58ad39cbae2c91a46c58"
@@ -5775,10 +5872,10 @@ yeoman-doctor@^6.0.0:
     semver "^7.7.2"
     twig "^1.17.1"
 
-yeoman-environment@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/yeoman-environment/-/yeoman-environment-6.0.0.tgz#e4401f2070d449d2bcfc1b60cafb601c15c882b9"
-  integrity sha512-FhVZ9bmA7Glu0M0Vfk5qR7obl27cUzdXEEvmtWAdzDSEub8mdTyElC7bxn7lwrrsLYmXYG+iN9G5xzcLky7d0w==
+yeoman-environment@^6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/yeoman-environment/-/yeoman-environment-6.0.1.tgz#fef33af4eedd77604155a9b219cfce78bee6079f"
+  integrity sha512-038Feg5aE77uOr7XKW5HYIV3Issw4aJBWAml6ndQotDeghomLuiFJxrZNoJohV+TJdhBy4KzlSsDB0gb4u3wSQ==
   dependencies:
     "@yeoman/adapter" "^4.0.2"
     "@yeoman/conflicter" "^4.0.1"
@@ -5791,12 +5888,12 @@ yeoman-environment@^6.0.0:
     debug "^4.4.3"
     execa "^9.6.1"
     fly-import "^1.0.0"
-    globby "^16.1.1"
+    globby "^16.2.0"
     grouped-queue "^2.1.0"
     locate-path "^8.0.0"
-    lodash-es "^4.17.23"
-    mem-fs "^4.1.2"
-    mem-fs-editor "^12.0.2"
+    lodash-es "^4.18.1"
+    mem-fs "^4.1.4"
+    mem-fs-editor "^12.0.3"
     semver "^7.7.4"
     slash "^5.1.0"
     untildify "^6.0.0"
@@ -5824,10 +5921,10 @@ yeoman-generator@^8.1.2:
     text-table "^0.2.0"
     type-fest "^5.4.4"
 
-yo@^7.0.0:
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/yo/-/yo-7.0.0.tgz#e723ea26a394f1085c8484aec2f1fc514ec19d1c"
-  integrity sha512-yw9L3re6RvOjKlDZmf5zxJT7WCESK1RyFAZ3clTBP7SYfg6erYwdiwibzJ7XecFkdgyHkOEF41lwiQUtfKxzbA==
+yo@^7.0.1:
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/yo/-/yo-7.0.1.tgz#f673f45f93f29bb4bd91448900650e1f9da401d6"
+  integrity sha512-HQcOYtTvDJ7BgUFv6aTKZ/QwFLQvpolfXjhK39sztfmHZov5rT6YMb3IULbBYiq678S8VpEpFc3tTtETnUxAiQ==
   dependencies:
     "@yeoman/adapter" "^4.0.2"
     "@yeoman/types" "^1.10.3"
@@ -5837,9 +5934,9 @@ yo@^7.0.0:
     cross-spawn "^7.0.6"
     figures "^6.1.0"
     fullname "^5.0.0"
-    global-agent "^3.0.0"
+    global-agent "^4.1.3"
     humanize-string "^3.1.0"
-    lodash "^4.17.23"
+    lodash "^4.18.1"
     meow "^14.1.0"
     npm-keyword "^8.0.0"
     open "^11.0.0"
@@ -5853,7 +5950,7 @@ yo@^7.0.0:
     update-notifier "^7.3.1"
     yeoman-character "^2.0.0"
     yeoman-doctor "^6.0.0"
-    yeoman-environment "^6.0.0"
+    yeoman-environment "^6.0.1"
     yosay "^3.0.0"
 
 yocto-queue@^1.0.0:
