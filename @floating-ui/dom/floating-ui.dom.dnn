@@ -1,9 +1,9 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="popper" type="JavaScript_Library" version="<~=version~>">
-      <friendlyName>Popper</friendlyName>
+    <package name="floating-ui.dom" type="JavaScript_Library" version="<~=version~>">
+      <friendlyName>Floating UI DOM</friendlyName>
       <description>
-        <![CDATA[Tooltip & Popover Positioning Engine]]>
+        <![CDATA[This is the library to use Floating UI on the web, wrapping @floating-ui/core with DOM interface logic.]]>
       </description>
       <owner>
         <name>Engage Software</name>
@@ -14,28 +14,30 @@
       <license src="LICENSE.htm" />
       <releaseNotes src="CHANGES.htm" />
       <azureCompatible>true</azureCompatible>
-      <dependencies></dependencies>
+      <dependencies>
+        <dependency type="managedPackage" version="<~=version~>">floating-ui.core</dependency>
+      </dependencies>
       <components>
         <component type="JavaScript_Library">
           <javaScriptLibrary>
-            <libraryName>popper</libraryName>
-            <fileName>popper.min.js</fileName>
+            <libraryName>floating-ui.dom</libraryName>
+            <fileName>floating-ui.dom.umd.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <objectName>Popper</objectName>
-            <cdnUrl>https://cdn.jsdelivr.net/npm/@popperjs/core@<~=version~>/dist/umd/popper.min.js</cdnUrl>
+            <objectName>FloatingUIDOM</objectName>
+            <cdnUrl>https://cdn.jsdelivr.net/npm/@floating-ui/dom@<~=version~>/dist/floating-ui.dom.umd.min.js</cdnUrl>
           </javaScriptLibrary>
         </component>
         <component type="JavaScriptFile">
           <jsfiles>
-            <libraryFolderName>popper</libraryFolderName>
+            <libraryFolderName>floating-ui.dom</libraryFolderName>
             <jsfile>
-              <name>popper.min.js</name>
+              <name>floating-ui.dom.umd.min.js</name>
             </jsfile>
           </jsfiles>
         </component>
         <component type="ResourceFile">
           <resourceFiles>
-            <basePath>Resources\Libraries\popper\<~=versionFolder~></basePath>
+            <basePath>Resources\Libraries\floating-ui.dom\<~=versionFolder~></basePath>
             <resourceFile>
               <name>Resources.zip</name>
             </resourceFile>

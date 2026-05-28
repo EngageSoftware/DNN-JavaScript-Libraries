@@ -1,7 +1,0 @@
-{
-	"files": ["node_modules/@popperjs/core/dist/umd/popper.min.js"],
-	"resources": [
-		"node_modules/@popperjs/core/dist/umd/*.js",
-		"node_modules/@popperjs/core/dist/umd/*.map"
-	]
-}

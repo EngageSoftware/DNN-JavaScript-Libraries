@@ -1,0 +1,47 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="floating-ui.core" type="JavaScript_Library" version="<~=version~>">
+      <friendlyName>Floating UI Core</friendlyName>
+      <description>
+        <![CDATA[This is the platform-agnostic core of Floating UI, exposing the main computePosition function but no platform interface logic.]]>
+      </description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>https://engagesoftware.com/</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes src="CHANGES.htm" />
+      <azureCompatible>true</azureCompatible>
+      <dependencies></dependencies>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>floating-ui.core</libraryName>
+            <fileName>floating-ui.core.umd.min.js</fileName>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+            <objectName>FloatingUICore</objectName>
+            <cdnUrl>https://cdn.jsdelivr.net/npm/@floating-ui/core@<~=version~>/dist/floating-ui.core.umd.min.js</cdnUrl>
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName>floating-ui.core</libraryFolderName>
+            <jsfile>
+              <name>floating-ui.core.umd.min.js</name>
+            </jsfile>
+          </jsfiles>
+        </component>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>Resources\Libraries\floating-ui.core\<~=versionFolder~></basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>

@@ -1,0 +1,9 @@
+{
+	"files": [
+		"node_modules/@floating-ui/core/dist/floating-ui.core.umd.min.js"
+	],
+	"resources": [
+		"node_modules/@floating-ui/core/dist/*.js",
+		"node_modules/@floating-ui/core/dist/*.mjs"
+	]
+}
