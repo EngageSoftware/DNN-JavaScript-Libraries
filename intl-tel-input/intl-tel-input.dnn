@@ -20,7 +20,7 @@
             <libraryName>intl-tel-input</libraryName>
             <fileName>intlTelInput.min.js</fileName>
             <preferredScriptLocation>BodyBottom</preferredScriptLocation>
-            <CDNPath>https://cdn.jsdelivr.net/npm/intl-tel-input@<~=version~>/build/js/intlTelInput.min.js</CDNPath>
+            <CDNPath>https://cdn.jsdelivr.net/npm/intl-tel-input@<~=version~>/dist/js/intlTelInput.min.js</CDNPath>
             <objectName>intlTelInput</objectName>
           </javaScriptLibrary>
         </component>
