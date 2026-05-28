@@ -62,20 +62,20 @@ export function getLibraries() {
  * @param {object} library - A library object
  * @returns {Promise} A Promise which returns a Map with available version upgrades
  */
-export function getUpgradeVersions(library) {
-	return packageJson(library.name, {
+export async function getUpgradeVersions(library) {
+	const { versions } = await packageJson(library.name, {
 		allVersions: true,
-	}).then(({ versions }) =>
-		Object.keys(versions)
-			.filter((version) => semver.gt(version, library.version))
-			.sort(semver.compare)
-			.reduce(
-				(upgrades, version) =>
-					upgrades.set(
-						semver.diff(version, library.version),
-						version
-					),
-				new Map()
-			)
-	);
+	});
+	return Object.keys(versions)
+		.filter(
+			(version) =>
+				semver.gt(version, library.version) &&
+				semver.prerelease(version) === null
+		)
+		.sort(semver.compare)
+		.reduce(
+			(upgrades, version) =>
+				upgrades.set(semver.diff(version, library.version), version),
+			new Map()
+		);
 }

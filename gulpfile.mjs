@@ -24,8 +24,8 @@ const libraries = getLibraries();
  *
  * @returns {Promise} A Promise which resolves when the folder is deleted
  */
-function clean() {
-	return deleteAsync('./_InstallPackages/');
+async function clean() {
+	return await deleteAsync('./_InstallPackages/');
 }
 
 /**
@@ -98,29 +98,22 @@ const defaultTask = gulp.series(
  *
  * @returns {Promise} A promise which resolves when the outdated table is complete
  */
-function outdated() {
-	const allUpgradesPromises = libraries.map((library) =>
-		getUpgradeVersions(library).then((upgrades) =>
-			Object.assign(library, { upgrades })
-		)
-	);
-
-	return Promise.all(allUpgradesPromises).then((allUpgrades) => {
-		const validUpgrades = allUpgrades
-			.filter(({ upgrades }) => upgrades.size > 0)
-			.sort(({ name: a }, { name: b }) => compareStrings(a, b));
-
-		if (validUpgrades.length === 0) {
-			log.warn(
-				`All ${chalk.yellow(allUpgrades.length)} packages up-to-date`
-			);
-
-			return;
-		}
-
-		log.info(`
-${formatPackageUpgrades(validUpgrades)}`);
+async function outdated() {
+	const allUpgradesPromises = libraries.map(async (library) => {
+		const upgrades = await getUpgradeVersions(library);
+		return Object.assign(library, { upgrades });
 	});
+
+	const allUpgrades = await Promise.all(allUpgradesPromises);
+	const validUpgrades = allUpgrades
+		.filter(({ upgrades }) => upgrades.size > 0)
+		.sort(({ name: a }, { name: b }) => compareStrings(a, b));
+	if (validUpgrades.length === 0) {
+		log.warn(`All ${chalk.yellow(allUpgrades.length)} packages up-to-date`);
+		return;
+	}
+	log.info(`
+${formatPackageUpgrades(validUpgrades)}`);
 }
 
 /**
@@ -130,89 +123,83 @@ ${formatPackageUpgrades(validUpgrades)}`);
  * @returns {Task} A Gulp task function
  */
 function makeUpgradeTask(upgradeType) {
-	const upgradeFn = () => {
+	const upgradeFn = async () => {
 		const allUpgradesPromises = libraries.map((library) =>
 			getUpgradeVersions(library).then((upgrades) =>
 				Object.assign(library, { upgrades })
 			)
 		);
 
-		return Promise.all(allUpgradesPromises).then((allUpgrades) => {
-			const validUpgrades = allUpgrades.filter(({ upgrades }) =>
-				upgrades.get(upgradeType)
-			);
+		const allUpgrades = await Promise.all(allUpgradesPromises);
+		const validUpgrades = allUpgrades.filter(({ upgrades: upgrades_1 }) =>
+			upgrades_1.get(upgradeType)
+		);
+		if (validUpgrades.length === 0) {
+			log.warn(`No ${upgradeType} upgrades to process`);
 
-			if (validUpgrades.length === 0) {
-				log.warn(`No ${upgradeType} upgrades to process`);
-
-				return;
-			}
-
-			const upgradeWarnings = validUpgrades.map(
-				({ name, version, upgrades, manifest }) => {
-					const newVersion = upgrades.get(upgradeType);
-					log(
-						`Upgrading ${chalk.magenta(name)} from ${chalk.yellow(
-							version
-						)} to ${chalk.yellow(newVersion)}`
-					);
-
-					spawn.sync(
-						'yarn',
-						[
-							'upgrade',
-							'--exact',
-							'--non-interactive',
-							`${name}@${newVersion}`,
-						],
-						{
-							stdio: 'inherit',
-						}
-					);
-					spawn.sync(
-						'git',
-						[
-							'commit',
-							'--all',
-							'--message',
-							`Upgrade ${name} to ${newVersion} (from ${version})`,
-						],
-						{ stdio: 'inherit' }
-					);
-					spawn.sync(
-						'git',
-						[
-							'tag',
-							'--message',
-							`Automatic ${upgradeType} upgrade of ${name} to ${newVersion} (from ${version})`,
-							`${name}_${newVersion}`,
-						],
-						{ stdio: 'inherit' }
-					);
-
-					const fileGlobs = manifest.files.concat(
-						manifest.resources || []
-					);
-					const hasExtraFiles = fileGlobs.some(
-						(f) => f[0] !== '!' && !f.startsWith('node_modules')
-					);
-
-					return hasExtraFiles ? name : null;
-				}
-			);
-
-			upgradeWarnings
-				.filter((libraryName) => libraryName !== null)
-				.forEach((libraryName) =>
-					log.warn(
-						`The library ${chalk.magenta(
-							libraryName
-						)} has some resources that do not come from ${chalk.gray(
-							'node_modules'
-						)}, please verify that the upgrade was complete`
-					)
+			return;
+		}
+		const upgradeWarnings = validUpgrades.map(
+			({ name, version, upgrades: upgrades_2, manifest }) => {
+				const newVersion = upgrades_2.get(upgradeType);
+				log(
+					`Upgrading ${chalk.magenta(name)} from ${chalk.yellow(
+						version
+					)} to ${chalk.yellow(newVersion)}`
 				);
-		});
+
+				spawn.sync(
+					'yarn',
+					[
+						'upgrade',
+						'--exact',
+						'--non-interactive',
+						`${name}@${newVersion}`,
+					],
+					{
+						stdio: 'inherit',
+					}
+				);
+				spawn.sync(
+					'git',
+					[
+						'commit',
+						'--all',
+						'--message',
+						`Upgrade ${name} to ${newVersion} (from ${version})`,
+					],
+					{ stdio: 'inherit' }
+				);
+				spawn.sync(
+					'git',
+					[
+						'tag',
+						'--message',
+						`Automatic ${upgradeType} upgrade of ${name} to ${newVersion} (from ${version})`,
+						`${name}_${newVersion}`,
+					],
+					{ stdio: 'inherit' }
+				);
+
+				const fileGlobs = manifest.files.concat(
+					manifest.resources || []
+				);
+				const hasExtraFiles = fileGlobs.some(
+					(f) => f[0] !== '!' && !f.startsWith('node_modules')
+				);
+
+				return hasExtraFiles ? name : null;
+			}
+		);
+		upgradeWarnings
+			.filter((libraryName) => libraryName !== null)
+			.forEach((libraryName_1) =>
+				log.warn(
+					`The library ${chalk.magenta(libraryName_1)} has some resources that do not come from ${chalk.gray(
+						'node_modules'
+					)}, please verify that the upgrade was complete`
+				)
+			);
 	};
 
 	upgradeFn.displayName = `Apply ${upgradeType} upgrades`;
