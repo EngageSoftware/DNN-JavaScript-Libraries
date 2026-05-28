@@ -1,0 +1,49 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="fancybox" type="JavaScript_Library" version="<~=version~>">
+      <friendlyName>fancybox</friendlyName>
+      <description>
+        <![CDATA[Touch enabled, responsive and fully customizable jQuery lightbox script]]>
+      </description>
+      <owner>
+        <name>Engage Software</name>
+        <organization>Engage Software</organization>
+        <url>https://engagesoftware.com/</url>
+        <email>support@engagesoftware.com</email>
+      </owner>
+      <license src="LICENSE.htm" />
+      <releaseNotes src="CHANGES.htm" />
+      <azureCompatible>true</azureCompatible>
+      <dependencies>
+        <dependency type="managedPackage" version="1.9.1">jQuery</dependency>
+      </dependencies>
+      <components>
+        <component type="JavaScript_Library">
+          <javaScriptLibrary>
+            <libraryName>fancybox</libraryName>
+            <fileName>jquery.fancybox.min.js</fileName>
+            <preferredScriptLocation>BodyBottom</preferredScriptLocation>
+            <objectName>jQuery.fancybox</objectName>
+            <cdnUrl>https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@<~=version~>/dist/jquery.fancybox.min.js</cdnUrl>
+          </javaScriptLibrary>
+        </component>
+        <component type="JavaScriptFile">
+          <jsfiles>
+            <libraryFolderName>fancybox</libraryFolderName>
+            <jsfile>
+              <name>jquery.fancybox.min.js</name>
+            </jsfile>
+          </jsfiles>
+        </component>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>Resources\Libraries\fancybox\<~=versionFolder~></basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>

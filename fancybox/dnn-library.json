@@ -1,4 +1,0 @@
-{
-	"files": ["node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"],
-	"resources": ["node_modules/@fancyapps/fancybox/dist/*.css"]
-}

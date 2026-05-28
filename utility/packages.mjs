@@ -26,16 +26,10 @@ function resolveLibraryName(libraryPath) {
 		return name;
 	}
 
-	for (const libraryName of validLibraryNames) {
-		if (libraryName.endsWith(`/${name}`)) {
-			return libraryName;
-		}
-	}
-
-	for (const libraryName of validLibraryNames) {
-		if (libraryName.startsWith(`${name}/`)) {
-			return libraryName;
-		}
+	const orgName = path.basename(path.dirname(libraryPath));
+	const nameWithOrg = `${orgName}/${name}`;
+	if (validLibraryNames.has(nameWithOrg)) {
+		return nameWithOrg;
 	}
 
 	log.warn(chalk`Unable to find npm package name for {yellow ${name}}`);
@@ -49,7 +43,7 @@ function resolveLibraryName(libraryPath) {
  * @returns {object[]} An array of objects with path, manifest, name, and version
  */
 export function getLibraries() {
-	return globSync('*/dnn-library.json')
+	return globSync(['./*/dnn-library.json', './@*/*/dnn-library.json'])
 		.map((manifestPath) => ({
 			path: path.dirname(manifestPath),
 			manifest: JSON.parse(readFileSync(path.resolve(manifestPath))),
