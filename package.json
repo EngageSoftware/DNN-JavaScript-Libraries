@@ -14,6 +14,7 @@
 	"dependencies": {
 		"@fancyapps/fancybox": "3.5.7",
 		"@khanacademy/tota11y": "0.2.0",
+		"@popperjs/core": "2.11.8",
 		"@xmldom/xmldom": "^0.9.10",
 		"alpaca": "1.5.27",
 		"blob.js": "1.0.1",
@@ -66,7 +67,6 @@
 		"numeral": "2.0.6",
 		"pepjs": "0.5.3",
 		"picturefill": "3.0.3",
-		"popper.js": "1.16.1",
 		"pubsub-js": "1.9.5",
 		"quill": "2.0.3",
 		"respond.js": "1.4.2",

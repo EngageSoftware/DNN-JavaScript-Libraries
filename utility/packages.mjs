@@ -1,5 +1,5 @@
 import path from 'path';
-import {globSync} from 'glob';
+import { globSync } from 'glob';
 import semver from 'semver';
 import log from 'fancy-log';
 import chalk from 'chalk';
@@ -28,6 +28,12 @@ function resolveLibraryName(libraryPath) {
 
 	for (const libraryName of validLibraryNames) {
 		if (libraryName.endsWith(`/${name}`)) {
+			return libraryName;
+		}
+	}
+
+	for (const libraryName of validLibraryNames) {
+		if (libraryName.startsWith(`${name}/`)) {
 			return libraryName;
 		}
 	}
