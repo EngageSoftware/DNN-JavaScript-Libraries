@@ -2822,10 +2822,10 @@ interpret@^3.1.1:
   resolved "https://registry.npmjs.org/interpret/-/interpret-3.1.1.tgz"
   integrity sha512-6xwYfHbajpoF0xLW+iwLkhwgvLoZDfjYfoFNu8ftMoXINzwuymNLd9u/KmwtdT2GbR+/Cz66otEGEVVUHX9QLQ==
 
-intl-tel-input@29.0.2:
-  version "29.0.2"
-  resolved "https://registry.yarnpkg.com/intl-tel-input/-/intl-tel-input-29.0.2.tgz#d27a30b43fc948a8a5147f55d5f93af78ea81977"
-  integrity sha512-vlyjn/ticBWthAURS0pOZ6dud6zb3SItkAiLHEJ196s80Nj7B1MSQbgEF4PV8DLrA0HKFHwNup6mcIwt+gwqsw==
+intl-tel-input@29.0.3:
+  version "29.0.3"
+  resolved "https://registry.yarnpkg.com/intl-tel-input/-/intl-tel-input-29.0.3.tgz#dcb74e3eb266fecaa6006b5b811180f96563eb01"
+  integrity sha512-ghv9GrUtcp1IrhzRQ6QQ8MV6eu19iTXqwx1E5RcG1XubtbpdMdilF7lCg1RzikSPSdZc26NWOrQOmqbjCaKJ+A==
 
 ip-address@^9.0.5:
   version "9.0.5"
