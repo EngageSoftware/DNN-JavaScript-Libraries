@@ -5184,10 +5184,10 @@ sver@^1.8.3:
   optionalDependencies:
     semver "^6.3.0"
 
-swiper@14.0.0:
-  version "14.0.0"
-  resolved "https://registry.yarnpkg.com/swiper/-/swiper-14.0.0.tgz#57130f74835466945bf1316f76c7932f41fd54a6"
-  integrity sha512-F6DXjC+GKt8WGvutu+35FIZO9iZkde+XxDwFqfw0tlFijDwfG7DikHYUiFQKqIYEp25q8TQSqI3Nh2+bHxs2uA==
+swiper@14.0.1:
+  version "14.0.1"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-14.0.1.tgz#65fd8cededb1219dccff2daf22d22589d96df591"
+  integrity sha512-dibQY282S5rn6S9Ba+GTIvofyY4Qujy526a0cPaJnjR2S18Z7HMGKZBr8k/3ukboeKW/ig5h0q//7CYip0MCQw==
 
 systemjs@6.15.1:
   version "6.15.1"
