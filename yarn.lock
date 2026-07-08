@@ -5242,10 +5242,10 @@ sver@^1.8.3:
   optionalDependencies:
     semver "^6.3.0"
 
-swiper@14.0.1:
-  version "14.0.1"
-  resolved "https://registry.yarnpkg.com/swiper/-/swiper-14.0.1.tgz#65fd8cededb1219dccff2daf22d22589d96df591"
-  integrity sha512-dibQY282S5rn6S9Ba+GTIvofyY4Qujy526a0cPaJnjR2S18Z7HMGKZBr8k/3ukboeKW/ig5h0q//7CYip0MCQw==
+swiper@14.0.2:
+  version "14.0.2"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-14.0.2.tgz#4dee61865392d53e628accd0970aa0ccb88eb347"
+  integrity sha512-KRFQZP0zXUh6MEmSQOJKSw27ARqS884OX/dfBz4i2/It9aixL7svh7/Ng0yZ0FE+PrjrW5vzBcjCfmNnq109XQ==
 
 systemjs@6.15.1:
   version "6.15.1"
