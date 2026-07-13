@@ -14,7 +14,7 @@
 	"dependencies": {
 		"@fancyapps/fancybox": "3.5.7",
 		"@floating-ui/core": "1.7.5",
-		"@floating-ui/dom": "1.7.6",
+		"@floating-ui/dom": "1.8.0",
 		"@khanacademy/tota11y": "0.2.0",
 		"@xmldom/xmldom": "^0.9.10",
 		"alpaca": "1.5.27",
