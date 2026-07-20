@@ -1559,6 +1559,13 @@ dateformat@^5.0.3:
   resolved "https://registry.npmjs.org/dateformat/-/dateformat-5.0.3.tgz"
   integrity sha512-Kvr6HmPXUMerlLcLF+Pwq3K7apHpYmGDVqrxcDasBg86UcKeTSNWbEzU8bwdXnxnR44FtMhJAxI4Bov6Y/KUfA==
 
+debug@2:
+  version "2.6.9"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
+  integrity sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==
+  dependencies:
+    ms "2.0.0"
+
 debug@4, debug@^4.1.1, debug@^4.3.4, debug@^4.4.0, debug@^4.4.3:
   version "4.4.3"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.4.3.tgz#c6ae432d9bd9662582fce08709b038c58e9e3d6a"
@@ -2716,6 +2723,13 @@ humanize-string@^3.1.0:
   dependencies:
     decamelize "^6.0.0"
 
+iconv-lite@^0.4.4:
+  version "0.4.24"
+  resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.24.tgz#2022b4b25fbddc21d2f524974a474aafe733908b"
+  integrity sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==
+  dependencies:
+    safer-buffer ">= 2.1.2 < 3"
+
 iconv-lite@^0.6.2:
   version "0.6.2"
   resolved "https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.6.2.tgz"
@@ -2768,11 +2782,6 @@ image-map@2.0.1:
   version "2.0.1"
   resolved "https://registry.npmjs.org/image-map/-/image-map-2.0.1.tgz"
   integrity sha512-6SVn3CK7n4wtaWqW3vRSFvKKyQpChr7ADECmLTS9WsD4mTivkRgZ8OqfUBsg7bo5hm81oiO02aAyZ1dNu20xXQ==
-
-image-size@~0.5.0:
-  version "0.5.5"
-  resolved "https://registry.npmjs.org/image-size/-/image-size-0.5.5.tgz"
-  integrity sha1-Cd/Uq50g4p6xw+gLiZA3jfnjy5w=
 
 immediate@~3.0.5:
   version "3.0.6"
@@ -3314,20 +3323,20 @@ lead@^4.0.0:
   resolved "https://registry.npmjs.org/lead/-/lead-4.0.0.tgz"
   integrity sha512-DpMa59o5uGUWWjruMp71e6knmwKU3jRBBn1kjuLWN9EeIOxNeSAwvHf03WIl8g/ZMR2oSQC9ej3yeLBwdDc/pg==
 
-less@4.6.7:
-  version "4.6.7"
-  resolved "https://registry.yarnpkg.com/less/-/less-4.6.7.tgz#15adef08189a6d06ca16876ab2de174d18e3ac59"
-  integrity sha512-o3UxHBPPVY1HtCXx15/z1NlknQiWyafRNbtLEv+6xFaDRI2g2xPKIH43do9dSwt8bGLTsjNSaifa48N3d6odsQ==
+less@4.7.0:
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/less/-/less-4.7.0.tgz#78c2d42718338e89acb04c8424b26de469d56435"
+  integrity sha512-i7dAlT3+boO0mMh1G4cex0vz1lLAScmBbikm1VEDNv+cy0ore1CUo2UtX8m3N9QLE5WYDr4ISbiCRzHNGyFkrA==
   dependencies:
     copy-anything "^3.0.5"
     parse-node-version "^1.0.1"
   optionalDependencies:
     errno "^0.1.1"
     graceful-fs "^4.1.2"
-    image-size "~0.5.0"
     make-dir "^5.1.0"
     mime "^1.4.1"
     needle "^3.1.0"
+    probe-image-size "^7.2.3"
     source-map "~0.6.0"
 
 lie@3.3.0, lie@~3.3.0:
@@ -3390,6 +3399,11 @@ lodash.isequal@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.isequal/-/lodash.isequal-4.5.0.tgz#415c4478f2bcc30120c22ce10ed3226f7d3e18e0"
   integrity sha512-pDo3lu8Jhfjqls6GkMgpahsF9kCyayhgykjyLMNFTKWrpVdAQtYyB4muAMWozBB4ig/dtWAmsMxLEI8wuz+DYQ==
+
+lodash.merge@^4.6.2:
+  version "4.6.2"
+  resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.2.tgz#558aa53b43b661e1925a0afdfa36a9a1085fe57a"
+  integrity sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==
 
 lodash@4.18.1, lodash@^4.18.1:
   version "4.18.1"
@@ -3772,6 +3786,11 @@ moment@2.30.1, "moment@>= 2.6.0", moment@^2.10, moment@^2.29.4:
   resolved "https://registry.npmjs.org/moment/-/moment-2.30.1.tgz"
   integrity sha512-uEmtNhbDOrWPFS+hdjFCBfy9f2YoyzRpwcl+DqpC6taX21FzsTLQVbMV/W7PzNSX6x/bhC1zA3c2UQ5NzH6how==
 
+ms@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
+  integrity sha512-Tpp60P6IUJDTuOq/5Z8cdskzJujfwqfOTkrwIwj7IRISpnkJnT6SyJ4PCPnGMoFjC9ddhal5KVIYtAt97ix05A==
+
 ms@^2.1.1:
   version "2.1.2"
   resolved "https://registry.npmjs.org/ms/-/ms-2.1.2.tgz"
@@ -3800,6 +3819,15 @@ mute-stream@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-3.0.0.tgz#cd8014dd2acb72e1e91bb67c74f0019e620ba2d1"
   integrity sha512-dkEJPVvun4FryqBmZ5KhDo0K9iDXAwn08tMLDinNdRBNPcYEDiWYysLcc6k3mjTMlbP9KyylvRpd4wFtwrT9rw==
+
+needle@^2.5.2:
+  version "2.9.1"
+  resolved "https://registry.yarnpkg.com/needle/-/needle-2.9.1.tgz#22d1dffbe3490c2b83e301f7709b6736cd8f2684"
+  integrity sha512-6R9fqJ5Zcmf+uYaFgdIHmLwNldn5HbK8L5ybn7Uz+ylX/rnOsSp1AHcvQSrCaFN+qNM1wpymHqD7mVasEOlHGQ==
+  dependencies:
+    debug "^3.2.6"
+    iconv-lite "^0.4.4"
+    sax "^1.2.4"
 
 needle@^3.1.0:
   version "3.1.0"
@@ -4435,6 +4463,15 @@ printj@~1.3.1:
   resolved "https://registry.npmjs.org/printj/-/printj-1.3.1.tgz"
   integrity sha512-GA3TdL8szPK4AQ2YnOe/b+Y1jUFwmmGMMK/qbY7VcE3Z7FU8JstbKiKRzO6CIiAKPhTO8m01NoQ0V5f3jc4OGg==
 
+probe-image-size@^7.2.3:
+  version "7.3.0"
+  resolved "https://registry.yarnpkg.com/probe-image-size/-/probe-image-size-7.3.0.tgz#a07df2e2cffc1057026d5a1bda3a5b11ee970034"
+  integrity sha512-7CaDeBwiAbh6ohXsvLbAZhO7wzsZAmaevfxe39qvCwRh8LyaZfDlBGGLU1CCTgrTLtCOdwBBhjOrIHaIIimHfQ==
+  dependencies:
+    lodash.merge "^4.6.2"
+    needle "^2.5.2"
+    stream-parser "~0.3.1"
+
 proc-log@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/proc-log/-/proc-log-5.0.0.tgz#e6c93cf37aef33f835c53485f314f50ea906a9d8"
@@ -4772,7 +4809,7 @@ safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   resolved "https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.2.tgz"
   integrity sha512-Gd2UZBJDkXlY7GbJxfsE8/nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8LOIrt8ud/wPtojys4G6+g==
 
-"safer-buffer@>= 2.1.2 < 3.0.0":
+"safer-buffer@>= 2.1.2 < 3", "safer-buffer@>= 2.1.2 < 3.0.0":
   version "2.1.2"
   resolved "https://registry.npmjs.org/safer-buffer/-/safer-buffer-2.1.2.tgz"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
@@ -5033,6 +5070,13 @@ stream-exhaust@^1.0.2:
   version "1.0.2"
   resolved "https://registry.npmjs.org/stream-exhaust/-/stream-exhaust-1.0.2.tgz"
   integrity sha512-b/qaq/GlBK5xaq1yrK9/zFcyRSTNxmcZwFLGSTG0mXgZl/4Z6GgiyYOXOvY7N3eEvFRAG1bkDRz5EPGSvPYQlw==
+
+stream-parser@~0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/stream-parser/-/stream-parser-0.3.1.tgz#1618548694420021a1182ff0af1911c129761773"
+  integrity sha512-bJ/HgKq41nlKvlhccD5kaCr/P+Hu0wPNKPJOH7en+YrJu/9EgqUF+88w5Jb6KNcjOFMhfX4B2asfeAtIGuHObQ==
+  dependencies:
+    debug "2"
 
 streamx@^2.12.0, streamx@^2.13.2, streamx@^2.14.0:
   version "2.18.0"
