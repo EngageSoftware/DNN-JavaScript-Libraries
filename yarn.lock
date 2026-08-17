@@ -3114,10 +3114,10 @@ jake@^10.8.5:
     filelist "^1.0.1"
     minimatch "^3.0.4"
 
-jodit@4.13.17:
-  version "4.13.17"
-  resolved "https://registry.yarnpkg.com/jodit/-/jodit-4.13.17.tgz#b90c259215717525492056ce04f662936e283cdd"
-  integrity sha512-H002fRxtbTBSUGYHA3QHjSsqGXZXEoG9ikJgvdvPU3wmB9YFRhqUZkZo5zOo4Z7FpMmbjnzF559jovhv9HqMEA==
+jodit@4.13.22:
+  version "4.13.22"
+  resolved "https://registry.yarnpkg.com/jodit/-/jodit-4.13.22.tgz#54b4768eefe4831ddb58e00bc46e86d6a7c5def4"
+  integrity sha512-a4ln9N89xuz9z/evjezOlFpoPix7gQGxHyXc3JKFWSu3RSYsjC2cxz99wZhrvOIrXsdrs07msIeAgxnuJBEMCg==
 
 jquery-menu-aim@1.1.0:
   version "1.1.0"
