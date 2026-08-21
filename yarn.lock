@@ -1522,18 +1522,18 @@ cssesc@^3.0.0:
   resolved "https://registry.npmjs.org/cssesc/-/cssesc-3.0.0.tgz"
   integrity sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==
 
-datatables.net-buttons-dt@4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/datatables.net-buttons-dt/-/datatables.net-buttons-dt-4.0.1.tgz#cf0eaf9566d91519adb46fc8312e3f452f7485b4"
-  integrity sha512-PXh8vYDdvHsIdjTLkEzZWK8jmAU1DdxiWSo2GeVLbakSTph0TzmyDaD5MquJWkJdIq9g++2C9V5twC8Rcsucxw==
+datatables.net-buttons-dt@4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/datatables.net-buttons-dt/-/datatables.net-buttons-dt-4.0.2.tgz#62688b5ad789aa16e2f30f2b4a5d9ae51922db9a"
+  integrity sha512-c6eJvgSoyrO9gK39VojqvFaSISsdIrI9cATT0BC4jVG3q2h86iPN94INUsnaUksOe/4VZlsVpwqWDmdimmn+og==
   dependencies:
-    datatables.net-buttons "4.0.1"
+    datatables.net-buttons "4.0.2"
     datatables.net-dt "^3"
 
-datatables.net-buttons@4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/datatables.net-buttons/-/datatables.net-buttons-4.0.1.tgz#d392070766fb921359757cf935df47fe80735d0f"
-  integrity sha512-cEiqdM65THR7hpDgz9KZEZdPNorHxieTJPQYTVG5kpivxmK57tdkoYa5cdmvg99bSaLIYUfr9Rp/j7GCMjYQZA==
+datatables.net-buttons@4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/datatables.net-buttons/-/datatables.net-buttons-4.0.2.tgz#5d8418ed127eed3a1bfdb6af06a10b5d5100d8d5"
+  integrity sha512-u0+5wEVR8kDaZJHlu6TMKmLrho8mFenBEzrcYtwfENBtDr+tRwzl1SdnJbLVqadAokDrIltlChKfRaEkbE+sOg==
   dependencies:
     datatables.net "^3"
 
