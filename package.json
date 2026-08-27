@@ -104,7 +104,7 @@
 		"package-json": "^10.0.1",
 		"semver": "7.8.5",
 		"xpath.js": "1.1.0",
-		"yeoman-generator": "^8.2.2",
+		"yeoman-generator": "^8.3.0",
 		"yo": "^7.0.1"
 	}
 }
