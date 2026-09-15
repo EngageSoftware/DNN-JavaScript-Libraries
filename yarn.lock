@@ -1907,6 +1907,24 @@ evrythng@6.0.5:
     cross-fetch "^3.0.6"
     node-fetch "^2.6.1"
 
+execa@^10.0.1:
+  version "10.0.1"
+  resolved "https://registry.yarnpkg.com/execa/-/execa-10.0.1.tgz#7e5ed6cc9d5ac2cc4160036c624934137f0750ff"
+  integrity sha512-ge98qjkRK4IB7tL7Ju/6qmm5LHoH1eEMt5FNZrz3f4UIYhF28lggX20z3FaX1sgc67msLEn0N0BscOs29iuwyw==
+  dependencies:
+    "@sindresorhus/merge-streams" "^4.0.0"
+    figures "^6.1.0"
+    get-stream "^9.0.1"
+    human-signals "^8.0.1"
+    is-plain-obj "^4.1.0"
+    is-stream "^4.0.1"
+    npm-run-path "^6.0.0"
+    pretty-ms "^9.3.0"
+    signal-exit "^4.1.0"
+    strip-final-newline "^4.0.0"
+    which-command "^0.1.0"
+    yoctocolors "^2.1.2"
+
 execa@^5.1.1:
   version "5.1.1"
   resolved "https://registry.npmjs.org/execa/-/execa-5.1.1.tgz"
@@ -4437,6 +4455,13 @@ pretty-ms@^9.2.0:
   dependencies:
     parse-ms "^4.0.0"
 
+pretty-ms@^9.3.0:
+  version "9.3.1"
+  resolved "https://registry.yarnpkg.com/pretty-ms/-/pretty-ms-9.3.1.tgz#7b58d8fbf376f01602ff05230358e8fa5e0f072b"
+  integrity sha512-HzMy3Geq23nVALD/M2LliU+F+M+gVNsvkQWWqeBZ8HDiCgzo6YPJ/Omrmtq24EFrIsk0a3EkQGEd7bDOo+IhGA==
+  dependencies:
+    parse-ms "^4.0.0"
+
 printj@~1.1.0:
   version "1.1.2"
   resolved "https://registry.npmjs.org/printj/-/printj-1.1.2.tgz"
@@ -4849,7 +4874,7 @@ semver-truncate@^3.0.0:
   dependencies:
     semver "^7.3.5"
 
-semver@7.8.5, semver@^7.1.1, semver@^7.3.2, semver@^7.3.5, semver@^7.3.7, semver@^7.5.3, semver@^7.6.0, semver@^7.6.3, semver@^7.7.2, semver@^7.7.4:
+semver@7.8.5, semver@^7.1.1, semver@^7.3.2, semver@^7.3.5, semver@^7.3.7, semver@^7.5.3, semver@^7.6.0, semver@^7.6.3, semver@^7.7.2, semver@^7.7.4, semver@^7.8.5:
   version "7.8.5"
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.8.5.tgz#39b646037dd50c14fb451e7e4cac58ed8b863f69"
   integrity sha512-Y7/KDsb8LjooZpwaqGyulO6DQlksgCncchHGk+sZIY4SBvUocMBEFH5Ur1fI4dV+Jvl0w6cjvucaIi40puRioA==
@@ -4950,10 +4975,10 @@ socks@^2.8.3:
     ip-address "^9.0.5"
     smart-buffer "^4.2.0"
 
-sort-keys@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/sort-keys/-/sort-keys-6.0.0.tgz#46fccab1341c38ddd406f262d43a5237e9a58296"
-  integrity sha512-ueSlHJMwpIw42CJ4B11Uxzh/S0p0AlOyiNktlv2KOu5e1JpUE6DlC4AAUjXqesHdBRv/g0wC9Q4vwq0NP2pA9w==
+sort-keys@^6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/sort-keys/-/sort-keys-6.0.1.tgz#496d3f5ff9d42c45ba8ad5b500e9022f7e854e17"
+  integrity sha512-w7xWRu8U9MneKNna8ptG194jp9PLtbd/Rl6gwrmbK4yUeKbE66a64rHgl0iKTBBDr/hpanx7zMGP1Qo8MRkc/w==
   dependencies:
     is-plain-obj "^4.1.0"
 
@@ -5454,10 +5479,10 @@ type-fest@^4.18.2, type-fest@^4.21.0, type-fest@^4.39.1, type-fest@^4.6.0:
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-4.41.0.tgz#6ae1c8e5731273c2bf1f58ad39cbae2c91a46c58"
   integrity sha512-TeTSQ6H5YHvpqVwBRcnLDCBnDOHWYu7IvGbHT6N8AOymcr9PJGjc1GTtiWZTYg0NCgYwvnYWEkVChQAr9bjfwA==
 
-type-fest@^5.0.0, type-fest@^5.2.0, type-fest@^5.6.0:
-  version "5.6.0"
-  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-5.6.0.tgz#502f7a003b7309e96a7e17052cc2ab2c7e5c7a31"
-  integrity sha512-8ZiHFm91orbSAe2PSAiSVBVko18pbhbiB3U9GglSzF/zCGkR+rxpHx6sEMCUm4kxY4LjDIUGgCfUMtwfZfjfUA==
+type-fest@^5.0.0, type-fest@^5.2.0, type-fest@^5.6.0, type-fest@^5.9.0:
+  version "5.9.0"
+  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-5.9.0.tgz#0a4dd554d397f1a44447477eaeb3d1f4d8c7680f"
+  integrity sha512-yANm3Jr3GiJ1qgJlxGAVxTOIcEOk1rhQHamlXtnrCK7EHP4HeM9OGxtMg/W7HFdrVzw/ZWJKGVIJusVH85sLtw==
   dependencies:
     tagged-tag "^1.0.0"
 
@@ -5718,6 +5743,11 @@ when-exit@^2.1.4:
   resolved "https://registry.yarnpkg.com/when-exit/-/when-exit-2.1.5.tgz#53fa4ffa2ba4c792213fb6617eb7d08f0dcb1a9f"
   integrity sha512-VGkKJ564kzt6Ms1dbgPP/yuIoQCrsFAnRbptpC5wOEsDaNsbCB2bnfnaA8i/vRs5tjUSEOtIuvl9/MyVsvQZCg==
 
+which-command@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/which-command/-/which-command-0.1.0.tgz#62828a961c1104d660fbdc397b5a540c629f3d6c"
+  integrity sha512-XZyoF5/5hZtXitIwzrU4NKK+Wtbb9aB9CezUEw2Q0wlYK8NUYQxC1rRXgNueYLtBAJwXIb+/tFVk4dozciNJMA==
+
 which-package-manager@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/which-package-manager/-/which-package-manager-1.0.1.tgz#69d934142db2179b6d16881690ff7c4f1f9edf75"
@@ -5963,27 +5993,27 @@ yeoman-environment@^6.0.1:
     untildify "^6.0.0"
     which-package-manager "^1.0.1"
 
-yeoman-generator@^8.4.0:
-  version "8.4.0"
-  resolved "https://registry.yarnpkg.com/yeoman-generator/-/yeoman-generator-8.4.0.tgz#6e503e965f11d051887b90da32735563140c5984"
-  integrity sha512-8yMkAfuAPqOaN9dsdf2hGxgCGuSIV3c/RmPKXWoe5YZ4HX2zXnDS9D/AoXlUw9OSPeRVpBe4vh92vTBi840Evw==
+yeoman-generator@^9.1.0:
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/yeoman-generator/-/yeoman-generator-9.1.0.tgz#acbf994ccdaf7280e3009422658b24e344dc4b32"
+  integrity sha512-dfQE5eJhYQUvgGIggH5/X9+0VwxjrrCuZ3QO39MkvEa3363Bcw5/d++yUCRUy9MvvytfEZv4XsdOFluHMmTj3w==
   dependencies:
     "@types/debug" "^4.1.13"
     "@types/lodash-es" "^4.17.12"
     "@yeoman/namespace" "^2.1.0"
-    chalk "^5.6.2"
+    chalk "^6.0.0"
     debug "^4.4.3"
-    execa "^9.6.1"
+    execa "^10.0.1"
     latest-version "^9.0.0"
     lodash-es "^4.18.1"
     mem-fs-editor "^12.0.9"
     minimist "^1.2.8"
     read-package-up "^12.0.0"
-    semver "^7.7.4"
+    semver "^7.8.5"
     simple-git "^3.36.0"
-    sort-keys "^6.0.0"
+    sort-keys "^6.0.1"
     text-table "^0.2.0"
-    type-fest "^5.6.0"
+    type-fest "^5.9.0"
 
 yo@^7.0.1:
   version "7.0.1"
@@ -6026,6 +6056,11 @@ yoctocolors@^2.1.1:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/yoctocolors/-/yoctocolors-2.1.2.tgz#d795f54d173494e7d8db93150cec0ed7f678c83a"
   integrity sha512-CzhO+pFNo8ajLM2d2IW/R93ipy99LWjtwblvC1RsoSUMZgyLbYFr221TnSNT7GjGdYui6P459mw9JH/g/zW2ug==
+
+yoctocolors@^2.1.2:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/yoctocolors/-/yoctocolors-2.2.0.tgz#c4b68ee477f3982c33e4de24a5aa4a354be506d3"
+  integrity sha512-xYqdZFUK/VYazNl/oCDYN+3WloWQwMfZxBoiNt6qNyk+xfOdi598muWE42rNZFp1kNOiqW936q5RhUdnpqElSg==
 
 yosay@^3.0.0:
   version "3.0.0"
