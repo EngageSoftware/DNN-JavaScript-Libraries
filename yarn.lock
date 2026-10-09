@@ -5396,10 +5396,10 @@ tinyglobby@^0.2.12, tinyglobby@^0.2.15:
     fdir "^6.5.0"
     picomatch "^4.0.3"
 
-tinymce@8.9.2:
-  version "8.9.2"
-  resolved "https://registry.yarnpkg.com/tinymce/-/tinymce-8.9.2.tgz#0e6cb1d0230a27afe701651c1dbd99e2dac7ffdb"
-  integrity sha512-Qh6ADSC0x1F/KsrupfResNJFAaINJQBtfVjx5zxxWJ0ZrGtaKldtAXDMI6uEA57s2n+0rEtXmtbitiU4zV7+0Q==
+tinymce@8.9.3:
+  version "8.9.3"
+  resolved "https://registry.yarnpkg.com/tinymce/-/tinymce-8.9.3.tgz#7fdab6588e99cd1fc5a849b881ec4a00e9c594cb"
+  integrity sha512-T6Z541dm8R34/rgotB40/j2lwrE3eKARbaoet37/I4d3jq+S7Ul3Q7bNZUQY2WtXOvD9P5aTVbgcYI1nKQoGqg==
 
 titleize@^4.0.0:
   version "4.0.0"
