@@ -2809,10 +2809,10 @@ interpret@^3.1.1:
   resolved "https://registry.npmjs.org/interpret/-/interpret-3.1.1.tgz"
   integrity sha512-6xwYfHbajpoF0xLW+iwLkhwgvLoZDfjYfoFNu8ftMoXINzwuymNLd9u/KmwtdT2GbR+/Cz66otEGEVVUHX9QLQ==
 
-intl-tel-input@29.5.3:
-  version "29.5.3"
-  resolved "https://registry.yarnpkg.com/intl-tel-input/-/intl-tel-input-29.5.3.tgz#9f62ad6ff14a660e2d80ee67cbf7cefb0c966af5"
-  integrity sha512-aVqUyjALMavXrdpniEv5+9CjTdVcHRDLiHKi6fBKxb+iNVriwqnWcsGvWmKwHjjDdBoYe2lf3pta0sIJL5ytYA==
+intl-tel-input@29.5.4:
+  version "29.5.4"
+  resolved "https://registry.yarnpkg.com/intl-tel-input/-/intl-tel-input-29.5.4.tgz#c52dae8ced1c6682e925085de94e3e01ff4bd5c1"
+  integrity sha512-T28+2raEyMDFBrGKiwLxcXBjutWJVy85fhagcDPl4+ddKfMBdUnJdPhWCaGKkj1IvEsf0cZZ0DvqdSZ/M+7tgg==
 
 ip-address@^9.0.5:
   version "9.0.5"
