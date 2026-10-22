@@ -5951,10 +5951,10 @@ yeoman-environment@^6.0.1:
     untildify "^6.0.0"
     which-package-manager "^1.0.1"
 
-yeoman-generator@^10.0.1:
-  version "10.0.1"
-  resolved "https://registry.yarnpkg.com/yeoman-generator/-/yeoman-generator-10.0.1.tgz#92d75b9d2fd0b744afdc9415e5fca809deb6b1de"
-  integrity sha512-soThDMqOoqxxxDyJzKAXsU9qg6KaiACoeL6V7GGy3RZaJ7Sxi2aji8GIcRx+y7eH0A7lWObP0gCq1Ob+0VEDkw==
+yeoman-generator@^10.2.0:
+  version "10.2.0"
+  resolved "https://registry.yarnpkg.com/yeoman-generator/-/yeoman-generator-10.2.0.tgz#d574f708d531b0d8530ba7a9dab1e7b681bede12"
+  integrity sha512-KKroFu95UxS/ljMdwZCPBIYLQtjMTvUrvBD22GRNXrC+o7vseFacOMonjSSTmU5l1KOPXFG7/HRMh/8mSq6Lmg==
   dependencies:
     "@types/debug" "^4.1.13"
     "@types/lodash-es" "^4.17.12"
@@ -5962,11 +5962,11 @@ yeoman-generator@^10.0.1:
     chalk "^6.0.0"
     debug "^4.4.3"
     execa "^10.0.1"
+    find-up-simple "^1.0.1"
     latest-version "^9.0.0"
     lodash-es "^4.18.1"
     mem-fs-editor "^12.0.9"
     minimist "^1.2.8"
-    read-package-up "^12.0.0"
     semver "^7.8.5"
     simple-git "^4.0.2"
     sort-keys "^6.0.1"
