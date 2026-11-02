@@ -2814,10 +2814,10 @@ interpret@^3.1.1:
   resolved "https://registry.npmjs.org/interpret/-/interpret-3.1.1.tgz"
   integrity sha512-6xwYfHbajpoF0xLW+iwLkhwgvLoZDfjYfoFNu8ftMoXINzwuymNLd9u/KmwtdT2GbR+/Cz66otEGEVVUHX9QLQ==
 
-intl-tel-input@29.5.7:
-  version "29.5.7"
-  resolved "https://registry.yarnpkg.com/intl-tel-input/-/intl-tel-input-29.5.7.tgz#4508f94c85ee0ea2572dee39e3dc69994c24b81c"
-  integrity sha512-KAmo28FkLZMd31KpMQ9aEdUWKiR6FshU1Uj3FTrI3H//LQyJlFK43Wn6frMxKrQq/OSF7u3RatdKPluV+2M8WA==
+intl-tel-input@29.5.8:
+  version "29.5.8"
+  resolved "https://registry.yarnpkg.com/intl-tel-input/-/intl-tel-input-29.5.8.tgz#07f89434702cc435cb3f29ec524477b3a3383639"
+  integrity sha512-RNXhQ4/xdAAksSM9nYt0/ALUui94H3mAVLgAeUDeBCaEWTJIFk6ekp99icbD/nHWN1rZPnvm+TznFmKsB8l3Jg==
 
 ip-address@^9.0.5:
   version "9.0.5"
