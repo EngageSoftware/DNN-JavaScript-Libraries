@@ -5951,10 +5951,10 @@ yeoman-environment@^6.0.1:
     untildify "^6.0.0"
     which-package-manager "^1.0.1"
 
-yeoman-generator@^10.3.0:
-  version "10.3.0"
-  resolved "https://registry.yarnpkg.com/yeoman-generator/-/yeoman-generator-10.3.0.tgz#bebc5dfb7aff359973d9bdd2cb1787176e37504d"
-  integrity sha512-ZBNnz2B9ugvsmURuEEGE4M6Iuqs4CPHfsuzKolR06PZph/+5nh/CP5PrtiUKJrmnpj31IKs/JQpps4cd7V1QQA==
+yeoman-generator@^10.3.1:
+  version "10.3.1"
+  resolved "https://registry.yarnpkg.com/yeoman-generator/-/yeoman-generator-10.3.1.tgz#1b9a9f0c2a1c7058330878aee849c8522159b610"
+  integrity sha512-rb9sN/n6cS4MNbIDmuC1cxJwgDohN3EUQK17ApXJYxpCNOF7NFxcJn1Hyf3xHp4A9AcYkHMsZUrzmXnjj5aSow==
   dependencies:
     "@types/debug" "^4.1.13"
     "@types/lodash-es" "^4.17.12"
