@@ -4798,10 +4798,10 @@ seek-bzip@^1.0.5:
   dependencies:
     commander "~2.8.1"
 
-select2@4.1.1:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/select2/-/select2-4.1.1.tgz#bd66bbab8a057b17ea117196a073aa333acf315e"
-  integrity sha512-kufep72db0ibLV8V/BI7uLT4vb1LPn29tYFtH2Y0TIqgimYwbj9NBw5nzTa9j1spBoABio6MlVcupxfWvoGMPA==
+select2@4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/select2/-/select2-4.2.0.tgz#c98af11f99928ebb14caf9582d07a8f3c33d5e71"
+  integrity sha512-wptq1br36O1UHPyXR2QTyqzyCcLUhYy90c+iFNMaotP7raeVAsUQdbHObikYOwC+mHU1hoVFIJwJTagly115TQ==
 
 select@^1.1.2:
   version "1.1.2"
