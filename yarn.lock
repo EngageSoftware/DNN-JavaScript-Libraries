@@ -1517,32 +1517,44 @@ cssesc@^3.0.0:
   resolved "https://registry.npmjs.org/cssesc/-/cssesc-3.0.0.tgz"
   integrity sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==
 
-datatables.net-buttons-dt@4.1.3:
-  version "4.1.3"
-  resolved "https://registry.yarnpkg.com/datatables.net-buttons-dt/-/datatables.net-buttons-dt-4.1.3.tgz#5f8113e1cd8368b43dbe7217fc772b27fbdaa6ec"
-  integrity sha512-n0QtvbyEqDVilFH56IV6IGp5irs7e/XpDmY9u5934YNuBvePAA86IjSepOSD6pgWU5id0nfaNG1XRt+ubDTArQ==
+datatables.net-buttons-dt@4.1.4:
+  version "4.1.4"
+  resolved "https://registry.yarnpkg.com/datatables.net-buttons-dt/-/datatables.net-buttons-dt-4.1.4.tgz#12b3ab47b62b1858048feb0e4876e2c78fddb3ab"
+  integrity sha512-85NdHMh4X2Kcz4MuL3fQsACy00fJF7gw/OKufBlhrWBYwIC8szA2coMZepZoriuVbYRKuNOJLDtH+UbceMxg+w==
   dependencies:
-    datatables.net-buttons "4.1.3"
-    datatables.net-dt "^3.1"
+    datatables.net-buttons "4.1.4"
+    datatables.net-dt "^3"
 
-datatables.net-buttons@4.1.3:
-  version "4.1.3"
-  resolved "https://registry.yarnpkg.com/datatables.net-buttons/-/datatables.net-buttons-4.1.3.tgz#24b7490e4c556bd805328e75256ed864300be82b"
-  integrity sha512-8ss6wBBfh5RUUYzNtbV+USx7L3Neu+KdjT+VU2by5HIEDZ0cf1xz0MNiIHUp3aPpN0tyMB5e0M9Vp2YGCEACPQ==
+datatables.net-buttons@4.1.4:
+  version "4.1.4"
+  resolved "https://registry.yarnpkg.com/datatables.net-buttons/-/datatables.net-buttons-4.1.4.tgz#209c4234eaebae7a3e2f9dcf9da3f92c82cc2c15"
+  integrity sha512-OvJ9q1u3OSuZP+9WXQPFrWMbeOaG2BZ5YgbtYMnAg5dQNlivZ6Xi0r/Ugvu0XFvbpiTftG+GD8tndpcTug33kA==
   dependencies:
     datatables.net "^3.1"
 
-datatables.net-dt@3.1.5, datatables.net-dt@^3.1:
+datatables.net-dt@3.1.5:
   version "3.1.5"
   resolved "https://registry.yarnpkg.com/datatables.net-dt/-/datatables.net-dt-3.1.5.tgz#f582d06535389db237538cba28c601a7a9e1f245"
   integrity sha512-JXjpuKJmTZhndDCmi9Pz0Zkxd6sodYaMaE9KYc3x0YOGIerbRlnP0s1EJ2MWBtAkmJ0AbZo5hl8GahreMAd4hg==
   dependencies:
     datatables.net "3.1.5"
 
+datatables.net-dt@^3:
+  version "3.1.6"
+  resolved "https://registry.yarnpkg.com/datatables.net-dt/-/datatables.net-dt-3.1.6.tgz#f855047f2cf1e317e98c4e7fd82354fab5dcfdad"
+  integrity sha512-ZV1A5wor0LOQbssK1OMubtgHf7AqBLHjanZezmza1GyLVqlVabY1tCarePIO6CYnyh7SFKX7ct444yg8TWj/ZA==
+  dependencies:
+    datatables.net "3.1.6"
+
 datatables.net@3.1.5, datatables.net@^3.1:
   version "3.1.5"
   resolved "https://registry.yarnpkg.com/datatables.net/-/datatables.net-3.1.5.tgz#aea72d23adb015ff2b98e35fc38e1d23f2fd7a57"
   integrity sha512-phu9fVz1cOhD7kZDO5Ztj15qwghCkmdwX5AezLi+PxfMtnFAq0itpewvXzdwdr6bOwPqO2zuXsXWUU5x3wQptw==
+
+datatables.net@3.1.6:
+  version "3.1.6"
+  resolved "https://registry.yarnpkg.com/datatables.net/-/datatables.net-3.1.6.tgz#6f2991dfebf03fc35b225d0c284af59c94bc5cfa"
+  integrity sha512-gHQ2TCiDmN7t5FajFAnCiT8AYxLOtmVaDZELedy79mStrRqxJM7yIU/suknM77b5FeqXrHEYDsitAz8jZGJ1Dw==
 
 dateformat@^5.0.3:
   version "5.0.3"
